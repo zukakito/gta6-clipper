@@ -1,24 +1,25 @@
 {
   "scout": {
-    "checked_at": "2026-11-20T18:33:37+00:00",
-    "new": 0,
-    "known": 21,
+    "checked_at": "2026-11-20T20:07:44+00:00",
+    "new": 21,
+    "known": 42,
     "youtube_open": 0,
     "needs_review": []
   },
-  "last_scout": "2026-11-20T18:33:37+00:00",
-  "last_run": "2026-11-20T19:44:13+00:00",
-  "run_seconds": 1089,
-  "made_this_run": 1,
+  "last_scout": "2026-11-20T20:07:44+00:00",
+  "last_run": "2026-11-20T20:16:08+00:00",
+  "run_seconds": 792,
+  "made_this_run": 2,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "lacy-gta6-pool"
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 0,
+  "queued_candidates": 2,
   "pending_submissions": 0,
   "rendered_files": [
-    "lacy-gta6-pool_twitchvod-v293376701_90583.mp4"
+    "lacy-gta6-pool_twitchvod-v293505968_4060.mp4",
+    "lacy-gta6-pool_twitchvod-v293505968_4925.mp4"
   ]
 }

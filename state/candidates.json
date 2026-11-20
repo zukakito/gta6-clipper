@@ -446,5 +446,79 @@
     "win_end": 90613.0,
     "found_at": "2026-11-20T19:36:14+00:00",
     "status": "rendered"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2935059680",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-20 20:07",
+    "t": 5110.0,
+    "score": 1.957867230378663,
+    "win_start": 5065.0,
+    "win_end": 5140.0,
+    "found_at": "2026-11-20T20:08:01+00:00",
+    "status": "rejected",
+    "reason": "There is no active GTA gameplay visible (only a map menu/concept screen), LACY is restricted to a small webcam inset rather than being the main focus, and screen elements include logos."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2935059680",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-20 20:07",
+    "t": 4925.0,
+    "score": 1.9438212504917456,
+    "win_start": 4880.0,
+    "win_end": 4955.0,
+    "found_at": "2026-11-20T20:08:01+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2935059680",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-20 20:07",
+    "t": 5560.0,
+    "score": 1.919476797416336,
+    "win_start": 5515.0,
+    "win_end": 5590.0,
+    "found_at": "2026-11-20T20:08:01+00:00",
+    "status": "rejected",
+    "reason": "The clip contains explicit references to sexual content, violating the campaign rule against sexual content."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2935059680",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-20 20:07",
+    "t": 4060.0,
+    "score": 1.8715279400174332,
+    "win_start": 4015.0,
+    "win_end": 4090.0,
+    "found_at": "2026-11-20T20:08:01+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2935059680",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-20 20:07",
+    "t": 6360.0,
+    "score": 1.7670461444455074,
+    "win_start": 6315.0,
+    "win_end": 6390.0,
+    "found_at": "2026-11-20T20:08:01+00:00",
+    "status": "new"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2935059680",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-20 20:07",
+    "t": 6190.0,
+    "score": 1.7005391103480658,
+    "win_start": 6145.0,
+    "win_end": 6220.0,
+    "found_at": "2026-11-20T20:08:01+00:00",
+    "status": "new"
   }
 ]
