@@ -46,5 +46,29 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293376701_77598.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-20T16:38:23+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_offset": 77574.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293376701_77403.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-20T16:39:50+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_offset": 77379.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
