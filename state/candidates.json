@@ -304,5 +304,83 @@
     "found_at": "2026-11-20T16:59:17+00:00",
     "status": "rejected",
     "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 88733.0,
+    "score": 2.955275366141178,
+    "win_start": 88688.0,
+    "win_end": 88763.0,
+    "found_at": "2026-11-20T17:06:20+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 85383.0,
+    "score": 2.7332874926347057,
+    "win_start": 85338.0,
+    "win_end": 85413.0,
+    "found_at": "2026-11-20T17:06:20+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 88018.0,
+    "score": 2.509179955318221,
+    "win_start": 87973.0,
+    "win_end": 88048.0,
+    "found_at": "2026-11-20T17:06:20+00:00",
+    "status": "rejected",
+    "reason": "too little speech (11 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 86673.0,
+    "score": 2.125746175113086,
+    "win_start": 86628.0,
+    "win_end": 86703.0,
+    "found_at": "2026-11-20T17:06:20+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 88578.0,
+    "score": 2.021863784903706,
+    "win_start": 88533.0,
+    "win_end": 88608.0,
+    "found_at": "2026-11-20T17:06:20+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 88858.0,
+    "score": 1.913285867767178,
+    "win_start": 88813.0,
+    "win_end": 88888.0,
+    "found_at": "2026-11-20T17:06:20+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   }
 ]
