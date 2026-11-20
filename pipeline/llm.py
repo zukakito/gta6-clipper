@@ -13,8 +13,27 @@ import requests
 
 from .common import env, log
 
-MODEL = env("GEMINI_MODEL", "gemini-2.5-flash")
-URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+BASE = "https://generativelanguage.googleapis.com/v1beta"
+URL = BASE + "/models/{model}:generateContent"
+_model: str | None = env("GEMINI_MODEL")   # optional override; otherwise picked automatically
+
+
+def _pick_model(key: str) -> str | None:
+    """Pick the newest stable 'flash' model this key can use (model names change over time)."""
+    try:
+        r = requests.get(BASE + "/models", params={"key": key, "pageSize": 200}, timeout=30)
+        r.raise_for_status()
+        names = [m["name"].split("/", 1)[1] for m in r.json().get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+    except Exception as e:  # noqa: BLE001
+        log.warning("gemini: cannot list models: %s", e)
+        return None
+    def rank(n: str):
+        nums = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", n)[:1]] or [0.0]
+        return (("flash" in n) and ("lite" not in n), not any(t in n for t in ("preview", "exp", "image", "tts", "live", "audio")), nums[0], -len(n))
+    best = max(names, key=rank) if names else None
+    log.info("gemini: using model %s", best)
+    return best
 
 
 def available() -> bool:
@@ -34,9 +53,15 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries:
     }
     if want_json:
         body["generationConfig"]["responseMimeType"] = "application/json"
+    global _model
+    if _model is None:
+        _model = _pick_model(key) or "gemini-flash-latest"
     for attempt in range(retries):
         try:
-            r = requests.post(URL.format(model=MODEL), params={"key": key}, json=body, timeout=90)
+            r = requests.post(URL.format(model=_model), params={"key": key}, json=body, timeout=90)
+            if r.status_code == 404 and attempt == 0:  # model retired -> re-pick once
+                _model = _pick_model(key) or _model
+                continue
             if r.status_code == 429:  # free-tier rate limit
                 time.sleep(20 * (attempt + 1))
                 continue

@@ -92,6 +92,10 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
         try:
             src = render.download_section(cand["vod_url"], cand["win_start"], cand["win_end"], name)
             words = render.transcribe(src, clip_cfg["whisper_model"])
+            if len(words) < curate.MIN_WORDS:   # cheap check first: idle/sleeping moments have no speech
+                cand["status"], cand["reason"] = "rejected", f"too little speech ({len(words)} words)"
+                log.info("rejected %s: no speech", name)
+                continue
             win_len = render.probe_duration(src)
             meta = curate.curate(c, words, win_len, cand["t"] - cand["win_start"], clip_cfg)
             if not meta.get("keep", True):
