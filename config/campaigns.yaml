@@ -77,7 +77,9 @@ campaigns:
     rules: "Every clip must include his stream overlay - use full-frame layout, never crop the overlay out."
     layout: fit_blur
     verified_brief: false
-    enabled: true
+    # Disabled 20 Nov: YouTube blocks VOD downloads from GitHub runners ("confirm you're not a bot").
+    # Re-enable after adding the YTDLP_COOKIES secret.
+    enabled: false
 
   - id: dylan-page-gta6
     name: "$5,000 Dylan Page GTA VI Marathon (NewsDaddy)"
@@ -88,13 +90,13 @@ campaigns:
     cpm: 1.00
     min_payout_usd: 10
     cap_usd: 250
-    sources: [https://www.youtube.com/@dylanpage/streams]
+    sources: []   # @dylanpage/streams returned 404 - confirm his marathon channel from the brief
     format: short
     must_include: ["Dylan Page", "#DylanPage"]
     overlay_text: "DYLAN PAGE"
     rules: "Clips must show Dylan on screen. Source is his 120-hour GTA 6 marathon on YouTube."
     verified_brief: false
-    enabled: true
+    enabled: false   # needs the correct source channel + YTDLP_COOKIES (YouTube source)
 
   - id: clix-gta6-pool
     name: "$5,000 Clix GTA VI Marathon Pool (Reach)"

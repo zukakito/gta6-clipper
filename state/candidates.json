@@ -4,77 +4,71 @@
     "vod_id": "twitchvod:v2933767012",
     "vod_url": "https://www.twitch.tv/videos/2933767012",
     "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 16:00",
-    "t": 67308.0,
+    "t": 67308,
     "score": 2.68720033673315,
-    "win_start": 67303.0,
-    "win_end": 67338.0,
+    "win_start": 67303,
+    "win_end": 67338,
     "found_at": "2026-11-20T16:00:44+00:00",
-    "status": "error",
-    "error": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+    "status": "new"
   },
   {
     "campaign_id": "lacy-gta6-pool",
     "vod_id": "twitchvod:v2933767012",
     "vod_url": "https://www.twitch.tv/videos/2933767012",
     "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 16:00",
-    "t": 68953.0,
+    "t": 68953,
     "score": 2.29026347741574,
-    "win_start": 68908.0,
-    "win_end": 68983.0,
+    "win_start": 68908,
+    "win_end": 68983,
     "found_at": "2026-11-20T16:00:44+00:00",
-    "status": "error",
-    "error": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+    "status": "new"
   },
   {
     "campaign_id": "lacy-gta6-pool",
     "vod_id": "twitchvod:v2933767012",
     "vod_url": "https://www.twitch.tv/videos/2933767012",
     "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 16:00",
-    "t": 69743.0,
+    "t": 69743,
     "score": 2.231330788580947,
-    "win_start": 69698.0,
-    "win_end": 69773.0,
+    "win_start": 69698,
+    "win_end": 69773,
     "found_at": "2026-11-20T16:00:44+00:00",
-    "status": "error",
-    "error": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+    "status": "new"
   },
   {
     "campaign_id": "lacy-gta6-pool",
     "vod_id": "twitchvod:v2933767012",
     "vod_url": "https://www.twitch.tv/videos/2933767012",
     "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 16:00",
-    "t": 71943.0,
+    "t": 71943,
     "score": 2.182949059349556,
-    "win_start": 71898.0,
-    "win_end": 71973.0,
+    "win_start": 71898,
+    "win_end": 71973,
     "found_at": "2026-11-20T16:00:44+00:00",
-    "status": "error",
-    "error": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+    "status": "new"
   },
   {
     "campaign_id": "lacy-gta6-pool",
     "vod_id": "twitchvod:v2933767012",
     "vod_url": "https://www.twitch.tv/videos/2933767012",
     "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 16:00",
-    "t": 72883.0,
+    "t": 72883,
     "score": 2.15984883718907,
-    "win_start": 72838.0,
-    "win_end": 72913.0,
+    "win_start": 72838,
+    "win_end": 72913,
     "found_at": "2026-11-20T16:00:44+00:00",
-    "status": "error",
-    "error": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+    "status": "new"
   },
   {
     "campaign_id": "lacy-gta6-pool",
     "vod_id": "twitchvod:v2933767012",
     "vod_url": "https://www.twitch.tv/videos/2933767012",
     "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM 2026-11-20 16:00",
-    "t": 72308.0,
+    "t": 72308,
     "score": 2.128917887191776,
-    "win_start": 72263.0,
-    "win_end": 72338.0,
+    "win_start": 72263,
+    "win_end": 72338,
     "found_at": "2026-11-20T16:00:44+00:00",
-    "status": "error",
-    "error": "TypeError: open() got an unexpected keyword argument 'metadata_errors'"
+    "status": "new"
   }
 ]

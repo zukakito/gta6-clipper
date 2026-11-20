@@ -38,9 +38,18 @@ def transcribe(path: Path, model_size: str = "small") -> list[dict]:
     except ImportError:
         log.warning("faster-whisper not installed; rendering without captions")
         return []
+    import numpy as np
+
     if _model is None:
         _model = WhisperModel(model_size, device="cpu", compute_type="int8")
-    segments, _ = _model.transcribe(str(path), language="en", word_timestamps=True, vad_filter=True)
+    # Decode with ffmpeg ourselves (16 kHz mono float32). This avoids faster-whisper's PyAV
+    # decoder, which breaks on newer PyAV releases ("unexpected keyword 'metadata_errors'").
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-vn", "-ac", "1", "-ar", "16000",
+                          "-f", "s16le", "-"], check=True, capture_output=True, timeout=600).stdout
+    audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    if audio.size == 0:
+        return []
+    segments, _ = _model.transcribe(audio, language="en", word_timestamps=True, vad_filter=True)
     words = []
     for seg in segments:
         for w in seg.words or []:

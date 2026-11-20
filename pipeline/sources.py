@@ -45,6 +45,8 @@ def recent_vods(src: str, lookback_hours: int, limit: int = 4, since: str | None
             except Exception as ex:  # noqa: BLE001
                 log.warning("sources: cannot read %s: %s", vurl, ex)
                 continue
+            if not info.get("id"):
+                continue  # extraction failed (e.g. YouTube bot check) - skip quietly
             ts = info.get("timestamp") or info.get("release_timestamp")
             started = dt.datetime.fromtimestamp(ts, dt.timezone.utc) if ts else None
             if started and started < cutoff:
