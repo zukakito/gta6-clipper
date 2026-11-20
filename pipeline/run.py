@@ -17,6 +17,7 @@ from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_s
 RUN_BUDGET_SEC = 50 * 60
 SCAN_CHUNK_SEC = 3600           # analyse at most 1 h of new VOD per VOD per run
 FIRST_LOOK_SEC = 6 * 3600       # on first sight of a long marathon VOD, start 6 h from the end
+MAX_LAG_SEC = 3 * 3600          # if we fall more than 3 h behind a live VOD, jump to the newest hour
 LIVE_EDGE_SEC = 90              # don't analyse the last 90 s of a live VOD (still being written)
 
 
@@ -49,6 +50,8 @@ def discover_moments(cfg: dict, vod_state: dict, candidates: list[dict], deadlin
                     continue
                 edge = dur - (LIVE_EDGE_SEC if v["is_live"] else 0)
                 start = st["scanned_until"] if st["scanned_until"] is not None else max(0.0, edge - FIRST_LOOK_SEC)
+                if edge - start > MAX_LAG_SEC:   # fresh moments earn far more than old ones: skip stale backlog
+                    start = edge - SCAN_CHUNK_SEC
                 new = edge - start
                 if new < 60 or (v["is_live"] and new < 600):
                     continue  # wait for at least 10 new minutes on live VODs
