@@ -68,6 +68,17 @@ jobs:
             python -m pipeline.run
           fi
 
+      - name: Preview frames of new clips
+        if: always()
+        run: |
+          mkdir -p state/previews
+          for f in /tmp/clipper/out/*.mp4; do
+            [ -e "$f" ] || continue
+            n=$(basename "$f" .mp4)
+            ffmpeg -v error -y -i "$f" -vf "fps=1/8,scale=270:-2,tile=5x1" -frames:v 1 -q:v 4 "state/previews/$n.jpg" || true
+          done
+          ls -1t state/previews/*.jpg 2>/dev/null | tail -n +21 | xargs -r rm -f
+
       - name: Keep rendered clips for review (7 days)
         if: always()
         uses: actions/upload-artifact@v4

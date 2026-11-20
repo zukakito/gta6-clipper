@@ -54,7 +54,7 @@ def audio_series(url: str, start: float, end: float, vod_key: str) -> np.ndarray
             subprocess.run([
                 "yt-dlp", "-q", "--no-warnings", "-f", "Audio_Only/bestaudio/worst",
                 "--download-sections", f"*{int(start)}-{int(end)}", "-o", str(out), url,
-            ], check=True, timeout=1800)
+            ], check=True, timeout=600)   # a stuck download must not eat the whole run
         raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(out), "-ac", "1", "-ar", "4000", "-f", "s16le", "-"],
                              check=True, capture_output=True, timeout=900).stdout
         x = np.frombuffer(raw, dtype=np.int16).astype(np.float32)

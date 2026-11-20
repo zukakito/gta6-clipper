@@ -15,7 +15,7 @@ from . import curate, highlights, publish, render, scout, sources, submit
 from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_state, settings, slug
 
 RUN_BUDGET_SEC = 50 * 60
-SCAN_CHUNK_SEC = 2 * 3600       # analyse at most 2 h of new VOD per VOD per run
+SCAN_CHUNK_SEC = 3600           # analyse at most 1 h of new VOD per VOD per run
 FIRST_LOOK_SEC = 6 * 3600       # on first sight of a long marathon VOD, start 6 h from the end
 LIVE_EDGE_SEC = 90              # don't analyse the last 90 s of a live VOD (still being written)
 
