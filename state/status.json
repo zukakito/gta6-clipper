@@ -7,20 +7,18 @@
     "needs_review": []
   },
   "last_scout": "2026-11-20T21:56:05+00:00",
-  "last_run": "2026-11-20T22:04:39+00:00",
-  "run_seconds": 744,
-  "made_this_run": 3,
+  "last_run": "2026-11-20T22:54:49+00:00",
+  "run_seconds": 246,
+  "made_this_run": 1,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "lacy-gta6-pool"
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 4,
+  "queued_candidates": 0,
   "pending_submissions": 0,
   "rendered_files": [
-    "lacy-gta6-pool_twitchvod-v293505968_13180.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_13440.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_9080.mp4"
+    "lacy-gta6-pool_twitchvod-v293505968_12945.mp4"
   ]
 }
