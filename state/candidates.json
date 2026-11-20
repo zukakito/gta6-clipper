@@ -382,5 +382,69 @@
     "found_at": "2026-11-20T17:06:20+00:00",
     "status": "rejected",
     "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 89853.0,
+    "score": 1.6654115842079265,
+    "win_start": 89808.0,
+    "win_end": 89883.0,
+    "found_at": "2026-11-20T19:36:14+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains explicit sexual references and vulgar dialogue about genitals, violating sexual content guidelines."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 90058.0,
+    "score": 1.572439897563292,
+    "win_start": 90013.0,
+    "win_end": 90088.0,
+    "found_at": "2026-11-20T19:36:14+00:00",
+    "status": "rejected",
+    "reason": "The clip contains inappropriate/sexual language ('leave my cock', shower references) which violates campaign rules regarding sexual content."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 89643.0,
+    "score": 1.495634524918897,
+    "win_start": 89598.0,
+    "win_end": 89673.0,
+    "found_at": "2026-11-20T19:36:14+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains explicit references to sexual content ('Did you all see my dick?'), which breaks the campaign rule prohibiting sexual content."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 90223.0,
+    "score": 1.2956054424365366,
+    "win_start": 90178.0,
+    "win_end": 90253.0,
+    "found_at": "2026-11-20T19:36:14+00:00",
+    "status": "rejected",
+    "reason": "Nothing happens in the clip beyond Lacy plugging an off-stream sports interview, with no entertaining moment, gameplay, or payoff."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2933767012",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_title": "☀️ GTA 6 MARATHON ☀️GIVING AWAY GTA 6 TO VIEWERS ☀️ IN MIAMI ☀️ CHAPTER 2 ☀️ LIVE 24/7 ☀️ !CLIPPING !COM",
+    "t": 90583.0,
+    "score": 1.1972711079875147,
+    "win_start": 90538.0,
+    "win_end": 90613.0,
+    "found_at": "2026-11-20T19:36:14+00:00",
+    "status": "rendered"
   }
 ]

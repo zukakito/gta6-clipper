@@ -70,5 +70,17 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293376701_90583.mp4",
+    "title": "LACY Wants To Pre Order This For Lucia #LACY #shorts",
+    "posted_at": "2026-11-20T19:44:13+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2933767012",
+    "vod_offset": 90555.3,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
