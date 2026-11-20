@@ -1,0 +1,40 @@
+# Global pipeline settings. Edit freely; the runner re-reads this every run.
+
+channel:
+  name: "Six Star Clips"            # change to whatever name you picked
+  language: "en"
+  default_category_id: 20           # 20 = Gaming
+
+posting:
+  # A brand-new channel that dumps dozens of Shorts on day one looks like spam
+  # to YouTube. Start modest and ramp up as the channel gains trust.
+  max_uploads_per_run: 2
+  max_uploads_per_day: 8
+  min_minutes_between_uploads: 45
+  privacy: public                   # public | unlisted | private
+  # Where uploads go:
+  #   youtube_api  -> your own Google Cloud project (public only after Google's audit)
+  #   upload_post  -> Upload-Post free plan (10 public uploads/month) as a stop-gap
+  #   dry_run      -> render only, no upload (good for the first test run)
+  publisher: dry_run
+
+clipping:
+  short_min_sec: 20
+  short_max_sec: 58
+  long_target_min: 8               # long-form compilations, only for campaigns with format: long
+  highlights_per_vod: 6            # candidate moments scored per VOD
+  vod_lookback_hours: 48           # only clip VODs newer than this
+  whisper_model: small             # tiny | base | small (CPU-friendly)
+  layout: fit_blur                 # fit_blur | center_crop | facecam_split
+
+scout:
+  # Boards the scout reads every run to discover new GTA 6 campaigns.
+  boards:
+    - https://clipcpm.com/gta-6
+    - https://gtaclipper.com/campaigns
+    - https://contentrewards.com/c/discover/clipping
+  keywords: ["gta 6", "gta vi", "gta6", "grand theft auto", "leonida", "vice city"]
+  # New campaigns are added to state/discovered.json. They are NOT auto-clipped
+  # until the brief has been parsed and the campaign appears in campaigns.yaml
+  # with enabled: true (the Claude monitor or you do this).
+  auto_enable: true                # if true and Gemini parsed a YouTube-allowed brief, enable automatically

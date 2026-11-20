@@ -1,0 +1,186 @@
+# Campaigns the pipeline clips for. Only entries with enabled: true are processed.
+# Fields:
+#   id            short slug, used in state files
+#   board         content_rewards | vyro | clipster | clipping_net | other
+#   join_url      campaign page (where you join + submit)
+#   whop_bounty_id  optional (bnty_...) -> enables automatic submission via the Whop API
+#   type          cpm | pool
+#   cpm           USD per 1,000 views (cpm campaigns)
+#   min_views_to_pay / cap_usd   per-clip limits from the brief
+#   sources       channels whose VODs are authorised footage (twitch/kick/youtube URLs)
+#   format        short | long | both
+#   must_include  text that must appear in the title/caption (names, hashtags)
+#   overlay_text  on-screen text burned into the clip (e.g. required name)
+#   rules         free-text rules from the brief (read by the LLM when writing metadata)
+#   submit_within_min  submit link to the campaign within N minutes of posting
+#   verified_brief  true once someone has read the full brief behind the join button
+#
+# Snapshot built 20 Nov 2026 from public campaign listings. Rates/budgets move fast;
+# the scout + Claude monitor keep this current.
+
+defaults:
+  paid_disclosure: true            # Content Rewards requires a clear paid disclosure at the start
+  submit_within_min: 30
+  format: short
+
+campaigns:
+  - id: lacy-gta6-pool
+    name: "$12,500 LACY GTA VI Marathon Pool (Reach)"
+    board: content_rewards
+    host: Reach
+    join_url: https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a
+    type: pool
+    pool_usd: 12500
+    min_total_views: 750000
+    sources: [https://www.twitch.tv/lacy]
+    source_since: "2026-11-18"
+    format: short
+    must_include: ["LACY", "#LACY"]
+    overlay_text: "LACY"
+    rules: >
+      LACY must be the main focus of every clip (not just the intro). Never portray him
+      negatively or push false negative narratives. No logos of any kind. No AI-generated
+      content. No Japanese captions. Thumbnails must match the content.
+      Audience should be majority USA/CA/AU/UK/NZ - write in English.
+    verified_brief: true
+    enabled: true
+
+  - id: kai-cenat-gta6-pool
+    name: "Kai Cenat $10,000 GTA 6 Pool (Clipped & Shipped)"
+    board: content_rewards
+    host: Clipped & Shipped
+    join_url: https://whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86
+    type: pool
+    pool_usd: 10000
+    min_total_views: 750000
+    min_views_per_clip: 1000
+    sources: [https://www.twitch.tv/kaicenat]
+    format: short
+    must_include: ["Kai Cenat", "#KaiCenat"]
+    overlay_text: "KAI CENAT"
+    rules: "Full rules are behind the join button - confirm before enabling."
+    verified_brief: false
+    enabled: false
+
+  - id: kreekcraft-gta6
+    name: "KreekCraft GTA 6 Clipping (ClipLaunch)"
+    board: content_rewards
+    host: ClipLaunch
+    join_url: https://whop.com/experiences/exp_drhUyiUEj7jN3e/campaigns/2eaa14fb-6927-4136-897e-b096e0d907d6
+    type: cpm
+    cpm: 1.00
+    min_payout_usd: 2
+    cap_usd: 400
+    sources: [https://www.youtube.com/@KreekCraft/streams]
+    format: short
+    must_include: ["KreekCraft"]
+    rules: "Every clip must include his stream overlay - use full-frame layout, never crop the overlay out."
+    layout: fit_blur
+    verified_brief: false
+    enabled: true
+
+  - id: dylan-page-gta6
+    name: "$5,000 Dylan Page GTA VI Marathon (NewsDaddy)"
+    board: content_rewards
+    host: NewsDaddy
+    join_url: https://whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/39753a1a-f1f3-491b-a8f6-0cfee0af0c97
+    type: cpm
+    cpm: 1.00
+    min_payout_usd: 10
+    cap_usd: 250
+    sources: [https://www.youtube.com/@dylanpage/streams]
+    format: short
+    must_include: ["Dylan Page", "#DylanPage"]
+    overlay_text: "DYLAN PAGE"
+    rules: "Clips must show Dylan on screen. Source is his 120-hour GTA 6 marathon on YouTube."
+    verified_brief: false
+    enabled: true
+
+  - id: clix-gta6-pool
+    name: "$5,000 Clix GTA VI Marathon Pool (Reach)"
+    board: content_rewards
+    host: Reach
+    join_url: https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/985dc674-c75e-44fc-ac87-1b1506324389
+    type: pool
+    pool_usd: 5000
+    min_total_views: 400000
+    sources: [https://www.twitch.tv/clix]
+    format: short
+    must_include: ["Clix", "#Clix"]
+    overlay_text: "CLIX"
+    rules: "No AI-generated videos. No logos. Reach network rules: one violation = removal from all Reach campaigns."
+    verified_brief: false
+    enabled: true
+
+  - id: yourrage-gta6-pool
+    name: "YourRAGE $5,000 GTA 6 Pool (Reach)"
+    board: content_rewards
+    host: Reach
+    join_url: https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/be9b123e-ea47-4305-b6c5-af81f503b247
+    type: pool
+    pool_usd: 5000
+    min_total_views: 500000
+    sources: [https://www.twitch.tv/yourragegaming]
+    format: short
+    must_include: ["YourRAGE"]
+    rules: "Marathon stream footage. Full rules behind join button."
+    verified_brief: false
+    enabled: false
+
+  - id: bendadonnn-puffco-gta6
+    name: "BenDaDonnn x Puffco GTA 6 (Launch Clipping)"
+    board: content_rewards
+    host: Launch Clipping
+    join_url: https://whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/bb66f9eb-b90e-4dd0-8cee-9f3cd566c9a0
+    type: cpm
+    cpm: 1.00
+    sources: [https://www.twitch.tv/bendadonnn]
+    format: short
+    must_include: ["BenDaDonnn"]
+    rules: "Brand campaign (Puffco). Read brief for required brand mention before enabling."
+    verified_brief: false
+    enabled: false
+
+  - id: asianjeff-gta6
+    name: "$2,500 AsianJeff Clipping (Reach)"
+    board: content_rewards
+    host: Reach
+    join_url: https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/bbd3a963-9a23-457c-bc15-6697971d9902
+    type: cpm
+    cpm: 1.00
+    sources: [https://www.twitch.tv/asianjeff]
+    format: short
+    must_include: ["AsianJeff"]
+    rules: "Reach network rules: no AI content, no logos, no bots."
+    verified_brief: false
+    enabled: false
+
+  - id: tomo-gta6
+    name: "TOMO GTA VI Clipping (Clipping Nation)"
+    board: content_rewards
+    host: Clipping Nation
+    type: cpm
+    cpm: 1.50
+    min_payout_usd: 3.5
+    cap_usd: 150
+    sources: []
+    format: short
+    must_include: ["Tomo"]
+    rules: "Tomo's GTA VI livestreams and YouTube videos. Add source channel URL before enabling."
+    verified_brief: false
+    enabled: false
+
+  - id: dasgasd3m-ruckus
+    name: "Dasgasd3m x RUCKUS | GTA 6"
+    board: content_rewards
+    host: Ruckus
+    join_url: https://whop.com/experiences/exp_TDe1k6GyH2XhXR/campaigns/051002dd-5c46-43d0-a446-43f2957ba3a9
+    type: cpm
+    cpm: 2.00
+    min_payout_usd: 10
+    cap_usd: 150
+    sources: []
+    format: short
+    rules: "GTA 6-specific account required. Funny GTA 6 moments of Dom. Add source channel before enabling."
+    verified_brief: false
+    enabled: false
