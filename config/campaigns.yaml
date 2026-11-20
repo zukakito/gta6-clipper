@@ -112,7 +112,8 @@ campaigns:
     overlay_text: "CLIX"
     rules: "No AI-generated videos. No logos. Reach network rules: one violation = removal from all Reach campaigns."
     verified_brief: false
-    enabled: true
+    # Paused 20 Nov: audio download of Clix's Twitch VODs hangs on GitHub runners (2 runs). Investigate before re-enabling.
+    enabled: false
 
   - id: yourrage-gta6-pool
     name: "YourRAGE $5,000 GTA 6 Pool (Reach)"
