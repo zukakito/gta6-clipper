@@ -142,5 +142,41 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_9080.mp4",
+    "title": "Lacy Unlocks A Brand New GTA Mission #LACY #shorts",
+    "posted_at": "2026-11-20T21:59:23+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 9072.6,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_13180.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-20T22:02:07+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 13156.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_13440.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-20T22:04:39+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 13416.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
