@@ -4,6 +4,7 @@ Every caller has a non-LLM fallback, so the pipeline still runs without a key.
 """
 from __future__ import annotations
 
+import base64
 import json
 import re
 import time
@@ -20,12 +21,15 @@ def available() -> bool:
     return bool(env("GEMINI_API_KEY"))
 
 
-def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries: int = 3) -> str | dict | list | None:
+def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries: int = 3,
+        images: list[bytes] | None = None) -> str | dict | list | None:
     key = env("GEMINI_API_KEY")
     if not key:
         return None
+    parts = [{"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(im).decode()}} for im in (images or [])]
+    parts.append({"text": prompt})
     body = {
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+        "contents": [{"role": "user", "parts": parts}],
         "generationConfig": {"temperature": temperature},
     }
     if want_json:

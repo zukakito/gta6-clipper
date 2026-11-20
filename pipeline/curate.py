@@ -2,9 +2,47 @@
 from __future__ import annotations
 
 import re
+import subprocess
+from pathlib import Path
 
 from . import llm
 from .common import log
+
+MIN_WORDS = 15   # a clip with less speech than this is almost never a real highlight
+
+VISION_PROMPT = """These are frames from a moment in {streamer}'s livestream, picked for a paid GTA 6 clipping campaign.
+Campaign rules: {rules}
+Answer as JSON {{"keep": bool, "gta_gameplay": bool, "streamer_visible": bool, "reason": str}}.
+keep must be false if: the stream is idle/AFK/sleeping/a dark or empty room, a starting/ending/BRB screen,
+no GTA 6 gameplay or GTA-related activity is visible, the streamer the campaign is about is not present,
+or anything breaks the rules above. Be strict: a reviewer will reject weak clips."""
+
+
+def frames(src: Path, start: float, end: float, n: int = 3) -> list[bytes]:
+    out = []
+    for i in range(n):
+        t = start + (end - start) * (i + 1) / (n + 1)
+        r = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{t:.2f}", "-i", str(src), "-frames:v", "1",
+                            "-vf", "scale=640:-2", "-f", "image2", "-c:v", "mjpeg", "-q:v", "5", "-"],
+                           capture_output=True, timeout=60)
+        if r.returncode == 0 and r.stdout:
+            out.append(r.stdout)
+    return out
+
+
+def quality_gate(campaign: dict, src: Path, words: list[dict], start: float, end: float) -> tuple[bool, str]:
+    """Reject idle / off-topic moments before rendering. Speech check always; vision check if Gemini is set."""
+    spoken = [w for w in words if start <= w["s"] <= end]
+    if len(spoken) < MIN_WORDS:
+        return False, f"too little speech ({len(spoken)} words)"
+    if not llm.available():
+        return True, "speech ok (no vision check without GEMINI_API_KEY)"
+    streamer = campaign.get("overlay_text") or (campaign.get("must_include") or [campaign["name"]])[0]
+    res = llm.ask(VISION_PROMPT.format(streamer=streamer, rules=(campaign.get("rules") or "none").strip()),
+                  want_json=True, temperature=0, images=frames(src, start, end))
+    if not isinstance(res, dict):
+        return True, "vision check unavailable"
+    return bool(res.get("keep")), str(res.get("reason", ""))[:200]
 
 CURATE_PROMPT = """You edit YouTube Shorts from authorised GTA 6 livestream footage for a paid clipping campaign.
 

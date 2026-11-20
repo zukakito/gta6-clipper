@@ -98,6 +98,12 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 cand["status"] = "rejected"
                 cand["reason"] = meta.get("reason")
                 continue
+            ok, why = curate.quality_gate(c, src, words, meta["start"], meta["end"])
+            if not ok:
+                cand["status"] = "rejected"
+                cand["reason"] = why
+                log.info("quality gate rejected %s: %s", name, why)
+                continue
             out = render.render_short(src, meta["start"], meta["end"], words, meta["hook"],
                                       c.get("overlay_text") or "", bool(c.get("paid_disclosure")),
                                       c.get("layout") or clip_cfg["layout"], name)
@@ -138,7 +144,7 @@ def produce_long(c: dict, candidates: list[dict], posted: list[dict], cfg: dict)
             words = render.transcribe(src, clip_cfg["whisper_model"])
             meta = curate.curate(c, words, render.probe_duration(src), cand["t"] - cand["win_start"],
                                  {**clip_cfg, "short_max_sec": 75})
-            if not meta.get("keep", True):
+            if not meta.get("keep", True) or not curate.quality_gate(c, src, words, meta["start"], meta["end"])[0]:
                 cand["status"] = "rejected"
                 continue
             parts.append((src, meta["start"], meta["end"], words, meta["hook"]))
