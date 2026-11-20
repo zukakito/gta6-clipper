@@ -106,5 +106,41 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_6190.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-20T21:09:11+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 6166.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_7780.mp4",
+    "title": "LACY Always Gets Stuck Driving #LACY #shorts",
+    "posted_at": "2026-11-20T21:11:53+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 7766.7,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_10705.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-20T21:13:48+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 10681.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
