@@ -216,3 +216,99 @@ campaigns:
     verified_brief: true
     joined: true
     enabled: true
+
+  - id: diegoloveless-gta6
+    name: "DiegoLoveless GTA 6 Clipping (ClipLaunch)"
+    board: content_rewards
+    host: ClipLaunch
+    join_url: https://whop.com/experiences/exp_drhUyiUEj7jN3e/campaigns/5d37d3dd-adf3-401f-9c62-24bb54d5087a
+    rules_doc: https://app.notion.com/p/DiegoLoveless-GTA-6-Full-Rules-Brief-4038e33583238129bbc3f689497ad8db
+    type: cpm
+    cpm: 1.00
+    min_payout_usd: 2
+    cap_usd: 300
+    sources: [https://www.twitch.tv/diegoloveless]
+    source_since: "2026-11-18"
+    format: short
+    must_include: ["twitch.tv/diegoloveless", "#GTA", "#DiegoLoveless"]
+    overlay_text: "TWITCH.TV/DIEGOLOVELESS"
+    rules: >
+      Only Grand Theft Auto content from Diego's Twitch gaming streams (no IRL, no other games). Funny moments,
+      reactions, standout gameplay and speedrun highlights with a clear hook and payoff. Streamer/brainrot edit style.
+      Never make Diego look bad. No low-effort screen recordings or random moments. Accurate captions, no clickbait.
+      Never post the same or near-identical clip more than 5 times. 40%+ Tier 1 audience. Keep clips up 30+ days.
+    verified_brief: true
+    joined: true
+    enabled: true
+
+  - id: boeshi-gta6
+    name: "Boeshi GTA 6 Clipping (ClipLaunch)"
+    board: content_rewards
+    host: ClipLaunch
+    join_url: https://whop.com/experiences/exp_drhUyiUEj7jN3e/campaigns/5c01ecdb-a148-4489-ba26-5aadbbb5bf69
+    rules_doc: https://app.notion.com/p/Boeshi-GTA-6-Clipping-Full-Rules-Brief-4158e335832381febd29c4548e838f42
+    type: cpm
+    cpm: 1.00
+    min_payout_usd: 3
+    cap_usd: 300
+    sources: [https://www.twitch.tv/darealboeshi]
+    source_since: "2026-11-18"
+    format: short
+    must_include: ["Full stream at twitch.tv/darealboeshi"]
+    overlay_text: "BOESHI"
+    overlay_image_url: https://drive.google.com/uc?export=download&id=1WRa2iLdB9JofEZiK0ckR5UKaJSe1x7nn
+    rules: >
+      Only recent GTA 6 content from Boeshi's Twitch VODs. The official overlay must stay visible the whole clip.
+      Tag twitch.tv/darealboeshi in every caption. Funny reactions, police chases, unexpected encounters, chaotic
+      gameplay. Meme-style relatable captions are welcome but must stay accurate. 40%+ Tier 1 audience; 0.8%+ engagement.
+    verified_brief: true
+    joined: true
+    enabled: true
+
+  - id: bobby-vanriper-gta6
+    name: "BOBBY VAN RIPER GTA VI Clipping (Clipping Nation)"
+    board: content_rewards
+    host: Clipping Nation
+    join_url: https://whop.com/experiences/exp_COwEAApyXCaJyc/campaigns/f583b069-ced7-49e5-9ed3-2d3a13d6df0c
+    rules_doc: https://app.notion.com/p/Bobby-Van-Riper-GTA-VI-Clipping-Requirements-Guide-414582c82d8881d5b28bdd4235a1be82
+    type: cpm
+    cpm: 1.50
+    min_payout_usd: 2.25
+    cap_usd: 150
+    sources: [https://www.twitch.tv/bobby_vanriper]
+    source_since: "2026-11-18"
+    format: short
+    must_include: ["Follow Bobby Vanriper on Twitch: twitch.tv/bobby_vanriper", "#bobbyvanriper"]
+    overlay_text: "TWITCH.TV/BOBBY_VANRIPER"
+    rules: >
+      GTA VI only, must feature Bobby. One clear funny, crazy or surprising moment; first reactions are priority.
+      CTA telling viewers to follow Bobby Vanriper on Twitch. English captions readable without sound.
+      40%+ Tier 1 audience; after 1,500 views a demographics proof ticket is required in their Discord (payout needs
+      Discord membership). 1%+ engagement. Keep clips up 30+ days. No low-effort content.
+    verified_brief: true
+    joined: true
+    enabled: true
+
+  - id: parkerr-gta6
+    name: "GTA VI | PARKERRYT STREAM (ClipHaus)"
+    board: content_rewards
+    host: ClipHaus
+    join_url: https://whop.com/experiences/exp_BmRo1Cepnpq46o/campaigns/e41de449-3eca-4343-a11c-b194e7a3379a
+    rules_doc: https://app.notion.com/p/GTA-VI-Streamer-Campaign-3ea0395e47eb8095ba10ef12ef45b2bc
+    type: cpm
+    cpm: 0.60
+    min_payout_usd: 0.60
+    cap_usd: 100
+    sources: [https://www.twitch.tv/realparkerr]
+    source_since: "2026-11-18"
+    format: short
+    must_include: ["Parkerr", "twitch.tv/realparkerr"]
+    overlay_text: "TWITCH.TV/REALPARKERR"   # brief asks for a "Parkerr Twitch stamp"; text stamp until the official asset is found
+    rules: >
+      Only Parkerr's GTA VI Twitch streams/VODs (not his YouTube, no other streamers, trailers or leaks).
+      Hook in the first 1-3 seconds, remove dead time, fast pacing, captions, one main moment per clip, understandable
+      without the stream. Avoid major story spoilers (flag them before any reveal). Never make Parkerr look bad,
+      never change what he said. Every clip must include the Parkerr Twitch stamp.
+    verified_brief: true
+    joined: true
+    enabled: true
