@@ -11,7 +11,7 @@ import datetime as dt
 import time
 import traceback
 
-from . import curate, highlights, publish, render, scout, sources, submit
+from . import curate, highlights, publish, render, safety, scout, sources, submit
 from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_state, settings, slug
 
 RUN_BUDGET_SEC = 50 * 60
@@ -47,6 +47,7 @@ def discover_moments(cfg: dict, vod_state: dict, candidates: list[dict], deadlin
                 st = vod_state.setdefault(v["id"], {"url": v["url"], "title": v["title"], "scanned_until": None})
                 dur = v["duration"] or 0
                 if dur < 120:
+                    log.info("discover: skipping %s (duration %.0fs unknown/too short)", v["url"], dur)
                     continue
                 edge = dur - (LIVE_EDGE_SEC if v["is_live"] else 0)
                 start = st["scanned_until"] if st["scanned_until"] is not None else max(0.0, edge - FIRST_LOOK_SEC)
@@ -100,12 +101,22 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 log.info("rejected %s: no speech", name)
                 continue
             win_len = render.probe_duration(src)
-            meta = curate.curate(c, words, win_len, cand["t"] - cand["win_start"], clip_cfg)
+            meta = curate.curate(c, words, win_len, cand["t"] - cand["win_start"], clip_cfg,
+                                 images=curate.frames(src, 0, win_len, n=4),
+                                 require_llm=p_cfg.get("require_llm", True))
+            if meta.get("defer"):
+                cand["deferrals"] = cand.get("deferrals", 0) + 1
+                if cand["deferrals"] >= 6:
+                    cand["status"], cand["reason"] = "stale", meta["reason"]
+                log.info("deferred %s: %s", name, meta["reason"])
+                continue
             if not meta.get("keep", True):
                 cand["status"] = "rejected"
                 cand["reason"] = meta.get("reason")
                 continue
             ok, why = curate.quality_gate(c, src, words, meta["start"], meta["end"])
+            if ok:
+                ok, why = safety.check(src, meta["start"], meta["end"])   # local NSFW / idle / censor check
             if not ok:
                 cand["status"] = "rejected"
                 cand["reason"] = why
@@ -151,8 +162,9 @@ def produce_long(c: dict, candidates: list[dict], posted: list[dict], cfg: dict)
             src = render.download_section(cand["vod_url"], cand["win_start"], cand["win_end"], name)
             words = render.transcribe(src, clip_cfg["whisper_model"])
             meta = curate.curate(c, words, render.probe_duration(src), cand["t"] - cand["win_start"],
-                                 {**clip_cfg, "short_max_sec": 75})
-            if not meta.get("keep", True) or not curate.quality_gate(c, src, words, meta["start"], meta["end"])[0]:
+                                 {**clip_cfg, "short_max_sec": 75}, images=curate.frames(src, 0, render.probe_duration(src), n=4))
+            if meta.get("defer") or not meta.get("keep", True) or not curate.quality_gate(c, src, words, meta["start"], meta["end"])[0] \
+                    or not safety.check(src, meta["start"], meta["end"])[0]:
                 cand["status"] = "rejected"
                 continue
             parts.append((src, meta["start"], meta["end"], words, meta["hook"]))
@@ -162,7 +174,7 @@ def produce_long(c: dict, candidates: list[dict], posted: list[dict], cfg: dict)
             cand["status"], cand["error"] = "error", str(e)[:300]
     if total < target * 0.6:
         return 0
-    streamer = c.get("overlay_text") or c["name"]
+    streamer = curate.streamer_name(c)
     out = render.render_long(parts, streamer, f'{c["id"]}_long_{now():%Y%m%d%H%M}')
     must = " ".join(c.get("must_include") or [])
     meta = {"title": f"{streamer.title()}'s Best GTA 6 Moments ({now():%b %d})"[:100],

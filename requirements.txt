@@ -8,3 +8,6 @@ PyYAML>=6.0
 google-api-python-client>=2.150
 google-auth>=2.35
 google-auth-oauthlib>=1.2
+opencv-python-headless>=4.9,<5
+pillow>=10
+transformers>=4.44

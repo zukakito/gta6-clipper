@@ -25,6 +25,7 @@ defaults:
 
 campaigns:
   - id: lacy-gta6-pool
+    streamer: "Lacy"
     name: "$12,500 LACY GTA VI Marathon Pool (Reach)"
     board: content_rewards
     host: Reach
@@ -47,6 +48,7 @@ campaigns:
     enabled: false
 
   - id: kai-cenat-gta6-pool
+    streamer: "Kai Cenat"
     name: "Kai Cenat $10,000 GTA 6 Pool (Clipped & Shipped)"
     board: content_rewards
     host: Clipped & Shipped
@@ -73,6 +75,7 @@ campaigns:
     enabled: true
 
   - id: kreekcraft-gta6
+    streamer: "KreekCraft"
     name: "KreekCraft GTA 6 Clipping (ClipLaunch)"
     board: content_rewards
     host: ClipLaunch
@@ -89,7 +92,6 @@ campaigns:
     overlay_text: "KREEKCRAFT"
     overlay_image_url: https://crusercontent.com/organizations/43893b4f-434d-549b-9037-4f1c62984ff2/campaigns/references/assets/a6688393-4374-492e-8ec3-059554a1870f.webp
     paid_disclosure: true
-    layout: fit_blur
     rules: >
       The official KreekCraft overlay must stay clearly visible for the whole clip. Only his official GTA 6
       livestreams/replays. Strong hook in the first 1-2 seconds; no low-effort or random gameplay; no misleading
@@ -192,6 +194,7 @@ campaigns:
     enabled: false
 
   - id: dasgasd3m-ruckus
+    streamer: "Dasgas Dom"
     name: "Dasgasd3m x RUCKUS | GTA 6"
     board: content_rewards
     host: Ruckus
@@ -218,6 +221,7 @@ campaigns:
     enabled: true
 
   - id: diegoloveless-gta6
+    streamer: "Diego Loveless"
     name: "DiegoLoveless GTA 6 Clipping (ClipLaunch)"
     board: content_rewards
     host: ClipLaunch
@@ -242,6 +246,7 @@ campaigns:
     enabled: true
 
   - id: boeshi-gta6
+    streamer: "Boeshi"
     name: "Boeshi GTA 6 Clipping (ClipLaunch)"
     board: content_rewards
     host: ClipLaunch
@@ -266,6 +271,7 @@ campaigns:
     enabled: true
 
   - id: bobby-vanriper-gta6
+    streamer: "Bobby Vanriper"
     name: "BOBBY VAN RIPER GTA VI Clipping (Clipping Nation)"
     board: content_rewards
     host: Clipping Nation
@@ -290,6 +296,7 @@ campaigns:
     enabled: true
 
   - id: parkerr-gta6
+    streamer: "Parkerr"
     name: "GTA VI | PARKERRYT STREAM (ClipHaus)"
     board: content_rewards
     host: ClipHaus

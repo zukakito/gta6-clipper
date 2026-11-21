@@ -59,6 +59,89 @@ def transcribe(path: Path, model_size: str = "small") -> list[dict]:
     return words
 
 
+
+# ---------------------------------------------------------------- facecam detection
+def detect_facecam(src: Path, start: float, end: float) -> tuple[int, int, int, int] | None:
+    """Find a static webcam overlay: a face that stays in the same place across frames
+    (game characters move, a facecam doesn't). Returns (x, y, w, h) in source pixels."""
+    try:
+        import cv2
+    except ImportError:
+        return None
+    try:
+        cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+    except Exception:  # noqa: BLE001
+        return None
+    if cascade.empty():
+        log.warning("render: face cascade not available - no facecam detection")
+        return None
+    cap = cv2.VideoCapture(str(src))
+    W0 = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) or 1920
+    H0 = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) or 1080
+    hits = []
+    for i in range(7):
+        cap.set(cv2.CAP_PROP_POS_MSEC, 1000 * (start + (end - start) * (i + 0.5) / 7))
+        ok, frame = cap.read()
+        if not ok:
+            continue
+        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        faces = cascade.detectMultiScale(gray, 1.1, 6, minSize=(int(H0 * 0.05), int(H0 * 0.05)))
+        hits.append([tuple(map(int, f)) for f in faces])
+    cap.release()
+    if len(hits) < 4:
+        return None
+    # cluster face centres; a facecam appears in >= 60% of frames within ~4% of frame width
+    cands = [f for fr in hits for f in fr]
+    best, best_n = None, 0
+    for f in cands:
+        cx, cy = f[0] + f[2] / 2, f[1] + f[3] / 2
+        n = sum(any(abs((g[0] + g[2] / 2) - cx) < W0 * 0.04 and abs((g[1] + g[3] / 2) - cy) < H0 * 0.04 for g in fr) for fr in hits)
+        if n > best_n:
+            best, best_n = f, n
+    if not best or best_n < 0.6 * len(hits):
+        return None
+    x, y, w, h = best
+    # webcam box ~ 3.2x face width, 16:10-ish aspect, clamped to the frame
+    bw = min(W0, int(w * 3.2))
+    bh = min(H0, int(bw * 640 / 1080))
+    bx = max(0, min(W0 - bw, int(x + w / 2 - bw / 2)))
+    by = max(0, min(H0 - bh, int(y + h / 2 - bh * 0.45)))
+    return bx, by, bw, bh
+
+
+# ---------------------------------------------------------------- dead-air trimming
+def speech_segments(words: list[dict], start: float, end: float, max_gap: float = 0.7,
+                    pad: float = 0.18) -> list[tuple[float, float]]:
+    """Keep-segments (relative to start) that drop pauses longer than max_gap seconds."""
+    ws = [w for w in words if w["e"] > start and w["s"] < end]
+    if not ws:
+        return [(0.0, end - start)]
+    segs = []
+    cur_s, cur_e = max(start, ws[0]["s"] - pad), min(end, ws[0]["e"] + pad)
+    for w in ws[1:]:
+        if w["s"] - cur_e > max_gap:
+            segs.append((cur_s - start, cur_e - start))
+            cur_s = max(start, w["s"] - pad)
+        cur_e = min(end, max(cur_e, w["e"] + pad))
+    segs.append((cur_s - start, cur_e - start))
+    # always keep the very beginning (setup) and the reaction tail
+    segs[0] = (0.0, segs[0][1])
+    segs[-1] = (segs[-1][0], end - start)
+    return segs
+
+
+def remap_words(words: list[dict], start: float, segs: list[tuple[float, float]]) -> list[dict]:
+    """Shift word times (absolute in the source window) onto the trimmed timeline (relative to 0)."""
+    out, offset = [], 0.0
+    for a, b in segs:
+        for w in words:
+            ws, we = w["s"] - start, w["e"] - start
+            if a <= ws < b:
+                out.append({"w": w["w"], "s": ws - a + offset, "e": min(we, b) - a + offset})
+        offset += b - a
+    return out
+
+
 # ---------------------------------------------------------------- captions (ASS)
 def _ts(t: float) -> str:
     t = max(0.0, t)
@@ -73,10 +156,10 @@ def _clean(s: str) -> str:
 
 
 def build_ass(words: list[dict], clip_start: float, clip_end: float, hook: str, tag: str,
-              disclosure: bool, vertical: bool = True) -> str:
+              disclosure: bool, vertical: bool = True, split: bool = False) -> str:
     pw, ph = (W, H) if vertical else (1920, 1080)
-    cap_size = 78 if vertical else 64
-    cap_y = int(ph * 0.70) if vertical else int(ph * 0.88)
+    cap_size = 84 if split else (78 if vertical else 64)
+    cap_y = 1180 if split else (int(ph * 0.70) if vertical else int(ph * 0.88))
     head = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {pw}
@@ -96,7 +179,9 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
     dur = clip_end - clip_start
     ev = []
-    if hook:
+    if hook and split:   # split layout: hook sits on the seam between facecam and gameplay for the first 4 s
+        ev.append(f"Dialogue: 1,{_ts(0)},{_ts(min(4.0, dur))},Hook,,0,0,0,,{{\\an5\\pos({pw // 2},640)}}{_clean(hook).upper()}")
+    elif hook:
         ev.append(f"Dialogue: 1,{_ts(0)},{_ts(dur)},Hook,,0,0,0,,{_clean(hook).upper()}")
     if tag:
         ev.append(f"Dialogue: 1,{_ts(0)},{_ts(dur)},Tag,,0,0,0,,{_clean(tag).upper()}")
@@ -126,6 +211,19 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 # ---------------------------------------------------------------- ffmpeg compose
+def _filter_split(face: tuple[int, int, int, int], ass_path: Path, trim: str, overlay_img: Path | None) -> str:
+    """Facecam (top 1080x640) + gameplay centre crop (bottom 1080x1280)."""
+    fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
+    fx, fy, fw, fh = face
+    chain = (f"[0:v]{trim}split=2[a][b];"
+             f"[a]crop={fw}:{fh}:{fx}:{fy},scale={W}:640,setsar=1[top];"
+             f"[b]crop=ih*{W}/1280:ih:(iw-ow)/2:0,scale={W}:1280,setsar=1[bot];"
+             f"[top][bot]vstack=inputs=2[st]")
+    if overlay_img:
+        chain += f";[1:v]scale={int(W * 0.30)}:-1[ov];[st][ov]overlay=W-w-24:664[st]"
+    return chain + f";[st]fps=30,ass={ass_path}{fontsdir}[v]"
+
+
 def _filter_vertical(layout: str, ass_path: Path, overlay_img: Path | None = None) -> str:
     fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
     ass = f"ass={ass_path}{fontsdir}"
@@ -148,19 +246,34 @@ def _filter_vertical(layout: str, ass_path: Path, overlay_img: Path | None = Non
 
 
 def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict], hook: str, tag: str,
-                 disclosure: bool, layout: str, name: str, overlay_img: Path | None = None) -> Path:
-    ass_path = WORK / f"{name}.ass"
-    ass_path.write_text(build_ass(words, rel_start, rel_end, hook, tag, disclosure), encoding="utf-8")
+                 disclosure: bool, layout: str, name: str, overlay_img: Path | None = None,
+                 trim_silence: bool = True) -> Path:
     out = OUT / f"{name}.mp4"
+    ass_path = WORK / f"{name}.ass"
     extra = ["-i", str(overlay_img)] if overlay_img else []
+    face = detect_facecam(src, rel_start, rel_end) if layout in ("auto", "split") else None
+    segs = speech_segments(words, rel_start, rel_end) if trim_silence else [(0.0, rel_end - rel_start)]
+    if sum(b - a for a, b in segs) < 0.8 * (rel_end - rel_start) - 0.01 or len(segs) > 1:
+        sel = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in segs)
+        vtrim, atrim = f"select='{sel}',setpts=N/FRAME_RATE/TB,", f"aselect='{sel}',asetpts=N/SR/TB,"
+        cap_words, total = remap_words(words, rel_start, segs), sum(b - a for a, b in segs)
+    else:
+        vtrim, atrim, cap_words, total = "", "", [{**w, "s": w["s"] - rel_start, "e": w["e"] - rel_start} for w in words], rel_end - rel_start
+    ass_path.write_text(build_ass(cap_words, 0.0, total, hook, tag, disclosure, split=bool(face)), encoding="utf-8")
+    if face:
+        fc = _filter_split(face, ass_path, vtrim, overlay_img)
+    else:
+        lay = "zoom_blur" if layout == "auto" else layout
+        fc = _filter_vertical(lay, ass_path, overlay_img).replace("[0:v]", f"[0:v]{vtrim}", 1)
+    log.info("render: %s layout=%s facecam=%s segments=%d (%.1fs -> %.1fs)", name,
+             "split" if face else layout, face, len(segs), rel_end - rel_start, total)
     subprocess.run([
         "ffmpeg", "-y", "-v", "error", "-ss", f"{rel_start:.2f}", "-to", f"{rel_end:.2f}", "-i", str(src), *extra,
-        "-filter_complex", _filter_vertical(layout, ass_path, overlay_img), "-map", "[v]", "-map", "0:a?",
-        "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+        "-filter_complex", fc, "-map", "[v]", "-map", "0:a?",
+        "-af", f"{atrim}loudnorm=I=-14:TP=-1.5:LRA=11",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out),
     ], check=True, timeout=1800)
-    # -ss before -i resets timestamps to 0, matching the ASS times built relative to rel_start.
     return out
 
 

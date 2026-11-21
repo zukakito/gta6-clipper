@@ -1,7 +1,7 @@
 # Global pipeline settings. Edit freely; the runner re-reads this every run.
 
 channel:
-  name: "Six Star Clips"            # change to whatever name you picked
+  name: "Leonida Clips - GTA 6 Streamers"
   language: "en"
   default_category_id: 20           # 20 = Gaming
 
@@ -17,6 +17,9 @@ posting:
   #   upload_post  -> Upload-Post free plan (10 public uploads/month) as a stop-gap
   #   dry_run      -> render only, no upload (good for the first test run)
   publisher: dry_run
+  # Every clip must pass the local safety check (NSFW / idle / censor graphic) - always on.
+  # Skip moments when no LLM (Groq/Gemini) answers, instead of posting generic titles.
+  require_llm: true
 
 clipping:
   short_min_sec: 20
@@ -25,7 +28,7 @@ clipping:
   highlights_per_vod: 6            # candidate moments scored per VOD
   vod_lookback_hours: 48           # only clip VODs newer than this
   whisper_model: small             # tiny | base | small (CPU-friendly)
-  layout: fit_blur                 # fit_blur | center_crop | facecam_split
+  layout: auto                     # auto = facecam on top + gameplay below when a webcam is found, else zoomed gameplay
 
 scout:
   # Boards the scout reads every run to discover new GTA 6 campaigns.
