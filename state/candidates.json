@@ -806,7 +806,7 @@
     "win_start": 27839.0,
     "win_end": 27914.0,
     "found_at": "2026-11-21T02:37:20+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -818,7 +818,7 @@
     "win_start": 27184.0,
     "win_end": 27259.0,
     "found_at": "2026-11-21T02:37:20+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -854,7 +854,7 @@
     "win_start": 33219.0,
     "win_end": 33294.0,
     "found_at": "2026-11-21T03:32:31+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -866,7 +866,8 @@
     "win_start": 32634.0,
     "win_end": 32709.0,
     "found_at": "2026-11-21T03:32:31+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No audio or transcript content available within the required 20 to 58 second cut window."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -878,7 +879,8 @@
     "win_start": 31214.0,
     "win_end": 31289.0,
     "found_at": "2026-11-21T03:32:31+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (11 words)"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -890,6 +892,7 @@
     "win_start": 32009.0,
     "win_end": 32084.0,
     "found_at": "2026-11-21T03:32:31+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay or GTA-related activity is present in the provided frames."
   }
 ]

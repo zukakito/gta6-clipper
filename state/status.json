@@ -1,6 +1,6 @@
 {
   "scout": {
-    "checked_at": "2026-11-21T02:37:05+00:00",
+    "checked_at": "2026-11-21T04:37:57+00:00",
     "new": 0,
     "known": 78,
     "youtube_open": 29,
@@ -16,22 +16,21 @@
       "Lord Kebun"
     ]
   },
-  "last_scout": "2026-11-21T02:37:05+00:00",
-  "last_run": "2026-11-21T03:37:49+00:00",
-  "run_seconds": 631,
-  "made_this_run": 4,
+  "last_scout": "2026-11-21T04:37:57+00:00",
+  "last_run": "2026-11-21T04:48:33+00:00",
+  "run_seconds": 884,
+  "made_this_run": 3,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "lacy-gta6-pool"
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 6,
+  "queued_candidates": 0,
   "pending_submissions": 0,
   "rendered_files": [
-    "lacy-gta6-pool_twitchvod-v293505968_26494.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_28104.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_30894.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_33029.mp4"
+    "lacy-gta6-pool_twitchvod-v293505968_27229.mp4",
+    "lacy-gta6-pool_twitchvod-v293505968_27884.mp4",
+    "lacy-gta6-pool_twitchvod-v293505968_33264.mp4"
   ]
 }
