@@ -28,6 +28,7 @@ clipping:
   highlights_per_vod: 6            # candidate moments scored per VOD
   vod_lookback_hours: 48           # only clip VODs newer than this
   whisper_model: small             # tiny | base | small (CPU-friendly)
+  caption_model: medium            # re-transcribes only the final cut, for accurate on-screen captions
   layout: auto                     # auto = facecam on top + gameplay below when a webcam is found, else zoomed gameplay
 
 scout:
