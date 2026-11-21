@@ -1,8 +1,8 @@
 {
   "scout": {
-    "checked_at": "2026-11-21T04:37:57+00:00",
-    "new": 0,
-    "known": 78,
+    "checked_at": "2026-11-21T06:41:56+00:00",
+    "new": 2,
+    "known": 80,
     "youtube_open": 29,
     "needs_review": [
       "Jack [GTA LOGO]",
@@ -16,20 +16,22 @@
       "Lord Kebun"
     ]
   },
-  "last_scout": "2026-11-21T04:37:57+00:00",
-  "last_run": "2026-11-21T05:41:43+00:00",
-  "run_seconds": 446,
-  "made_this_run": 2,
+  "last_scout": "2026-11-21T06:41:56+00:00",
+  "last_run": "2026-11-21T06:54:03+00:00",
+  "run_seconds": 1054,
+  "made_this_run": 4,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "lacy-gta6-pool"
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 4,
+  "queued_candidates": 6,
   "pending_submissions": 0,
   "rendered_files": [
-    "lacy-gta6-pool_twitchvod-v293505968_39079.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_39374.mp4"
+    "lacy-gta6-pool_twitchvod-v293505968_37874.mp4",
+    "lacy-gta6-pool_twitchvod-v293505968_40289.mp4",
+    "lacy-gta6-pool_twitchvod-v293505968_43854.mp4",
+    "lacy-gta6-pool_twitchvod-v293505968_44239.mp4"
   ]
 }
