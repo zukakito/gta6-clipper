@@ -52,9 +52,11 @@ Decide:
    mumbled, incoherent or needs outside context to follow; the moment is mostly a loading/fail/black screen; or anything breaks
    the campaign rules. Otherwise true. Be strict - campaign reviewers reject weak clips.
 2. start, end: the best self-contained cut between {minlen} and {maxlen} seconds. Start right before the
-   setup (strong first 2 seconds), end right after the payoff/reaction. Use transcript times.
-3. hook: on-screen headline, max 6 words, punchy and specific to what happens, no emojis, no clickbait lies,
-   no spoilers of major story twists.
+   setup (strong first 2 seconds), end right after the payoff/reaction. Prefer 30-45 s so a new viewer gets the whole
+   story: setup, the moment, and the streamer's reaction. Use transcript times.
+3. hook: a clear one-line summary of the scene, max 6 words, that tells a new viewer exactly what happens
+   (good: "Bridge mishap turns hilarious", "Cops chase him into the sea"; bad: "Wait for it", "Crazy moment").
+   No emojis, no clickbait lies, no spoilers of major story twists.
 4. title: YouTube title under 70 chars, specific and curiosity-driven, includes the streamer's name, ends with " #shorts".
 5. description: 2 short lines describing the moment + required names/hashtags + "Clip from {streamer}'s GTA 6 stream."
 6. tags: 8-12 lowercase tags.
