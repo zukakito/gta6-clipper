@@ -719,7 +719,8 @@
     "win_start": 25059.0,
     "win_end": 25134.0,
     "found_at": "2026-11-20T23:54:56+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (5 words)"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -731,7 +732,8 @@
     "win_start": 22909.0,
     "win_end": 22984.0,
     "found_at": "2026-11-20T23:54:56+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay or GTA-related content is present in the frames."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -743,6 +745,7 @@
     "win_start": 23499.0,
     "win_end": 23574.0,
     "found_at": "2026-11-20T23:54:56+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The audio transcript lacks a clear highlight, coherent context, or engaging payoff around the spike."
   }
 ]
