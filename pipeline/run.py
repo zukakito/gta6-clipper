@@ -11,7 +11,7 @@ import datetime as dt
 import time
 import traceback
 
-from . import curate, highlights, llm, publish, render, safety, scout, sources, submit
+from . import curate, drive, highlights, llm, publish, render, safety, scout, sources, submit
 from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_state, settings, slug
 
 RUN_BUDGET_SEC = 50 * 60
@@ -135,11 +135,13 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                                       overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]))
             meta["paid"] = bool(c.get("paid_disclosure"))
             meta["playlist"] = f"{curate.streamer_name(c)} GTA 6 Moments"
+            stored = drive.save(out, meta, c, {"vod_url": cand["vod_url"], "offset": cand["win_start"] + meta["start"]},
+                                cfg.get("storage", {}).get("drive_folder", "Zukakito Clips"))
             res = publish.publish(out, meta, cfg)
             sub = submit.submit(c, res or {})
             rec = {"campaign_id": c["id"], "file": out.name, "title": meta["title"], "posted_at": iso(),
                    "vod_url": cand["vod_url"], "vod_offset": cand["win_start"] + meta["start"],
-                   "submission": sub, **(res or {})}
+                   "submission": sub, "drive": stored, **(res or {})}
             posted.append(rec)
             cand["status"] = "posted" if res and res.get("privacy") != "dry_run" else "rendered"
             made += 1
