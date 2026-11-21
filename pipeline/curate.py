@@ -115,9 +115,17 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
                "hook": f"{streamer} in GTA 6", "title": f"{streamer} GTA 6 moment #shorts",
                "description": f"Clip from {streamer}'s GTA 6 stream.", "tags": ["gta 6", "gta vi", streamer.lower(), "gta 6 clips"]}
 
+    if not res.get("keep", True):   # rejected: the model often leaves start/end empty
+        log.info("curate: keep=False %s: %s", campaign["id"], str(res.get("reason"))[:160])
+        return res
     # Clamp to valid ranges no matter what the model said.
-    s = max(0.0, float(res.get("start", 0)))
-    e = min(window_len, float(res.get("end", s + 40)))
+    def num(v, default):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return default
+    s = max(0.0, num(res.get("start"), 0.0))
+    e = min(window_len, num(res.get("end"), s + 40))
     if e - s < minlen:
         e = min(window_len, s + minlen)
         s = max(0.0, e - minlen)
