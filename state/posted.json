@@ -730,5 +730,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293652450_1335.mp4",
+    "title": "Parkerr spots the perfect tow truck in GTA VI #shorts",
+    "posted_at": "2026-11-21T21:59:54+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_offset": 1328.4,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1gRIiwigCRiUX9CVZYb3P8KurzHLKKXcQ/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293652450_2705.mp4",
+    "title": "Parkerr's GTA VI Headlight Mishap #shorts",
+    "posted_at": "2026-11-21T22:03:16+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_offset": 2694.1,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1vyAcIL5lXBncf76FLEZTs-EobUcHE9ks/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
