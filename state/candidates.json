@@ -1141,8 +1141,9 @@
     "win_start": 530.0,
     "win_end": 605.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "No GTA VI gameplay visible; transcript shows only chat lines with no clear in‑game moment, violating campaign rules."
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1247,7 +1248,7 @@
     "win_start": 46390.0,
     "win_end": 46465.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 2
   },
   {
@@ -1260,8 +1261,9 @@
     "win_start": 45065.0,
     "win_end": 45140.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "No GTA 6 gameplay, just a rant about teammates with no clear setup or payoff; violates campaign rules requiring funny, standout GTA moments."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1273,8 +1275,9 @@
     "win_start": 43620.0,
     "win_end": 43695.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The transcript contains incoherent chatter with no clear GTA 6 gameplay, no setup/payoff, and does not meet campaign rules for interesting, game‑related content."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1378,7 +1381,7 @@
     "win_start": 23877.0,
     "win_end": 23952.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 2
   },
   {
@@ -1496,8 +1499,9 @@
     "win_start": 395.0,
     "win_end": 470.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The segment contains only commentary with no GTA 6 gameplay, no clear setup/payoff, and lacks visual interest, violating campaign rules that require engaging in‑game moments."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1599,8 +1603,9 @@
     "win_start": 39165.0,
     "win_end": 39240.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "Transcript only shows early commentary without clear GTA 6 gameplay, setup, or payoff within the required 25‑58 s window; no interesting moment identified, violating campaign rules."
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1612,8 +1617,9 @@
     "win_start": 40725.0,
     "win_end": 40800.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "too little speech (13 words)"
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1625,8 +1631,9 @@
     "win_start": 40575.0,
     "win_end": 40650.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "Contains sexual content and no GTA 6 gameplay, violating campaign rules."
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1677,8 +1684,9 @@
     "win_start": 22469.0,
     "win_end": 22544.0,
     "found_at": "2026-11-21T07:51:18+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "rejected",
+    "deferrals": 1,
+    "reason": "The clip contains only the streamer talking about chat and does not show any GTA 6 gameplay, which violates the campaign rule that GTA 6 must be the main focus. No gameplay is visible in the provided timestamps, so the clip is not usable."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1811,7 +1819,7 @@
     "win_start": 7130.0,
     "win_end": 7200.0,
     "found_at": "2026-11-21T07:52:02+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 1
   },
   {
@@ -1837,8 +1845,9 @@
     "win_start": 47135.0,
     "win_end": 47170.0,
     "found_at": "2026-11-21T07:52:21+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "rejected",
+    "deferrals": 1,
+    "reason": "The transcript shows incoherent dialogue with no clear GTA 6 gameplay, no setup/payoff, and does not meet the campaign's requirement for funny or standout moments from Diego Loveless's GTA 6 stream."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1850,7 +1859,7 @@
     "win_start": 48735.0,
     "win_end": 48810.0,
     "found_at": "2026-11-21T07:52:21+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 1
   },
   {

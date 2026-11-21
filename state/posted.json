@@ -466,5 +466,53 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293515934_46435.mp4",
+    "title": "Diego Loveless's Epic Bridge Fail & Reboot in GTA 6 #shorts",
+    "posted_at": "2026-11-21T09:55:25+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_offset": 46426.1,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "file": "bobby-vanriper-gta6_twitchvod-v293515593_7175.mp4",
+    "title": "Bobby Vanriper's Scenic GTA 6 Crash - #shorts",
+    "posted_at": "2026-11-21T09:56:21+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_offset": 7170.9,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293539066_23922.mp4",
+    "title": "Parkerr pulls off epic GTA 6 jump #shorts",
+    "posted_at": "2026-11-21T10:07:51+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935390668",
+    "vod_offset": 23926.9,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293515934_48780.mp4",
+    "title": "Diego Loveless finally gets GTA 6 Eternity after 10 seasons #shorts",
+    "posted_at": "2026-11-21T10:08:38+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_offset": 48763.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
