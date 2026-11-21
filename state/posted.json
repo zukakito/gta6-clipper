@@ -658,5 +658,29 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293595618_9047.mp4",
+    "title": "Boeshi Loots All, Then Rides a Bike #shorts",
+    "posted_at": "2026-11-21T14:05:54+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_offset": 9034.9,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293515934_47650.mp4",
+    "title": "Diego Loveless: Car Heist Gone Wrong #shorts",
+    "posted_at": "2026-11-21T14:07:19+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_offset": 47635.3,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

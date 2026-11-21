@@ -1115,8 +1115,9 @@
     "win_start": 20349.0,
     "win_end": 20424.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "No GTA 6 gameplay or streamer focus, idle chat reading only"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1348,8 +1349,9 @@
     "win_start": 18405.0,
     "win_end": 18480.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "No GTA 6 gameplay; only chat, no clear setup or payoff, violates campaign rules."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1361,8 +1363,9 @@
     "win_start": 17500.0,
     "win_end": 17575.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "No GTA 6 gameplay present; transcript shows only chat chatter and no clear setup/payoff, violating campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1672,8 +1675,9 @@
     "win_start": 39315.0,
     "win_end": 39390.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "Transcript contains only chat with no GTA 6 gameplay, no clear hook, and no visible streamer activity. The clip violates campaign rules for idle or non‑gameplay content."
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1685,8 +1689,9 @@
     "win_start": 38845.0,
     "win_end": 38920.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "Transcript shows idle chat with no GTA 6 gameplay, no clear setup/payoff, and likely no overlay; violates campaign rules."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1752,8 +1757,9 @@
     "win_start": 22859.0,
     "win_end": 22934.0,
     "found_at": "2026-11-21T07:51:18+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "rejected",
+    "deferrals": 1,
+    "reason": "too little speech (7 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1765,8 +1771,9 @@
     "win_start": 23409.0,
     "win_end": 23484.0,
     "found_at": "2026-11-21T07:51:18+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "rejected",
+    "deferrals": 1,
+    "reason": "No GTA 6 gameplay, idle/AFK, streamer not present, violates campaign rules"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1915,8 +1922,9 @@
     "win_start": 49235.0,
     "win_end": 49310.0,
     "found_at": "2026-11-21T07:52:21+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "rejected",
+    "deferrals": 1,
+    "reason": "No GTA 6 gameplay, idle chatter about potential ban, not a funny or engaging moment, violates campaign rules."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1928,7 +1936,7 @@
     "win_start": 47605.0,
     "win_end": 47680.0,
     "found_at": "2026-11-21T07:52:21+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 1
   },
   {
@@ -2440,7 +2448,7 @@
     "win_start": 9002.0,
     "win_end": 9077.0,
     "found_at": "2026-11-21T13:01:57+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "boeshi-gta6",
@@ -2452,6 +2460,7 @@
     "win_start": 8862.0,
     "win_end": 8902.0,
     "found_at": "2026-11-21T13:01:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "Idle chat, no GTA 6 gameplay, violates campaign rules"
   }
 ]
