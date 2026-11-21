@@ -1,7 +1,7 @@
 {
   "scout": {
-    "checked_at": "2026-11-21T06:41:56+00:00",
-    "new": 2,
+    "checked_at": "2026-11-21T08:39:24+00:00",
+    "new": 0,
     "known": 80,
     "youtube_open": 29,
     "needs_review": [
@@ -16,9 +16,9 @@
       "Lord Kebun"
     ]
   },
-  "last_scout": "2026-11-21T06:41:56+00:00",
-  "last_run": "2026-11-21T07:59:01+00:00",
-  "run_seconds": 1035,
+  "last_scout": "2026-11-21T08:39:24+00:00",
+  "last_run": "2026-11-21T08:42:22+00:00",
+  "run_seconds": 392,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
@@ -32,7 +32,7 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 63,
+  "queued_candidates": 83,
   "pending_submissions": 0,
   "rendered_files": []
 }
