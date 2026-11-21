@@ -17,21 +17,25 @@
     ]
   },
   "last_scout": "2026-11-21T06:41:56+00:00",
-  "last_run": "2026-11-21T06:54:03+00:00",
-  "run_seconds": 1054,
-  "made_this_run": 4,
+  "last_run": "2026-11-21T07:22:05+00:00",
+  "run_seconds": 492,
+  "made_this_run": 2,
   "publisher": "dry_run",
   "enabled_campaigns": [
-    "lacy-gta6-pool"
+    "kai-cenat-gta6-pool",
+    "kreekcraft-gta6",
+    "dasgasd3m-ruckus",
+    "diegoloveless-gta6",
+    "boeshi-gta6",
+    "bobby-vanriper-gta6",
+    "parkerr-gta6"
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 6,
+  "queued_candidates": 52,
   "pending_submissions": 0,
   "rendered_files": [
-    "lacy-gta6-pool_twitchvod-v293505968_37874.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_40289.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_43854.mp4",
-    "lacy-gta6-pool_twitchvod-v293505968_44239.mp4"
+    "kreekcraft-gta6_twitchvod-v293498173_39623.mp4",
+    "parkerr-gta6_twitchvod-v293529540_1750.mp4"
   ]
 }

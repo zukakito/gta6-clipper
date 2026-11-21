@@ -394,5 +394,29 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kreekcraft-gta6",
+    "file": "kreekcraft-gta6_twitchvod-v293498173_39623.mp4",
+    "title": "Kreekcraft GTA 6 moment #shorts Watch KreekCraft on YouTube and Twitch",
+    "posted_at": "2026-11-21T07:20:35+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2934981732",
+    "vod_offset": 39599.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293529540_1750.mp4",
+    "title": "Twitch.Tv/Realparkerr GTA 6 moment #shorts",
+    "posted_at": "2026-11-21T07:22:05+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935295400",
+    "vod_offset": 1726.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
