@@ -30,6 +30,7 @@ jobs:
       UPLOAD_POST_USER: ${{ secrets.UPLOAD_POST_USER }}
       WHOP_USER_TOKEN: ${{ secrets.WHOP_USER_TOKEN }}
       YTDLP_COOKIES: ${{ secrets.YTDLP_COOKIES }}
+      CLIPS_ZIP_PASSWORD: ${{ secrets.CLIPS_ZIP_PASSWORD }}
       CLIPPER_WORKDIR: /tmp/clipper
     steps:
       - uses: actions/checkout@v4
@@ -71,24 +72,19 @@ jobs:
             python -m pipeline.run
           fi
 
-      - name: Preview frames of new clips
-        if: always()
+      - name: Encrypted backup of new clips (only if CLIPS_ZIP_PASSWORD is set)
+        if: always() && env.CLIPS_ZIP_PASSWORD != ''
         run: |
-          mkdir -p state/previews
-          for f in /tmp/clipper/out/*.mp4; do
-            [ -e "$f" ] || continue
-            n=$(basename "$f" .mp4)
-            ffmpeg -v error -y -i "$f" -vf "fps=1/8,scale=270:-2,tile=5x1" -frames:v 1 -q:v 4 "state/previews/$n.jpg" || true
-          done
-          ls -1t state/previews/*.jpg 2>/dev/null | tail -n +21 | xargs -r rm -f
+          ls /tmp/clipper/out/*.mp4 >/dev/null 2>&1 || exit 0
+          7z a -tzip -mem=AES256 -p"$CLIPS_ZIP_PASSWORD" /tmp/clips-encrypted.zip /tmp/clipper/out/*.mp4 > /dev/null
 
-      - name: Keep rendered clips for review (7 days)
-        if: always()
+      - name: Keep encrypted backup (3 days)
+        if: always() && env.CLIPS_ZIP_PASSWORD != ''
         uses: actions/upload-artifact@v4
         with:
-          name: clips-${{ github.run_id }}
-          path: /tmp/clipper/out/*.mp4
-          retention-days: 7
+          name: clips-encrypted-${{ github.run_id }}
+          path: /tmp/clips-encrypted.zip
+          retention-days: 3
           if-no-files-found: ignore
 
       - name: Save state
