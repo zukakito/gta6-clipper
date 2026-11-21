@@ -22,7 +22,7 @@ posting:
   require_llm: true
 
 clipping:
-  short_min_sec: 20
+  short_min_sec: 25
   short_max_sec: 58
   long_target_min: 8               # long-form compilations, only for campaigns with format: long
   highlights_per_vod: 6            # candidate moments scored per VOD
