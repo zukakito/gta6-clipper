@@ -1253,7 +1253,7 @@
     "win_start": 46390,
     "win_end": 46465,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
+    "status": "rendered",
     "requeued_for_review": true
   },
   {
@@ -1391,8 +1391,9 @@
     "win_start": 23877,
     "win_end": 23952,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
-    "requeued_for_review": true
+    "status": "rejected",
+    "requeued_for_review": true,
+    "reason": "Contains hateful remarks and negative portrayal of the streamer, violating campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1538,8 +1539,9 @@
     "win_start": 39578,
     "win_end": 39653,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
-    "requeued_for_review": true
+    "status": "rejected",
+    "requeued_for_review": true,
+    "reason": "No GTA 6 gameplay visible; the audio is incoherent chatter without clear setup/payoff, violating campaign rules for interesting content."
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1842,7 +1844,7 @@
     "win_start": 7130,
     "win_end": 7200,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
+    "status": "rendered",
     "requeued_for_review": true
   },
   {
@@ -1883,8 +1885,9 @@
     "win_start": 48735,
     "win_end": 48810,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
-    "requeued_for_review": true
+    "status": "rejected",
+    "requeued_for_review": true,
+    "reason": "No GTA 6 gameplay visible; the segment is just streamer talking about achievements without any in-game action, lacking clear setup/payoff and fails campaign rules."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -2041,7 +2044,7 @@
     "win_start": 21327.834,
     "win_end": 21402.834,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
+    "status": "rendered",
     "requeued_for_review": true
   },
   {
@@ -2300,7 +2303,7 @@
     "win_start": 2690,
     "win_end": 2765,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
+    "status": "rendered",
     "requeued_for_review": true
   },
   {
@@ -2403,8 +2406,9 @@
     "win_start": 8792,
     "win_end": 8862,
     "found_at": "2026-11-21T15:17:18+00:00",
-    "status": "new",
-    "requeued_for_review": true
+    "status": "rejected",
+    "requeued_for_review": true,
+    "reason": "The transcript shows only repetitive chat about loot and no clear GTA 6 gameplay, action, or payoff. There's no visual setup or reaction, making it unsuitable for the clipping campaign."
   },
   {
     "campaign_id": "boeshi-gta6",

@@ -682,5 +682,53 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293595618_2735.mp4",
+    "title": "Boeshi's Wild River Motorcycle Gunfight in GTA 6 #shorts",
+    "posted_at": "2026-11-21T15:50:56+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_offset": 2731.8,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293515934_46435.mp4",
+    "title": "Diego Loveless Crashes Into the Wrong Bridge in GTA 6 #shorts",
+    "posted_at": "2026-11-21T15:51:41+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_offset": 46414.1,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "file": "bobby-vanriper-gta6_twitchvod-v293515593_7175.mp4",
+    "title": "Bobby Vanriper's Crazy GTA 6 Scenic Route Fail #shorts",
+    "posted_at": "2026-11-21T16:02:33+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_offset": 7170.9,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "file": "dasgasd3m-ruckus_kickvod-01a1fa65-962_21372.mp4",
+    "title": "Dasgas Dom's Crazy GTA 6 NPC Moment #shorts",
+    "posted_at": "2026-11-21T16:04:06+00:00",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1fa65-9620-775a-8dc0-b3e82aa77f6c#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_offset": 21356.933999999997,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
