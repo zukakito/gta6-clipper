@@ -1088,8 +1088,9 @@
     "win_start": 20559.0,
     "win_end": 20634.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "No GTA 6 gameplay visible; streamer not shown playing GTA 6; violates campaign rule requiring GTA 6 focus."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1155,8 +1156,9 @@
     "win_start": 760.0,
     "win_end": 835.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The provided transcript shows no clear indication of GTA VI gameplay or a distinct funny/crazy moment involving Bobby Vanriper, violating the campaign requirement for GTA VI content featuring the streamer."
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1394,8 +1396,9 @@
     "win_start": 24947.0,
     "win_end": 25017.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The segment contains only the streamer’s outro with no GTA VI gameplay, no clear setup/payoff, and no interesting moment, violating campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1407,7 +1410,7 @@
     "win_start": 21987.0,
     "win_end": 22062.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 2
   },
   {
@@ -1513,7 +1516,7 @@
     "win_start": 1260.0,
     "win_end": 1335.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 2
   },
   {
@@ -1551,8 +1554,9 @@
     "win_start": 41703.0,
     "win_end": 41778.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The clip contains only idle streamer chatter with no GTA 6 gameplay, no clear setup/payoff, and does not meet campaign rules."
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1564,8 +1568,9 @@
     "win_start": 40613.0,
     "win_end": 40688.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "Clip contains only idle commentary with no GTA 6 gameplay, no clear setup or payoff, and provides no interesting content per campaign rules."
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1872,8 +1877,9 @@
     "win_start": 48375.0,
     "win_end": 48450.0,
     "found_at": "2026-11-21T07:52:21+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "rejected",
+    "deferrals": 1,
+    "reason": "No GTA 6 gameplay; only discussion about clipping accounts, violates campaign rules."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -2236,5 +2242,79 @@
     "found_at": "2026-11-21T08:58:39+00:00",
     "status": "error",
     "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2935956182",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG) 2026-11-21 10:55",
+    "t": 4825.0,
+    "score": 2.8139528198316146,
+    "win_start": 4780.0,
+    "win_end": 4855.0,
+    "found_at": "2026-11-21T10:55:41+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only chat dialogue with no GTA 6 gameplay, the streamer is not actively playing, and the segment lacks any interesting in‑game action, violating campaign rules."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2935956182",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG) 2026-11-21 10:55",
+    "t": 4095.0,
+    "score": 2.262701222873078,
+    "win_start": 4050.0,
+    "win_end": 4125.0,
+    "found_at": "2026-11-21T10:55:41+00:00",
+    "status": "rejected",
+    "reason": "The provided segment contains only generic dialogue with no visible GTA 6 gameplay, police chase, or funny reaction. It appears to be idle conversation rather than an engaging GTA 6 moment, violating the campaign requirement for recent GTA 6 content and a clear setup/payoff."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2935956182",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG) 2026-11-21 10:55",
+    "t": 2735.0,
+    "score": 1.9302802603587796,
+    "win_start": 2690.0,
+    "win_end": 2765.0,
+    "found_at": "2026-11-21T10:55:41+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2935956182",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG) 2026-11-21 10:55",
+    "t": 4285.0,
+    "score": 1.9152650263092028,
+    "win_start": 4240.0,
+    "win_end": 4315.0,
+    "found_at": "2026-11-21T10:55:41+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2935956182",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG) 2026-11-21 10:55",
+    "t": 1810.0,
+    "score": 1.80913853475504,
+    "win_start": 1765.0,
+    "win_end": 1840.0,
+    "found_at": "2026-11-21T10:55:41+00:00",
+    "status": "new"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2935956182",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG) 2026-11-21 10:55",
+    "t": 4500.0,
+    "score": 1.6289100421508493,
+    "win_start": 4455.0,
+    "win_end": 4530.0,
+    "found_at": "2026-11-21T10:55:41+00:00",
+    "status": "new"
   }
 ]
