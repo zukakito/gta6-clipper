@@ -756,5 +756,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293652450_5747.mp4",
+    "title": "Parkerr reacts to unexpected extra-star tracker #shorts",
+    "posted_at": "2026-11-21T23:14:14+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_offset": 5738.2,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1kep88vygLSOWuTPA5H4EpGRL4gT3pZUw/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

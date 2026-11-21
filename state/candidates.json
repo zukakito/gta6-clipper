@@ -2572,7 +2572,8 @@
     "win_start": 3750.0,
     "win_end": 3825.0,
     "found_at": "2026-11-21T21:46:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The provided transcript lacks any clear GTA VI gameplay moment, setup, or payoff involving Bobby Vanriper. It appears to be idle chat without visual action, violating the campaign rule that clips must feature a funny, crazy, or surprising in‑game moment with the streamer present."
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -2584,7 +2585,8 @@
     "win_start": 6910.0,
     "win_end": 6985.0,
     "found_at": "2026-11-21T21:46:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -2596,7 +2598,8 @@
     "win_start": 7090.0,
     "win_end": 7165.0,
     "found_at": "2026-11-21T21:46:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The segment contains only vague conversation with no clear GTA VI gameplay, funny or surprising moment, or visible reaction. It lacks a setup/payoff and does not meet campaign requirements for interesting content."
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -2608,7 +2611,8 @@
     "win_start": 4145.0,
     "win_end": 4220.0,
     "found_at": "2026-11-21T21:46:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA VI gameplay or clear funny moment; transcript shows unrelated chat without visual context, likely not a self-contained entertaining clip."
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -2620,7 +2624,8 @@
     "win_start": 4615.0,
     "win_end": 4690.0,
     "found_at": "2026-11-21T21:46:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA VI gameplay or relevant content; transcript is incoherent and does not feature Bobby Vanriper in a clear funny or surprising moment, violating campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2696,6 +2701,83 @@
     "win_start": 2660.0,
     "win_end": 2735.0,
     "found_at": "2026-11-21T21:48:14+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 22:58",
+    "t": 6602.0,
+    "score": 2.1614396064121912,
+    "win_start": 6557.0,
+    "win_end": 6632.0,
+    "found_at": "2026-11-21T23:00:15+00:00",
+    "status": "rejected",
+    "reason": "No GTA VI gameplay shown; the segment is just the streamer talking with no visual action, violating campaign rule requiring in‑game content and a clear moment."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 22:58",
+    "t": 4817.0,
+    "score": 1.983091036517823,
+    "win_start": 4772.0,
+    "win_end": 4847.0,
+    "found_at": "2026-11-21T23:00:15+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible; streamer is idle with incoherent dialogue and no clear setup/payoff, violating campaign rules."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 22:58",
+    "t": 5267.0,
+    "score": 1.8988292124540782,
+    "win_start": 5222.0,
+    "win_end": 5297.0,
+    "found_at": "2026-11-21T23:00:15+00:00",
+    "status": "rejected",
+    "reason": "No GTA VI gameplay or clear moment; streamer is just talking about songs and unrelated chatter, no setup/payoff, violates campaign rules."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 22:58",
+    "t": 7012.0,
+    "score": 1.6324199183708483,
+    "win_start": 6967.0,
+    "win_end": 7042.0,
+    "found_at": "2026-11-21T23:00:15+00:00",
+    "status": "rejected",
+    "reason": "The segment contains mostly unrelated banter with no clear GTA VI gameplay, no setup/payoff, and lacks visual interest, violating campaign rules for engaging content."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 22:58",
+    "t": 4952.0,
+    "score": 1.6227634014548802,
+    "win_start": 4907.0,
+    "win_end": 4982.0,
+    "found_at": "2026-11-21T23:00:15+00:00",
+    "status": "rejected",
+    "reason": "The segment contains only chat dialogue with no GTA VI gameplay, no visual action, and no relevant in‑game moment, violating campaign rules that require GTA 6 footage and an interesting self‑contained clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 22:58",
+    "t": 5747.0,
+    "score": 1.5976671622778427,
+    "win_start": 5702.0,
+    "win_end": 5777.0,
+    "found_at": "2026-11-21T23:00:15+00:00",
     "status": "rendered"
   }
 ]
