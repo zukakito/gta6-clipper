@@ -322,5 +322,29 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_39079.mp4",
+    "title": "Lacy Almost Dies In GTA 6 #LACY #shorts",
+    "posted_at": "2026-11-21T05:39:50+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 39040.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_39374.mp4",
+    "title": "Lacy Catches First Time Chatters #LACY #shorts",
+    "posted_at": "2026-11-21T05:41:43+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 39357.5,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
