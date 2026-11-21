@@ -610,5 +610,53 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293432517_19195.mp4",
+    "title": "Diego Loveless vs GTA Cops! #GTA #shorts",
+    "posted_at": "2026-11-21T13:00:03+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2934325173",
+    "vod_offset": 19188.7,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "file": "bobby-vanriper-gta6_twitchvod-v293515593_2520.mp4",
+    "title": "Bobby Vanriper's Epic GTA 6 Crash Reaction #shorts",
+    "posted_at": "2026-11-21T13:01:40+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_offset": 2518.5,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293595618_9917.mp4",
+    "title": "Boeshi Dies 50 Times, Blames the Plane! #shorts",
+    "posted_at": "2026-11-21T13:02:51+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_offset": 9898.1,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293595618_9642.mp4",
+    "title": "Boeshi's OCD Moment: Fingerprint Madness in GTA 6 #shorts",
+    "posted_at": "2026-11-21T13:03:37+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_offset": 9627.4,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
