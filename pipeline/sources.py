@@ -3,9 +3,11 @@ from __future__ import annotations
 
 import datetime as dt
 
-import yt_dlp
-
 import os
+import re
+
+import requests
+import yt_dlp
 
 from .common import log, now
 
@@ -21,6 +23,23 @@ def _listing_url(src: str) -> str:
     if "kick.com" in s and "/videos" not in s:
         return s + "/videos"
     return s
+
+
+def _hls_duration(info: dict) -> float:
+    """Kick VODs often come back without a duration: add up the segment lengths of the HLS playlist."""
+    fmts = [f for f in (info.get("formats") or []) if "m3u8" in (f.get("protocol") or "") or ".m3u8" in (f.get("url") or "")]
+    if not fmts and (info.get("url") or "").find(".m3u8") > 0:
+        fmts = [info]
+    for f in sorted(fmts, key=lambda f: f.get("tbr") or 0)[:2]:
+        try:
+            r = requests.get(f["url"], headers=f.get("http_headers") or {}, timeout=30)
+            r.raise_for_status()
+            total = sum(float(x) for x in re.findall(r"#EXTINF:([\d.]+)", r.text))
+            if total > 0:
+                return total
+        except Exception as ex:  # noqa: BLE001
+            log.warning("sources: playlist duration failed for %s: %s", info.get("id"), str(ex)[:200])
+    return 0.0
 
 
 def recent_vods(src: str, lookback_hours: int, limit: int = 4, since: str | None = None) -> list[dict]:
@@ -61,13 +80,18 @@ def recent_vods(src: str, lookback_hours: int, limit: int = 4, since: str | None
                 continue
             if info.get("live_status") == "is_upcoming":
                 continue
+            duration = float(info.get("duration") or 0)
+            is_live = info.get("live_status") == "is_live" or bool(info.get("is_live"))
+            if duration <= 0 and not is_live:
+                duration = _hls_duration(info)
+                log.info("sources: %s had no duration; playlist says %.0fs", info.get("id"), duration)
             out.append({
                 "id": f'{info.get("extractor_key", "x").lower()}:{info.get("id")}',
                 "url": info.get("webpage_url") or vurl,
                 "title": info.get("title") or "",
-                "duration": float(info.get("duration") or 0),
+                "duration": duration,
                 "started_at": started.isoformat() if started else None,
-                "is_live": info.get("live_status") == "is_live" or bool(info.get("is_live")),
+                "is_live": is_live,
                 "extractor": info.get("extractor_key", ""),
             })
             if len(out) >= limit:
