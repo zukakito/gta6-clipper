@@ -20,6 +20,7 @@ GEMINI = "https://generativelanguage.googleapis.com/v1beta"
 GROQ = "https://api.groq.com/openai/v1"
 _models: dict[str, list[str]] = {}
 _fail: dict[str, int] = {"groq": 0, "gemini": 0}
+_spent: set[str] = set()   # models whose daily quota is used up (skipped for the rest of the run)
 MAX_PROMPT_CHARS = 18000   # ~5k tokens: fits Groq's free-tier per-minute token cap with room for the reply
 
 
@@ -59,13 +60,16 @@ def _list_gemini(key: str) -> list[str]:
 def _list_groq(key: str) -> list[str]:
     if env("GROQ_MODEL"):
         return [env("GROQ_MODEL")]
-    preferred = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "openai/gpt-oss-20b", "moonshotai/kimi-k2-instruct"]
+    # Each Groq model has its own free daily quota, so several good models multiply the budget.
+    preferred = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "moonshotai/kimi-k2-instruct", "qwen/qwen3-32b",
+                 "meta-llama/llama-4-maverick-17b-128e-instruct", "meta-llama/llama-4-scout-17b-16e-instruct",
+                 "openai/gpt-oss-20b"]
     try:
         r = requests.get(GROQ + "/models", headers={"Authorization": f"Bearer {key}"}, timeout=30)
         r.raise_for_status()
         have = {m["id"] for m in r.json().get("data", []) if m.get("active", True)}
         picks = [m for m in preferred if m in have]
-        return picks[:3] or sorted(have)[:2]
+        return picks[:5] or sorted(have)[:2]
     except Exception as e:  # noqa: BLE001
         log.warning("groq: cannot list models: %s", e)
         return preferred[:2]
@@ -98,6 +102,10 @@ def _call_groq(model: str, prompt: str, want_json: bool, temperature: float, ima
     body = {"model": model, "temperature": temperature, "messages": [{"role": "user", "content": msg}]}
     if want_json:
         body["response_format"] = {"type": "json_object"}   # Groq JSON mode: always valid JSON
+    if "gpt-oss" in model:
+        body["reasoning_effort"] = "low"   # far fewer tokens per call, so the free daily quota lasts much longer
+    elif "qwen3" in model:
+        body["reasoning_effort"] = "none"
     r = requests.post(GROQ + "/chat/completions", headers={"Authorization": f"Bearer {env('GROQ_API_KEY')}"}, json=body, timeout=40)
     return r, (lambda: r.json()["choices"][0]["message"]["content"])
 
@@ -125,6 +133,8 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, images: 
         call = _call_groq if prov == "groq" else _call_gemini
         for attempt in range(retries * len(_models[prov])):
             model = _models[prov][attempt % len(_models[prov])]
+            if model in _spent:
+                continue
             try:
                 r, text_of = call(model, prompt, want_json, temperature, images)
                 if r.status_code == 413:   # this prompt is too big for the free tier - not an outage
@@ -138,8 +148,12 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, images: 
                     log.info("%s: %s rate-limited, waiting %.0fs", prov, model, wait)
                     time.sleep(wait + 1)
                     continue
+                if r.status_code == 429 and ("per day" in r.text or "TPD" in r.text or "RPD" in r.text or (wait or 0) > 40):
+                    log.warning("%s: %s daily quota used up - trying the next model", prov, model)
+                    _spent.add(model)
+                    continue
                 if r.status_code in (404, 429, 500, 502, 503):
-                    log.warning("%s: %s returned %s %s", prov, model, r.status_code, r.text[:120])
+                    log.warning("%s: %s returned %s %s", prov, model, r.status_code, r.text[:300])
                     hard_fail = True
                     time.sleep(2 * (attempt + 1))
                     continue
@@ -158,6 +172,10 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, images: 
             except Exception as e:  # noqa: BLE001
                 log.warning("%s call failed on %s: %s", prov, model, str(e)[:200])
                 time.sleep(2)
+        if all(m in _spent for m in _models[prov]):
+            log.warning("%s: every model's daily quota is used up - skipped for the rest of this run", prov)
+            _fail[prov] = 2
+            continue
         if not hard_fail:
             continue
         _fail[prov] += 1
