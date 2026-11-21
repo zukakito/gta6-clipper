@@ -9,7 +9,7 @@ posting:
   # A brand-new channel that dumps dozens of Shorts on day one looks like spam
   # to YouTube. Start modest and ramp up as the channel gains trust.
   max_uploads_per_run: 2
-  max_uploads_per_day: 8
+  max_uploads_per_day: 6             # YouTube API quota: 10,000 units/day, one upload = 1,600
   min_minutes_between_uploads: 45
   privacy: public                   # public | unlisted | private
   # Where uploads go:
