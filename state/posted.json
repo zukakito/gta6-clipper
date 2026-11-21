@@ -238,5 +238,53 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_26494.mp4",
+    "title": "Lacy Meets His Biggest Fan In GTA 6 #LACY #shorts",
+    "posted_at": "2026-11-21T03:29:03+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 26482.4,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_28104.mp4",
+    "title": "LACY Finds Perfect Cover in GTA 6 #LACY #shorts",
+    "posted_at": "2026-11-21T03:32:02+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 28080.5,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_33029.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-21T03:35:12+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 33005.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_30894.mp4",
+    "title": "Lacy GTA 6 moment #shorts",
+    "posted_at": "2026-11-21T03:37:49+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 30870.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
