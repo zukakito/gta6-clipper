@@ -418,5 +418,53 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293529540_4785.mp4",
+    "title": "Parkerr Shoots Tires in GTA 6 Chaos #shorts",
+    "posted_at": "2026-11-21T08:56:45+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935295400",
+    "vod_offset": 4776.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "file": "dasgasd3m-ruckus_kickvod-01a1fa65-962_21372.mp4",
+    "title": "Dasgas Dom's GTA 6 Glitch: Mortal Enemy Obliterated #shorts",
+    "posted_at": "2026-11-21T08:58:13+00:00",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1fa65-9620-775a-8dc0-b3e82aa77f6c#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_offset": 21356.834,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293529540_2800.mp4",
+    "title": "Parkerr Captures a Wild NPC in GTA 6 #shorts",
+    "posted_at": "2026-11-21T09:04:45+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935295400",
+    "vod_offset": 2775.3,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293515934_45775.mp4",
+    "title": "Diego Loveless Tries to Jack a Rapper's GTA 6 Car #shorts",
+    "posted_at": "2026-11-21T09:07:32+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_offset": 45768.6,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

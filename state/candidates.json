@@ -1127,8 +1127,9 @@
     "win_start": 3510.0,
     "win_end": 3585.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "error",
+    "deferrals": 2,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1205,8 +1206,9 @@
     "win_start": 44740.0,
     "win_end": 44815.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The transcript shows no GTA 6 gameplay; it references ult, healing, night crawler, portals, and water guns, which are unrelated to Grand Theft Auto. This violates the campaign rule requiring only GTA 6 content."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1218,8 +1220,9 @@
     "win_start": 45290.0,
     "win_end": 45365.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "error",
+    "deferrals": 2,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1231,7 +1234,7 @@
     "win_start": 45730.0,
     "win_end": 45805.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 2
   },
   {
@@ -1361,8 +1364,9 @@
     "win_start": 23542.0,
     "win_end": 23617.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "error",
+    "deferrals": 2,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1451,8 +1455,9 @@
     "win_start": 1555.0,
     "win_end": 1630.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The segment contains no GTA VI gameplay, only off‑stream banter about donations and a stripper gag, violating campaign rules that require in‑game moments. No clear setup/payoff, and the streamer is not part of any interesting GTA action."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1464,8 +1469,9 @@
     "win_start": 1980.0,
     "win_end": 2055.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new",
-    "deferrals": 2
+    "status": "rejected",
+    "deferrals": 2,
+    "reason": "The transcript shows random, incoherent chatter with no clear GTA VI gameplay, setup, or payoff. It lacks an interesting moment, visual action, or any recognizable in‑game event, violating campaign rules for a self‑contained clip."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1477,7 +1483,7 @@
     "win_start": 2755.0,
     "win_end": 2830.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new",
+    "status": "rendered",
     "deferrals": 2
   },
   {
@@ -1749,8 +1755,9 @@
     "win_start": 4765.0,
     "win_end": 4840.0,
     "found_at": "2026-11-21T07:52:02+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "error",
+    "deferrals": 1,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1762,8 +1769,9 @@
     "win_start": 5525.0,
     "win_end": 5600.0,
     "found_at": "2026-11-21T07:52:02+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "error",
+    "deferrals": 1,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1775,8 +1783,9 @@
     "win_start": 6155.0,
     "win_end": 6230.0,
     "found_at": "2026-11-21T07:52:02+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "error",
+    "deferrals": 1,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1788,8 +1797,9 @@
     "win_start": 3600.0,
     "win_end": 3650.0,
     "found_at": "2026-11-21T07:52:02+00:00",
-    "status": "new",
-    "deferrals": 1
+    "status": "error",
+    "deferrals": 1,
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1905,7 +1915,8 @@
     "win_start": 23803.0,
     "win_end": 23878.0,
     "found_at": "2026-11-21T08:39:35+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1917,7 +1928,8 @@
     "win_start": 24003.0,
     "win_end": 24078.0,
     "found_at": "2026-11-21T08:39:35+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1929,7 +1941,8 @@
     "win_start": 24138.0,
     "win_end": 24213.0,
     "found_at": "2026-11-21T08:39:35+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (4 words)"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -1941,7 +1954,8 @@
     "win_start": 22047.834,
     "win_end": 22122.834,
     "found_at": "2026-11-21T08:39:47+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -1953,7 +1967,8 @@
     "win_start": 22917.834,
     "win_end": 22992.834,
     "found_at": "2026-11-21T08:39:47+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -1965,7 +1980,8 @@
     "win_start": 22747.834,
     "win_end": 22822.834,
     "found_at": "2026-11-21T08:39:47+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -1977,7 +1993,8 @@
     "win_start": 21927.834,
     "win_end": 22002.834,
     "found_at": "2026-11-21T08:39:47+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -1989,7 +2006,7 @@
     "win_start": 21327.834,
     "win_end": 21402.834,
     "found_at": "2026-11-21T08:39:47+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -2001,7 +2018,8 @@
     "win_start": 21552.834,
     "win_end": 21627.834,
     "found_at": "2026-11-21T08:39:47+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -2013,7 +2031,8 @@
     "win_start": 48901.484,
     "win_end": 48976.484,
     "found_at": "2026-11-21T08:40:27+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -2025,7 +2044,8 @@
     "win_start": 48641.484,
     "win_end": 48716.484,
     "found_at": "2026-11-21T08:40:27+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "Transcript contains hate slurs and explicit sexual content, violating campaign rules and community standards; also includes graphic violence and offensive language."
   },
   {
     "campaign_id": "dasgasd3m-ruckus",
@@ -2037,7 +2057,8 @@
     "win_start": 47276.484,
     "win_end": 47351.484,
     "found_at": "2026-11-21T08:40:27+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The provided segment lacks clear GTA 6 gameplay, setup, and payoff; appears to be idle chat without the streamer’s face or voice in a meaningful moment."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -2049,7 +2070,8 @@
     "win_start": 49486.0,
     "win_end": 49561.0,
     "found_at": "2026-11-21T08:42:04+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -2061,7 +2083,8 @@
     "win_start": 49781.0,
     "win_end": 49856.0,
     "found_at": "2026-11-21T08:42:04+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The segment contains only the streamer ranting with no GTA 6 gameplay, no clear setup/payoff, and does not meet campaign rules requiring in‑game content."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2073,7 +2096,7 @@
     "win_start": 4740.0,
     "win_end": 4815.0,
     "found_at": "2026-11-21T08:42:20+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2085,7 +2108,8 @@
     "win_start": 5200.0,
     "win_end": 5275.0,
     "found_at": "2026-11-21T08:42:20+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The segment contains only off‑game chat with no GTA VI gameplay, no visual action, and no relevant content for the campaign; it fails the requirement to showcase Parkerr's GTA VI stream."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2097,7 +2121,8 @@
     "win_start": 4860.0,
     "win_end": 4935.0,
     "found_at": "2026-11-21T08:42:20+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The segment contains only idle chat with no visible GTA 6 gameplay, no clear setup/payoff, and lacks any interesting moment per campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2109,7 +2134,8 @@
     "win_start": 4160.0,
     "win_end": 4235.0,
     "found_at": "2026-11-21T08:42:20+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2121,7 +2147,8 @@
     "win_start": 4580.0,
     "win_end": 4655.0,
     "found_at": "2026-11-21T08:42:20+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The segment contains idle conversation with no clear GTA VI gameplay, no setup/payoff, and lacks visual interest, violating campaign rules for engaging content."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2133,6 +2160,72 @@
     "win_start": 4040.0,
     "win_end": 4115.0,
     "found_at": "2026-11-21T08:42:20+00:00",
-    "status": "new"
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "vod_id": "kickvod:01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_title": "kick-vod video #01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "t": 3975.0,
+    "score": 1.9660621221824413,
+    "win_start": 3930.0,
+    "win_end": 4005.0,
+    "found_at": "2026-11-21T08:58:39+00:00",
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "vod_id": "kickvod:01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_title": "kick-vod video #01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "t": 3810.0,
+    "score": 1.72746288837155,
+    "win_start": 3765.0,
+    "win_end": 3840.0,
+    "found_at": "2026-11-21T08:58:39+00:00",
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "vod_id": "kickvod:01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_title": "kick-vod video #01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "t": 4215.0,
+    "score": 1.6618518876901367,
+    "win_start": 4170.0,
+    "win_end": 4245.0,
+    "found_at": "2026-11-21T08:58:39+00:00",
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "vod_id": "kickvod:01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_title": "kick-vod video #01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "t": 3610.0,
+    "score": 1.584531303773911,
+    "win_start": 3600.0,
+    "win_end": 3640.0,
+    "found_at": "2026-11-21T08:58:39+00:00",
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
+  },
+  {
+    "campaign_id": "dasgasd3m-ruckus",
+    "vod_id": "kickvod:01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "vod_url": "https://kick.com/dasgasd3m/videos/01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba#__youtubedl_smuggle=%7B%22availability%22%3A+%22public%22%7D",
+    "vod_title": "kick-vod video #01a1f7ca-9c08-754c-a1c8-8e0ae1d416ba",
+    "t": 4525.0,
+    "score": 1.2359057090620955,
+    "win_start": 4480.0,
+    "win_end": 4555.0,
+    "found_at": "2026-11-21T08:58:39+00:00",
+    "status": "error",
+    "error": "TypeError: float() argument must be a string or a real number, not 'NoneType'"
   }
 ]
