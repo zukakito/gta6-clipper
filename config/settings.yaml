@@ -21,6 +21,10 @@ posting:
   # Skip moments when no LLM (Groq/Gemini) answers, instead of posting generic titles.
   require_llm: true
 
+storage:
+  # Finished clips go to this folder in the channel owner's Google Drive (private), never to public GitHub artifacts.
+  drive_folder: "Zukakito Clips"
+
 clipping:
   short_min_sec: 30
   short_max_sec: 58
