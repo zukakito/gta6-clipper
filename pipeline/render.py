@@ -110,8 +110,8 @@ def detect_facecam(src: Path, start: float, end: float) -> tuple[int, int, int, 
 
 
 # ---------------------------------------------------------------- dead-air trimming
-def speech_segments(words: list[dict], start: float, end: float, max_gap: float = 0.7,
-                    pad: float = 0.18) -> list[tuple[float, float]]:
+def speech_segments(words: list[dict], start: float, end: float, max_gap: float = 2.0,
+                    pad: float = 0.35) -> list[tuple[float, float]]:
     """Keep-segments (relative to start) that drop pauses longer than max_gap seconds."""
     ws = [w for w in words if w["e"] > start and w["s"] < end]
     if not ws:
@@ -150,8 +150,17 @@ def _ts(t: float) -> str:
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
+_SWEAR = re.compile(r"(?i)\b(mother)?(f+u+c+k+\w*|sh+i+t+\w*|bitch\w*|cunts?|dicks?|pussy|pussies|nigg\w*|fag\w*|retard\w*)")
+
+
+def _bleep(m: re.Match) -> str:
+    w = m.group(0)
+    return w[0] + "*" * (len(w) - 2) + w[-1] if len(w) > 2 else "*" * len(w)
+
+
 def _clean(s: str) -> str:
-    s = re.sub(r"[^\w\s'!?.,&:#$%-]", "", s)  # libass can't draw colour emoji; drop them
+    s = re.sub(r"[^\w\s'!?.,&:#$%/@*-]", "", s)  # libass can't draw colour emoji; drop them
+    s = _SWEAR.sub(_bleep, s)                   # on-screen text stays advertiser-friendly
     return s.replace("{", "").replace("}", "").strip()
 
 
@@ -253,11 +262,14 @@ def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict],
     extra = ["-i", str(overlay_img)] if overlay_img else []
     face = detect_facecam(src, rel_start, rel_end) if layout in ("auto", "split") else None
     segs = speech_segments(words, rel_start, rel_end) if trim_silence else [(0.0, rel_end - rel_start)]
+    vtrim = atrim = ""
     if sum(b - a for a, b in segs) < 0.8 * (rel_end - rel_start) - 0.01 or len(segs) > 1:
         sel = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in segs)
         vtrim, atrim = f"select='{sel}',setpts=N/FRAME_RATE/TB,", f"aselect='{sel}',asetpts=N/SR/TB,"
         cap_words, total = remap_words(words, rel_start, segs), sum(b - a for a, b in segs)
-    else:
+    if vtrim and total < 0.75 * (rel_end - rel_start):   # mostly-action clip: silence is gameplay, keep it
+        segs, vtrim, atrim = [(0.0, rel_end - rel_start)], "", ""
+    if not vtrim:
         vtrim, atrim, cap_words, total = "", "", [{**w, "s": w["s"] - rel_start, "e": w["e"] - rel_start} for w in words], rel_end - rel_start
     ass_path.write_text(build_ass(cap_words, 0.0, total, hook, tag, disclosure, split=bool(face)), encoding="utf-8")
     if face:
