@@ -151,7 +151,19 @@
   "twitchvod:v2936183180": {
     "url": "https://www.twitch.tv/videos/2936183180",
     "title": "🔴LIVE! BEATING GTA 6 *RIGHT NOW* (FINAL MISSION) 2026-11-21 15:22",
-    "scanned_until": 13221.0,
-    "last_scan": "2026-11-21T19:01:05+00:00"
+    "scanned_until": 16821.0,
+    "last_scan": "2026-11-21T21:06:48+00:00"
+  },
+  "twitchvod:v2936338171": {
+    "url": "https://www.twitch.tv/videos/2936338171",
+    "title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "scanned_until": 3600.0,
+    "last_scan": "2026-11-21T20:46:31+00:00"
+  },
+  "twitchvod:v2936524505": {
+    "url": "https://www.twitch.tv/videos/2936524505",
+    "title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 20:46",
+    "scanned_until": 1130.0,
+    "last_scan": "2026-11-21T20:56:42+00:00"
   }
 }

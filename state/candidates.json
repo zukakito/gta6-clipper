@@ -2470,5 +2470,83 @@
     "found_at": "2026-11-21T13:01:57+00:00",
     "status": "rejected",
     "reason": "Idle chat, no GTA 6 gameplay, violates campaign rules"
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2936338171",
+    "vod_url": "https://www.twitch.tv/videos/2936338171",
+    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "t": 40.0,
+    "score": 2.077615050499052,
+    "win_start": 0.0,
+    "win_end": 70.0,
+    "found_at": "2026-11-21T20:46:31+00:00",
+    "status": "rejected",
+    "reason": "too little speech (14 words)"
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2936338171",
+    "vod_url": "https://www.twitch.tv/videos/2936338171",
+    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "t": 2850.0,
+    "score": 2.049153136604583,
+    "win_start": 2805.0,
+    "win_end": 2880.0,
+    "found_at": "2026-11-21T20:46:31+00:00",
+    "status": "rejected",
+    "reason": "No GTA VI gameplay or relevant moment; streamer is discussing AI clipping, not part of a funny or surprising in-game event, violating campaign rules."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2936338171",
+    "vod_url": "https://www.twitch.tv/videos/2936338171",
+    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "t": 860.0,
+    "score": 1.6173613130885782,
+    "win_start": 815.0,
+    "win_end": 890.0,
+    "found_at": "2026-11-21T20:46:31+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 33% of the clip"
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2936338171",
+    "vod_url": "https://www.twitch.tv/videos/2936338171",
+    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "t": 3580.0,
+    "score": 1.5759165833765485,
+    "win_start": 3535.0,
+    "win_end": 3600.0,
+    "found_at": "2026-11-21T20:46:31+00:00",
+    "status": "rejected",
+    "reason": "The transcript references Night City and PlayStation Pro, indicating Cyberpunk gameplay, not GTA VI, violating campaign rules."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2936338171",
+    "vod_url": "https://www.twitch.tv/videos/2936338171",
+    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "t": 2470.0,
+    "score": 1.5016391846909651,
+    "win_start": 2425.0,
+    "win_end": 2500.0,
+    "found_at": "2026-11-21T20:46:31+00:00",
+    "status": "rejected",
+    "reason": "No GTA VI gameplay or relevant content; the transcript is incoherent and unrelated, violating campaign rules."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2936338171",
+    "vod_url": "https://www.twitch.tv/videos/2936338171",
+    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
+    "t": 2720.0,
+    "score": 1.495779478644687,
+    "win_start": 2675.0,
+    "win_end": 2750.0,
+    "found_at": "2026-11-21T20:46:31+00:00",
+    "status": "rejected",
+    "reason": "No clear GTA VI gameplay or funny/crazy moment; transcript is generic filler without visual payoff, violating campaign rules."
   }
 ]
