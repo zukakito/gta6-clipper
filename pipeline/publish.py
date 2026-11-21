@@ -29,7 +29,6 @@ def _youtube_api(path: Path, meta: dict, privacy: str, category: int) -> dict:
         client_id=env("YT_CLIENT_ID"),
         client_secret=env("YT_CLIENT_SECRET"),
         token_uri="https://oauth2.googleapis.com/token",
-        scopes=["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube.readonly"],
     )
     yt = build("youtube", "v3", credentials=creds, cache_discovery=False)
     body = {
@@ -58,7 +57,34 @@ def _youtube_api(path: Path, meta: dict, privacy: str, category: int) -> dict:
     status = resp.get("status", {}).get("privacyStatus")
     if privacy == "public" and status != "public":
         log.warning("YouTube set the video to %s - the API project is probably not audited yet", status)
+    if meta.get("playlist"):
+        _add_to_playlist(yt, vid, meta["playlist"])
     return {"video_id": vid, "url": f"https://www.youtube.com/shorts/{vid}", "privacy": status}
+
+
+_playlists: dict[str, str] = {}
+
+
+def _add_to_playlist(yt, video_id: str, title: str) -> None:
+    """File the upload into the streamer's playlist (e.g. "Kai Cenat GTA 6 Moments"). Best effort:
+    needs the youtube.force-ssl scope on the refresh token; costs ~51 quota units."""
+    try:
+        if not _playlists:
+            req = yt.playlists().list(part="snippet", mine=True, maxResults=50)
+            while req is not None:
+                resp = req.execute()
+                for it in resp.get("items", []):
+                    _playlists[it["snippet"]["title"].strip().lower()] = it["id"]
+                req = yt.playlists().list_next(req, resp)
+        pid = _playlists.get(title.strip().lower())
+        if not pid:
+            log.info("playlist %r not found on the channel - skipping", title)
+            return
+        yt.playlistItems().insert(part="snippet", body={"snippet": {
+            "playlistId": pid, "resourceId": {"kind": "youtube#video", "videoId": video_id}}}).execute()
+        log.info("added %s to playlist %r", video_id, title)
+    except Exception as e:  # noqa: BLE001
+        log.warning("could not add %s to playlist %r (token may lack youtube.force-ssl scope): %s", video_id, title, str(e)[:200])
 
 
 def _upload_post(path: Path, meta: dict, privacy: str, category: int) -> dict:
