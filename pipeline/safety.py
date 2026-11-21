@@ -80,3 +80,24 @@ def check(src: Path, start: float, end: float) -> tuple[bool, str]:
     if max(scores) >= NSFW_THRESHOLD:
         return False, f"NSFW content detected (score {max(scores):.2f})"
     return True, f"ok (lum {np.mean(lum):.0f}, motion {np.median(motion):.1f}, nsfw {max(scores) if scores else 'n/a'})"
+
+
+def gameplay_ok(src: Path, start: float, end: float, max_dead: float = 0.25) -> tuple[bool, str]:
+    """Look only at the gameplay area (the centre column the vertical crop keeps) and reject the moment when
+    too much of it is a black / loading / fade screen - the facecam alone keeps the whole-frame checks happy."""
+    frames = _frames(src, start, end, n=12, w=384)
+    if len(frames) < 6:
+        return False, "could not read gameplay frames"
+    dead = 0
+    for f in frames:
+        h, w, _ = f.shape
+        cw = int(h * 1080 / 1280)
+        g = f[:, max(0, (w - cw) // 2): (w + cw) // 2].astype(np.int16)
+        lum = g.mean()
+        detail = g.std()
+        if lum < 22 or detail < 14:
+            dead += 1
+    ratio = dead / len(frames)
+    if ratio > max_dead:
+        return False, f"gameplay is black/loading for {ratio:.0%} of the clip"
+    return True, "ok"
