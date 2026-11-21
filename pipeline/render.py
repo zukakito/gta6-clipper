@@ -18,7 +18,7 @@ def download_section(url: str, start: float, end: float, name: str) -> Path:
         return out
     subprocess.run([
         "yt-dlp", "-q", "--no-warnings",
-        "-f", "bv*[height<=1080]+ba/b[height<=1080]/best",
+        "-f", "bv*[height<=1080]+ba/b[height<=1080]/best", "-S", "res:1080,fps,br",
         "--merge-output-format", "mp4",
         "--download-sections", f"*{start:.2f}-{end:.2f}",
         "-o", str(out), url,
@@ -30,9 +30,13 @@ def download_section(url: str, start: float, end: float, name: str) -> Path:
 _model = None
 
 
-def transcribe(path: Path, model_size: str = "small") -> list[dict]:
-    """Return word-level transcript: [{'w': str, 's': float, 'e': float}] (times relative to file)."""
-    global _model
+_models_by_size: dict = {}
+
+
+def transcribe(path: Path, model_size: str = "small", start: float | None = None, end: float | None = None,
+               prompt: str | None = None) -> list[dict]:
+    """Return word-level transcript: [{'w': str, 's': float, 'e': float}] (times relative to file).
+    With start/end only that part is transcribed (times still relative to the file)."""
     try:
         from faster_whisper import WhisperModel
     except ImportError:
@@ -40,23 +44,40 @@ def transcribe(path: Path, model_size: str = "small") -> list[dict]:
         return []
     import numpy as np
 
-    if _model is None:
-        _model = WhisperModel(model_size, device="cpu", compute_type="int8")
+    if model_size not in _models_by_size:
+        _models_by_size[model_size] = WhisperModel(model_size, device="cpu", compute_type="int8")
+    _model = _models_by_size[model_size]
     # Decode with ffmpeg ourselves (16 kHz mono float32). This avoids faster-whisper's PyAV
     # decoder, which breaks on newer PyAV releases ("unexpected keyword 'metadata_errors'").
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-vn", "-ac", "1", "-ar", "16000",
+    seek = ["-ss", f"{start:.2f}", "-to", f"{end:.2f}"] if start is not None and end is not None else []
+    raw = subprocess.run(["ffmpeg", "-v", "error", *seek, "-i", str(path), "-vn", "-ac", "1", "-ar", "16000",
                           "-f", "s16le", "-"], check=True, capture_output=True, timeout=600).stdout
     audio = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
     if audio.size == 0:
         return []
-    segments, _ = _model.transcribe(audio, language="en", word_timestamps=True, vad_filter=True)
+    segments, _ = _model.transcribe(audio, language="en", word_timestamps=True, vad_filter=True,
+                                    initial_prompt=prompt, condition_on_previous_text=False)
+    off = start or 0.0
     words = []
     for seg in segments:
         for w in seg.words or []:
             t = w.word.strip()
             if t:
-                words.append({"w": t, "s": float(w.start), "e": float(w.end)})
+                words.append({"w": t, "s": float(w.start) + off, "e": float(w.end) + off})
     return words
+
+
+def refine_words(path: Path, words: list[dict], start: float, end: float, model_size: str = "medium",
+                 prompt: str | None = None) -> list[dict]:
+    """Re-transcribe just the chosen cut with a bigger Whisper model for accurate captions."""
+    try:
+        better = transcribe(path, model_size, max(0.0, start - 0.5), end + 0.5, prompt=prompt)
+    except Exception as e:  # noqa: BLE001
+        log.warning("render: caption refine failed (%s) - keeping draft captions", e)
+        return words
+    if not better:
+        return words
+    return [w for w in words if w["e"] <= start - 0.5 or w["s"] >= end + 0.5] + better
 
 
 
@@ -101,8 +122,11 @@ def detect_facecam(src: Path, start: float, end: float) -> tuple[int, int, int, 
     if not best or best_n < 0.6 * len(hits):
         return None
     x, y, w, h = best
-    # webcam box ~ 3.2x face width, 16:10-ish aspect, clamped to the frame
-    bw = min(W0, int(w * 3.2))
+    if H0 < 900 or w < W0 * 0.04:   # low-res source or a tiny webcam: upscaling it to 1080 px wide looks pixelated
+        log.info("render: facecam too small to split (face %dpx in %dx%d) - using full-frame layout", w, W0, H0)
+        return None
+    # webcam box ~ 3.2x face width (at least 30% of the frame, so it is never upscaled > ~1.9x), clamped
+    bw = min(W0, max(int(w * 3.2), int(W0 * 0.30)))
     bh = min(H0, int(bw * 640 / 1080))
     bx = max(0, min(W0 - bw, int(x + w / 2 - bw / 2)))
     by = max(0, min(H0 - bh, int(y + h / 2 - bh * 0.45)))
@@ -263,14 +287,22 @@ def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict],
     face = detect_facecam(src, rel_start, rel_end) if layout in ("auto", "split") else None
     segs = speech_segments(words, rel_start, rel_end) if trim_silence else [(0.0, rel_end - rel_start)]
     vtrim = atrim = ""
-    if sum(b - a for a, b in segs) < 0.8 * (rel_end - rel_start) - 0.01 or len(segs) > 1:
-        sel = "+".join(f"between(t,{a:.2f},{b:.2f})" for a, b in segs)
-        vtrim, atrim = f"select='{sel}',setpts=N/FRAME_RATE/TB,", f"aselect='{sel}',asetpts=N/SR/TB,"
-        cap_words, total = remap_words(words, rel_start, segs), sum(b - a for a, b in segs)
-    if vtrim and total < 0.75 * (rel_end - rel_start):   # mostly-action clip: silence is gameplay, keep it
-        segs, vtrim, atrim = [(0.0, rel_end - rel_start)], "", ""
-    if not vtrim:
-        vtrim, atrim, cap_words, total = "", "", [{**w, "s": w["s"] - rel_start, "e": w["e"] - rel_start} for w in words], rel_end - rel_start
+    orig_len = rel_end - rel_start
+    total = sum(b - a for a, b in segs)
+    if len(segs) > 1 and total >= 0.75 * (rel_end - rel_start):   # trim dead air (mostly-action clips are left whole)
+        cut = WORK / f"{name}_cut.mp4"
+        parts = ";".join(f"[0:v]trim={a:.3f}:{b:.3f},setpts=PTS-STARTPTS[v{i}];[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[a{i}]"
+                         for i, (a, b) in enumerate(segs))
+        joins = "".join(f"[v{i}][a{i}]" for i in range(len(segs)))
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{rel_start:.3f}", "-to", f"{rel_end:.3f}", "-i", str(src),
+                        "-filter_complex", f"{parts};{joins}concat=n={len(segs)}:v=1:a=1[v][a]",
+                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "14",
+                        "-c:a", "aac", "-b:a", "192k", str(cut)], check=True, timeout=900)
+        cap_words = remap_words(words, rel_start, segs)
+        src, rel_start, rel_end = cut, 0.0, total
+    else:
+        segs, total = [(0.0, rel_end - rel_start)], rel_end - rel_start
+        cap_words = [{**w, "s": w["s"] - rel_start, "e": w["e"] - rel_start} for w in words]
     ass_path.write_text(build_ass(cap_words, 0.0, total, hook, tag, disclosure, split=bool(face)), encoding="utf-8")
     if face:
         fc = _filter_split(face, ass_path, vtrim, overlay_img)
@@ -278,7 +310,7 @@ def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict],
         lay = "zoom_blur" if layout == "auto" else layout
         fc = _filter_vertical(lay, ass_path, overlay_img).replace("[0:v]", f"[0:v]{vtrim}", 1)
     log.info("render: %s layout=%s facecam=%s segments=%d (%.1fs -> %.1fs)", name,
-             "split" if face else layout, face, len(segs), rel_end - rel_start, total)
+             "split" if face else layout, face, len(segs), orig_len, total)
     subprocess.run([
         "ffmpeg", "-y", "-v", "error", "-ss", f"{rel_start:.2f}", "-to", f"{rel_end:.2f}", "-i", str(src), *extra,
         "-filter_complex", fc, "-map", "[v]", "-map", "0:a?",
