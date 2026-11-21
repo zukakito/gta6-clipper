@@ -4,8 +4,8 @@ Every clip that passes all checks is uploaded to
     <drive_folder>/<YYYY-MM-DD>/<clip>.mp4   (+ <clip>.txt with title, description, tags, campaign, source)
 so nothing is exposed through the public GitHub repo.
 
-Uses the same OAuth client and refresh token as the YouTube uploader; the token must include the
-drive.file scope (run tools/get_youtube_token.py again). drive.file only lets the app see files it created.
+Uses the same OAuth client as the YouTube uploader but its own refresh token (DRIVE_REFRESH_TOKEN, scope drive.file):
+Google won't grant YouTube (brand-account) and Drive scopes in one sign-in. drive.file only sees files this app created.
 """
 from __future__ import annotations
 
@@ -25,7 +25,7 @@ def _service():
         from google.oauth2.credentials import Credentials
         from googleapiclient.discovery import build
 
-        creds = Credentials(token=None, refresh_token=env("YT_REFRESH_TOKEN"), client_id=env("YT_CLIENT_ID"),
+        creds = Credentials(token=None, refresh_token=env("DRIVE_REFRESH_TOKEN") or env("YT_REFRESH_TOKEN"), client_id=env("YT_CLIENT_ID"),
                             client_secret=env("YT_CLIENT_SECRET"), token_uri="https://oauth2.googleapis.com/token")
         _svc = build("drive", "v3", credentials=creds, cache_discovery=False)
     return _svc
@@ -49,13 +49,13 @@ def _folder(name: str, parent: str | None) -> str:
 
 
 def enabled() -> bool:
-    return bool(env("YT_REFRESH_TOKEN") and env("YT_CLIENT_ID") and env("YT_CLIENT_SECRET"))
+    return bool(env("DRIVE_REFRESH_TOKEN") and env("YT_CLIENT_ID") and env("YT_CLIENT_SECRET"))
 
 
 def save(clip: Path, meta: dict, campaign: dict, source: dict, root_name: str = "Zukakito Clips") -> str | None:
     """Upload the clip + a sidecar text file. Returns the Drive link of the clip, or None if storage failed."""
     if not enabled():
-        log.warning("drive: no Google credentials - clip not stored")
+        log.warning("drive: DRIVE_REFRESH_TOKEN not set - clip not stored")
         return None
     try:
         from googleapiclient.http import MediaFileUpload, MediaInMemoryUpload
