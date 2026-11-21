@@ -120,11 +120,15 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
             ok, why = curate.quality_gate(c, src, words, meta["start"], meta["end"])
             if ok:
                 ok, why = safety.check(src, meta["start"], meta["end"])   # local NSFW / idle / censor check
+            if ok:
+                ok, why = safety.gameplay_ok(src, meta["start"], meta["end"])   # no long black/loading screens
             if not ok:
                 cand["status"] = "rejected"
                 cand["reason"] = why
                 log.info("quality gate rejected %s: %s", name, why)
                 continue
+            words = render.refine_words(src, words, meta["start"], meta["end"], clip_cfg.get("caption_model", "medium"),
+                                        prompt=f"{curate.streamer_name(c)} playing GTA 6.")
             out = render.render_short(src, meta["start"], meta["end"], words, meta["hook"],
                                       c.get("overlay_text") or "", bool(c.get("paid_disclosure")),
                                       c.get("layout") or clip_cfg["layout"], name,
