@@ -562,5 +562,53 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293539066_22192.mp4",
+    "title": "Parkerr Accidentally Switches to Jason in GTA 6 #shorts",
+    "posted_at": "2026-11-21T11:55:23+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935390668",
+    "vod_offset": 22174.9,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293515934_47480.mp4",
+    "title": "Diego Loveless gets chased after Lambo grab! #shorts",
+    "posted_at": "2026-11-21T11:57:04+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_offset": 47471.0,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293595618_8837.mp4",
+    "title": "Boeshi's Crazy Loot Frenzy in GTA 6! #shorts",
+    "posted_at": "2026-11-21T12:00:53+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_offset": 8821.1,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293595618_7752.mp4",
+    "title": "Boeshi's Epic Ramp Jump in GTA 6 – You Won't Believe It #shorts",
+    "posted_at": "2026-11-21T12:02:13+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935956182",
+    "vod_offset": 7737.1,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

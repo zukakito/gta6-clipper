@@ -1,7 +1,7 @@
 {
   "scout": {
-    "checked_at": "2026-11-21T09:54:35+00:00",
-    "new": 2,
+    "checked_at": "2026-11-21T11:53:16+00:00",
+    "new": 0,
     "known": 82,
     "youtube_open": 31,
     "needs_review": [
@@ -18,9 +18,9 @@
       "LACY GTA VI Marathon Pool Campaign"
     ]
   },
-  "last_scout": "2026-11-21T09:54:35+00:00",
-  "last_run": "2026-11-21T10:59:10+00:00",
-  "run_seconds": 412,
+  "last_scout": "2026-11-21T11:53:16+00:00",
+  "last_run": "2026-11-21T12:02:13+00:00",
+  "run_seconds": 753,
   "made_this_run": 4,
   "publisher": "dry_run",
   "enabled_campaigns": [
@@ -34,12 +34,12 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 32,
+  "queued_candidates": 23,
   "pending_submissions": 0,
   "rendered_files": [
-    "boeshi-gta6_twitchvod-v293595618_2735.mp4",
-    "boeshi-gta6_twitchvod-v293595618_4285.mp4",
-    "parkerr-gta6_twitchvod-v293529540_1305.mp4",
-    "parkerr-gta6_twitchvod-v293539066_22032.mp4"
+    "boeshi-gta6_twitchvod-v293595618_7752.mp4",
+    "boeshi-gta6_twitchvod-v293595618_8837.mp4",
+    "diegoloveless-gta6_twitchvod-v293515934_47480.mp4",
+    "parkerr-gta6_twitchvod-v293539066_22192.mp4"
   ]
 }
