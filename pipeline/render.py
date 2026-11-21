@@ -126,9 +126,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 
 
 # ---------------------------------------------------------------- ffmpeg compose
-def _filter_vertical(layout: str, ass_path: Path) -> str:
+def _filter_vertical(layout: str, ass_path: Path, overlay_img: Path | None = None) -> str:
     fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
     ass = f"ass={ass_path}{fontsdir}"
+    if overlay_img:   # campaign-supplied overlay (e.g. KreekCraft logo): top-right corner of the video area
+        y0 = (H - int(W * 9 / 16)) // 2 - 60 + 16
+        return (f"[0:v]split=2[a][b];"
+                f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=24:3,eq=brightness=-0.10[bg];"
+                f"[b]scale={W}:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2-60[base];"
+                f"[1:v]scale={int(W * 0.28)}:-1[ov];[base][ov]overlay=W-w-24:{y0},setsar=1,fps=30,{ass}[v]")
     if layout == "center_crop":
         return f"[0:v]scale=-2:{H},crop={W}:{H},setsar=1,fps=30,{ass}[v]"
     if layout == "zoom_blur":
@@ -142,13 +148,14 @@ def _filter_vertical(layout: str, ass_path: Path) -> str:
 
 
 def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict], hook: str, tag: str,
-                 disclosure: bool, layout: str, name: str) -> Path:
+                 disclosure: bool, layout: str, name: str, overlay_img: Path | None = None) -> Path:
     ass_path = WORK / f"{name}.ass"
     ass_path.write_text(build_ass(words, rel_start, rel_end, hook, tag, disclosure), encoding="utf-8")
     out = OUT / f"{name}.mp4"
+    extra = ["-i", str(overlay_img)] if overlay_img else []
     subprocess.run([
-        "ffmpeg", "-y", "-v", "error", "-ss", f"{rel_start:.2f}", "-to", f"{rel_end:.2f}", "-i", str(src),
-        "-filter_complex", _filter_vertical(layout, ass_path), "-map", "[v]", "-map", "0:a?",
+        "ffmpeg", "-y", "-v", "error", "-ss", f"{rel_start:.2f}", "-to", f"{rel_end:.2f}", "-i", str(src), *extra,
+        "-filter_complex", _filter_vertical(layout, ass_path, overlay_img), "-map", "[v]", "-map", "0:a?",
         "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out),
@@ -177,6 +184,19 @@ def render_long(parts: list[tuple[Path, float, float, list[dict], str]], tag: st
     out = OUT / f"{name}.mp4"
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy",
                     "-movflags", "+faststart", str(out)], check=True)
+    return out
+
+
+def fetch_overlay(url: str | None, key: str) -> Path | None:
+    """Download a campaign overlay image once per run (cached in WORK)."""
+    if not url:
+        return None
+    out = WORK / f"overlay_{key}.png"
+    if not out.exists():
+        import requests
+        raw = WORK / f"overlay_{key}.src"
+        raw.write_bytes(requests.get(url, timeout=60).content)
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(raw), str(out)], check=True, timeout=60)
     return out
 
 

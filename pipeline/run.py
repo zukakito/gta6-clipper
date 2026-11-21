@@ -113,7 +113,8 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 continue
             out = render.render_short(src, meta["start"], meta["end"], words, meta["hook"],
                                       c.get("overlay_text") or "", bool(c.get("paid_disclosure")),
-                                      c.get("layout") or clip_cfg["layout"], name)
+                                      c.get("layout") or clip_cfg["layout"], name,
+                                      overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]))
             meta["paid"] = bool(c.get("paid_disclosure"))
             res = publish.publish(out, meta, cfg)
             sub = submit.submit(c, res or {})
