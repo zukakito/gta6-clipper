@@ -48,7 +48,8 @@ Decide:
 1. keep: false if ANY of these is true: the stream is idle/AFK/sleeping/a dark or empty room/BRB or starting screen;
    no GTA 6 gameplay is happening; the streamer is not part of the moment; sexual content, nudity or strip-club
    scenes (even if covered by an emoji or censor graphic); graphic gore; slurs/hate; real-world personal info;
-   negative portrayal of the streamer; nothing interesting happens (no clear setup and payoff); or anything breaks
+   negative portrayal of the streamer; nothing interesting happens (no clear setup and payoff); the talk is
+   mumbled, incoherent or needs outside context to follow; the moment is mostly a loading/fail/black screen; or anything breaks
    the campaign rules. Otherwise true. Be strict - campaign reviewers reject weak clips.
 2. start, end: the best self-contained cut between {minlen} and {maxlen} seconds. Start right before the
    setup (strong first 2 seconds), end right after the payoff/reaction. Use transcript times.
