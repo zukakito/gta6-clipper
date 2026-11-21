@@ -3,7 +3,7 @@
 publisher = youtube_api  -> your Google Cloud project (needs YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN).
                             Until Google approves the project's API audit, YouTube forces these uploads to private.
 publisher = upload_post  -> Upload-Post free plan (UPLOAD_POST_API_KEY, UPLOAD_POST_USER). 10 uploads/month free.
-publisher = dry_run      -> nothing is uploaded; the clip is kept as a workflow artifact for review.
+publisher = dry_run      -> nothing is uploaded to YouTube; the clip is still stored privately in Google Drive.
 """
 from __future__ import annotations
 
