@@ -45,15 +45,18 @@ def _rank_models(key: str) -> list[str]:
     return out
 
 
+_failures = 0          # consecutive calls that failed completely; after 2, skip Gemini for the rest of the run
+
+
 def available() -> bool:
-    return bool(env("GEMINI_API_KEY"))
+    return bool(env("GEMINI_API_KEY")) and _failures < 2
 
 
-def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries: int = 4,
+def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries: int = 3,
         images: list[bytes] | None = None) -> str | dict | list | None:
-    global _models
+    global _models, _failures
     key = env("GEMINI_API_KEY")
-    if not key:
+    if not key or _failures >= 2:
         return None
     if _models is None:
         _models = _rank_models(key)
@@ -65,7 +68,7 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries:
     for attempt in range(retries):
         model = _models[attempt % len(_models)]
         try:
-            r = requests.post(URL.format(model=model), params={"key": key}, json=body, timeout=45)
+            r = requests.post(URL.format(model=model), params={"key": key}, json=body, timeout=25)
             if r.status_code in (404, 429, 500, 503):   # retired / rate-limited / overloaded -> next model
                 log.warning("gemini: %s returned %s, trying another model", model, r.status_code)
                 if r.status_code == 404 and len(_models) > 1:
@@ -74,6 +77,7 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries:
                 continue
             r.raise_for_status()
             text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            _failures = 0
             if not want_json:
                 return text.strip()
             text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
@@ -81,4 +85,7 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, retries:
         except Exception as e:  # noqa: BLE001 - never let the LLM kill a run
             log.warning("gemini call failed (%s/%s) on %s: %s", attempt + 1, retries, model, e)
             time.sleep(3)
+    _failures += 1
+    if _failures >= 2:
+        log.warning("gemini: unavailable twice in a row - using heuristics for the rest of this run")
     return None

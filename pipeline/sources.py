@@ -25,10 +25,17 @@ def _listing_url(src: str) -> str:
 
 def recent_vods(src: str, lookback_hours: int, limit: int = 4, since: str | None = None) -> list[dict]:
     """Return [{id, url, title, duration, started_at(datetime|None), is_live}] newest first."""
-    url = _listing_url(src)
-    with yt_dlp.YoutubeDL({**YDL_BASE, "extract_flat": "in_playlist", "playlistend": limit * 2}) as ydl:
-        listing = ydl.extract_info(url, download=False) or {}
-    entries = [e for e in (listing.get("entries") or []) if e][: limit * 2]
+    entries = []
+    for url in dict.fromkeys([_listing_url(src), src.rstrip("/") + "/videos"]):
+        try:
+            with yt_dlp.YoutubeDL({**YDL_BASE, "ignoreerrors": False, "extract_flat": "in_playlist",
+                                   "playlistend": limit * 2}) as ydl:
+                listing = ydl.extract_info(url, download=False) or {}
+            entries = [e for e in (listing.get("entries") or []) if e][: limit * 2]
+        except Exception as ex:  # noqa: BLE001
+            log.warning("sources: listing %s failed: %s", url, str(ex)[:300])
+        if entries:
+            break
 
     cutoff = now() - dt.timedelta(hours=lookback_hours)
     if since:

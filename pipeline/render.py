@@ -116,7 +116,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     for ch in chunks:
         for i, w in enumerate(ch):
             s = w["s"] - clip_start
-            e = (ch[i + 1]["s"] if i + 1 < len(ch) else w["e"]) - clip_start
+            e = min((ch[i + 1]["s"] if i + 1 < len(ch) else w["e"]) - clip_start, s + 1.2)  # never linger
             parts = []
             for j, x in enumerate(ch):
                 t = _clean(x["w"]).upper()

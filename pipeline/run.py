@@ -209,7 +209,7 @@ def main() -> None:
     candidates = load_state("candidates.json", [])
     posted = load_state("posted.json", [])
 
-    made = produce(cfg, candidates, posted, deadline - 25 * 60)   # render what we already found first
+    made = produce(cfg, candidates, posted, min(deadline - 25 * 60, t0 + 15 * 60))   # render queued moments first, max 15 min
     discover_moments(cfg, vod_state, candidates, deadline - 20 * 60)
     made += produce(cfg, candidates, posted, deadline)
 
