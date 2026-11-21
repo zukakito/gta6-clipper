@@ -190,5 +190,29 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_23919.mp4",
+    "title": "Lacy cannot stop singing to GTA 6 radio #LACY #shorts",
+    "posted_at": "2026-11-20T23:58:14+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 23898.5,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293505968_24869.mp4",
+    "title": "LACY Gets Completely Hyped in GTA 6 #LACY #shorts",
+    "posted_at": "2026-11-21T00:00:20+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2935059680",
+    "vod_offset": 24839.2,
+    "submission": "skipped",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
