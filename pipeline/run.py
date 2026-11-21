@@ -130,6 +130,7 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                                       c.get("layout") or clip_cfg["layout"], name,
                                       overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]))
             meta["paid"] = bool(c.get("paid_disclosure"))
+            meta["playlist"] = f"{curate.streamer_name(c)} GTA 6 Moments"
             res = publish.publish(out, meta, cfg)
             sub = submit.submit(c, res or {})
             rec = {"campaign_id": c["id"], "file": out.name, "title": meta["title"], "posted_at": iso(),
