@@ -11,7 +11,7 @@ import datetime as dt
 import time
 import traceback
 
-from . import curate, highlights, publish, render, safety, scout, sources, submit
+from . import curate, highlights, llm, publish, render, safety, scout, sources, submit
 from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_state, settings, slug
 
 RUN_BUDGET_SEC = 50 * 60
@@ -76,6 +76,9 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
     queue.sort(key=lambda x: (-parse_iso(x["found_at"]).timestamp() // 3600, -x["score"]))
     for cand in queue:
         if time.time() > deadline or made >= p_cfg["max_uploads_per_run"]:
+            break
+        if p_cfg.get("require_llm", True) and not llm.available():
+            log.warning("produce: no LLM provider is answering (quota/outage) - leaving %d moments queued", len(queue))
             break
         if parse_iso(cand["found_at"]) < now() - dt.timedelta(hours=36):
             cand["status"] = "stale"
