@@ -65,7 +65,9 @@ def run() -> dict:
             log.warning("scout: could not read %s: %s", board, e)
             continue
 
-        found = llm.ask(EXTRACT_PROMPT.format(links="\n".join(links[:200]), text=text), want_json=True, temperature=0) if llm.available() else None
+        found = llm.ask(EXTRACT_PROMPT.format(links="\n".join(links[:80]), text=text[:9000]), want_json=True, temperature=0) if llm.available() else None
+        if isinstance(found, dict):   # JSON mode returns an object: unwrap {"campaigns": [...]}
+            found = next((v for v in found.values() if isinstance(v, list)), None)
         if not isinstance(found, list):
             # Fallback without an LLM: record raw campaign links containing GTA keywords nearby.
             found = []
