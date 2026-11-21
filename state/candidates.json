@@ -1049,7 +1049,8 @@
     "win_start": 18719.0,
     "win_end": 18794.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1061,7 +1062,8 @@
     "win_start": 18579.0,
     "win_end": 18654.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (4 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1073,7 +1075,8 @@
     "win_start": 18869.0,
     "win_end": 18944.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1085,7 +1088,8 @@
     "win_start": 20559.0,
     "win_end": 20634.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1097,7 +1101,8 @@
     "win_start": 18219.0,
     "win_end": 18294.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1109,7 +1114,8 @@
     "win_start": 20349.0,
     "win_end": 20424.0,
     "found_at": "2026-11-21T07:14:06+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1121,7 +1127,8 @@
     "win_start": 3510.0,
     "win_end": 3585.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1133,7 +1140,8 @@
     "win_start": 530.0,
     "win_end": 605.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1145,7 +1153,8 @@
     "win_start": 760.0,
     "win_end": 835.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1157,7 +1166,8 @@
     "win_start": 2115.0,
     "win_end": 2190.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1169,7 +1179,8 @@
     "win_start": 1570.0,
     "win_end": 1645.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "bobby-vanriper-gta6",
@@ -1181,7 +1192,8 @@
     "win_start": 2475.0,
     "win_end": 2550.0,
     "found_at": "2026-11-21T07:15:05+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1193,7 +1205,8 @@
     "win_start": 44740.0,
     "win_end": 44815.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1205,7 +1218,8 @@
     "win_start": 45290.0,
     "win_end": 45365.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1217,7 +1231,8 @@
     "win_start": 45730.0,
     "win_end": 45805.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1229,7 +1244,8 @@
     "win_start": 46390.0,
     "win_end": 46465.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1241,7 +1257,8 @@
     "win_start": 45065.0,
     "win_end": 45140.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1253,7 +1270,8 @@
     "win_start": 43620.0,
     "win_end": 43695.0,
     "found_at": "2026-11-21T07:15:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1265,7 +1283,8 @@
     "win_start": 19685.0,
     "win_end": 19745.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1277,7 +1296,8 @@
     "win_start": 19150.0,
     "win_end": 19225.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1289,7 +1309,8 @@
     "win_start": 18760.0,
     "win_end": 18835.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1301,7 +1322,8 @@
     "win_start": 18555.0,
     "win_end": 18630.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1313,7 +1335,8 @@
     "win_start": 18405.0,
     "win_end": 18480.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -1325,7 +1348,8 @@
     "win_start": 17500.0,
     "win_end": 17575.0,
     "found_at": "2026-11-21T07:15:58+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1337,7 +1361,8 @@
     "win_start": 23542.0,
     "win_end": 23617.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1349,7 +1374,8 @@
     "win_start": 23877.0,
     "win_end": 23952.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1361,7 +1387,8 @@
     "win_start": 24947.0,
     "win_end": 25017.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1373,7 +1400,8 @@
     "win_start": 21987.0,
     "win_end": 22062.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1385,7 +1413,8 @@
     "win_start": 22147.0,
     "win_end": 22222.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1397,7 +1426,8 @@
     "win_start": 22982.0,
     "win_end": 23057.0,
     "found_at": "2026-11-21T07:16:53+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1421,7 +1451,8 @@
     "win_start": 1555.0,
     "win_end": 1630.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1433,7 +1464,8 @@
     "win_start": 1980.0,
     "win_end": 2055.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1445,7 +1477,8 @@
     "win_start": 2755.0,
     "win_end": 2830.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1457,7 +1490,8 @@
     "win_start": 395.0,
     "win_end": 470.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1469,7 +1503,8 @@
     "win_start": 1260.0,
     "win_end": 1335.0,
     "found_at": "2026-11-21T07:17:30+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1493,7 +1528,8 @@
     "win_start": 41033.0,
     "win_end": 41108.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1505,7 +1541,8 @@
     "win_start": 41703.0,
     "win_end": 41778.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1517,7 +1554,8 @@
     "win_start": 40613.0,
     "win_end": 40688.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1529,7 +1567,8 @@
     "win_start": 39063.0,
     "win_end": 39138.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1541,7 +1580,8 @@
     "win_start": 41833.0,
     "win_end": 41908.0,
     "found_at": "2026-11-21T07:18:18+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1553,7 +1593,8 @@
     "win_start": 39165.0,
     "win_end": 39240.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1565,7 +1606,8 @@
     "win_start": 40725.0,
     "win_end": 40800.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1577,7 +1619,8 @@
     "win_start": 40575.0,
     "win_end": 40650.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1589,7 +1632,8 @@
     "win_start": 40895.0,
     "win_end": 40970.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1601,7 +1645,8 @@
     "win_start": 39315.0,
     "win_end": 39390.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -1613,6 +1658,241 @@
     "win_start": 38845.0,
     "win_end": 38920.0,
     "found_at": "2026-11-21T07:18:51+00:00",
-    "status": "new"
+    "status": "new",
+    "deferrals": 2
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2935613960",
+    "vod_url": "https://www.twitch.tv/videos/2935613960",
+    "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 07:51",
+    "t": 22514.0,
+    "score": 1.5977119475273276,
+    "win_start": 22469.0,
+    "win_end": 22544.0,
+    "found_at": "2026-11-21T07:51:18+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2935613960",
+    "vod_url": "https://www.twitch.tv/videos/2935613960",
+    "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 07:51",
+    "t": 22234.0,
+    "score": 1.3107961562362893,
+    "win_start": 22189.0,
+    "win_end": 22264.0,
+    "found_at": "2026-11-21T07:51:18+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2935613960",
+    "vod_url": "https://www.twitch.tv/videos/2935613960",
+    "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 07:51",
+    "t": 23294.0,
+    "score": 1.2591502277683209,
+    "win_start": 23249.0,
+    "win_end": 23324.0,
+    "found_at": "2026-11-21T07:51:18+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2935613960",
+    "vod_url": "https://www.twitch.tv/videos/2935613960",
+    "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 07:51",
+    "t": 23104.0,
+    "score": 1.243507725181646,
+    "win_start": 23059.0,
+    "win_end": 23134.0,
+    "found_at": "2026-11-21T07:51:18+00:00",
+    "status": "rejected",
+    "reason": "too little speech (3 words)"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2935613960",
+    "vod_url": "https://www.twitch.tv/videos/2935613960",
+    "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 07:51",
+    "t": 22904.0,
+    "score": 1.1235281686047454,
+    "win_start": 22859.0,
+    "win_end": 22934.0,
+    "found_at": "2026-11-21T07:51:18+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2935613960",
+    "vod_url": "https://www.twitch.tv/videos/2935613960",
+    "vod_title": "BEATING GTA 6 RIGHT NOW *FINALE* 2026-11-21 07:51",
+    "t": 23454.0,
+    "score": 1.0375962763107704,
+    "win_start": 23409.0,
+    "win_end": 23484.0,
+    "found_at": "2026-11-21T07:51:18+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2935155935",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_title": "[69/365] 🌴🚔 PLAYING GTA FOR 2 HOURS 🌴🚔 THEN WE IRL IN THE REAL VICE CITY 🌴🚔",
+    "t": 4810.0,
+    "score": 2.2283461083542835,
+    "win_start": 4765.0,
+    "win_end": 4840.0,
+    "found_at": "2026-11-21T07:52:02+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2935155935",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_title": "[69/365] 🌴🚔 PLAYING GTA FOR 2 HOURS 🌴🚔 THEN WE IRL IN THE REAL VICE CITY 🌴🚔",
+    "t": 5570.0,
+    "score": 1.7477869038052152,
+    "win_start": 5525.0,
+    "win_end": 5600.0,
+    "found_at": "2026-11-21T07:52:02+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2935155935",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_title": "[69/365] 🌴🚔 PLAYING GTA FOR 2 HOURS 🌴🚔 THEN WE IRL IN THE REAL VICE CITY 🌴🚔",
+    "t": 6200.0,
+    "score": 1.717345517657219,
+    "win_start": 6155.0,
+    "win_end": 6230.0,
+    "found_at": "2026-11-21T07:52:02+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2935155935",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_title": "[69/365] 🌴🚔 PLAYING GTA FOR 2 HOURS 🌴🚔 THEN WE IRL IN THE REAL VICE CITY 🌴🚔",
+    "t": 3620.0,
+    "score": 1.6867794721249527,
+    "win_start": 3600.0,
+    "win_end": 3650.0,
+    "found_at": "2026-11-21T07:52:02+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2935155935",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_title": "[69/365] 🌴🚔 PLAYING GTA FOR 2 HOURS 🌴🚔 THEN WE IRL IN THE REAL VICE CITY 🌴🚔",
+    "t": 7175.0,
+    "score": 1.5925579356338506,
+    "win_start": 7130.0,
+    "win_end": 7200.0,
+    "found_at": "2026-11-21T07:52:02+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2935155935",
+    "vod_url": "https://www.twitch.tv/videos/2935155935",
+    "vod_title": "[69/365] 🌴🚔 PLAYING GTA FOR 2 HOURS 🌴🚔 THEN WE IRL IN THE REAL VICE CITY 🌴🚔",
+    "t": 5750.0,
+    "score": 1.3732287310147888,
+    "win_start": 5705.0,
+    "win_end": 5780.0,
+    "found_at": "2026-11-21T07:52:02+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2935159348",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 07:52",
+    "t": 47140.0,
+    "score": 1.6017142137778617,
+    "win_start": 47135.0,
+    "win_end": 47170.0,
+    "found_at": "2026-11-21T07:52:21+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2935159348",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 07:52",
+    "t": 48780.0,
+    "score": 1.560340569322897,
+    "win_start": 48735.0,
+    "win_end": 48810.0,
+    "found_at": "2026-11-21T07:52:21+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2935159348",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 07:52",
+    "t": 48420.0,
+    "score": 1.5372370809357454,
+    "win_start": 48375.0,
+    "win_end": 48450.0,
+    "found_at": "2026-11-21T07:52:21+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2935159348",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 07:52",
+    "t": 47480.0,
+    "score": 1.3077778853866866,
+    "win_start": 47435.0,
+    "win_end": 47510.0,
+    "found_at": "2026-11-21T07:52:21+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2935159348",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 07:52",
+    "t": 49280.0,
+    "score": 1.212701251761683,
+    "win_start": 49235.0,
+    "win_end": 49310.0,
+    "found_at": "2026-11-21T07:52:21+00:00",
+    "status": "new",
+    "deferrals": 1
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2935159348",
+    "vod_url": "https://www.twitch.tv/videos/2935159348",
+    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 07:52",
+    "t": 47650.0,
+    "score": 1.210437490663327,
+    "win_start": 47605.0,
+    "win_end": 47680.0,
+    "found_at": "2026-11-21T07:52:21+00:00",
+    "status": "new",
+    "deferrals": 1
   }
 ]
