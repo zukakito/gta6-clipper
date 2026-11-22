@@ -953,7 +953,8 @@
     "win_start": 39509,
     "win_end": 39584,
     "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -965,7 +966,8 @@
     "win_start": 38559,
     "win_end": 38634,
     "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The clip contains sexual content with a woman on the streamer’s lap and explicit language, violating campaign rules that prohibit sexual content, nudity, or strip‑club scenes. No valid start/end or hook can be provided."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -1001,7 +1003,8 @@
     "win_start": 41484,
     "win_end": 41559,
     "found_at": "2026-11-21T06:48:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows no GTA 6 gameplay, only idle chat about school shootings, no clear setup or payoff, and violates campaign rules by discussing sensitive content. No suitable clip."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -1013,7 +1016,8 @@
     "win_start": 42494,
     "win_end": 42569,
     "found_at": "2026-11-21T06:48:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows no gameplay, only chat chatter with no clear setup or payoff, and no mention of GTA 6 content. It does not meet campaign rules."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -1025,7 +1029,8 @@
     "win_start": 41914,
     "win_end": 41989,
     "found_at": "2026-11-21T06:48:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript indicates the streamer is confused and not engaged in gameplay; no clear setup or payoff, no GTA 6 action, and the content does not meet campaign rules."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -1037,7 +1042,8 @@
     "win_start": 41024,
     "win_end": 41099,
     "found_at": "2026-11-21T06:48:23+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only idle chat and no GTA 6 gameplay. The streamer is not part of any moment, no clear setup or payoff, and the content does not meet campaign rules. No start/end, hook, title, description, or tags are provided."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -4224,5 +4230,252 @@
     "found_at": "2026-11-22T07:13:15+00:00",
     "status": "rejected",
     "reason": "The transcript shows idle chatter with no GTA 6 gameplay, no clear setup or payoff, and no streamer involvement in a notable moment. This violates campaign rules for content, making the clip unsuitable."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2936518555",
+    "vod_url": "https://www.twitch.tv/videos/2936518555",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 80% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-22 08:31",
+    "t": 43633.0,
+    "score": 1.332634193577098,
+    "win_start": 43588.0,
+    "win_end": 43663.0,
+    "found_at": "2026-11-22T08:32:13+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible; streamer is only talking about travel plans, no action, no setup/payoff, violates campaign rules."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2936518555",
+    "vod_url": "https://www.twitch.tv/videos/2936518555",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 80% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-22 08:31",
+    "t": 42943.0,
+    "score": 1.2963601262578888,
+    "win_start": 42898.0,
+    "win_end": 42973.0,
+    "found_at": "2026-11-22T08:32:13+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay, idle talk, no interesting moment, violates campaign rules."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2936518555",
+    "vod_url": "https://www.twitch.tv/videos/2936518555",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 80% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-22 08:31",
+    "t": 43763.0,
+    "score": 1.2888828579606189,
+    "win_start": 43718.0,
+    "win_end": 43793.0,
+    "found_at": "2026-11-22T08:32:13+00:00",
+    "status": "rejected",
+    "reason": "The clip contains no GTA 6 gameplay, the streamer is idle discussing travel plans, no action or reaction to in-game events, violating campaign rules."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2936518555",
+    "vod_url": "https://www.twitch.tv/videos/2936518555",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 80% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-22 08:31",
+    "t": 42323.0,
+    "score": 1.2658024993063797,
+    "win_start": 42278.0,
+    "win_end": 42353.0,
+    "found_at": "2026-11-22T08:32:13+00:00",
+    "status": "rejected",
+    "reason": "too little speech (4 words)"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2936518555",
+    "vod_url": "https://www.twitch.tv/videos/2936518555",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 80% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-22 08:31",
+    "t": 43493.0,
+    "score": 1.261340306554503,
+    "win_start": 43448.0,
+    "win_end": 43523.0,
+    "found_at": "2026-11-22T08:32:13+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay, idle talk, no streamer action, violates campaign rules"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2936518555",
+    "vod_url": "https://www.twitch.tv/videos/2936518555",
+    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ 80% FINISHED 🍹️ IN VICE CITY 🌴️ LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-22 08:31",
+    "t": 40808.0,
+    "score": 1.2298388686894266,
+    "win_start": 40763.0,
+    "win_end": 40838.0,
+    "found_at": "2026-11-22T08:32:13+00:00",
+    "status": "rejected",
+    "reason": "too dark (mean luminance 23) - idle/sleeping/camera off"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️",
+    "t": 24080.0,
+    "score": 1.188220804343707,
+    "win_start": 24035.0,
+    "win_end": 24110.0,
+    "found_at": "2026-11-22T08:32:27+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay; only chat chatter, idle stream, violates campaign rules."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-22 08:32",
+    "t": 20592.0,
+    "score": 1.5560409944418356,
+    "win_start": 20547.0,
+    "win_end": 20622.0,
+    "found_at": "2026-11-22T08:32:47+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows repetitive, incoherent dialogue with no clear gameplay action, setup, payoff, or streamer reaction. It appears to be idle or filler content, violating campaign rules for interesting moments and clear content. No valid start/end times can be identified."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-22 08:32",
+    "t": 19192.0,
+    "score": 1.553071472320744,
+    "win_start": 19147.0,
+    "win_end": 19222.0,
+    "found_at": "2026-11-22T08:32:47+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows incoherent dialogue with no clear GTA 6 gameplay or notable moment. The content appears to be idle/AFK and does not meet campaign rules for a clip. No start/end or hook can be provided."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-22 08:32",
+    "t": 19922.0,
+    "score": 1.5510682792509338,
+    "win_start": 19877.0,
+    "win_end": 19952.0,
+    "found_at": "2026-11-22T08:32:47+00:00",
+    "status": "rejected",
+    "reason": "The clip contains only idle chat with no GTA 6 gameplay, no clear setup or payoff, and the streamer is not actively playing. It violates the campaign rule that only active gameplay moments may be used."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-22 08:32",
+    "t": 18802.0,
+    "score": 1.5138817742852866,
+    "win_start": 18757.0,
+    "win_end": 18832.0,
+    "found_at": "2026-11-22T08:32:47+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows incoherent, unrelated dialogue with no clear GTA 6 gameplay or funny moment. The streamer is not actively playing, no setup or payoff, and the content appears idle/AFK. This violates campaign rules for a playable clip."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-22 08:32",
+    "t": 20212.0,
+    "score": 1.495397851001697,
+    "win_start": 20167.0,
+    "win_end": 20242.0,
+    "found_at": "2026-11-22T08:32:47+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only chat spam and no visible GTA 6 gameplay; the streamer is not actively playing, and the content does not meet campaign rules for a clip."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-22 08:32",
+    "t": 19642.0,
+    "score": 1.4783655373440445,
+    "win_start": 19597.0,
+    "win_end": 19672.0,
+    "found_at": "2026-11-22T08:32:47+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only idle chat with no GTA 6 gameplay, no clear setup or payoff, and no interaction from AsianJeff related to gameplay. This violates campaign rules for content relevance and quality."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936935740",
+    "vod_url": "https://www.twitch.tv/videos/2936935740",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-22 08:32",
+    "t": 13730.0,
+    "score": 1.7401923866575022,
+    "win_start": 13685.0,
+    "win_end": 13760.0,
+    "found_at": "2026-11-22T08:33:42+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible; transcript shows idle chat with no clear setup or payoff, violating campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936935740",
+    "vod_url": "https://www.twitch.tv/videos/2936935740",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-22 08:32",
+    "t": 10955.0,
+    "score": 1.703125226722582,
+    "win_start": 10910.0,
+    "win_end": 10985.0,
+    "found_at": "2026-11-22T08:33:42+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains only chat dialogue with no GTA 6 gameplay, no clear setup or payoff, and the streamer is not part of the moment. This violates the campaign rules and does not provide a suitable clip."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936935740",
+    "vod_url": "https://www.twitch.tv/videos/2936935740",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-22 08:32",
+    "t": 13385.0,
+    "score": 1.5975031974953993,
+    "win_start": 13340.0,
+    "win_end": 13415.0,
+    "found_at": "2026-11-22T08:33:42+00:00",
+    "status": "rejected",
+    "reason": "The transcript does not contain a clear GTA 6 gameplay moment with setup and payoff. The dialogue is fragmented, lacks context, and there is no identifiable action or reaction that satisfies the campaign rules. Therefore, this clip should not be kept."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936935740",
+    "vod_url": "https://www.twitch.tv/videos/2936935740",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-22 08:32",
+    "t": 12735.0,
+    "score": 1.5943591574667026,
+    "win_start": 12690.0,
+    "win_end": 12765.0,
+    "found_at": "2026-11-22T08:33:42+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only chat commentary with no GTA 6 gameplay, no clear setup and payoff, and the streamer is not actively playing. This does not meet campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936935740",
+    "vod_url": "https://www.twitch.tv/videos/2936935740",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-22 08:32",
+    "t": 12915.0,
+    "score": 1.5572431785974477,
+    "win_start": 12870.0,
+    "win_end": 12945.0,
+    "found_at": "2026-11-22T08:33:42+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay present; transcript shows idle chat and no clear setup or payoff."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936935740",
+    "vod_url": "https://www.twitch.tv/videos/2936935740",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-22 08:32",
+    "t": 12325.0,
+    "score": 1.547851321549988,
+    "win_start": 12280.0,
+    "win_end": 12355.0,
+    "found_at": "2026-11-22T08:33:42+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible, streamer idle with chat spike, no clear setup or payoff, violates campaign rules."
   }
 ]
