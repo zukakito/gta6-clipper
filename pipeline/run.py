@@ -135,6 +135,7 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                                       overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]))
             meta["paid"] = bool(c.get("paid_disclosure"))
             meta["playlist"] = f"{curate.streamer_name(c)} GTA 6 Moments"
+            meta["streamer"] = curate.streamer_name(c)
             stored = drive.save(out, meta, c, {"vod_url": cand["vod_url"], "offset": cand["win_start"] + meta["start"]},
                                 cfg.get("storage", {}).get("drive_folder", "Zukakito Clips"))
             res = publish.publish(out, meta, cfg)
