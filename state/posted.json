@@ -795,5 +795,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293660099_11355.mp4",
+    "title": "Diego Loveless battles insane GTA 6 traffic jam #shorts",
+    "posted_at": "2026-11-22T02:26:31+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_offset": 11350.8,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1tAceLutqkw1M4Cni3NzhvUDG-sgKzWwK/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293660099_11485.mp4",
+    "title": "Diego Loveless tries to rob a store for $13 #shorts",
+    "posted_at": "2026-11-22T02:27:38+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_offset": 11474.5,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1Hvw0j9lEF3eRKGFqGjv-VLaPMT8qRolo/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
