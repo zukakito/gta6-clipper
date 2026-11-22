@@ -54,14 +54,53 @@ Decide:
 2. start, end: the best self-contained cut between {minlen} and {maxlen} seconds. Start right before the
    setup (strong first 2 seconds), end right after the payoff/reaction. Prefer 30-45 s so a new viewer gets the whole
    story: setup, the moment, and the streamer's reaction. Use transcript times.
-3. hook: a clear one-line summary of the scene, max 6 words, that tells a new viewer exactly what happens
-   (good: "Bridge mishap turns hilarious", "Cops chase him into the sea"; bad: "Wait for it", "Crazy moment").
-   No emojis, no clickbait lies, no spoilers of major story twists.
-4. title: YouTube title under 70 chars, specific and curiosity-driven, includes the streamer's name, ends with " #shorts".
+3. hook: a clear one-line summary of the scene, max 6 words, that says concretely WHAT HAPPENS (who does what)
+   (good: "He robs a store for $13", "Cops lock him inside the store", "Car flips off the bridge";
+   bad: "Wait for it", "Crazy moment", "Epic car chase surprise", "Lost him, hilarious reaction",
+   "Video tape mystery revealed"). Never use hype words (epic, hilarious, insane, crazy, wild, shock, mystery,
+   surprise, revealed, chaos). No emojis, no clickbait, no spoilers of major story twists.
+4. title: YouTube title under 70 chars, specific (what actually happens), includes the streamer's name, no hype
+   words, ends with " #shorts".
 5. description: 2 short lines describing the moment + required names/hashtags + "Clip from {streamer}'s GTA 6 stream."
 6. tags: 8-12 lowercase tags.
 Return JSON: {{"keep": bool, "reason": str, "start": number, "end": number, "hook": str, "title": str, "description": str, "tags": [str]}}
 """
+
+
+# Hard filters on what the model wrote (it sometimes ignores the prompt).
+BANNED_TOPIC = re.compile(r"strip[\s-]?club|stripper|lap[\s-]?dance|pole[\s-]?danc|twerk|\bnud(?:e|ity)\b|naked|porn|onlyfans|\bsex(?:y|ual)?\b|brothel|escort", re.I)
+HYPE = re.compile(r"\b(?:epic|hilarious|insane|crazy|wild|shock(?:ing|ed)?|mystery|surprise[sd]?|revealed|chaos|chaotic|"
+                  r"unbelievable|you won'?t believe|gone wrong|must see|jaw[- ]dropping)\b", re.I)
+
+REWRITE_PROMPT = """Rewrite the hook and title of this GTA 6 YouTube Short so they say concretely what happens.
+Streamer: {streamer}
+Current hook: {hook}
+Current title: {title}
+Transcript: {transcript}
+Rules: hook max 6 words; title under 70 chars, includes "{streamer}", ends with " #shorts". Never use these words:
+epic, hilarious, insane, crazy, wild, shock, mystery, surprise, revealed, chaos. No emojis, no clickbait.
+Return JSON: {{"hook": str, "title": str}}"""
+
+
+def _strip_hype(text: str) -> str:
+    text = HYPE.sub("", text or "")
+    text = re.sub(r"\s+([,!?:])", r"\1", re.sub(r"\s{2,}", " ", text))
+    return text.strip(" ,:-!")
+
+
+def _fix_wording(res: dict, words: list[dict], streamer: str) -> None:
+    """Replace hype/clickbait hooks and titles with a concrete one-line summary."""
+    if not (HYPE.search(res.get("hook") or "") or HYPE.search(res.get("title") or "")):
+        return
+    new = None
+    if llm.available():
+        new = llm.ask(REWRITE_PROMPT.format(streamer=streamer, hook=res.get("hook"), title=res.get("title"),
+                                            transcript=_transcript_text(words)[:3000]), want_json=True, temperature=0.3)
+    for k in ("hook", "title"):
+        v = (new or {}).get(k) if isinstance(new, dict) else None
+        res[k] = v if v and not HYPE.search(v) else _strip_hype(res.get(k) or "")
+    log.info("curate: reworded hook/title -> %r / %r", res.get("hook"), res.get("title"))
+
 
 
 def _transcript_text(words: list[dict]) -> str:
@@ -121,6 +160,11 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
     if not res.get("keep", True):   # rejected: the model often leaves start/end empty
         log.info("curate: keep=False %s: %s", campaign["id"], str(res.get("reason"))[:160])
         return res
+    text = " ".join(str(res.get(k) or "") for k in ("title", "hook", "description"))
+    if BANNED_TOPIC.search(text):   # the model sometimes keeps these despite the prompt
+        log.info("curate: banned topic %s: %s", campaign["id"], res.get("title"))
+        return {**res, "keep": False, "reason": f"banned topic (sexual content): {BANNED_TOPIC.search(text).group(0)}"}
+    _fix_wording(res, words, streamer)
     # Clamp to valid ranges no matter what the model said.
     def num(v, default):
         try:
