@@ -157,19 +157,25 @@
   "twitchvod:v2936338171": {
     "url": "https://www.twitch.tv/videos/2936338171",
     "title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
-    "scanned_until": 7200.0,
-    "last_scan": "2026-11-21T21:46:23+00:00"
+    "scanned_until": 7926.0,
+    "last_scan": "2026-11-21T23:54:26+00:00"
   },
   "twitchvod:v2936524505": {
     "url": "https://www.twitch.tv/videos/2936524505",
     "title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 20:46",
-    "scanned_until": 8322.0,
-    "last_scan": "2026-11-21T23:00:15+00:00"
+    "scanned_until": 11922.0,
+    "last_scan": "2026-11-21T23:57:57+00:00"
   },
   "twitchvod:v2936600990": {
     "url": "https://www.twitch.tv/videos/2936600990",
     "title": "GTA Gaming & Gooning Marathon 2026-11-21 21:46",
-    "scanned_until": 3600.0,
-    "last_scan": "2026-11-21T22:58:14+00:00"
+    "scanned_until": 7200.0,
+    "last_scan": "2026-11-21T23:54:41+00:00"
+  },
+  "twitchvod:v2936683310": {
+    "url": "https://www.twitch.tv/videos/2936683310",
+    "title": "🗺️EXPLORING GTA 6🗺️ 2026-11-21 23:44",
+    "scanned_until": 2385.0,
+    "last_scan": "2026-11-21T23:54:16+00:00"
   }
 }
