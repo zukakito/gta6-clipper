@@ -769,5 +769,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kreekcraft-gta6",
+    "file": "kreekcraft-gta6_twitchvod-v293618318_32136.mp4",
+    "title": "KreekCraft Reacts to Cheat Code Ban in GTA 6 #shorts",
+    "posted_at": "2026-11-22T01:16:09+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936183180",
+    "vod_offset": 32131.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1zje2cq7cjOtawB9gmwQoP4WA0SwZEctw/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "file": "kai-cenat-gta6-pool_twitchvod-v293668331_2825.mp4",
+    "title": "Kai Cenat tries to rob a GTA 6 bank – chaos! #shorts",
+    "posted_at": "2026-11-22T01:18:12+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_offset": 2805.6,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/16ARAnwK9T9h61tRV1dGe3M2_RXk9u0mV/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
