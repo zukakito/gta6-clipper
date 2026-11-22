@@ -108,6 +108,11 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 log.info("rejected %s: no speech", name)
                 continue
             win_len = render.probe_duration(src)
+            ok, why = safety.gameplay_ok(src, 0, win_len, max_dead=0.4)   # cheap: skip black/loading windows before the LLM
+            if not ok:
+                cand["status"], cand["reason"] = "rejected", why
+                log.info("rejected %s before curate: %s", name, why)
+                continue
             meta = curate.curate(c, words, win_len, cand["t"] - cand["win_start"], clip_cfg,
                                  images=curate.frames(src, 0, win_len, n=4),
                                  require_llm=p_cfg.get("require_llm", True))
