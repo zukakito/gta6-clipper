@@ -1,6 +1,6 @@
 {
   "scout": {
-    "checked_at": "2026-11-22T21:47:09+00:00",
+    "checked_at": "2026-11-22T22:49:25+00:00",
     "new": 0,
     "known": 117,
     "youtube_open": 59,
@@ -44,10 +44,10 @@
       "GTA 6 x GTA Clipper Tool Campaign"
     ]
   },
-  "last_scout": "2026-11-22T21:47:09+00:00",
-  "last_run": "2026-11-22T21:59:40+00:00",
-  "run_seconds": 756,
-  "made_this_run": 0,
+  "last_scout": "2026-11-22T22:49:25+00:00",
+  "last_run": "2026-11-22T22:53:08+00:00",
+  "run_seconds": 241,
+  "made_this_run": 1,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "lacy-gta6-pool",
@@ -64,5 +64,7 @@
   "posted_total": 0,
   "queued_candidates": 0,
   "pending_submissions": 0,
-  "rendered_files": []
+  "rendered_files": [
+    "lacy-gta6-pool_twitchvod-v293746551_20490.mp4"
+  ]
 }

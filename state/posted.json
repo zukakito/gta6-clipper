@@ -925,5 +925,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293746551_20490.mp4",
+    "title": "Lacy frustrated by autosave not working #LACY #shorts",
+    "posted_at": "2026-11-22T22:50:52+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937465519",
+    "vod_offset": 20485.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1ol2aIUluCHL9i-2WEhNL5VJvW0qg7dNT",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
