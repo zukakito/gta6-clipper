@@ -42,7 +42,7 @@ A chat/audio spike happened near second {peak:.0f}.
 
 {transcript}
 
-If frames from this window are attached as images, look at them carefully.
+{vision}
 
 Decide:
 1. keep: false if ANY of these is true: the stream is idle/AFK/sleeping/a dark or empty room/BRB or starting screen;
@@ -66,6 +66,15 @@ Decide:
 Return JSON: {{"keep": bool, "reason": str, "start": number, "end": number, "hook": str, "title": str, "description": str, "tags": [str]}}
 """
 
+
+VISION_NOTE = "Frames from this window are attached as images: look at them carefully."
+BLIND_NOTE = ("You cannot see the video, only the transcript. A local check already confirmed the screen is not black "
+              "or a loading screen, and idle/static footage is checked again after you, so do NOT reject just because the "
+              "transcript doesn't describe "
+              "gameplay - streamers talk to chat while they play. Reject for 'no gameplay' only if the talk makes it clear "
+              "they are not playing (BRB, eating, sleeping, a long unrelated real-life story for the whole window). "
+              "Keep moments where the streamer clearly reacts to something happening (shock, laughter, panic, a chase, "
+              "a crash, a fail, a funny exchange).")
 
 # Hard filters on what the model wrote (it sometimes ignores the prompt).
 BANNED_TOPIC = re.compile(r"strip[\s-]?club|stripper|lap[\s-]?dance|pole[\s-]?danc|twerk|\bnud(?:e|ity)\b|naked|porn|onlyfans|\bsex(?:y|ual)?\b|brothel|escort", re.I)
@@ -144,7 +153,8 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
         res = llm.ask(CURATE_PROMPT.format(
             name=campaign["name"], streamer=streamer, must=", ".join(must) or "none",
             rules=(campaign.get("rules") or "none").strip(), dur=window_len, peak=peak_rel,
-            transcript=_transcript_text(words), minlen=minlen, maxlen=maxlen), want_json=True, temperature=0.5,
+            transcript=_transcript_text(words), minlen=minlen, maxlen=maxlen,
+            vision=VISION_NOTE if images and llm.first_provider() == "gemini" else BLIND_NOTE), want_json=True, temperature=0.5,
             images=images)
     if require_llm and (not isinstance(res, dict) or "keep" not in res):
         return {"defer": True, "reason": "no LLM available for cut/title - retry next run"}
