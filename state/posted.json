@@ -912,5 +912,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293688584_47435.mp4",
+    "title": "AsianJeff encounters weird language glitch in GTA 6 #shorts",
+    "posted_at": "2026-11-22T17:06:53+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_offset": 47424.2,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1HBffNtmgf1W3ubMClvRSXfx3e3wPq2S5",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
