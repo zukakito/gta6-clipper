@@ -1,10 +1,10 @@
-name: morning-digest
+name: publish-digest
 
-# Emails the Shorts made since the last digest to the owner's phone at about 05:00 India time
-# (= 18:30 New York, US prime time). Cron is UTC and GitHub may start scheduled runs a few minutes late.
+# Every 30 min: emails the owner the campaign links for Shorts that are going public now (the daily slot,
+# ~23:30 IST weekdays / ~20:30 IST weekends). Sends nothing when nothing is due. Manual run = test email.
 on:
   schedule:
-    - cron: "12 23 * * *"
+    - cron: "4,34 * * * *"
   workflow_dispatch:
 
 concurrency:
