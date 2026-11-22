@@ -184,5 +184,11 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, images: 
     return None
 
 
+def first_provider() -> str | None:
+    """The provider that will answer first (Groq is text-only; Gemini also sees images)."""
+    p = _providers()
+    return p[0] if p else None
+
+
 def can_see_images() -> bool:
     return "gemini" in _providers()
