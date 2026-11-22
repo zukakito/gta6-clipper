@@ -70,7 +70,11 @@ def run() -> dict:
 
         # Skip the LLM when the board hasn't changed (digits stripped so view/budget counters don't count),
         # but re-read it at least every `full_refresh_hours` to refresh budgets and status.
-        sig = hashlib.sha1((re.sub(r"\d", "", text) + "|".join(links)).encode()).hexdigest()
+        # Signature = the GTA-related lines only (digits and "x days ago"/"NEW" badges stripped), so budget counters and
+        # relative dates don't wake the LLM every hour; a new campaign title or link does.
+        gta_lines = sorted({re.sub(r"\d+|\b(new|ago|days?|hours?|minutes?|today|launched)\b", "", ln.lower()).strip()
+                            for ln in text.splitlines() if any(k in ln.lower() for k in kw)})
+        sig = hashlib.sha1(("\n".join(gta_lines) + "|".join(links)).encode()).hexdigest()
         prev = cache.get(board, {})
         fresh = prev.get("at") and now() - parse_iso(prev["at"]) < dt.timedelta(hours=cfg.get("full_refresh_hours", 6))
         if prev.get("sig") == sig and fresh:
