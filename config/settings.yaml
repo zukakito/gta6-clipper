@@ -36,7 +36,9 @@ clipping:
   layout: auto                     # auto = facecam on top + gameplay below when a webcam is found, else zoomed gameplay
 
 scout:
-  # Boards the scout reads every run to discover new GTA 6 campaigns.
+  # Boards the scout reads to discover new GTA 6 campaigns.
+  interval_hours: 1        # check boards every hour
+  full_refresh_hours: 6    # unchanged boards are only re-sent to the LLM this often (saves Groq quota)
   boards:
     - https://clipcpm.com/gta-6
     - https://gtaclipper.com/campaigns
