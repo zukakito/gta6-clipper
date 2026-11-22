@@ -938,5 +938,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293688584_73850.mp4",
+    "title": "AsianJeff asks mission progress #shorts",
+    "posted_at": "2026-11-22T23:58:35+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_offset": 73833.9,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1DFuCGxQgLX3DuDaNl0uCSx1cmYFOzKeC",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "file": "lacy-gta6-pool_twitchvod-v293746551_21295.mp4",
+    "title": "Lacy walks off into sunset with family #shorts",
+    "posted_at": "2026-11-22T23:59:23+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937465519",
+    "vod_offset": 21290.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1fw4D6dzwQhNhlvk4Y8Iix5HJm0M1iHD2",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
