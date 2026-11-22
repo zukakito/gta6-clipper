@@ -92,6 +92,10 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
             break
 
         c = camp[cand["campaign_id"]]
+        gap = clip_cfg.get("min_gap_same_vod_sec", 360)   # no near-duplicate clips from the same part of a stream
+        if any(p.get("vod_url") == cand["vod_url"] and abs(float(p.get("vod_offset") or -1e9) - cand["t"]) < gap for p in posted):
+            cand["status"], cand["reason"] = "rejected", f"too close to an existing clip from this VOD (<{gap}s)"
+            continue
         if c.get("format") == "long":
             made += produce_long(c, candidates, posted, cfg)
             continue
@@ -132,7 +136,8 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
             out = render.render_short(src, meta["start"], meta["end"], words, meta["hook"],
                                       c.get("overlay_text") or "", bool(c.get("paid_disclosure")),
                                       c.get("layout") or clip_cfg["layout"], name,
-                                      overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]))
+                                      overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]),
+                                      min_len=clip_cfg["short_min_sec"])
             meta["paid"] = bool(c.get("paid_disclosure"))
             meta["playlist"] = f"{curate.streamer_name(c)} GTA 6 Moments"
             meta["streamer"] = curate.streamer_name(c)
