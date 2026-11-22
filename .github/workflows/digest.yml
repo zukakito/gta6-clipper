@@ -1,0 +1,47 @@
+name: morning-digest
+
+# Emails the Shorts made since the last digest to the owner's phone at about 05:00 India time
+# (= 18:30 New York, US prime time). Cron is UTC and GitHub may start scheduled runs a few minutes late.
+on:
+  schedule:
+    - cron: "12 23 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+      DIGEST_TO: ${{ secrets.DIGEST_TO }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Python deps
+        run: pip install -q google-api-python-client google-auth PyYAML requests
+
+      - name: Send digest
+        run: python -m pipeline.digest ${{ github.event_name == 'workflow_dispatch' && '--force' || '' }}
+
+      - name: Save state
+        if: always()
+        run: |
+          git config user.name "clipper-bot"
+          git config user.email "clipper-bot@users.noreply.github.com"
+          git add state/digest.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "state: digest $(date -u +%FT%TZ) [skip ci]"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
