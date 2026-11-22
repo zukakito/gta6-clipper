@@ -11,7 +11,15 @@ posting:
   max_uploads_per_run: 2
   max_uploads_per_day: 6             # YouTube API quota: 10,000 units/day, one upload = 1,600
   min_minutes_between_uploads: 45
-  privacy: private                  # uploads land as private drafts; the owner reviews and publishes them in YouTube Studio
+  privacy: public                   # public = go public automatically on the schedule below; private = drafts for manual review
+  schedule:
+    # US-first timing. Inside this New York-time window a finished clip goes public right away (after lead_min);
+    # outside it the clip is uploaded now but scheduled to go public at the next window start, spaced
+    # min_minutes_between_uploads apart. 11:00-22:00 ET = 21:30-08:30 India time.
+    enabled: true
+    tz: America/New_York
+    window: ["11:00", "22:00"]
+    lead_min: 10
   # Where uploads go:
   #   youtube_api  -> your own Google Cloud project (public only after Google's audit)
   #   upload_post  -> Upload-Post free plan (10 public uploads/month) as a stop-gap
@@ -28,6 +36,7 @@ storage:
 clipping:
   short_min_sec: 30
   short_max_sec: 58
+  min_gap_same_vod_sec: 360         # skip moments within 6 min of a clip already made from the same stream
   long_target_min: 8               # long-form compilations, only for campaigns with format: long
   highlights_per_vod: 6            # candidate moments scored per VOD
   vod_lookback_hours: 48           # only clip VODs newer than this
