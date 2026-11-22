@@ -23,28 +23,38 @@ class PublishError(RuntimeError):
 def publish_time(p: dict) -> dt.datetime | None:
     """When a new Short should go public (UTC), or None to publish immediately.
 
-    US-first timing: inside the US window (default 11:00-22:00 New York time) a clip goes public right away
-    (after `lead_min`) - fresh launch-week moments win. Outside it, the clip is scheduled for the next window
-    start so its first test viewers are American. Scheduled clips are spaced `min_minutes_between_uploads` apart.
+    mode "slots" (default): one daily slot in New York time, chosen to suit the owner in India -
+    weekdays 13:00 ET (about 23:30 IST: US lunchtime + UK evening), weekends 10:00 ET (about 20:30 IST: US
+    weekend morning). Each clip goes into the next slot that is at least `lead_min` away; clips in the same
+    slot go public `spacing_min` apart. The morning-digest workflow emails the campaign links at that time.
+    mode "window": inside the window a clip goes public right away, otherwise at the next window start.
     """
     sch = p.get("schedule") or {}
     if not sch.get("enabled"):
         return None
     tz = ZoneInfo(sch.get("tz", "America/New_York"))
-    h0, m0 = map(int, sch.get("window", ["11:00", "22:00"])[0].split(":"))
-    h1, m1 = map(int, sch.get("window", ["11:00", "22:00"])[1].split(":"))
-    earliest = now() + dt.timedelta(minutes=sch.get("lead_min", 10))
-    local = earliest.astimezone(tz)
-    start = local.replace(hour=h0, minute=m0, second=0, microsecond=0)
-    end = local.replace(hour=h1, minute=m1, second=0, microsecond=0)
-    if local < start:
-        when = start
-    elif local > end:
-        when = start + dt.timedelta(days=1)
-    else:
-        when = local
-    when = when.astimezone(dt.timezone.utc)
+    earliest = (now() + dt.timedelta(minutes=sch.get("lead_min", 10))).astimezone(tz)
+    hm = lambda s: tuple(map(int, s.split(":")))   # noqa: E731
     st = load_state("schedule.json", {})
+    if sch.get("mode", "slots") == "slots":
+        slots = sch.get("slots", {"weekday": "13:00", "weekend": "10:00"})
+        for d in range(8):
+            day = (earliest + dt.timedelta(days=d)).date()
+            h, m = hm(slots["weekend" if day.weekday() >= 5 else "weekday"])
+            base = dt.datetime(day.year, day.month, day.day, h, m, tzinfo=tz)
+            if base >= earliest:
+                break
+        base = base.astimezone(dt.timezone.utc)
+        n = st.get("slot_count", 0) if st.get("slot") == iso(base) else 0
+        when = base + dt.timedelta(minutes=sch.get("spacing_min", 5) * n)
+        st.update(slot=iso(base), slot_count=n + 1, last_publish_at=iso(when))
+        save_state("schedule.json", st)
+        return when
+    (h0, m0), (h1, m1) = hm(sch.get("window", ["11:00", "22:00"])[0]), hm(sch.get("window", ["11:00", "22:00"])[1])
+    start = earliest.replace(hour=h0, minute=m0, second=0, microsecond=0)
+    end = earliest.replace(hour=h1, minute=m1, second=0, microsecond=0)
+    when = start if earliest < start else (start + dt.timedelta(days=1) if earliest > end else earliest)
+    when = when.astimezone(dt.timezone.utc)
     last = parse_iso(st["last_publish_at"]) if st.get("last_publish_at") else None
     if last and when < last + dt.timedelta(minutes=p.get("min_minutes_between_uploads", 45)):
         when = last + dt.timedelta(minutes=p.get("min_minutes_between_uploads", 45))
