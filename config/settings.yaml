@@ -11,13 +11,17 @@ posting:
   max_uploads_per_run: 2
   max_uploads_per_day: 6             # YouTube API quota: 10,000 units/day, one upload = 1,600
   min_minutes_between_uploads: 45
-  # private = upload as drafts; the 05:00 IST morning email (digest below) lists them so the owner sets each
-  # to Public from the phone at US prime time and submits its link. public = go public on the schedule below.
-  privacy: private
+  # public + schedule = upload now, go public automatically in the next daily slot (needs the API audit to pass).
+  # private = drafts only, for manual publishing.
+  privacy: public
   schedule:
-    # Only used with privacy: public. Inside this New York-time window a finished clip goes public right away
-    # (after lead_min); outside it, it is scheduled for the next window start, spaced min_minutes_between_uploads.
-    enabled: false
+    # Daily slots in New York time, picked for an owner in India: weekdays 13:00 ET (~23:30 IST, US lunchtime +
+    # UK evening), weekends 10:00 ET (~20:30 IST, US weekend morning). Clips in one slot go public spacing_min
+    # apart; the digest workflow emails the campaign links right then so they can be submitted within 30 min.
+    enabled: true
+    mode: slots
+    slots: {weekday: "13:00", weekend: "10:00"}
+    spacing_min: 5
     tz: America/New_York
     window: ["11:00", "22:00"]
     lead_min: 10
@@ -31,7 +35,9 @@ posting:
   require_llm: true
 
 digest:
-  # Morning email (.github/workflows/digest.yml, ~05:00 IST) from the owner's Gmail to the DIGEST_TO secret.
+  # Email at publish time (.github/workflows/digest.yml) from the owner's Gmail to the DIGEST_TO secret:
+  # every clip that has gone (or is about to go) public and hasn't been emailed yet, with its campaign link.
+  # Nothing is sent while publisher is dry_run.
   enabled: true
 
 storage:
