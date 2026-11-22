@@ -1,9 +1,9 @@
 {
   "scout": {
-    "checked_at": "2026-11-22T04:38:03+00:00",
-    "new": 1,
-    "known": 94,
-    "youtube_open": 40,
+    "checked_at": "2026-11-22T05:39:07+00:00",
+    "new": 11,
+    "known": 105,
+    "youtube_open": 51,
     "needs_review": [
       "Jack [GTA LOGO]",
       "$2,500 Pilat Clipping Campaign",
@@ -25,13 +25,21 @@
       "ClipUp Official GTA VI Clipup Logo Campaign",
       "Gattouz0 - Clipping GATTOUZ × GTA VI × 1WIN",
       "AsianJeff Clipping Campaign",
-      "Tokyo Girl GTA 6 Clipping Campaign"
+      "Tokyo Girl GTA 6 Clipping Campaign",
+      "Reach LACY GTA VI Marathon Pool Campaign",
+      "Clipped & Shipped Kai Cenat - $10,000 GTA 6 Pool Campaign",
+      "Launch Clipping BenDaDonnn x Puffco GTA 6",
+      "Reach LUXDROP Logo Clipping Campaign",
+      "Reach $5,000 Clix GTA VI Marathon Pool Campaign",
+      "Reach YourRAGE $5,000 GTA 6 Pool Campaign",
+      "NewsDaddy $5,000 Dylan Page GTA VI Marathon Campaign",
+      "ClipLaunch KreekCraft GTA 6 Clipping"
     ]
   },
-  "last_scout": "2026-11-22T04:38:03+00:00",
-  "last_run": "2026-11-22T04:56:45+00:00",
-  "run_seconds": 1163,
-  "made_this_run": 1,
+  "last_scout": "2026-11-22T05:39:07+00:00",
+  "last_run": "2026-11-22T05:45:36+00:00",
+  "run_seconds": 411,
+  "made_this_run": 2,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "kai-cenat-gta6-pool",
@@ -44,9 +52,10 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 6,
+  "queued_candidates": 10,
   "pending_submissions": 0,
   "rendered_files": [
-    "diegoloveless-gta6_twitchvod-v293660099_18145.mp4"
+    "kai-cenat-gta6-pool_twitchvod-v293668331_18185.mp4",
+    "kai-cenat-gta6-pool_twitchvod-v293668331_18510.mp4"
   ]
 }
