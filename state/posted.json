@@ -873,5 +873,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293660099_18145.mp4",
+    "title": "Diego Loveless Uncovers Video Tape Mystery #shorts",
+    "posted_at": "2026-11-22T04:52:52+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_offset": 18130.5,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1jptZTZPBrqreFhuHahSyGMOt9xX71_lA/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

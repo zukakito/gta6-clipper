@@ -1,9 +1,9 @@
 {
   "scout": {
-    "checked_at": "2026-11-21T21:45:32+00:00",
-    "new": 6,
-    "known": 93,
-    "youtube_open": 41,
+    "checked_at": "2026-11-22T04:38:03+00:00",
+    "new": 1,
+    "known": 94,
+    "youtube_open": 40,
     "needs_review": [
       "Jack [GTA LOGO]",
       "$2,500 Pilat Clipping Campaign",
@@ -28,10 +28,10 @@
       "Tokyo Girl GTA 6 Clipping Campaign"
     ]
   },
-  "last_scout": "2026-11-21T21:45:32+00:00",
-  "last_run": "2026-11-22T03:41:40+00:00",
-  "run_seconds": 775,
-  "made_this_run": 4,
+  "last_scout": "2026-11-22T04:38:03+00:00",
+  "last_run": "2026-11-22T04:56:45+00:00",
+  "run_seconds": 1163,
+  "made_this_run": 1,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "kai-cenat-gta6-pool",
@@ -44,12 +44,9 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 7,
+  "queued_candidates": 6,
   "pending_submissions": 0,
   "rendered_files": [
-    "diegoloveless-gta6_twitchvod-v293660099_11665.mp4",
-    "diegoloveless-gta6_twitchvod-v293660099_15275.mp4",
-    "kai-cenat-gta6-pool_twitchvod-v293668331_7315.mp4",
-    "parkerr-gta6_twitchvod-v293652450_17372.mp4"
+    "diegoloveless-gta6_twitchvod-v293660099_18145.mp4"
   ]
 }
