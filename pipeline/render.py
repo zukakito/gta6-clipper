@@ -280,7 +280,7 @@ def _filter_vertical(layout: str, ass_path: Path, overlay_img: Path | None = Non
 
 def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict], hook: str, tag: str,
                  disclosure: bool, layout: str, name: str, overlay_img: Path | None = None,
-                 trim_silence: bool = True) -> Path:
+                 trim_silence: bool = True, min_len: float = 0.0) -> Path:
     out = OUT / f"{name}.mp4"
     ass_path = WORK / f"{name}.ass"
     extra = ["-i", str(overlay_img)] if overlay_img else []
@@ -289,7 +289,8 @@ def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict],
     vtrim = atrim = ""
     orig_len = rel_end - rel_start
     total = sum(b - a for a, b in segs)
-    if len(segs) > 1 and total >= 0.75 * (rel_end - rel_start):   # trim dead air (mostly-action clips are left whole)
+    # Trim dead air, but never below the campaign/Shorts minimum length (mostly-action clips are left whole).
+    if len(segs) > 1 and total >= max(0.75 * (rel_end - rel_start), min_len):
         cut = WORK / f"{name}_cut.mp4"
         parts = ";".join(f"[0:v]trim={a:.3f}:{b:.3f},setpts=PTS-STARTPTS[v{i}];[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS[a{i}]"
                          for i, (a, b) in enumerate(segs))
