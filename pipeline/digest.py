@@ -1,12 +1,10 @@
-"""Morning email: every Short made since the last digest, ready to publish and submit from a phone.
+"""Publish-time email: the Shorts going public in this slot, with campaign links to submit from a phone.
 
-Runs from .github/workflows/digest.yml at about 05:00 India time (18:30 New York - US prime time).
+.github/workflows/digest.yml runs this every 30 minutes; it only sends when uploaded clips have reached (or are
+within 15 minutes of) their publish time and haven't been emailed yet - i.e. at the daily slot (about 23:30 IST on
+weekdays, 20:30 IST on weekends; see posting.schedule). Nothing is sent while publisher is dry_run.
 Sent with the Gmail API from the channel owner's own Gmail (scope gmail.send, secret GMAIL_REFRESH_TOKEN)
 to the address in the DIGEST_TO secret, so no address is stored in this public repo.
-
-For each clip the mail has: the private YouTube draft (open it in the YouTube app and set it to Public),
-the campaign page to submit the link, the link to paste, and the title/description/tags to copy.
-Before uploads are enabled (publisher dry_run) it links the clip's private Drive folder instead.
 """
 from __future__ import annotations
 
@@ -36,16 +34,17 @@ def _btn(url: str, label: str, color: str = "#cc0000") -> str:
 
 def _card(i: int, p: dict, c: dict) -> str:
     e = html.escape
-    made = parse_iso(p["posted_at"]).astimezone(IST).strftime("%d %b, %H:%M IST")
+    live = parse_iso(p.get("publish_at") or p["posted_at"]).astimezone(IST).strftime("%H:%M IST")
     pay = f'${c["cpm"]:.2f} per 1K views' if c.get("type") == "cpm" and c.get("cpm") else (
         f'${c.get("pool_usd", 0):,.0f} pool' if c.get("type") == "pool" else "")
     vid, short = p.get("video_id"), p.get("url")
     parts = [f'<div style="border:1px solid #ddd;border-radius:12px;padding:14px;margin:14px 0">',
              f'<div style="font-size:13px;color:#666">#{i} · {e(c.get("name", p["campaign_id"]))}'
-             f'{" · " + e(pay) if pay else ""} · made {made}</div>',
-             f'<div style="font-size:17px;font-weight:700;margin:6px 0 10px">{e(p.get("title", ""))}</div>']
+             f'{" · " + e(pay) if pay else ""}</div>',
+             f'<div style="font-size:17px;font-weight:700;margin:6px 0 4px">{e(p.get("title", ""))}</div>',
+             f'<div style="font-size:14px;margin-bottom:8px">Goes public at <b>{live}</b> - submit right after.</div>']
     if vid:
-        parts += [_btn(f"https://youtube.com/shorts/{vid}", "1. Open draft → set Public"),
+        parts += [_btn(f"https://youtube.com/shorts/{vid}", "1. Check it's live"),
                   _btn(f"https://studio.youtube.com/video/{vid}/edit", "Studio", "#555")]
     else:
         parts += [_btn(p.get("drive") or "https://drive.google.com", "1. Get video (Drive)", "#1a73e8"),
@@ -65,32 +64,40 @@ def _card(i: int, p: dict, c: dict) -> str:
     return "".join(parts)
 
 
+def _due(p: dict, horizon: dt.datetime) -> bool:
+    if not p.get("video_id") or p.get("privacy") not in ("public", "scheduled"):
+        return False
+    return parse_iso(p.get("publish_at") or p["posted_at"]) <= horizon
+
+
 def run(force: bool = False) -> None:
     cfg = settings()
     if not (cfg.get("digest") or {}).get("enabled", True) and not force:
+        return
+    if cfg["posting"].get("publisher") == "dry_run" and not force:
+        log.info("digest: publisher is dry_run - nothing is published, no email")
         return
     to = env("DIGEST_TO")
     if not (to and env("GMAIL_REFRESH_TOKEN")):
         log.warning("digest: DIGEST_TO / GMAIL_REFRESH_TOKEN not set - no email sent")
         return
     st = load_state("digest.json", {})
-    since = parse_iso(st["last_sent_at"]) if st.get("last_sent_at") else now() - dt.timedelta(days=1)
+    sent = set(st.get("sent", []))
     camp = {c["id"]: c for c in campaigns(enabled_only=False)}
-    items = [p for p in load_state("posted.json", []) if parse_iso(p["posted_at"]) > since]
+    horizon = now() + dt.timedelta(minutes=15)
+    items = [p for p in load_state("posted.json", []) if p.get("file") not in sent and _due(p, horizon)]
+    items.sort(key=lambda p: p.get("publish_at") or p["posted_at"])
+    if not items and not force:
+        log.info("digest: nothing due")
+        return
 
-    today = now().astimezone(IST).strftime("%a %d %b")
-    if items:
-        subject = f"{len(items)} GTA 6 Short{'s' if len(items) != 1 else ''} ready to publish · {today}"
-        intro = ("Publish them one by one, about 10 minutes apart (it's US prime time now). "
-                 "Right after each one goes Public, submit its link to the campaign.")
-        if cfg["posting"].get("publisher") == "dry_run":
-            intro = ("Uploads to YouTube aren't switched on yet, so these are in your private Drive. "
-                     "Upload each in the YouTube app, then submit its link to the campaign.")
-        body = "".join(_card(i + 1, p, camp.get(p["campaign_id"], {"name": p["campaign_id"]})) for i, p in enumerate(items))
-    else:
-        subject = f"No new GTA 6 Shorts this morning · {today}"
-        intro = "The pipeline ran but no clip passed the quality checks since the last email."
-        body = ""
+    when = now().astimezone(IST).strftime("%a %d %b")
+    subject = (f"Submit {len(items)} GTA 6 Short{'s' if len(items) != 1 else ''} now · {when}" if items
+               else f"Digest test · {when}")
+    intro = ("These Shorts are going public on your channel now. As each one goes live, tap "
+             "Submit to campaign and paste its link (most campaigns want it within 30 minutes).") if items else (
+             "Test email: the pipeline can reach your inbox. Real ones arrive at the daily publish slot.")
+    body = "".join(_card(i + 1, p, camp.get(p["campaign_id"], {"name": p["campaign_id"]})) for i, p in enumerate(items))
     page = (f'<div style="font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:640px;margin:auto">'
             f'<h2 style="margin:0 0 6px">Zukakito · {html.escape(subject)}</h2>'
             f'<p style="color:#333">{html.escape(intro)}</p>{body}'
@@ -100,6 +107,7 @@ def run(force: bool = False) -> None:
     msg["to"], msg["subject"] = to, subject
     raw = base64.urlsafe_b64encode(msg.as_bytes()).decode()
     _gmail().users().messages().send(userId="me", body={"raw": raw}).execute()
+    st["sent"] = (st.get("sent", []) + [p.get("file") for p in items])[-500:]
     st["last_sent_at"], st["last_count"] = iso(), len(items)
     save_state("digest.json", st)
     log.info("digest: sent %d clips", len(items))
