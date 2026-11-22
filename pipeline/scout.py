@@ -7,13 +7,15 @@ them to config/campaigns.yaml. Nothing here posts anything.
 """
 from __future__ import annotations
 
+import datetime as dt
+import hashlib
 import re
 
 import requests
 from bs4 import BeautifulSoup
 
 from . import llm
-from .common import campaigns, iso, load_state, log, save_state, settings
+from .common import campaigns, iso, load_state, log, now, parse_iso, save_state, settings
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"}
 CAMPAIGN_LINK = re.compile(r"(whop\.com/experiences/[^\s\"'<>]+/campaigns/[0-9a-f-]{36}|vyro\.com/[^\s\"'<>]*campaign[^\s\"'<>]*|clipping\.net/[^\s\"'<>]*campaign[^\s\"'<>]*)", re.I)
@@ -57,12 +59,22 @@ def run() -> dict:
     seen: dict = load_state("discovered.json", {})
     configured = {c["name"].lower() for c in campaigns(enabled_only=False)}
     new_items = []
+    cache: dict = load_state("scout_cache.json", {})
 
     for board in cfg["boards"]:
         try:
             text, links = fetch(board)
         except Exception as e:  # noqa: BLE001
             log.warning("scout: could not read %s: %s", board, e)
+            continue
+
+        # Skip the LLM when the board hasn't changed (digits stripped so view/budget counters don't count),
+        # but re-read it at least every `full_refresh_hours` to refresh budgets and status.
+        sig = hashlib.sha1((re.sub(r"\d", "", text) + "|".join(links)).encode()).hexdigest()
+        prev = cache.get(board, {})
+        fresh = prev.get("at") and now() - parse_iso(prev["at"]) < dt.timedelta(hours=cfg.get("full_refresh_hours", 6))
+        if prev.get("sig") == sig and fresh:
+            log.info("scout: %s unchanged, skipping", board)
             continue
 
         found = llm.ask(EXTRACT_PROMPT.format(links="\n".join(links[:80]), text=text[:9000]), want_json=True, temperature=0) if llm.available() else None
@@ -92,8 +104,11 @@ def run() -> dict:
             else:
                 entry.update({kk: vv for kk, vv in c.items() if vv not in (None, [], "")})
             entry["last_seen"] = iso()
+        if found:
+            cache[board] = {"sig": sig, "at": iso()}
 
     save_state("discovered.json", seen)
+    save_state("scout_cache.json", cache)
     yt_open = [v for v in seen.values() if "youtube" in (v.get("platforms") or []) and v.get("status") != "paid_out"]
     summary = {"checked_at": iso(), "new": len(new_items), "known": len(seen), "youtube_open": len(yt_open),
                "needs_review": [v["name"] for v in seen.values() if v.get("needs_review")]}
