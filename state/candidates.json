@@ -3308,7 +3308,8 @@
     "win_start": 6660.0,
     "win_end": 6735.0,
     "found_at": "2026-11-22T02:20:54+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible; appears to be chat/audio without visual game content, violating campaign rule requiring Kai Cenat playing GTA 6 as main focus."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -3320,7 +3321,7 @@
     "win_start": 7270.0,
     "win_end": 7345.0,
     "found_at": "2026-11-22T02:20:54+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -3332,7 +3333,8 @@
     "win_start": 6180.0,
     "win_end": 6255.0,
     "found_at": "2026-11-22T02:20:54+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too little speech (11 words)"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -3344,7 +3346,8 @@
     "win_start": 9225.0,
     "win_end": 9300.0,
     "found_at": "2026-11-22T02:20:54+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only idle chatter about cars with no gameplay action, payoff, or streamer reaction. It fails to meet the campaign rules for a compelling clip."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -3356,7 +3359,8 @@
     "win_start": 8825.0,
     "win_end": 8900.0,
     "found_at": "2026-11-22T02:20:54+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript indicates a vague, non‑specific reaction without clear gameplay action or a memorable moment. No GTA 6 gameplay is evident, and the clip lacks a distinct setup and payoff. Therefore it does not meet the campaign rules for a usable short."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -3430,7 +3434,7 @@
     "win_start": 11620.0,
     "win_end": 11695.0,
     "found_at": "2026-11-22T02:22:12+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -3442,7 +3446,8 @@
     "win_start": 13885.0,
     "win_end": 13960.0,
     "found_at": "2026-11-22T02:22:12+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay shown; the segment is just chat about Rivals and unrelated talk, lacking a clear setup and payoff, violating campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -3454,7 +3459,8 @@
     "win_start": 16497.0,
     "win_end": 16572.0,
     "found_at": "2026-11-22T02:24:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "Transcript contains incoherent, nonsensical dialogue with no clear gameplay moment, setup or payoff. No GTA VI gameplay is evident, and the content does not meet campaign rules for a compelling clip. No valid start/end times can be identified."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -3466,7 +3472,8 @@
     "win_start": 18917.0,
     "win_end": 18992.0,
     "found_at": "2026-11-22T02:24:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows no GTA VI gameplay, only idle chatter and no clear setup or payoff. It does not meet campaign rules for a clip."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -3478,7 +3485,8 @@
     "win_start": 17832.0,
     "win_end": 17907.0,
     "found_at": "2026-11-22T02:24:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only idle chat with no GTA 6 gameplay, no clear setup or payoff, and no moment that meets campaign rules. No clip can be made from this window."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -3490,7 +3498,8 @@
     "win_start": 16177.0,
     "win_end": 16252.0,
     "found_at": "2026-11-22T02:24:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only chat spam and no clear GTA 6 gameplay moment; the streamer is not actively playing or reacting to a specific event, making it unsuitable for the clipping campaign."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -3502,7 +3511,8 @@
     "win_start": 16792.0,
     "win_end": 16867.0,
     "found_at": "2026-11-22T02:24:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay; commentary only, no clear moment, violates campaign rules."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -3514,6 +3524,239 @@
     "win_start": 17327.0,
     "win_end": 17402.0,
     "found_at": "2026-11-22T02:24:57+00:00",
-    "status": "new"
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️ 2026-11-22 03:31",
+    "t": 10920.0,
+    "score": 1.9213976063495013,
+    "win_start": 10875.0,
+    "win_end": 10950.0,
+    "found_at": "2026-11-22T03:31:31+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️ 2026-11-22 03:31",
+    "t": 12245.0,
+    "score": 1.5640377560127963,
+    "win_start": 12200.0,
+    "win_end": 12275.0,
+    "found_at": "2026-11-22T03:31:31+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible; streamer is just talking, no clear setup/payoff, violates campaign rules."
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️ 2026-11-22 03:31",
+    "t": 10145.0,
+    "score": 1.5063786170028486,
+    "win_start": 10100.0,
+    "win_end": 10175.0,
+    "found_at": "2026-11-22T03:31:31+00:00",
+    "status": "rejected",
+    "reason": "too little speech (5 words)"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️ 2026-11-22 03:31",
+    "t": 12375.0,
+    "score": 1.4677500298030741,
+    "win_start": 12330.0,
+    "win_end": 12405.0,
+    "found_at": "2026-11-22T03:31:31+00:00",
+    "status": "rejected",
+    "reason": "too little speech (5 words)"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️ 2026-11-22 03:31",
+    "t": 9605.0,
+    "score": 1.1098808479145048,
+    "win_start": 9585.0,
+    "win_end": 9635.0,
+    "found_at": "2026-11-22T03:31:31+00:00",
+    "status": "rejected",
+    "reason": "too little speech (0 words)"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2936683310",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_title": "🗺️EXPLORING GTA 6🗺️ 2026-11-22 03:31",
+    "t": 11120.0,
+    "score": 1.08485983516721,
+    "win_start": 11075.0,
+    "win_end": 11150.0,
+    "found_at": "2026-11-22T03:31:31+00:00",
+    "status": "rejected",
+    "reason": "too little speech (4 words)"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936600990",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_title": "GTA Gaming & Gooning Marathon",
+    "t": 17305.0,
+    "score": 2.016297292970957,
+    "win_start": 17260.0,
+    "win_end": 17335.0,
+    "found_at": "2026-11-22T03:31:49+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay or clear hook/payoff; mostly idle talk without visual interest, violating campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936600990",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_title": "GTA Gaming & Gooning Marathon",
+    "t": 16635.0,
+    "score": 1.7968122161491138,
+    "win_start": 16590.0,
+    "win_end": 16665.0,
+    "found_at": "2026-11-22T03:31:49+00:00",
+    "status": "rejected",
+    "reason": "Transcript contains only chat commentary unrelated to GTA 6 gameplay; no clear setup or payoff, no gameplay moment, violates campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936600990",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_title": "GTA Gaming & Gooning Marathon",
+    "t": 16245.0,
+    "score": 1.5306016442206791,
+    "win_start": 16200.0,
+    "win_end": 16275.0,
+    "found_at": "2026-11-22T03:31:49+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows the streamer talking about mission options and frustration, with no visible GTA 6 gameplay, no clear setup or payoff, and the content is largely idle and incoherent. This violates the campaign rules for engaging, gameplay-focused clips."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936600990",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_title": "GTA Gaming & Gooning Marathon",
+    "t": 14680.0,
+    "score": 1.4940655828663727,
+    "win_start": 14635.0,
+    "win_end": 14710.0,
+    "found_at": "2026-11-22T03:31:49+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay visible; content is idle chat about streaming platforms, no clear setup and payoff, violates campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936600990",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_title": "GTA Gaming & Gooning Marathon",
+    "t": 14465.0,
+    "score": 1.4341314084271664,
+    "win_start": 14420.0,
+    "win_end": 14495.0,
+    "found_at": "2026-11-22T03:31:49+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay present; streamer is idle talking, no clear setup or payoff, violates campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2936600990",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_title": "GTA Gaming & Gooning Marathon",
+    "t": 15275.0,
+    "score": 1.4111944341366929,
+    "win_start": 15230.0,
+    "win_end": 15305.0,
+    "found_at": "2026-11-22T03:31:49+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-22 03:31",
+    "t": 19572.0,
+    "score": 2.1097516616880245,
+    "win_start": 19527.0,
+    "win_end": 19602.0,
+    "found_at": "2026-11-22T03:35:01+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay appears; the segment is just streamer chatter without visual game content, violating campaign rules."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-22 03:31",
+    "t": 19277.0,
+    "score": 1.9911352339459372,
+    "win_start": 19232.0,
+    "win_end": 19307.0,
+    "found_at": "2026-11-22T03:35:01+00:00",
+    "status": "rejected",
+    "reason": "The segment contains only chatty commentary about progress percentages with no clear GTA 6 gameplay, no visual hook, and lacks a self‑contained moment that meets campaign quality standards."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-22 03:31",
+    "t": 19702.0,
+    "score": 1.950200692511772,
+    "win_start": 19657.0,
+    "win_end": 19732.0,
+    "found_at": "2026-11-22T03:35:01+00:00",
+    "status": "rejected",
+    "reason": "No GTA VI gameplay shown; the segment is just chat about lap dances and VIP access without visual game content, violating campaign rules."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-22 03:31",
+    "t": 21717.0,
+    "score": 1.83953544156096,
+    "win_start": 21672.0,
+    "win_end": 21747.0,
+    "found_at": "2026-11-22T03:35:01+00:00",
+    "status": "rejected",
+    "reason": "Transcript contains incoherent, disjointed dialogue with no clear gameplay moment, no setup or payoff, and lacks any GTA 6 action. The clip does not meet campaign rules for engaging content."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-22 03:31",
+    "t": 21962.0,
+    "score": 1.7429918614861575,
+    "win_start": 21917.0,
+    "win_end": 21992.0,
+    "found_at": "2026-11-22T03:35:01+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows no GTA 6 gameplay or clear moment; it is idle chatter with no setup or payoff, violating campaign rules."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2936524505",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-22 03:31",
+    "t": 22452.0,
+    "score": 1.6157714457644718,
+    "win_start": 22407.0,
+    "win_end": 22482.0,
+    "found_at": "2026-11-22T03:35:01+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay occurs; the clip is only idle talking about streaming, violating campaign rules."
   }
 ]

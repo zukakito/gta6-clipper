@@ -821,5 +821,57 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293660099_11665.mp4",
+    "title": "Diego Loveless Gets Cops to Lock Store in GTA 6 #shorts",
+    "posted_at": "2026-11-22T03:29:45+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_offset": 11626.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1wCNlB2TbOV1D48KgkrPo0XPELuiGUcvM/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "file": "kai-cenat-gta6-pool_twitchvod-v293668331_7315.mp4",
+    "title": "Kai Cenat Gets Wild in GTA 6 Strip Club #shorts",
+    "posted_at": "2026-11-22T03:31:17+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936683310",
+    "vod_offset": 7295.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1uDeXZWdphtL1tRFMe1XkiyLGZ7MUWpah/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293660099_15275.mp4",
+    "title": "Diego Loveless: Car Crash Shock #shorts",
+    "posted_at": "2026-11-22T03:39:05+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936600990",
+    "vod_offset": 15264.8,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1tqM53d9hJVcMvlSXidAjhzhbpsnNPlC1/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293652450_17372.mp4",
+    "title": "Parkerr blasts way out of armored vault #shorts",
+    "posted_at": "2026-11-22T03:41:40+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936524505",
+    "vod_offset": 17357.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/file/d/1ESBSCMWZvM-ThNXbr9WDfTaWWgbC95T9/view?usp=drivesdk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
