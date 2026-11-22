@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-22T05:39:07+00:00",
-  "new": 11,
-  "known": 105,
-  "youtube_open": 51,
+  "checked_at": "2026-11-22T07:12:29+00:00",
+  "new": 3,
+  "known": 108,
+  "youtube_open": 55,
   "needs_review": [
-    "Jack [GTA LOGO]",
+    "Jack GTA LOGO",
     "$2,500 Pilat Clipping Campaign",
     "GTA 6 x ARON ORLANDO MUSIC CLIPPING",
     "Naya Yeira, Almost There Sound Campaign",
@@ -32,6 +32,9 @@
     "Reach $5,000 Clix GTA VI Marathon Pool Campaign",
     "Reach YourRAGE $5,000 GTA 6 Pool Campaign",
     "NewsDaddy $5,000 Dylan Page GTA VI Marathon Campaign",
-    "ClipLaunch KreekCraft GTA 6 Clipping"
+    "ClipLaunch KreekCraft GTA 6 Clipping",
+    "GTA 6 x GTA Clipper Logo Campaign",
+    "GTA VI Clipup Logo Campaign",
+    "GTA VI \"Things I Could've Said\" Music Campaign"
   ]
 }
