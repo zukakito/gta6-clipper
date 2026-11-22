@@ -7,18 +7,53 @@ publisher = dry_run      -> nothing is uploaded to YouTube; the clip is still st
 """
 from __future__ import annotations
 
+import datetime as dt
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
-from .common import env, log
+from .common import env, iso, load_state, log, now, parse_iso, save_state
 
 
 class PublishError(RuntimeError):
     pass
 
 
-def _youtube_api(path: Path, meta: dict, privacy: str, category: int) -> dict:
+def publish_time(p: dict) -> dt.datetime | None:
+    """When a new Short should go public (UTC), or None to publish immediately.
+
+    US-first timing: inside the US window (default 11:00-22:00 New York time) a clip goes public right away
+    (after `lead_min`) - fresh launch-week moments win. Outside it, the clip is scheduled for the next window
+    start so its first test viewers are American. Scheduled clips are spaced `min_minutes_between_uploads` apart.
+    """
+    sch = p.get("schedule") or {}
+    if not sch.get("enabled"):
+        return None
+    tz = ZoneInfo(sch.get("tz", "America/New_York"))
+    h0, m0 = map(int, sch.get("window", ["11:00", "22:00"])[0].split(":"))
+    h1, m1 = map(int, sch.get("window", ["11:00", "22:00"])[1].split(":"))
+    earliest = now() + dt.timedelta(minutes=sch.get("lead_min", 10))
+    local = earliest.astimezone(tz)
+    start = local.replace(hour=h0, minute=m0, second=0, microsecond=0)
+    end = local.replace(hour=h1, minute=m1, second=0, microsecond=0)
+    if local < start:
+        when = start
+    elif local > end:
+        when = start + dt.timedelta(days=1)
+    else:
+        when = local
+    when = when.astimezone(dt.timezone.utc)
+    st = load_state("schedule.json", {})
+    last = parse_iso(st["last_publish_at"]) if st.get("last_publish_at") else None
+    if last and when < last + dt.timedelta(minutes=p.get("min_minutes_between_uploads", 45)):
+        when = last + dt.timedelta(minutes=p.get("min_minutes_between_uploads", 45))
+    st["last_publish_at"] = iso(when)
+    save_state("schedule.json", st)
+    return when
+
+
+def _youtube_api(path: Path, meta: dict, privacy: str, category: int, publish_at: dt.datetime | None = None) -> dict:
     from google.oauth2.credentials import Credentials
     from googleapiclient.discovery import build
     from googleapiclient.http import MediaFileUpload
@@ -34,7 +69,8 @@ def _youtube_api(path: Path, meta: dict, privacy: str, category: int) -> dict:
     body = {
         "snippet": {"title": meta["title"], "description": meta["description"], "tags": meta["tags"],
                     "categoryId": str(category), "defaultLanguage": "en", "defaultAudioLanguage": "en"},
-        "status": {"privacyStatus": privacy, "selfDeclaredMadeForKids": False, "containsSyntheticMedia": False},
+        "status": {"privacyStatus": "private" if publish_at else privacy, "selfDeclaredMadeForKids": False,
+                   "containsSyntheticMedia": False, **({"publishAt": publish_at.strftime("%Y-%m-%dT%H:%M:%SZ")} if publish_at else {})},
         "paidProductPlacementDetails": {"hasPaidProductPlacement": bool(meta.get("paid"))},
     }
     parts = "snippet,status,paidProductPlacementDetails"
@@ -54,12 +90,17 @@ def _youtube_api(path: Path, meta: dict, privacy: str, category: int) -> dict:
         while resp is None:
             _, resp = req.next_chunk()
     vid = resp["id"]
-    status = resp.get("status", {}).get("privacyStatus")
-    if privacy == "public" and status != "public":
+    st = resp.get("status", {})
+    status = st.get("privacyStatus")
+    if publish_at and status == "private" and st.get("publishAt"):
+        status = "scheduled"
+        log.info("publish: %s scheduled to go public at %s", vid, st.get("publishAt"))
+    elif privacy == "public" and status != "public":
         log.warning("YouTube set the video to %s - the API project is probably not audited yet", status)
     if meta.get("playlist"):
         _add_to_playlist(yt, vid, meta["playlist"])
-    return {"video_id": vid, "url": f"https://www.youtube.com/shorts/{vid}", "privacy": status}
+    return {"video_id": vid, "url": f"https://www.youtube.com/shorts/{vid}", "privacy": status,
+            **({"publish_at": iso(publish_at)} if status == "scheduled" else {})}
 
 
 _playlists: dict[str, str] = {}
@@ -118,7 +159,9 @@ def publish(path: Path, meta: dict, settings: dict) -> dict | None:
     if mode == "youtube_api":
         if not env("YT_REFRESH_TOKEN"):
             raise PublishError("YT_REFRESH_TOKEN not set - run tools/get_youtube_token.py once")
-        return _youtube_api(path, meta, p.get("privacy", "public"), category)
+        privacy = p.get("privacy", "public")
+        when = publish_time(p) if privacy == "public" else None
+        return _youtube_api(path, meta, privacy, category, when)
     if mode == "upload_post":
         return _upload_post(path, meta, p.get("privacy", "public"), category)
     raise PublishError(f"unknown publisher {mode}")
