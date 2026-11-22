@@ -11,12 +11,13 @@ posting:
   max_uploads_per_run: 2
   max_uploads_per_day: 6             # YouTube API quota: 10,000 units/day, one upload = 1,600
   min_minutes_between_uploads: 45
-  privacy: public                   # public = go public automatically on the schedule below; private = drafts for manual review
+  # private = upload as drafts; the 05:00 IST morning email (digest below) lists them so the owner sets each
+  # to Public from the phone at US prime time and submits its link. public = go public on the schedule below.
+  privacy: private
   schedule:
-    # US-first timing. Inside this New York-time window a finished clip goes public right away (after lead_min);
-    # outside it the clip is uploaded now but scheduled to go public at the next window start, spaced
-    # min_minutes_between_uploads apart. 11:00-22:00 ET = 21:30-08:30 India time.
-    enabled: true
+    # Only used with privacy: public. Inside this New York-time window a finished clip goes public right away
+    # (after lead_min); outside it, it is scheduled for the next window start, spaced min_minutes_between_uploads.
+    enabled: false
     tz: America/New_York
     window: ["11:00", "22:00"]
     lead_min: 10
@@ -28,6 +29,10 @@ posting:
   # Every clip must pass the local safety check (NSFW / idle / censor graphic) - always on.
   # Skip moments when no LLM (Groq/Gemini) answers, instead of posting generic titles.
   require_llm: true
+
+digest:
+  # Morning email (.github/workflows/digest.yml, ~05:00 IST) from the owner's Gmail to the DIGEST_TO secret.
+  enabled: true
 
 storage:
   # Finished clips go to this folder in the channel owner's Google Drive (private), never to public GitHub artifacts.
