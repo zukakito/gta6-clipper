@@ -44,8 +44,10 @@ campaigns:
       content. No Japanese captions. Thumbnails must match the content.
       Audience should be majority USA/CA/AU/UK/NZ - write in English.
     verified_brief: true
-    # Reach does not offer its campaigns in India ("Not available in your region", 21 Nov). Do not use a VPN.
-    enabled: false
+    # Joined 22 Nov 2026 (Reach campaigns now open to India). Each clip needs 500 views to count.
+    min_views_per_clip: 500
+    joined: true
+    enabled: true
 
   - id: kai-cenat-gta6-pool
     streamer: "Kai Cenat"
@@ -165,18 +167,30 @@ campaigns:
     enabled: false
 
   - id: asianjeff-gta6
+    streamer: "AsianJeff"
     name: "$2,500 AsianJeff Clipping (Reach)"
     board: content_rewards
     host: Reach
     join_url: https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/bbd3a963-9a23-457c-bc15-6697971d9902
+    rules_doc: https://reachclipping.com/AsianJeff
     type: cpm
     cpm: 1.00
+    min_payout_usd: 10      # paid once a clip passes 10,000 views
+    cap_usd: 300
     sources: [https://www.twitch.tv/asianjeff]
+    source_since: "2026-11-19"
     format: short
-    must_include: ["AsianJeff"]
-    rules: "Reach network rules: no AI content, no logos, no bots."
-    verified_brief: false
-    enabled: false
+    must_include: ["AsianJeff", "#AsianJeff"]
+    overlay_text: "ASIANJEFF"
+    rules: >
+      Only AsianJeff's GTA 6 playthrough streams from 19 Nov 2026 (older streams don't count). AsianJeff must be the
+      main focus. Funny moments, memorable quotes and reactions. Never portray him negatively; no hate farming,
+      rage-bait captions or drama framing. No logos of any kind. No Japanese captions. Thumbnails must match the
+      content. Audience should be majority USA/CA/AU/UK/NZ - write in English. Reach network: no AI-generated
+      content, no botting; one violation removes us from every Reach campaign.
+    verified_brief: true
+    joined: true    # 22 Nov 2026
+    enabled: true
 
   - id: tomo-gta6
     name: "TOMO GTA VI Clipping (Clipping Nation)"
