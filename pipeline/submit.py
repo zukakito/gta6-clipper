@@ -14,7 +14,7 @@ import datetime as dt
 
 import requests
 
-from .common import env, iso, load_state, log, now, save_state
+from .common import env, iso, load_state, log, now, parse_iso, save_state
 
 WHOP_API = "https://api.whop.com/api/v1/bounty_submissions"
 
@@ -30,9 +30,10 @@ def _whop(campaign: dict, url: str) -> dict:
 
 def submit(campaign: dict, post: dict) -> str:
     url = post.get("url")
-    if not url or post.get("privacy") not in ("public", None):
+    if not url or post.get("privacy") not in ("public", "scheduled", None):
         return "skipped"  # dry runs / private uploads are never submitted
-    if campaign.get("whop_bounty_id") and env("WHOP_USER_TOKEN"):
+    live_at = parse_iso(post["publish_at"]) if post.get("publish_at") else now()   # scheduled: count from going public
+    if campaign.get("whop_bounty_id") and env("WHOP_USER_TOKEN") and live_at <= now():
         try:
             res = _whop(campaign, url)
             log.info("submit: whop accepted %s -> %s", url, res.get("id"))
@@ -42,8 +43,8 @@ def submit(campaign: dict, post: dict) -> str:
     pending = load_state("pending_submissions.json", [])
     pending.append({
         "campaign_id": campaign["id"], "campaign": campaign["name"], "join_url": campaign.get("join_url"),
-        "video_url": url, "posted_at": iso(),
-        "deadline": iso(now() + dt.timedelta(minutes=int(campaign.get("submit_within_min", 30)))),
+        "video_url": url, "posted_at": iso(live_at), "submit_after": iso(live_at),
+        "deadline": iso(live_at + dt.timedelta(minutes=int(campaign.get("submit_within_min", 30)))),
         "status": "pending",
     })
     save_state("pending_submissions.json", pending)
