@@ -217,7 +217,7 @@ def main() -> None:
 
     if not args.no_scout:
         last = status.get("last_scout")
-        if args.scout_only or not last or (now() - parse_iso(last)).total_seconds() > 6 * 3600:   # saves LLM quota
+        if args.scout_only or not last or (now() - parse_iso(last)).total_seconds() > cfg.get("scout", {}).get("interval_hours", 1) * 3600 - 300:
             try:
                 status["scout"] = scout.run()
                 status["last_scout"] = iso()
