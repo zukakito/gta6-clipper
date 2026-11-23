@@ -1120,5 +1120,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293798334_13434.mp4",
+    "title": "Diego Loveless asks for heal, gets free #shorts",
+    "posted_at": "2026-11-23T06:50:48+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_offset": 13426.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1cSRBPuDsg6H9oA9atCP9A3zmfHXmlDj7",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
