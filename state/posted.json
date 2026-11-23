@@ -1029,5 +1029,44 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293787864_6475.mp4",
+    "title": "Parkerr marvels at stunning GTA VI skyline #shorts",
+    "posted_at": "2026-11-23T03:43:21+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937878642",
+    "vod_offset": 6467.5,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/18YfoqkLsIhnJaQAyvOUdMM4u5kesqUk5",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293787864_8900.mp4",
+    "title": "Parkerr gets six stars in military base #shorts",
+    "posted_at": "2026-11-23T03:53:42+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937878642",
+    "vod_offset": 8900.05,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/15yuDXQf1yPsYz_5rDoUNFkFe9URtReUq",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293688584_83865.mp4",
+    "title": "AsianJeff chased by cops in GTA 6 #shorts",
+    "posted_at": "2026-11-23T03:55:53+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_offset": 83853.3,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1Ihu301_tBSFEsLRiDA-Ei4atfeSkskFg",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
