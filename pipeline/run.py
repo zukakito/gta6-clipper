@@ -7,6 +7,7 @@ python -m pipeline.run --no-scout
 from __future__ import annotations
 
 import argparse
+import re
 import datetime as dt
 import time
 import traceback
@@ -30,6 +31,19 @@ def _campaign_priority(c: dict) -> float:
     if c.get("type") == "pool":
         return 2.0 + (c.get("pool_usd", 0) / 10000)
     return float(c.get("cpm") or 0.5)
+
+
+GTA_RE = re.compile(r"grand\s*theft\s*auto|\bgta\b|\bgta\s*(?:vi|6)\b", re.I)
+
+
+def _gta_ranges(v: dict) -> list[tuple[float, float]] | None:
+    """Time ranges of the VOD where GTA was being played, from its game chapters.
+    None = the VOD has no chapter info (Kick, YouTube): allow everything and rely on the other checks."""
+    chapters = v.get("chapters") or []
+    if not chapters:
+        return None
+    end_default = v.get("duration") or 10 ** 9
+    return [(a, b or end_default) for a, b, title in chapters if GTA_RE.search(title or "")]
 
 
 def discover_moments(cfg: dict, vod_state: dict, candidates: list[dict], deadline: float) -> None:
@@ -57,7 +71,19 @@ def discover_moments(cfg: dict, vod_state: dict, candidates: list[dict], deadlin
                 if new < 60 or (v["is_live"] and new < 600):
                     continue  # wait for at least 10 new minutes on live VODs
                 end = min(edge, start + SCAN_CHUNK_SEC)
+                gta = _gta_ranges(v)
+                if gta == []:   # the VOD says which games were played and none of them is GTA
+                    log.info("discover: %s has no GTA segment (%s) - skipping", v["url"],
+                             ", ".join(sorted({ch[2] for ch in v.get("chapters") or []}))[:120])
+                    st["scanned_until"], st["last_scan"] = end, iso()
+                    save_state("vods.json", vod_state)
+                    continue
                 peaks = highlights.find_peaks(v["url"], start, end, v["id"], k=clip_cfg["highlights_per_vod"])
+                if gta is not None:
+                    kept = [p for p in peaks if any(a <= p["t"] <= b for a, b in gta)]
+                    if len(kept) < len(peaks):
+                        log.info("discover: dropped %d moment(s) outside GTA segments of %s", len(peaks) - len(kept), v["id"])
+                    peaks = kept
                 for p in peaks:
                     candidates.append({"campaign_id": c["id"], "vod_id": v["id"], "vod_url": v["url"],
                                        "vod_title": v["title"], **p, "found_at": iso(), "status": "new"})
