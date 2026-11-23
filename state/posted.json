@@ -1172,5 +1172,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_3976.mp4",
+    "title": "Parkerr lands a stylish car crash in GTA VI #shorts",
+    "posted_at": "2026-11-23T22:36:20+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 3969.6,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1euPnCBp4UpBFc7EItcp0OdZD1OPlhbHB",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
