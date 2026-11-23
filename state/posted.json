@@ -1185,5 +1185,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_8046.mp4",
+    "title": "Parkerr captures alien rescue proof in GTA 6 #shorts",
+    "posted_at": "2026-11-23T23:44:52+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 8029.8,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1xn9sMeDqi-Mh7xj6_spZq8dcKRxx7M1a",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_7221.mp4",
+    "title": "Parkerr jumps into Lucia car in GTA 6 #shorts",
+    "posted_at": "2026-11-23T23:45:50+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 7216.1,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1Fkavnbd4VOGg5MYAOkLY_vMhpraQO-lR",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
