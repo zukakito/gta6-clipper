@@ -1146,5 +1146,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293819398_10445.mp4",
+    "title": "Boeshi outruns police in GTA 6 #shorts",
+    "posted_at": "2026-11-23T12:54:19+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_offset": 10431.3,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/17mUN-XAm1tccrYSGp_HRMAnrsYX8p5a0",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
