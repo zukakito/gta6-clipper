@@ -93,6 +93,9 @@ def recent_vods(src: str, lookback_hours: int, limit: int = 4, since: str | None
                 "started_at": started.isoformat() if started else None,
                 "is_live": is_live,
                 "extractor": info.get("extractor_key", ""),
+                # Twitch VODs list the game played in each part ("chapters"); used to clip GTA segments only.
+                "chapters": [[float(ch.get("start_time") or 0), float(ch.get("end_time") or 0), ch.get("title") or ""]
+                             for ch in (info.get("chapters") or [])],
             })
             if len(out) >= limit:
                 break
