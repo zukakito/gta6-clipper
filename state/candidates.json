@@ -7268,5 +7268,82 @@
     "found_at": "2026-11-23T08:41:58+00:00",
     "status": "rejected",
     "reason": "The transcript shows only the streamer talking about voting and raiding, with no indication of GTA 6 gameplay or a clear in‑game event. This fails the campaign rule requiring funny or notable GTA moments."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2938193982",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-23 10:18",
+    "t": 3965.0,
+    "score": 2.804469517677319,
+    "win_start": 3920.0,
+    "win_end": 3995.0,
+    "found_at": "2026-11-23T10:19:04+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2938193982",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-23 10:18",
+    "t": 4420.0,
+    "score": 2.4355943979131496,
+    "win_start": 4375.0,
+    "win_end": 4450.0,
+    "found_at": "2026-11-23T10:19:04+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only repetitive chatter without clear GTA 6 gameplay event, reaction, or visual action; no setup/payoff identifiable."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2938193982",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-23 10:18",
+    "t": 4785.0,
+    "score": 2.2577916435969057,
+    "win_start": 4740.0,
+    "win_end": 4815.0,
+    "found_at": "2026-11-23T10:19:04+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only generic filler talk without clear GTA 6 gameplay event, reaction, or payoff. No distinct setup or payoff, making it unsuitable for the campaign."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2938193982",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-23 10:18",
+    "t": 4090.0,
+    "score": 2.2318245060661286,
+    "win_start": 4045.0,
+    "win_end": 4120.0,
+    "found_at": "2026-11-23T10:19:04+00:00",
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2938193982",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-23 10:18",
+    "t": 2895.0,
+    "score": 1.8781762847517343,
+    "win_start": 2850.0,
+    "win_end": 2925.0,
+    "found_at": "2026-11-23T10:19:04+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only conversation with no clear GTA 6 gameplay or reaction; appears to be idle chat without visual action, violating campaign rules."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2938193982",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-23 10:18",
+    "t": 4960.0,
+    "score": 1.8617565183083968,
+    "win_start": 4915.0,
+    "win_end": 4990.0,
+    "found_at": "2026-11-23T10:19:04+00:00",
+    "status": "rejected",
+    "reason": "Transcript lacks clear GTA 6 gameplay event or reaction; mostly unrelated chatter without setup/payoff, making it unsuitable for the clipping campaign."
   }
 ]

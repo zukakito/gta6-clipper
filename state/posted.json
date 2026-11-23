@@ -1133,5 +1133,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293819398_3965.mp4",
+    "title": "Boeshi spots Donny in GTA 6 #shorts",
+    "posted_at": "2026-11-23T10:21:03+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_offset": 3958.7,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1K1dag53sOZixIEygieTMMJ4hQTzoEP8u",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
