@@ -990,5 +990,44 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293781976_3685.mp4",
+    "title": "Parkerr avoids crashing for bonus in GTA VI #shorts",
+    "posted_at": "2026-11-23T02:40:03+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937819762",
+    "vod_offset": 3670.8,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1GqGJ8YzTumhu_Ccn43f3rls8Zxs7cGHB",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293688584_81865.mp4",
+    "title": "AsianJeff struggles climbing a ladder in GTA 6 #shorts",
+    "posted_at": "2026-11-23T02:56:47+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_offset": 81858.6,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1NvddYn_p1ulvGO-yAKYPw3ZL5rPQ1mm5",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293688584_80995.mp4",
+    "title": "AsianJeff Can't Find Ladder #shorts",
+    "posted_at": "2026-11-23T02:59:06+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_offset": 80986.1,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/147SC9hUlBIldmtuCVdRjwoQHrJWut75q",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
