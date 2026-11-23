@@ -49,7 +49,10 @@ Decide:
    no GTA 6 gameplay is happening; the streamer is not part of the moment; sexual content, nudity or strip-club
    scenes (even if covered by an emoji or censor graphic); graphic gore; slurs/hate; real-world personal info;
    negative portrayal of the streamer; nothing interesting happens (no clear setup and payoff); the talk is
-   mumbled, incoherent or needs outside context to follow; the moment is mostly a loading/fail/black screen; or anything breaks
+   mumbled, incoherent or needs outside context to follow; the moment is mostly a loading/fail/black screen; the
+   streamer is playing a different game (e.g. Marvel Rivals, Fortnite, Valorant - only GTA 6 counts); the moment is
+   mainly a story cutscene, mission briefing, the game's ending or the credits (major spoilers - the streamer's own
+   gameplay and reaction must be the focus); or anything breaks
    the campaign rules. Otherwise true. Be strict - campaign reviewers reject weak clips.
 2. start, end: the best self-contained cut between {minlen} and {maxlen} seconds. Start right before the
    setup (strong first 2 seconds), end right after the payoff/reaction. Prefer 30-45 s so a new viewer gets the whole
