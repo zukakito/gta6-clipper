@@ -1159,5 +1159,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293819398_13665.mp4",
+    "title": "Boeshi reacts to random civilian police chase #shorts",
+    "posted_at": "2026-11-23T14:34:02+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938193982",
+    "vod_offset": 13661.7,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1RiVtUJIuLiueCXTO_iansLVLPiisIeVC",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
