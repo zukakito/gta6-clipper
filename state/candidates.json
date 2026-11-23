@@ -6240,7 +6240,8 @@
     "win_start": 21000.0,
     "win_end": 21045.0,
     "found_at": "2026-11-22T23:48:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -6252,7 +6253,8 @@
     "win_start": 21860.0,
     "win_end": 21935.0,
     "found_at": "2026-11-22T23:48:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay or streamer reaction; the segment is only giveaway chat without visual action, violating campaign rules for interesting content."
   },
   {
     "campaign_id": "lacy-gta6-pool",
@@ -6264,7 +6266,8 @@
     "win_start": 21695.0,
     "win_end": 21770.0,
     "found_at": "2026-11-22T23:48:06+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The segment is a giveaway announcement with no clear GTA 6 gameplay or streamer reaction to in-game events, violating campaign requirements for engaging game content."
   },
   {
     "campaign_id": "asianjeff-gta6",
@@ -6340,7 +6343,8 @@
     "win_start": 72365.0,
     "win_end": 72440.0,
     "found_at": "2026-11-22T23:48:37+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript contains only unrelated conversation without clear GTA 6 gameplay or a distinct reaction moment; no setup/payoff, making it unsuitable for a short clip."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -6352,7 +6356,8 @@
     "win_start": 120.0,
     "win_end": 195.0,
     "found_at": "2026-11-22T23:52:19+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript lacks a clear gameplay reaction or event; it is mostly filler talk about plans and no distinct moment to hook viewers, making it unsuitable for a short clip."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -6431,5 +6436,181 @@
     "found_at": "2026-11-22T23:53:44+00:00",
     "status": "rejected",
     "reason": "The transcript shows only random chat and no clear GTA 6 gameplay or reaction moment. There is no setup/payoff, and the streamer is not reacting to in‑game action, making it unsuitable for the campaign."
+  },
+  {
+    "campaign_id": "lacy-gta6-pool",
+    "vod_id": "twitchvod:v2937823418",
+    "vod_url": "https://www.twitch.tv/videos/2937823418",
+    "vod_title": "Highlight: 🌴️ GTA 6 MARATHON 🍹 THE FINALE 🦩️ BEATING IT RIGHT NOW 🍹️ GIVEAWAYS 🌴️  !CLIPPING !COM",
+    "t": 3695.0,
+    "score": 1.1475332853316724,
+    "win_start": 3650.0,
+    "win_end": 3725.0,
+    "found_at": "2026-11-23T01:15:22+00:00",
+    "status": "new"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-23 01:15",
+    "t": 76955.0,
+    "score": 1.6959389911123814,
+    "win_start": 76910.0,
+    "win_end": 76985.0,
+    "found_at": "2026-11-23T01:15:45+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only chat comments with no clear gameplay event, reaction, or setup; violates campaign rule to include gameplay moments."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-23 01:15",
+    "t": 76830.0,
+    "score": 1.6044748286110126,
+    "win_start": 76785.0,
+    "win_end": 76860.0,
+    "found_at": "2026-11-23T01:15:45+00:00",
+    "status": "rejected",
+    "reason": "too little speech (11 words)"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-23 01:15",
+    "t": 75750.0,
+    "score": 1.4910089410092333,
+    "win_start": 75705.0,
+    "win_end": 75780.0,
+    "found_at": "2026-11-23T01:15:45+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only idle conversation with no clear gameplay moment, reaction, or funny event; violates campaign rule to include clear setup and payoff."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-23 01:15",
+    "t": 75620.0,
+    "score": 1.4857799719402642,
+    "win_start": 75575.0,
+    "win_end": 75650.0,
+    "found_at": "2026-11-23T01:15:45+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-23 01:15",
+    "t": 76140.0,
+    "score": 1.4497942370166996,
+    "win_start": 76095.0,
+    "win_end": 76170.0,
+    "found_at": "2026-11-23T01:15:45+00:00",
+    "status": "rejected",
+    "reason": "Stream contains only idle chat commentary with no visible gameplay or reaction moments, violating campaign rules."
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "vod_id": "twitchvod:v2936885848",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_title": "🌴GTA 6 MARATHON🌴DAY4🌴DAY 146 /365🌴!clipping !gg !newvid 2026-11-23 01:15",
+    "t": 77730.0,
+    "score": 1.4424478347685215,
+    "win_start": 77685.0,
+    "win_end": 77760.0,
+    "found_at": "2026-11-23T01:15:45+00:00",
+    "status": "rejected",
+    "reason": "Transcript indicates only idle chatter with no clear gameplay moment or streamer reaction, violating campaign rules for content quality."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937819762",
+    "vod_url": "https://www.twitch.tv/videos/2937819762",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 4075.0,
+    "score": 1.5537685724432222,
+    "win_start": 4030.0,
+    "win_end": 4105.0,
+    "found_at": "2026-11-23T01:26:00+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only chat commentary about Minecraft villagers with no clear GTA 6 gameplay action or reaction from the streamer. The content is idle chat and does not meet the campaign rules for a clip. No start/end, hook, title, description, or tags are provided."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937819762",
+    "vod_url": "https://www.twitch.tv/videos/2937819762",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 3685.0,
+    "score": 1.2206158076240812,
+    "win_start": 3640.0,
+    "win_end": 3715.0,
+    "found_at": "2026-11-23T01:26:00+00:00",
+    "status": "new"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937819762",
+    "vod_url": "https://www.twitch.tv/videos/2937819762",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 3850.0,
+    "score": 1.201364855731389,
+    "win_start": 3805.0,
+    "win_end": 3880.0,
+    "found_at": "2026-11-23T01:26:00+00:00",
+    "status": "new"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937694903",
+    "vod_url": "https://www.twitch.tv/videos/2937694903",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 7365.0,
+    "score": 1.8418666677637023,
+    "win_start": 7320.0,
+    "win_end": 7395.0,
+    "found_at": "2026-11-23T01:26:06+00:00",
+    "status": "rejected",
+    "reason": "The segment consists mainly of chat discussion about sub‑goals and comparisons between GTA 5 and GTA 6 with no clear in‑game action, reaction, or notable gameplay moment. It lacks a setup/payoff structure and does not showcase Parkerr reacting to a specific event, so it does not meet the campaign’s content criteria."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937694903",
+    "vod_url": "https://www.twitch.tv/videos/2937694903",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 7620.0,
+    "score": 1.629669185951552,
+    "win_start": 7575.0,
+    "win_end": 7650.0,
+    "found_at": "2026-11-23T01:26:06+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only idle chat about money with no gameplay or clear reaction to in-game events. No moment meets campaign rules for a clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937694903",
+    "vod_url": "https://www.twitch.tv/videos/2937694903",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 7760.0,
+    "score": 1.281138126635517,
+    "win_start": 7715.0,
+    "win_end": 7790.0,
+    "found_at": "2026-11-23T01:26:06+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2937694903",
+    "vod_url": "https://www.twitch.tv/videos/2937694903",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY🔴",
+    "t": 7915.0,
+    "score": 1.157470769905936,
+    "win_start": 7870.0,
+    "win_end": 7945.0,
+    "found_at": "2026-11-23T01:26:06+00:00",
+    "status": "new"
   }
 ]

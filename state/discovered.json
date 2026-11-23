@@ -250,7 +250,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "12-500-lacy-gta-vi-marathon-pool-campaign": {
     "name": "$12,500 LACY GTA VI Marathon Pool Campaign",
@@ -278,7 +278,7 @@
     "name": "Dasgasd3m x RUCKUS | GTA 6",
     "host": "Dasgasd3m",
     "board": "content_rewards",
-    "type": "pool",
+    "type": "cpm",
     "cpm": 2.0,
     "budget_left_usd": 905,
     "platforms": [
@@ -294,7 +294,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "kreekcraft-gta-6-clipping": {
     "name": "KreekCraft GTA 6 Clipping",
@@ -344,7 +344,7 @@
     "name": "GTA 6 Clipping Campaign - Tokyo Girl",
     "host": "Tokyo Girl",
     "board": "content_rewards",
-    "type": "pool",
+    "type": "cpm",
     "cpm": 0.7,
     "budget_left_usd": 1711,
     "platforms": [
@@ -360,7 +360,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -498,7 +498,7 @@
     "name": "Lucky Latvian X GTA6",
     "host": "Lucky Latvian",
     "board": "content_rewards",
-    "type": "unknown",
+    "type": "cpm",
     "cpm": 2.0,
     "budget_left_usd": 573,
     "platforms": [
@@ -514,7 +514,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "7-500-luxdrop-logo-clipping-campaign": {
     "name": "$7,500 LUXDROP Logo Clipping Campaign",
@@ -541,7 +541,7 @@
   "bendadonnn-x-puffco-gta-6": {
     "name": "BenDaDonnn x Puffco GTA 6",
     "host": "BenDaDonnn",
-    "board": "other",
+    "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
     "budget_left_usd": 9769,
@@ -551,14 +551,14 @@
       "instagram",
       "x"
     ],
-    "apply_first": true,
+    "apply_first": false,
     "streamer": "BenDaDonnn",
     "url": "https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a",
     "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:10+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -713,7 +713,7 @@
     "first_seen": "2026-11-20T21:56:05+00:00",
     "source_board": "https://contentrewards.com/c/discover/clipping",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "jack-gta-logo": {
     "name": "Jack [GTA LOGO]",
@@ -1714,7 +1714,7 @@
     "name": "[GTA VI] MUSIC | 10 TRACKS | GTA 6",
     "host": "[GTA VI] MUSIC",
     "board": "content_rewards",
-    "type": "unknown",
+    "type": "cpm",
     "cpm": 0.75,
     "budget_left_usd": 244,
     "platforms": [
@@ -1730,7 +1730,7 @@
     "first_seen": "2026-11-22T04:38:03+00:00",
     "source_board": "https://contentrewards.com/c/discover/clipping",
     "needs_review": false,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "reach-lacy-gta-vi-marathon-pool-campaign": {
     "name": "Reach LACY GTA VI Marathon Pool Campaign",
@@ -1972,7 +1972,7 @@
     "name": "GTA 6 x GTA Clipper Logo Campaign",
     "host": "GTA Clipper",
     "board": "content_rewards",
-    "type": "unknown",
+    "type": "cpm",
     "cpm": 0.5,
     "budget_left_usd": 929,
     "platforms": [
@@ -1988,7 +1988,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-22T22:49:25+00:00"
+    "last_seen": "2026-11-23T01:14:12+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
