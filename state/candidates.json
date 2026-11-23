@@ -6844,7 +6844,8 @@
     "win_start": 39069.0,
     "win_end": 39144.0,
     "found_at": "2026-11-23T03:45:13+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 42% of the clip"
   },
   {
     "campaign_id": "asianjeff-gta6",
@@ -6881,7 +6882,7 @@
     "win_start": 83370.0,
     "win_end": 83445.0,
     "found_at": "2026-11-23T03:45:57+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "asianjeff-gta6",
@@ -6893,7 +6894,8 @@
     "win_start": 83990.0,
     "win_end": 84065.0,
     "found_at": "2026-11-23T03:45:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "asianjeff-gta6",
@@ -6905,7 +6907,8 @@
     "win_start": 83690.0,
     "win_end": 83765.0,
     "found_at": "2026-11-23T03:45:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "asianjeff-gta6",
@@ -6917,7 +6920,8 @@
     "win_start": 82585.0,
     "win_end": 82660.0,
     "found_at": "2026-11-23T03:45:57+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "Transcript shows only idle chat with no clear gameplay event or reaction; no setup and payoff, violating campaign rules."
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -6929,7 +6933,7 @@
     "win_start": 3499.0,
     "win_end": 3574.0,
     "found_at": "2026-11-23T03:46:11+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -6941,7 +6945,7 @@
     "win_start": 5389.0,
     "win_end": 5464.0,
     "found_at": "2026-11-23T03:46:11+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "diegoloveless-gta6",
@@ -7067,5 +7071,82 @@
     "win_end": 8930.0,
     "found_at": "2026-11-23T03:48:40+00:00",
     "status": "rendered"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-23 05:36",
+    "t": 9974.0,
+    "score": 1.5423564219772483,
+    "win_start": 9929.0,
+    "win_end": 10004.0,
+    "found_at": "2026-11-23T05:37:44+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only vague commentary about clothing items and matchmaking without any clear GTA 6 gameplay event, reaction, or payoff. There is no identifiable setup and payoff, making it unsuitable for a highlight clip per campaign rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-23 05:36",
+    "t": 8334.0,
+    "score": 1.4881278950489154,
+    "win_start": 8289.0,
+    "win_end": 8364.0,
+    "found_at": "2026-11-23T05:37:44+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows unrelated discussion about team composition and magic players, no clear GTA 6 gameplay or reaction. Does not meet campaign content rules."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-23 05:36",
+    "t": 9729.0,
+    "score": 1.4594837025011602,
+    "win_start": 9684.0,
+    "win_end": 9759.0,
+    "found_at": "2026-11-23T05:37:44+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only disjointed chat comments with no clear GTA 6 gameplay, reaction, or event. No setup/payoff visible, making it unsuitable for the clipping campaign."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-23 05:36",
+    "t": 7584.0,
+    "score": 1.43491641706298,
+    "win_start": 7539.0,
+    "win_end": 7614.0,
+    "found_at": "2026-11-23T05:37:44+00:00",
+    "status": "rejected",
+    "reason": "Transcript lacks clear GTA 6 gameplay or a distinct setup/payoff; streamer dialogue is incoherent and does not indicate a notable in-game moment, making it unsuitable for the campaign."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-23 05:36",
+    "t": 9274.0,
+    "score": 1.414794092848433,
+    "win_start": 9229.0,
+    "win_end": 9304.0,
+    "found_at": "2026-11-23T05:37:44+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers) 2026-11-23 05:36",
+    "t": 7064.0,
+    "score": 1.3352181799869123,
+    "win_start": 7019.0,
+    "win_end": 7094.0,
+    "found_at": "2026-11-23T05:37:44+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows incoherent chat without clear GTA 6 gameplay or a distinct hook/payoff; no evident reaction or action, making it unsuitable for the campaign."
   }
 ]

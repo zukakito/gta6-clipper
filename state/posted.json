@@ -1068,5 +1068,57 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293688584_83415.mp4",
+    "title": "AsianJeff decides to rob a bank in GTA 6 #shorts",
+    "posted_at": "2026-11-23T05:25:36+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2936885848",
+    "vod_offset": 83415.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/11QI-PmvVAum1jInNiPkhDQB8aqXii7Ah",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293798334_3544.mp4",
+    "title": "Diego Loveless battles clone army in GTA 6 #shorts",
+    "posted_at": "2026-11-23T05:26:36+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_offset": 3522.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1Nytu8wBl_oSqJmtJuNs4_hiNwYl879lE",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293798334_9274.mp4",
+    "title": "Diego Loveless dodges incoming buck in GTA 6 #shorts",
+    "posted_at": "2026-11-23T05:39:25+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_offset": 9250.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1yvx9A63bSQvywZnvM-IRzvXjY99GwpgW",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "file": "diegoloveless-gta6_twitchvod-v293798334_5434.mp4",
+    "title": "Diego blames barber for haircut #shorts",
+    "posted_at": "2026-11-23T05:40:59+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_offset": 5428.5,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/19vJWfm5jA2LYrUjEMta4a-dsxMBWjNk3",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
