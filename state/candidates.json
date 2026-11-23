@@ -7229,5 +7229,44 @@
     "found_at": "2026-11-23T06:47:42+00:00",
     "status": "rejected",
     "reason": "Transcript shows only chat interaction with no indication of GTA 6 gameplay or a clear moment; violates campaign rules for idle/AFK content."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers)",
+    "t": 13679.0,
+    "score": 1.4288149668595562,
+    "win_start": 13634.0,
+    "win_end": 13709.0,
+    "found_at": "2026-11-23T08:41:58+00:00",
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers)",
+    "t": 14014.0,
+    "score": 1.3018937518277327,
+    "win_start": 13969.0,
+    "win_end": 14044.0,
+    "found_at": "2026-11-23T08:41:58+00:00",
+    "status": "rejected",
+    "reason": "Transcript shows only streamer talking without clear GTA 6 gameplay or a distinct setup/payoff; no observable in-game action, making it unsuitable for the campaign."
+  },
+  {
+    "campaign_id": "diegoloveless-gta6",
+    "vod_id": "twitchvod:v2937983341",
+    "vod_url": "https://www.twitch.tv/videos/2937983341",
+    "vod_title": "Eternity Magik Main (defending against throwers)",
+    "t": 14179.0,
+    "score": 1.2532164018117955,
+    "win_start": 14134.0,
+    "win_end": 14209.0,
+    "found_at": "2026-11-23T08:41:58+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only the streamer talking about voting and raiding, with no indication of GTA 6 gameplay or a clear in‑game event. This fails the campaign rule requiring funny or notable GTA moments."
   }
 ]
