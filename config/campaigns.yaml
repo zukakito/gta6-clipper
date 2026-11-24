@@ -324,7 +324,9 @@ campaigns:
     source_since: "2026-11-18"
     format: short
     must_include: ["Parkerr", "twitch.tv/realparkerr"]
-    overlay_text: "TWITCH.TV/REALPARKERR"   # brief asks for a "Parkerr Twitch stamp"; text stamp until the official asset is found
+    overlay_text: "TWITCH.TV/REALPARKERR"
+    # Official "Parkerr Twitch stamp" (Parkerr Stamp.png, 2172x724) from the campaign brief, via Notion's public image proxy.
+    overlay_image_url: https://app.notion.com/image/attachment%3A4763ef9d-3ef4-406e-9c17-0be1784b92b8%3AParkerr_Stamp.png?table=block&id=3eb0395e-47eb-8025-b864-e5ac17eec127&spaceId=f2c0395e-47eb-8184-8576-0003104b2f57&cache=v2
     rules: >
       Only Parkerr's GTA VI Twitch streams/VODs (not his YouTube, no other streamers, trailers or leaks).
       Hook in the first 1-3 seconds, remove dead time, fast pacing, captions, one main moment per clip, understandable
