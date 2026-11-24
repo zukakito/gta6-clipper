@@ -3,80 +3,6 @@
     "campaign_id": "lacy-gta6-pool",
     "vod_id": "twitchvod:v2935059680",
     "vod_url": "https://www.twitch.tv/videos/2935059680",
-    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 05:34",
-    "t": 39079,
-    "score": 3.3256354244364106,
-    "win_start": 39034,
-    "win_end": 39109,
-    "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "lacy-gta6-pool",
-    "vod_id": "twitchvod:v2935059680",
-    "vod_url": "https://www.twitch.tv/videos/2935059680",
-    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 05:34",
-    "t": 39374,
-    "score": 2.885785704312153,
-    "win_start": 39329,
-    "win_end": 39404,
-    "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "lacy-gta6-pool",
-    "vod_id": "twitchvod:v2935059680",
-    "vod_url": "https://www.twitch.tv/videos/2935059680",
-    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 05:34",
-    "t": 40289,
-    "score": 2.571186158817266,
-    "win_start": 40244,
-    "win_end": 40319,
-    "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "lacy-gta6-pool",
-    "vod_id": "twitchvod:v2935059680",
-    "vod_url": "https://www.twitch.tv/videos/2935059680",
-    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 05:34",
-    "t": 37874,
-    "score": 2.1804730983467433,
-    "win_start": 37829,
-    "win_end": 37904,
-    "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "lacy-gta6-pool",
-    "vod_id": "twitchvod:v2935059680",
-    "vod_url": "https://www.twitch.tv/videos/2935059680",
-    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 05:34",
-    "t": 39554,
-    "score": 2.1479495572023493,
-    "win_start": 39509,
-    "win_end": 39584,
-    "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "rejected",
-    "reason": "too close to an existing clip from this VOD (<360s)"
-  },
-  {
-    "campaign_id": "lacy-gta6-pool",
-    "vod_id": "twitchvod:v2935059680",
-    "vod_url": "https://www.twitch.tv/videos/2935059680",
-    "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 05:34",
-    "t": 38604,
-    "score": 2.1169683855597983,
-    "win_start": 38559,
-    "win_end": 38634,
-    "found_at": "2026-11-21T05:34:39+00:00",
-    "status": "rejected",
-    "reason": "The clip contains sexual content with a woman on the streamer’s lap and explicit language, violating campaign rules that prohibit sexual content, nudity, or strip‑club scenes. No valid start/end or hook can be provided."
-  },
-  {
-    "campaign_id": "lacy-gta6-pool",
-    "vod_id": "twitchvod:v2935059680",
-    "vod_url": "https://www.twitch.tv/videos/2935059680",
     "vod_title": "🌴️ GTA 6 MARATHON 🍹 GIVING AWAY GTA 6 TO VIEWERS 🦩️ IN MIAMI 🌴️ CHAPTER 3 🍹️IN VICE CITY 🌴️  LIVE 24/7 🦩️ !CLIPPING !COM 2026-11-21 06:48",
     "t": 43854,
     "score": 3.0796618724153997,
@@ -7202,7 +7128,8 @@
     "win_start": 22286.0,
     "win_end": 22361.0,
     "found_at": "2026-11-24T05:29:42+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -7214,6 +7141,7 @@
     "win_start": 23571.0,
     "win_end": 23646.0,
     "found_at": "2026-11-24T05:29:42+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only unrelated dialogue with no clear GTA VI gameplay reaction, setup, or payoff. There is no identifiable in‑game event, crash, chase, or funny moment, making it unsuitable for a short clip per campaign rules."
   }
 ]
