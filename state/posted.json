@@ -1302,5 +1302,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "asianjeff-gta6",
+    "file": "asianjeff-gta6_twitchvod-v293884582_24086.mp4",
+    "title": "AsianJeff decides which GTA 6 heist to start #shorts",
+    "posted_at": "2026-11-24T09:23:14+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938845822",
+    "vod_offset": 24081.7,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1eyU0PGfneksIFeBkbNrTpdiEWIHQTIEJ",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
