@@ -1380,5 +1380,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "file": "kai-cenat-gta6-pool_twitchvod-v293950473_17153.mp4",
+    "title": "Kai Cenat wins big in GTA 6 #KAICENAT #shorts",
+    "posted_at": "2026-11-24T23:06:42+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939504732",
+    "vod_offset": 17126.6,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1dr48aSK9aGB7tWbuW0WqsLliz8Mupysa",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "file": "kai-cenat-gta6-pool_twitchvod-v293950473_15593.mp4",
+    "title": "Kai Cenat grabs the bag and exits GTA 6 #shorts",
+    "posted_at": "2026-11-24T23:09:43+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939504732",
+    "vod_offset": 15573.1,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1DzebxcFgmorokylYGmT7CLIY4BLi3IDD",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
