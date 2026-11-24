@@ -62,6 +62,10 @@ Decide:
    bad: "Wait for it", "Crazy moment", "Epic car chase surprise", "Lost him, hilarious reaction",
    "Video tape mystery revealed"). Never use hype words (epic, hilarious, insane, crazy, wild, shock, mystery,
    surprise, revealed, chaos). No emojis, no clickbait, no spoilers of major story twists.
+   GROUND IT IN THE TRANSCRIPT: only state events the streamer's own words confirm (if nobody mentions a tank, a heist
+   or the police, don't put them in the hook or title). If the transcript only promises something ("we're going to
+   get six stars") and the window ends before it happens, the hook must not say it happened - or set keep: false
+   when the payoff is missing. A short paraphrase of the streamer's reaction is ideal.
 4. title: YouTube title under 70 chars, specific (what actually happens), includes the streamer's name, no hype
    words, ends with " #shorts".
 5. description: 2 short lines describing the moment + required names/hashtags + "Clip from {streamer}'s GTA 6 stream."
