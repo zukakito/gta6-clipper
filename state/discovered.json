@@ -246,11 +246,11 @@
     "apply_first": false,
     "streamer": "Kai Cenat",
     "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/dd617572-f0f7-4754-8df5-4c0deb81763a",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-24T19:40:50+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "12-500-lacy-gta-vi-marathon-pool-campaign": {
     "name": "$12,500 LACY GTA VI Marathon Pool Campaign",
@@ -280,7 +280,7 @@
     "host": "Dasgasd3m",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 2.0,
+    "cpm": 2,
     "budget_left_usd": 703,
     "platforms": [
       "youtube",
@@ -291,11 +291,11 @@
     "apply_first": false,
     "streamer": "Dasgasd3m",
     "url": "https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/985dc674-c75e-44fc-ac87-1b1506324389",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-24T17:11:23+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "kreekcraft-gta-6-clipping": {
     "name": "KreekCraft GTA 6 Clipping",
@@ -357,11 +357,11 @@
     "apply_first": false,
     "streamer": "Tokyo Girl",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/9dedcdfc-7e4d-4e56-8036-846bfdbdc676",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-24T19:40:50+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -544,7 +544,7 @@
     "host": "BenDaDonnn",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1.0,
+    "cpm": 1,
     "budget_left_usd": 8490,
     "platforms": [
       "tiktok",
@@ -555,11 +555,11 @@
     "apply_first": false,
     "streamer": "BenDaDonnn",
     "url": "whop.com/experiences/exp_9wEKVJKauL8lbP/campaigns/749b47da-47bb-4122-8bb3-1b4a60d8f0d5",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-24T19:40:50+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -1983,11 +1983,11 @@
     "apply_first": false,
     "streamer": "GTA Clipper",
     "url": "whop.com/experiences/exp_3XuozWlyyQaylJ/campaigns/de2b2ee3-bb22-453e-ae1a-c07bf89c5ef4",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-24T19:40:50+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
@@ -2005,11 +2005,11 @@
     "apply_first": false,
     "streamer": "ClipUp Official",
     "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/1b3065cb-29fd-4631-a252-ec3f6d28a583",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-24T19:40:50+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "gta-vi-things-i-could-ve-said-music-campaign": {
     "name": "GTA VI \"Things I Could've Said\" Music Campaign",
@@ -2286,11 +2286,11 @@
     "apply_first": false,
     "streamer": null,
     "url": null,
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-23T08:41:34+00:00",
     "source_board": "https://contentrewards.com/c/discover/clipping",
     "needs_review": false,
-    "last_seen": "2026-11-24T14:26:38+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "gattouz0-gattouz-gta-vi-1win": {
     "name": "Gattouz0 - GATTOUZ × GTA VI × 1WIN",
@@ -2318,7 +2318,7 @@
     "host": "BICHOU MIAMI",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1.0,
+    "cpm": 1,
     "budget_left_usd": 553,
     "platforms": [
       "youtube",
@@ -2329,11 +2329,11 @@
     "apply_first": false,
     "streamer": "BICHOU MIAMI",
     "url": null,
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-23T15:44:41+00:00",
     "source_board": "https://contentrewards.com/c/discover/clipping",
     "needs_review": false,
-    "last_seen": "2026-11-24T17:11:23+00:00"
+    "last_seen": "2026-11-24T20:59:23+00:00"
   },
   "reach-12-500-lacy-gta-vi-marathon-pool-campaign": {
     "name": "Reach $12,500 LACY GTA VI Marathon Pool Campaign",
