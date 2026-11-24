@@ -1315,5 +1315,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293918585_5435.mp4",
+    "title": "Boeshi gets chased by police in GTA 6 #shorts",
+    "posted_at": "2026-11-24T10:36:59+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939185858",
+    "vod_offset": 5420.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1LV37Qc2wOwAp1vuGEgTD5axn26zmGPkD",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293918585_6445.mp4",
+    "title": "Boeshi reacts to birds killing themselves in GTA 6 #shorts",
+    "posted_at": "2026-11-24T10:39:23+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939185858",
+    "vod_offset": 6444.8,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1-g1sjp9x5-UMYUF5Goiti7IEHgYApYun",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
