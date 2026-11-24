@@ -1237,5 +1237,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_12416.mp4",
+    "title": "Parkerr triggers huge explosion in GTA 6 #shorts",
+    "posted_at": "2026-11-24T02:14:11+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 12406.1,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/14U8J8SVlBIunrsSjKg-ERwcC72p8l1-p",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_12836.mp4",
+    "title": "Parkerr finally smokes a cigarette in GTA 6 #shorts",
+    "posted_at": "2026-11-24T02:15:27+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 12814.3,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1BfBYU4oBGVIDz9oytmXpJI5Sgmouxj9-",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

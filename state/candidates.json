@@ -6992,7 +6992,8 @@
     "win_start": 11136.0,
     "win_end": 11211.0,
     "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows the streamer talking about a workout montage with no indication of GTA 6 gameplay, reaction, or in-game action. This violates campaign rules requiring GTA VI content and a clear in-game moment."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -7004,7 +7005,8 @@
     "win_start": 11301.0,
     "win_end": 11376.0,
     "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only chatty commentary about \"thunder thighs\" with no clear GTA 6 gameplay action, reaction, or visual moment. There is no setup/payoff, and the content does not meet the campaign requirement for an interesting, self‑contained gameplay clip."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -7016,7 +7018,7 @@
     "win_start": 12371.0,
     "win_end": 12446.0,
     "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -7028,7 +7030,8 @@
     "win_start": 10556.0,
     "win_end": 10626.0,
     "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript contains unrelated rambling without clear GTA 6 gameplay reaction, no setup/payoff, and no identifiable in‑game event. It does not meet campaign criteria for an interesting self‑contained clip."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -7040,7 +7043,7 @@
     "win_start": 12791.0,
     "win_end": 12866.0,
     "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -7052,7 +7055,8 @@
     "win_start": 12601.0,
     "win_end": 12676.0,
     "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "kreekcraft-gta6",
