@@ -1,6 +1,6 @@
 {
   "scout": {
-    "checked_at": "2026-11-24T10:33:16+00:00",
+    "checked_at": "2026-11-24T11:31:05+00:00",
     "new": 0,
     "known": 137,
     "youtube_open": 63,
@@ -49,10 +49,10 @@
       "Launch Clipping"
     ]
   },
-  "last_scout": "2026-11-24T10:33:16+00:00",
-  "last_run": "2026-11-24T10:39:23+00:00",
-  "run_seconds": 368,
-  "made_this_run": 2,
+  "last_scout": "2026-11-24T11:31:05+00:00",
+  "last_run": "2026-11-24T11:37:37+00:00",
+  "run_seconds": 398,
+  "made_this_run": 1,
   "publisher": "dry_run",
   "enabled_campaigns": [
     "lacy-gta6-pool",
@@ -67,10 +67,9 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 1,
+  "queued_candidates": 0,
   "pending_submissions": 0,
   "rendered_files": [
-    "boeshi-gta6_twitchvod-v293918585_5435.mp4",
-    "boeshi-gta6_twitchvod-v293918585_6445.mp4"
+    "boeshi-gta6_twitchvod-v293918585_10410.mp4"
   ]
 }

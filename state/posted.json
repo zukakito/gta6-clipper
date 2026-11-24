@@ -1341,5 +1341,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v293918585_10410.mp4",
+    "title": "Boeshi crashes car into obstacles after chase #shorts",
+    "posted_at": "2026-11-24T11:34:45+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939185858",
+    "vod_offset": 10396.7,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1KNWUxhBhVYQiLCzI2HH6o2Heu_-UFgF6",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
