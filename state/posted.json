@@ -1276,5 +1276,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_22596.mp4",
+    "title": "Parkerr encounters a nightmare tiger in GTA 6 #shorts",
+    "posted_at": "2026-11-24T05:31:11+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 22589.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1zCFTYpzW9IwPHjOawRpJADGyXwSnRBVQ",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_21911.mp4",
+    "title": "Parkerr reacts to strange object in GTA VI #shorts",
+    "posted_at": "2026-11-24T05:32:50+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 21904.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1Pi4vDdJb01j1LKwW1gsFAKUOv0kBOiQ0",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

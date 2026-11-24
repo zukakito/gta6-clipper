@@ -7141,5 +7141,79 @@
     "found_at": "2026-11-24T04:05:43+00:00",
     "status": "rejected",
     "reason": "The transcript lacks a clear GTA 6 gameplay moment or reaction; it is mostly idle chatter without setup/payoff, making it unsuitable for the campaign."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2938684415",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
+    "t": 22791.0,
+    "score": 1.7179334660196026,
+    "win_start": 22746.0,
+    "win_end": 22821.0,
+    "found_at": "2026-11-24T05:29:42+00:00",
+    "status": "rejected",
+    "reason": "Streamer is repeatedly expressing frustration and profanity without a clear gameplay event, reaction, or interesting moment. No distinct setup/payoff, and the content is mostly incoherent ranting, which does not meet campaign quality standards."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2938684415",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
+    "t": 22596.0,
+    "score": 1.641040862173695,
+    "win_start": 22551.0,
+    "win_end": 22626.0,
+    "found_at": "2026-11-24T05:29:42+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2938684415",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
+    "t": 21566.0,
+    "score": 1.6207828161246165,
+    "win_start": 21521.0,
+    "win_end": 21596.0,
+    "found_at": "2026-11-24T05:29:42+00:00",
+    "status": "rejected",
+    "reason": "No clear GTA 6 gameplay moment; transcript is mostly profanity and disjointed chat without identifiable in-game action or reaction."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2938684415",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
+    "t": 21911.0,
+    "score": 1.587115443227882,
+    "win_start": 21866.0,
+    "win_end": 21941.0,
+    "found_at": "2026-11-24T05:29:42+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2938684415",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
+    "t": 22331.0,
+    "score": 1.3699958701281316,
+    "win_start": 22286.0,
+    "win_end": 22361.0,
+    "found_at": "2026-11-24T05:29:42+00:00",
+    "status": "new"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2938684415",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
+    "t": 23616.0,
+    "score": 1.238214777812077,
+    "win_start": 23571.0,
+    "win_end": 23646.0,
+    "found_at": "2026-11-24T05:29:42+00:00",
+    "status": "new"
   }
 ]
