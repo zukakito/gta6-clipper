@@ -1354,5 +1354,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293967900_1420.mp4",
+    "title": "Parkerr reacts as Billy gets shanked in GTA 6 #shorts",
+    "posted_at": "2026-11-24T22:07:06+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_offset": 1417.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1BKuk4liytRO9nkdGNtROKGxYe5nV57SU",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293967900_3340.mp4",
+    "title": "Parkerr reacts to seven‑grand ops cost in GTA VI #shorts",
+    "posted_at": "2026-11-24T22:09:37+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_offset": 3327.6,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1DSl7yRYlXcl9lH0S5Nr_37RcxyMYkBI9",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
