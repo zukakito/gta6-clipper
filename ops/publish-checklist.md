@@ -53,13 +53,13 @@ _Re-reviewed against each campaign's own brief on 22 Nov 2026. Claude runs this 
 - Source: GTA VI streams only. One clear funny, crazy or surprising moment; first reactions are the priority.
 - **CTA: mention Bobby and where to watch him**, e.g. "Follow Bobby Vanriper on Twitch". Show **twitch.tv/bobby_vanriper** on screen or in the caption, plus **#bobbyvanriper**. English only.
 - No AI-generated thumbnails or content. **Submit within 30 minutes.**
-- **HOLD:** payouts need the Clipping Nation Discord plus a demographics screen recording after 1,500 views. Publish Bobby clips only once the owner has joined that Discord.
+- Owner joined the Clipping Nation Discord (24 Nov), so Bobby clips can be published. **After a clip passes 1,500 views, open a "Submit Demographics" ticket there with a screen recording of the audience country breakdown**, or it won't be approved.
 
 ### Parkerr — ClipHaus
 - Source: Parkerr's GTA VI **Twitch** streams only (not his YouTube, no trailers or leaks). One main moment, hook in the first 1–3 seconds, no story spoilers without a warning. Never change what he said.
-- **The official "Parkerr Twitch stamp" image must be on every clip.** We currently burn a text stamp, which does not meet the brief.
+- **The official "Parkerr Twitch stamp" image (RealParkerr Twitch badge) must be on every clip.** Added to the pipeline 24 Nov; check it's visible on each clip.
 - Direct viewers only to his approved accounts (Twitch @realparkerr, YouTube @ParkerrLive). Never mention his main YouTube channel. Personal-style pages only.
-- **HOLD:** no Parkerr clips until the official stamp image is in the pipeline.
+- **HOLD** on Parkerr clips rendered before 24 Nov ~20:00 IST (text stamp only). Newer clips must show the official stamp.
 
 ### Dasgas Dom — $2 per 1K views (Ruckus)
 - Source: his GTA 6 playthrough on kick.com/dasgasd3m from 18 Nov (no leaks, trailers, other streams). Keep his face or voice in the edit.
@@ -74,8 +74,8 @@ _Re-reviewed against each campaign's own brief on 22 Nov 2026. Claude runs this 
 5. Report back: what was published and submitted, and what was skipped and why.
 
 ## Owner actions that unblock campaigns
-- Join the **Clipping Nation Discord** (Bobby payouts): https://discord.gg/DQyAcKa3nU
-- Optional but recommended: the ClipLaunch, Ruckus and Reach Discords, for brief updates.
+- Done 24 Nov: joined the Clipping Nation, ClipLaunch, Ruckus and Content Rewards Discords. Still optional: Reach Discord.
+- **Discord safety:** campaign links and briefs only come from the official campaign page or the server's own announcement channels. Ignore and report DMs/message requests offering "other campaigns", paid courses, Whop checkout links or staff jobs.
 - Whop bank account, for any payout at all: https://whop.com/home/
 
 ## Campaign briefs (source of truth)
