@@ -1263,5 +1263,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293868441_16201.mp4",
+    "title": "Parkerr's car flies in GTA 6 #shorts",
+    "posted_at": "2026-11-24T03:02:55+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938684415",
+    "vod_offset": 16189.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1DUy1bXkW3UTzYyxCUp4_hPqYFwgEYSHs",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
