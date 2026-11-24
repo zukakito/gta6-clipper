@@ -108,55 +108,6 @@
     "reason": "The transcript shows only repetitive chat about loot and no clear GTA 6 gameplay, action, or payoff. There's no visual setup or reaction, making it unsuitable for the clipping campaign."
   },
   {
-    "campaign_id": "boeshi-gta6",
-    "vod_id": "twitchvod:v2935956182",
-    "vod_url": "https://www.twitch.tv/videos/2935956182",
-    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG)",
-    "t": 9917,
-    "score": 2.2475820068297416,
-    "win_start": 9872,
-    "win_end": 9947,
-    "found_at": "2026-11-21T13:01:57+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "boeshi-gta6",
-    "vod_id": "twitchvod:v2935956182",
-    "vod_url": "https://www.twitch.tv/videos/2935956182",
-    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG)",
-    "t": 9642,
-    "score": 2.0212823071455364,
-    "win_start": 9597,
-    "win_end": 9672,
-    "found_at": "2026-11-21T13:01:57+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "boeshi-gta6",
-    "vod_id": "twitchvod:v2935956182",
-    "vod_url": "https://www.twitch.tv/videos/2935956182",
-    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG)",
-    "t": 9047,
-    "score": 1.3551462298961863,
-    "win_start": 9002,
-    "win_end": 9077,
-    "found_at": "2026-11-21T13:01:57+00:00",
-    "status": "rendered"
-  },
-  {
-    "campaign_id": "boeshi-gta6",
-    "vod_id": "twitchvod:v2935956182",
-    "vod_url": "https://www.twitch.tv/videos/2935956182",
-    "vod_title": "Streaming GTA 6 At 3AM (GONE WRONG)",
-    "t": 8872,
-    "score": 1.3381684684542472,
-    "win_start": 8862,
-    "win_end": 8902,
-    "found_at": "2026-11-21T13:01:57+00:00",
-    "status": "rejected",
-    "reason": "Idle chat, no GTA 6 gameplay, violates campaign rules"
-  },
-  {
     "campaign_id": "bobby-vanriper-gta6",
     "vod_id": "twitchvod:v2936338171",
     "vod_url": "https://www.twitch.tv/videos/2936338171",
