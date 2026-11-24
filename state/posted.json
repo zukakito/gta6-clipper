@@ -1211,5 +1211,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kreekcraft-gta6",
+    "file": "kreekcraft-gta6_twitchvod-v293883176_3410.mp4",
+    "title": "KreekCraft finds a tank and battles enemies in GTA 6 #shorts",
+    "posted_at": "2026-11-24T00:34:39+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938831767",
+    "vod_offset": 3392.8,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1eVE7SmGD-amsVpRa3JMCcY573VRbXeJN",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "kreekcraft-gta6",
+    "file": "kreekcraft-gta6_twitchvod-v293883176_2960.mp4",
+    "title": "KreekCraft gets a six-star wanted level in GTA 6 #shorts",
+    "posted_at": "2026-11-24T00:39:08+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2938831767",
+    "vod_offset": 2945.7,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/107zQbyRdM7XuAHDJHdF6G2egFqVCnwo4",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

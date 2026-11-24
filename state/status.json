@@ -1,7 +1,7 @@
 {
   "scout": {
-    "checked_at": "2026-11-23T23:30:25+00:00",
-    "new": 2,
+    "checked_at": "2026-11-24T00:27:56+00:00",
+    "new": 0,
     "known": 131,
     "youtube_open": 66,
     "needs_review": [
@@ -49,9 +49,9 @@
       "Launch Clipping"
     ]
   },
-  "last_scout": "2026-11-23T23:30:25+00:00",
-  "last_run": "2026-11-23T23:45:50+00:00",
-  "run_seconds": 930,
+  "last_scout": "2026-11-24T00:27:56+00:00",
+  "last_run": "2026-11-24T00:39:08+00:00",
+  "run_seconds": 673,
   "made_this_run": 2,
   "publisher": "dry_run",
   "enabled_campaigns": [
@@ -67,10 +67,10 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 2,
+  "queued_candidates": 6,
   "pending_submissions": 0,
   "rendered_files": [
-    "parkerr-gta6_twitchvod-v293868441_7221.mp4",
-    "parkerr-gta6_twitchvod-v293868441_8046.mp4"
+    "kreekcraft-gta6_twitchvod-v293883176_2960.mp4",
+    "kreekcraft-gta6_twitchvod-v293883176_3410.mp4"
   ]
 }
