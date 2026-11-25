@@ -57,9 +57,9 @@ _Re-reviewed against each campaign's own brief on 22 Nov 2026. Claude runs this 
 
 ### Parkerr — ClipHaus
 - Source: Parkerr's GTA VI **Twitch** streams only (not his YouTube, no trailers or leaks). One main moment, hook in the first 1–3 seconds, no story spoilers without a warning. Never change what he said.
-- **The official "Parkerr Twitch stamp" image (RealParkerr Twitch badge) must be on every clip.** Added to the pipeline 24 Nov; check it's visible on each clip.
+- **The official "Parkerr Twitch stamp" image (RealParkerr Twitch badge) must be on every clip, visible from the first second.** Verified rendering on 25 Nov; from 25 Nov ~19:00 IST it sits below the hook box instead of behind it.
 - Direct viewers only to his approved accounts (Twitch @realparkerr, YouTube @ParkerrLive). Never mention his main YouTube channel. Personal-style pages only.
-- **HOLD** on Parkerr clips rendered before 24 Nov ~20:00 IST (text stamp only). Newer clips must show the official stamp.
+- Parkerr clips rendered before 24 Nov ~20:00 IST have only a text stamp: never publish those.
 
 ### Dasgas Dom — $2 per 1K views (Ruckus)
 - Source: his GTA 6 playthrough on kick.com/dasgasd3m from 18 Nov (no leaks, trailers, other streams). Keep his face or voice in the edit.
