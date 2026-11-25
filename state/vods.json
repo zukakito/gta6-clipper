@@ -408,13 +408,25 @@
   "twitchvod:v2940662518": {
     "url": "https://www.twitch.tv/videos/2940662518",
     "title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-25 21:37",
-    "scanned_until": 3600.0,
-    "last_scan": "2026-11-25T21:48:00+00:00"
+    "scanned_until": 7200.0,
+    "last_scan": "2026-11-25T23:33:21+00:00"
   },
   "twitchvod:v2940695873": {
     "url": "https://www.twitch.tv/videos/2940695873",
     "title": "🔴LIVE! INVESTIGATING THE JUPITER INCIDENT 2026-11-25 21:48",
-    "scanned_until": 5310.0,
-    "last_scan": "2026-11-25T22:36:52+00:00"
+    "scanned_until": 5496.0,
+    "last_scan": "2026-11-25T23:43:27+00:00"
+  },
+  "twitchvod:v2940760392": {
+    "url": "https://www.twitch.tv/videos/2940760392",
+    "title": "VERY SHORT STREAM BEFORE MY FLIGHT",
+    "scanned_until": 1246.0,
+    "last_scan": "2026-11-25T23:29:47+00:00"
+  },
+  "twitchvod:v2940796044": {
+    "url": "https://www.twitch.tv/videos/2940796044",
+    "title": "🔴LIVE! GTA 6 JUPITER INCIDENT.. 2026-11-25 23:33",
+    "scanned_until": 1614.0,
+    "last_scan": "2026-11-25T23:43:27+00:00"
   }
 }
