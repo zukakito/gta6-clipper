@@ -1,8 +1,8 @@
 {
   "scout": {
-    "checked_at": "2026-11-25T09:56:48+00:00",
-    "new": 0,
-    "known": 166,
+    "checked_at": "2026-11-25T11:01:24+00:00",
+    "new": 1,
+    "known": 167,
     "youtube_open": 78,
     "needs_review": [
       "Jack [GTA LOGO]",
@@ -58,9 +58,9 @@
       "MONTAGEM CALMO - Phonknight [EDITS]"
     ]
   },
-  "last_scout": "2026-11-25T09:56:48+00:00",
-  "last_run": "2026-11-25T09:57:06+00:00",
-  "run_seconds": 19,
+  "last_scout": "2026-11-25T11:01:24+00:00",
+  "last_run": "2026-11-25T11:01:53+00:00",
+  "run_seconds": 34,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
