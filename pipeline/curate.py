@@ -61,11 +61,13 @@ Decide:
    (good: "He robs a store for $13", "Cops lock him inside the store", "Car flips off the bridge";
    bad: "Wait for it", "Crazy moment", "Epic car chase surprise", "Lost him, hilarious reaction",
    "Video tape mystery revealed"). Never use hype words (epic, hilarious, insane, crazy, wild, shock, mystery,
-   surprise, revealed, chaos). No emojis, no clickbait, no spoilers of major story twists.
+   surprise, revealed, chaos, huge, massive, giant, big win). No emojis, no clickbait, no spoilers of major story
+   twists - never name a story character being killed, stabbed or betrayed in the hook or title.
    GROUND IT IN THE TRANSCRIPT: only state events the streamer's own words confirm (if nobody mentions a tank, a heist
    or the police, don't put them in the hook or title). If the transcript only promises something ("we're going to
    get six stars") and the window ends before it happens, the hook must not say it happened - or set keep: false
-   when the payoff is missing. A short paraphrase of the streamer's reaction is ideal.
+   when the payoff is missing. A short paraphrase of the streamer's reaction is ideal. If the transcript is too thin
+   to tell what happens (a few scattered words, mostly silence), set keep: false rather than guessing.
 4. title: YouTube title under 70 chars, specific (what actually happens), includes the streamer's name, no hype
    words, ends with " #shorts".
 5. description: 2 short lines describing the moment + required names/hashtags + "Clip from {streamer}'s GTA 6 stream."
@@ -86,7 +88,8 @@ BLIND_NOTE = ("You cannot see the video, only the transcript. A local check alre
 # Hard filters on what the model wrote (it sometimes ignores the prompt).
 BANNED_TOPIC = re.compile(r"strip[\s-]?club|stripper|lap[\s-]?dance|pole[\s-]?danc|twerk|\bnud(?:e|ity)\b|naked|porn|onlyfans|\bsex(?:y|ual)?\b|brothel|escort", re.I)
 HYPE = re.compile(r"\b(?:epic|hilarious|insane|crazy|wild|shock(?:ing|ed)?|mystery|surprise[sd]?|revealed|chaos|chaotic|"
-                  r"unbelievable|you won'?t believe|gone wrong|must see|jaw[- ]dropping)\b", re.I)
+                  r"unbelievable|you won'?t believe|gone wrong|must see|jaw[- ]dropping|huge|massive|giant|ginormous|"
+                  r"wins? big|big win)\b", re.I)
 
 REWRITE_PROMPT = """Rewrite the hook and title of this GTA 6 YouTube Short so they say concretely what happens.
 Streamer: {streamer}
