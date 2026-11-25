@@ -55,8 +55,8 @@
     ]
   },
   "last_scout": "2026-11-24T23:01:12+00:00",
-  "last_run": "2026-11-24T23:09:43+00:00",
-  "run_seconds": 513,
+  "last_run": "2026-11-25T00:03:27+00:00",
+  "run_seconds": 596,
   "made_this_run": 2,
   "publisher": "dry_run",
   "enabled_campaigns": [
@@ -72,10 +72,10 @@
   ],
   "posted_24h": 0,
   "posted_total": 0,
-  "queued_candidates": 5,
+  "queued_candidates": 0,
   "pending_submissions": 0,
   "rendered_files": [
-    "kai-cenat-gta6-pool_twitchvod-v293950473_15593.mp4",
-    "kai-cenat-gta6-pool_twitchvod-v293950473_17153.mp4"
+    "parkerr-gta6_twitchvod-v293967900_11510.mp4",
+    "parkerr-gta6_twitchvod-v293967900_5165.mp4"
   ]
 }

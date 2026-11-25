@@ -1,213 +1,5 @@
 [
   {
-    "campaign_id": "bobby-vanriper-gta6",
-    "vod_id": "twitchvod:v2936338171",
-    "vod_url": "https://www.twitch.tv/videos/2936338171",
-    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
-    "t": 7695.0,
-    "score": 1.756338467791521,
-    "win_start": 7650.0,
-    "win_end": 7725.0,
-    "found_at": "2026-11-21T23:54:26+00:00",
-    "status": "rejected",
-    "reason": "No GTA VI gameplay visible; the transcript shows idle chat with no clear funny or surprising in-game moment, violating campaign rules."
-  },
-  {
-    "campaign_id": "bobby-vanriper-gta6",
-    "vod_id": "twitchvod:v2936338171",
-    "vod_url": "https://www.twitch.tv/videos/2936338171",
-    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
-    "t": 7255.0,
-    "score": 1.5258260385081024,
-    "win_start": 7210.0,
-    "win_end": 7285.0,
-    "found_at": "2026-11-21T23:54:26+00:00",
-    "status": "rejected",
-    "reason": "Transcript lacks a clear, self-contained funny or surprising GTA VI moment with Bobby Vanriper; no evident gameplay action or reaction, making it unsuitable for the campaign."
-  },
-  {
-    "campaign_id": "bobby-vanriper-gta6",
-    "vod_id": "twitchvod:v2936338171",
-    "vod_url": "https://www.twitch.tv/videos/2936338171",
-    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
-    "t": 7875.0,
-    "score": 1.508208717126585,
-    "win_start": 7830.0,
-    "win_end": 7905.0,
-    "found_at": "2026-11-21T23:54:26+00:00",
-    "status": "rejected",
-    "reason": "No GTA VI gameplay shown; streamer is just talking about IRL plans, no clear funny or surprising GTA moment, violating campaign rules."
-  },
-  {
-    "campaign_id": "bobby-vanriper-gta6",
-    "vod_id": "twitchvod:v2936338171",
-    "vod_url": "https://www.twitch.tv/videos/2936338171",
-    "vod_title": "[70/365] 🌴🚔 LIVE IN THE REAL VICE CITY  🌴🚔 PART 40% IN 🌴🚔 UMIAMI GAME TONIGHT???🌴🚔",
-    "t": 7575.0,
-    "score": 1.1548385435670832,
-    "win_start": 7530.0,
-    "win_end": 7605.0,
-    "found_at": "2026-11-21T23:54:26+00:00",
-    "status": "rejected",
-    "reason": "The transcript shows no clear GTA VI gameplay moment, no funny or surprising reaction, and lacks a self-contained setup/payoff. It appears to be idle chatter without visual interest, violating campaign rules."
-  },
-  {
-    "campaign_id": "diegoloveless-gta6",
-    "vod_id": "twitchvod:v2936600990",
-    "vod_url": "https://www.twitch.tv/videos/2936600990",
-    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 23:54",
-    "t": 5260.0,
-    "score": 1.9805498716890388,
-    "win_start": 5215.0,
-    "win_end": 5290.0,
-    "found_at": "2026-11-21T23:54:41+00:00",
-    "status": "rejected",
-    "reason": "No GTA 6 gameplay visible; only chat dialogue with no clear setup/payoff, fails campaign rules."
-  },
-  {
-    "campaign_id": "diegoloveless-gta6",
-    "vod_id": "twitchvod:v2936600990",
-    "vod_url": "https://www.twitch.tv/videos/2936600990",
-    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 23:54",
-    "t": 4985.0,
-    "score": 1.5545158502625942,
-    "win_start": 4940.0,
-    "win_end": 5015.0,
-    "found_at": "2026-11-21T23:54:41+00:00",
-    "status": "rejected",
-    "reason": "No GTA 6 gameplay shown; the segment is just meta discussion about posting clips, violating campaign rules requiring in‑game content."
-  },
-  {
-    "campaign_id": "diegoloveless-gta6",
-    "vod_id": "twitchvod:v2936600990",
-    "vod_url": "https://www.twitch.tv/videos/2936600990",
-    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 23:54",
-    "t": 7155.0,
-    "score": 1.415173839336403,
-    "win_start": 7110.0,
-    "win_end": 7185.0,
-    "found_at": "2026-11-21T23:54:41+00:00",
-    "status": "rejected",
-    "reason": "Transcript shows incoherent conversation with no clear GTA 6 gameplay, no setup/payoff, and likely not a relevant clip per campaign rules."
-  },
-  {
-    "campaign_id": "diegoloveless-gta6",
-    "vod_id": "twitchvod:v2936600990",
-    "vod_url": "https://www.twitch.tv/videos/2936600990",
-    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 23:54",
-    "t": 5925.0,
-    "score": 1.3833623823477474,
-    "win_start": 5880.0,
-    "win_end": 5955.0,
-    "found_at": "2026-11-21T23:54:41+00:00",
-    "status": "rejected",
-    "reason": "The segment lacks clear GTA 6 gameplay, has incoherent ranting, no setup/payoff, and does not meet campaign quality standards."
-  },
-  {
-    "campaign_id": "diegoloveless-gta6",
-    "vod_id": "twitchvod:v2936600990",
-    "vod_url": "https://www.twitch.tv/videos/2936600990",
-    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 23:54",
-    "t": 5410.0,
-    "score": 1.3237597890559838,
-    "win_start": 5365.0,
-    "win_end": 5440.0,
-    "found_at": "2026-11-21T23:54:41+00:00",
-    "status": "rejected",
-    "reason": "The transcript lacks clear GTA 6 gameplay, setup, and payoff; dialogue is incoherent and no interesting in‑game moment is evident, violating campaign rules."
-  },
-  {
-    "campaign_id": "diegoloveless-gta6",
-    "vod_id": "twitchvod:v2936600990",
-    "vod_url": "https://www.twitch.tv/videos/2936600990",
-    "vod_title": "GTA Gaming & Gooning Marathon 2026-11-21 23:54",
-    "t": 4505.0,
-    "score": 1.2799288279626397,
-    "win_start": 4460.0,
-    "win_end": 4535.0,
-    "found_at": "2026-11-21T23:54:41+00:00",
-    "status": "rejected",
-    "reason": "No GTA 6 gameplay shown; streamer only talks about posting clips, no clear setup/payoff, violates campaign rules."
-  },
-  {
-    "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2936524505",
-    "vod_url": "https://www.twitch.tv/videos/2936524505",
-    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 23:54",
-    "t": 11192.0,
-    "score": 2.2691168101325414,
-    "win_start": 11147.0,
-    "win_end": 11222.0,
-    "found_at": "2026-11-21T23:57:57+00:00",
-    "status": "rejected",
-    "reason": "No GTA 6 gameplay visible; the streamer is just talking without any in‑game action, violating campaign rules"
-  },
-  {
-    "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2936524505",
-    "vod_url": "https://www.twitch.tv/videos/2936524505",
-    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 23:54",
-    "t": 11862.0,
-    "score": 2.175261308493694,
-    "win_start": 11817.0,
-    "win_end": 11892.0,
-    "found_at": "2026-11-21T23:57:57+00:00",
-    "status": "rejected",
-    "reason": "The segment contains no clear GTA VI gameplay, mainly incoherent ranting and profanity without a self-contained moment, violating campaign rules for interesting content."
-  },
-  {
-    "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2936524505",
-    "vod_url": "https://www.twitch.tv/videos/2936524505",
-    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 23:54",
-    "t": 11332.0,
-    "score": 2.0343603984271903,
-    "win_start": 11287.0,
-    "win_end": 11362.0,
-    "found_at": "2026-11-21T23:57:57+00:00",
-    "status": "rejected",
-    "reason": "No GTA 6 gameplay shown; streamer is just reading chat and talking, no visual game content, violating campaign rules."
-  },
-  {
-    "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2936524505",
-    "vod_url": "https://www.twitch.tv/videos/2936524505",
-    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 23:54",
-    "t": 11612.0,
-    "score": 1.8548975516945319,
-    "win_start": 11567.0,
-    "win_end": 11642.0,
-    "found_at": "2026-11-21T23:57:57+00:00",
-    "status": "rejected",
-    "reason": "No GTA VI gameplay; the segment is just the streamer chatting about drinking beers with no visual action, violating campaign rules that require a clear GTA moment."
-  },
-  {
-    "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2936524505",
-    "vod_url": "https://www.twitch.tv/videos/2936524505",
-    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 23:54",
-    "t": 9362.0,
-    "score": 1.848989321166078,
-    "win_start": 9317.0,
-    "win_end": 9392.0,
-    "found_at": "2026-11-21T23:57:57+00:00",
-    "status": "rejected",
-    "reason": "too dark (mean luminance 35) - idle/sleeping/camera off"
-  },
-  {
-    "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2936524505",
-    "vod_url": "https://www.twitch.tv/videos/2936524505",
-    "vod_title": "🔴 GTA 6 PLAYTHROUGH STREAM FINAL DAY?? 🔴 2026-11-21 23:54",
-    "t": 10447.0,
-    "score": 1.7906328007529324,
-    "win_start": 10402.0,
-    "win_end": 10477.0,
-    "found_at": "2026-11-21T23:57:57+00:00",
-    "status": "rejected",
-    "reason": "No clear GTA VI gameplay, incoherent dialogue, no setup/payoff, and potential negative portrayal."
-  },
-  {
     "campaign_id": "kai-cenat-gta6-pool",
     "vod_id": "twitchvod:v2936683310",
     "vod_url": "https://www.twitch.tv/videos/2936683310",
@@ -5784,7 +5576,8 @@
     "win_start": 17408.0,
     "win_end": 17478.0,
     "found_at": "2026-11-24T23:01:28+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -5822,7 +5615,7 @@
     "win_start": 5120.0,
     "win_end": 5195.0,
     "found_at": "2026-11-24T23:04:20+00:00",
-    "status": "new"
+    "status": "rendered"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -5834,7 +5627,8 @@
     "win_start": 4610.0,
     "win_end": 4685.0,
     "found_at": "2026-11-24T23:04:20+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows only idle conversation without any clear GTA 6 gameplay event, reaction, or interesting moment. No setup/payoff, no in-game action, and does not meet campaign criteria."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -5846,7 +5640,8 @@
     "win_start": 7755.0,
     "win_end": 7830.0,
     "found_at": "2026-11-24T23:04:20+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript shows incoherent conversation with no clear GTA 6 gameplay, reactions, or interesting moment. Streamer is not reacting to in-game events, making it unsuitable for the campaign."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -5858,6 +5653,97 @@
     "win_start": 5980.0,
     "win_end": 6055.0,
     "found_at": "2026-11-24T23:04:20+00:00",
-    "status": "new"
+    "status": "rejected",
+    "reason": "The transcript only contains the streamer discussing speculation about GTA VI release timing with no clear gameplay action, reaction, or interesting moment. It lacks a setup/payoff and does not meet campaign requirements for a self-contained clip."
+  },
+  {
+    "campaign_id": "kai-cenat-gta6-pool",
+    "vod_id": "twitchvod:v2939504732",
+    "vod_url": "https://www.twitch.tv/videos/2939504732",
+    "vod_title": "KAI VS SPEED: FIRST TO MAKE A MILLION DOLLARS IN GTA 6",
+    "t": 17593.0,
+    "score": 1.309395909796661,
+    "win_start": 17548.0,
+    "win_end": 17623.0,
+    "found_at": "2026-11-24T23:56:35+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains only meta commentary about the gaming channel and offline uploads, with no indication of Kai Cenat reacting to GTA 6 gameplay. There is no clear GTA 6 action, reaction, or memorable moment within the 75‑second window, violating the campaign rule that GTA 6 gameplay must be the main focus."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2939679008",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴 2026-11-24 23:56",
+    "t": 11510.0,
+    "score": 1.7334508579454526,
+    "win_start": 11465.0,
+    "win_end": 11538.0,
+    "found_at": "2026-11-24T23:59:55+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2939679008",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴 2026-11-24 23:56",
+    "t": 8405.0,
+    "score": 1.6132977133701933,
+    "win_start": 8360.0,
+    "win_end": 8435.0,
+    "found_at": "2026-11-24T23:59:55+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains no clear GTA 6 gameplay moment, reaction, or event. It is mostly unrelated chat and vague comments without a setup/payoff, violating campaign rules."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2939679008",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴 2026-11-24 23:56",
+    "t": 11255.0,
+    "score": 1.470911518069214,
+    "win_start": 11210.0,
+    "win_end": 11285.0,
+    "found_at": "2026-11-24T23:59:55+00:00",
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2939679008",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴 2026-11-24 23:56",
+    "t": 10355.0,
+    "score": 1.417728585006227,
+    "win_start": 10310.0,
+    "win_end": 10385.0,
+    "found_at": "2026-11-24T23:59:55+00:00",
+    "status": "rejected",
+    "reason": "The segment is just idle chatter about character switching and jokes about driving without any clear gameplay event, reaction, or payoff. It lacks a self-contained moment and does not meet the campaign's requirement for an interesting GTA VI clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2939679008",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴 2026-11-24 23:56",
+    "t": 9705.0,
+    "score": 1.417164636053982,
+    "win_start": 9660.0,
+    "win_end": 9735.0,
+    "found_at": "2026-11-24T23:59:55+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 33% of the clip"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2939679008",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴 2026-11-24 23:56",
+    "t": 9240.0,
+    "score": 1.3772712510101695,
+    "win_start": 9195.0,
+    "win_end": 9270.0,
+    "found_at": "2026-11-24T23:59:55+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows idle conversation without a clear gameplay event, reaction, or payoff. No distinct GTA 6 moment or visual action is evident, making it unsuitable for a short clip."
   }
 ]

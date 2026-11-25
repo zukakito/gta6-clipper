@@ -1406,5 +1406,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293967900_5165.mp4",
+    "title": "Parkerr reacts to giant vehicle in GTA VI #shorts",
+    "posted_at": "2026-11-24T23:54:46+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_offset": 5160.3,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1J3C43V50KchWvJO97HjGo2aXCJqD2a77",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v293967900_11510.mp4",
+    "title": "Parkerr survives massive car damage in GTA 6 #shorts",
+    "posted_at": "2026-11-25T00:01:09+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2939679008",
+    "vod_offset": 11496.7,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1ZBqn0bmWWB_QptCbKtVH5iBb-3exptvk",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
