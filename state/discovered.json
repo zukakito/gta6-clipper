@@ -1436,7 +1436,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.3,
-    "budget_left_usd": 13400,
+    "budget_left_usd": 13000,
     "platforms": [
       "instagram",
       "tiktok",
@@ -1449,7 +1449,7 @@
     "first_seen": "2026-11-21T09:54:12+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T11:01:23+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "lacy-gta-vi-marathon-pool-campaign": {
     "name": "LACY GTA VI Marathon Pool Campaign",
@@ -1817,7 +1817,7 @@
     "first_seen": "2026-11-22T05:38:49+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T11:01:23+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "ritmo-salsa": {
     "name": "RITMO SALSA",
@@ -1825,7 +1825,7 @@
     "board": "clipster",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 9600,
+    "budget_left_usd": 10000,
     "platforms": [
       "tiktok",
       "youtube"
@@ -1837,7 +1837,7 @@
     "first_seen": "2026-11-22T05:38:49+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-24T14:26:20+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "reach-luxdrop-logo-clipping-campaign": {
     "name": "Reach LUXDROP Logo Clipping Campaign",
@@ -2483,7 +2483,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-25T11:01:23+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "arthurtv": {
     "name": "ArthurTV",
@@ -2502,7 +2502,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T11:01:23+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "bounty-gta-vi-lucia-vs-fanvue-ai-lucia": {
     "name": "Bounty GTA VI Lucia vs Fanvue AI Lucia",
@@ -2651,7 +2651,7 @@
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-24T14:26:20+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "bounty": {
     "name": "Bounty",
@@ -2671,7 +2671,7 @@
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T11:01:23+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "newsdaddy": {
     "name": "NewsDaddy",
@@ -2686,14 +2686,14 @@
       "x",
       "youtube"
     ],
-    "apply_first": true,
+    "apply_first": false,
     "streamer": null,
     "url": null,
     "status": "open",
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-25T04:10:02+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "donbet": {
     "name": "DonBet",
@@ -2705,14 +2705,14 @@
     "platforms": [
       "instagram"
     ],
-    "apply_first": true,
+    "apply_first": false,
     "streamer": null,
     "url": null,
     "status": "open",
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T04:10:02+00:00"
+    "last_seen": "2026-11-25T14:47:28+00:00"
   },
   "rexxlife-raj-handful-of-diamond-rings-gta-6": {
     "name": "RexxLife Raj \"Handful of Diamond Rings\" GTA 6",
@@ -3109,5 +3109,105 @@
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
     "last_seen": "2026-11-25T11:01:23+00:00"
+  },
+  "clipped-shipped": {
+    "name": "Clipped & Shipped",
+    "host": null,
+    "board": "content_rewards",
+    "type": "pool",
+    "cpm": null,
+    "budget_left_usd": 10000,
+    "platforms": [
+      "instagram",
+      "tiktok",
+      "x",
+      "youtube"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-25T14:47:28+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": true,
+    "last_seen": "2026-11-25T14:47:28+00:00"
+  },
+  "reach": {
+    "name": "Reach",
+    "host": null,
+    "board": "content_rewards",
+    "type": "cpm",
+    "cpm": 1.5,
+    "budget_left_usd": 4200,
+    "platforms": [
+      "instagram"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-25T14:47:28+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-25T14:47:28+00:00"
+  },
+  "the-clip-ship": {
+    "name": "The Clip Ship",
+    "host": null,
+    "board": "content_rewards",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 4100,
+    "platforms": [
+      "instagram"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-25T14:47:28+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-25T14:47:28+00:00"
+  },
+  "phonknight": {
+    "name": "Phonknight",
+    "host": null,
+    "board": "clipster",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 3200,
+    "platforms": [
+      "tiktok",
+      "youtube"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-25T14:47:28+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": true,
+    "last_seen": "2026-11-25T14:47:28+00:00"
+  },
+  "clippedin": {
+    "name": "ClippedIn",
+    "host": null,
+    "board": "content_rewards",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 3000,
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-25T14:47:28+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-25T14:47:28+00:00"
   }
 }
