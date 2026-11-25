@@ -87,23 +87,27 @@ def _json(text: str):
             return None
 
 
-def _call_gemini(model: str, prompt: str, want_json: bool, temperature: float, images):
+def _call_gemini(model: str, prompt: str, want_json: bool, temperature: float, images, system=None, effort=None):
     parts = [{"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(im).decode()}} for im in (images or [])]
     parts.append({"text": prompt})
     body = {"contents": [{"role": "user", "parts": parts}], "generationConfig": {"temperature": temperature}}
+    if system:
+        body["systemInstruction"] = {"parts": [{"text": system}]}
     if want_json:
         body["generationConfig"]["responseMimeType"] = "application/json"
     r = requests.post(f"{GEMINI}/models/{model}:generateContent", params={"key": env("GEMINI_API_KEY")}, json=body, timeout=25)
     return r, (lambda: r.json()["candidates"][0]["content"]["parts"][0]["text"])
 
 
-def _call_groq(model: str, prompt: str, want_json: bool, temperature: float, images):
+def _call_groq(model: str, prompt: str, want_json: bool, temperature: float, images, system=None, effort=None):
     msg = prompt + ("\n\nRespond with JSON only." if want_json else "")
-    body = {"model": model, "temperature": temperature, "messages": [{"role": "user", "content": msg}]}
+    messages = ([{"role": "system", "content": system}] if system else []) + [{"role": "user", "content": msg}]
+    body = {"model": model, "temperature": temperature, "messages": messages}
     if want_json:
         body["response_format"] = {"type": "json_object"}   # Groq JSON mode: always valid JSON
     if "gpt-oss" in model:
-        body["reasoning_effort"] = "low"   # far fewer tokens per call, so the free daily quota lasts much longer
+        # low by default so the free daily quota lasts; the clip judge asks for "medium" (quality matters there)
+        body["reasoning_effort"] = effort or "low"
     elif "qwen3" in model:
         body["reasoning_effort"] = "none"
     r = requests.post(GROQ + "/chat/completions", headers={"Authorization": f"Bearer {env('GROQ_API_KEY')}"}, json=body, timeout=40)
@@ -120,8 +124,9 @@ def _retry_after(r) -> float | None:
 
 
 def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, images: list[bytes] | None = None,
-        retries: int = 2) -> str | dict | list | None:
-    """Try each available provider/model in turn. Returns None if all fail."""
+        retries: int = 2, system: str | None = None, effort: str | None = None) -> str | dict | list | None:
+    """Try each available provider/model in turn. Returns None if all fail.
+    system: standing role/rules sent as the system message; effort: reasoning effort for gpt-oss models."""
     if len(prompt) > MAX_PROMPT_CHARS:   # Groq free tier rejects big requests with 413 (tokens-per-minute cap)
         prompt = prompt[:MAX_PROMPT_CHARS] + "\n...(truncated)"
     for prov in _providers():
@@ -136,7 +141,7 @@ def ask(prompt: str, want_json: bool = False, temperature: float = 0.4, images: 
             if model in _spent:
                 continue
             try:
-                r, text_of = call(model, prompt, want_json, temperature, images)
+                r, text_of = call(model, prompt, want_json, temperature, images, system, effort)
                 if r.status_code == 413:   # this prompt is too big for the free tier - not an outage
                     log.warning("%s: %s says the request is too large (%d chars) - skipping it", prov, model, len(prompt))
                     break
