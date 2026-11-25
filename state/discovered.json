@@ -358,11 +358,11 @@
     "apply_first": false,
     "streamer": "Tokyo Girl",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/9dedcdfc-7e4d-4e56-8036-846bfdbdc676",
-    "status": "unknown",
+    "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T05:38:19+00:00"
+    "last_seen": "2026-11-25T12:07:30+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -542,26 +542,25 @@
   },
   "bendadonnn-x-puffco-gta-6": {
     "name": "BenDaDonnn x Puffco GTA 6",
-    "host": "Launch Clipping",
+    "host": "BenDaDonnn",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 8500,
+    "budget_left_usd": 7760,
     "platforms": [
-      "facebook",
-      "instagram",
+      "youtube",
       "tiktok",
-      "x",
-      "youtube"
+      "instagram",
+      "x"
     ],
-    "apply_first": true,
+    "apply_first": false,
     "streamer": "BenDaDonnn",
-    "url": "whop.com/experiences/exp_9wEKVJKauL8lbP/campaigns/749b47da-47bb-4122-8bb3-1b4a60d8f0d5",
+    "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/9044579d-fef2-4de7-aded-b86ac8e4f5bd",
     "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T06:39:12+00:00"
+    "last_seen": "2026-11-25T12:07:15+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -1970,7 +1969,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.5,
-    "budget_left_usd": 1000,
+    "budget_left_usd": 738,
     "platforms": [
       "youtube",
       "tiktok"
@@ -1978,11 +1977,11 @@
     "apply_first": false,
     "streamer": "GTA Clipper",
     "url": "whop.com/experiences/exp_3XuozWlyyQaylJ/campaigns/de2b2ee3-bb22-453e-ae1a-c07bf89c5ef4",
-    "status": "unknown",
+    "status": "open",
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T05:38:19+00:00"
+    "last_seen": "2026-11-25T12:07:30+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
@@ -1990,20 +1989,21 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.3,
-    "budget_left_usd": 13000,
+    "budget_left_usd": 11854,
     "platforms": [
-      "instagram",
+      "youtube",
       "tiktok",
-      "youtube"
+      "instagram",
+      "x"
     ],
-    "apply_first": true,
+    "apply_first": false,
     "streamer": "Clipup",
-    "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/1b3065cb-29fd-4631-a252-ec3f6d28a583",
+    "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/6d896f33-152f-42a9-92f4-662199228349",
     "status": "open",
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T06:39:12+00:00"
+    "last_seen": "2026-11-25T12:07:30+00:00"
   },
   "gta-vi-things-i-could-ve-said-music-campaign": {
     "name": "GTA VI \"Things I Could've Said\" Music Campaign",
@@ -2201,7 +2201,7 @@
     "first_seen": "2026-11-22T20:49:54+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T12:07:15+00:00"
   },
   "gta-vi-lucia-vs-fanvue-ai-lucia": {
     "name": "GTA VI Lucia vs Fanvue AI Lucia",
@@ -2209,19 +2209,21 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
-    "budget_left_usd": 5000,
+    "budget_left_usd": 4975,
     "platforms": [
+      "youtube",
+      "tiktok",
       "instagram",
-      "tiktok"
+      "x"
     ],
-    "apply_first": true,
+    "apply_first": false,
     "streamer": "Lucia",
-    "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
+    "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/6e9ca548-f36c-42c2-abc0-61f89b4b53ba",
     "status": "open",
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T06:39:12+00:00"
+    "last_seen": "2026-11-25T12:07:15+00:00"
   },
   "whethan-dev-bass-down-low-gta-vi": {
     "name": "Whethan & DEV - Bass Down Low (GTA VI)",
@@ -2814,7 +2816,7 @@
     "host": "Risor Clipping",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1.0,
+    "cpm": 1,
     "budget_left_usd": 3828,
     "platforms": [
       "youtube",
@@ -2829,7 +2831,7 @@
     "first_seen": "2026-11-25T02:43:20+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T12:07:30+00:00"
   },
   "game-over-gta-vi-rollout": {
     "name": "'Game Over' GTA VI Rollout",
