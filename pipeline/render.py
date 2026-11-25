@@ -253,7 +253,8 @@ def _filter_split(face: tuple[int, int, int, int], ass_path: Path, trim: str, ov
              f"[b]crop=ih*{W}/1280:ih:(iw-ow)/2:0,scale={W}:1280,setsar=1[bot];"
              f"[top][bot]vstack=inputs=2[st]")
     if overlay_img:
-        chain += f";[1:v]scale={int(W * 0.30)}:-1[ov];[st][ov]overlay=W-w-24:664[st]"
+        # y=760 keeps the campaign stamp clear of the 2-line hook box on the seam (about y 540-740)
+        chain += f";[1:v]scale={int(W * 0.30)}:-1[ov];[st][ov]overlay=W-w-24:760[st]"
     return chain + f";[st]fps=30,ass={ass_path}{fontsdir}[v]"
 
 
