@@ -232,7 +232,7 @@
   },
   "kai-cenat-10-000-gta-6-pool-campaign": {
     "name": "Kai Cenat - $10,000 GTA 6 Pool Campaign",
-    "host": "Kai Cenat",
+    "host": "Clipped & Shipped",
     "board": "content_rewards",
     "type": "pool",
     "cpm": null,
@@ -250,7 +250,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T04:10:02+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "12-500-lacy-gta-vi-marathon-pool-campaign": {
     "name": "$12,500 LACY GTA VI Marathon Pool Campaign",
@@ -487,14 +487,14 @@
       "x",
       "youtube"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "Dylan Page",
     "url": "https://whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/bbd3a963-9a23-457c-bc15-6697971d9902",
     "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T02:43:04+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "lucky-latvian-x-gta6": {
     "name": "Lucky Latvian X GTA6",
@@ -546,43 +546,43 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 8037,
+    "budget_left_usd": 8500,
     "platforms": [
-      "youtube",
-      "tiktok",
+      "facebook",
       "instagram",
-      "x"
+      "tiktok",
+      "x",
+      "youtube"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "BenDaDonnn",
     "url": "whop.com/experiences/exp_9wEKVJKauL8lbP/campaigns/749b47da-47bb-4122-8bb3-1b4a60d8f0d5",
     "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
-    "host": "Gattouz0",
+    "host": "Gattouz0 - Clipping",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.35,
-    "budget_left_usd": 9191,
+    "budget_left_usd": 9200,
     "platforms": [
-      "youtube",
-      "tiktok",
       "instagram",
+      "tiktok",
       "x"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "Gattouz0",
     "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/15078d54-8a1d-4805-84ec-e25d4cc0e4dc",
     "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "yourrage-5-000-gta-6-pool-campaign": {
     "name": "YourRAGE $5,000 GTA 6 Pool Campaign",
@@ -674,25 +674,22 @@
   },
   "5-000-lauren-hamden-gta-6-clipping-campaign": {
     "name": "$5,000 Lauren Hamden GTA 6 Clipping Campaign",
-    "host": "Lauren Hamden",
+    "host": "Reach",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
-    "budget_left_usd": 4182,
+    "budget_left_usd": 4200,
     "platforms": [
-      "youtube",
-      "tiktok",
-      "instagram",
-      "x"
+      "instagram"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "Lauren Hamden",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/6d896f33-152f-42a9-92f4-662199228349",
     "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "gta-6": {
     "name": "GTA 6",
@@ -744,7 +741,7 @@
     "board": "clipster",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 10000,
+    "budget_left_usd": 9800,
     "platforms": [
       "tiktok",
       "youtube"
@@ -756,7 +753,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T04:10:02+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "donbet-logo-campaign-gta6": {
     "name": "DonBet Logo Campaign (GTA6)",
@@ -768,14 +765,14 @@
     "platforms": [
       "instagram"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "DonBet",
     "url": null,
     "status": "open",
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T02:43:04+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "3-000-8lanco-every-little-thing-sound-campaign": {
     "name": "$3,000 8lanco 'Every Little Thing' Sound Campaign",
@@ -788,14 +785,14 @@
       "instagram",
       "tiktok"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": null,
     "url": null,
     "status": "open",
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-20T23:52:30+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "2-500-pilat-clipping-campaign": {
     "name": "$2,500 Pilat Clipping Campaign",
@@ -1453,26 +1450,25 @@
   },
   "lacy-gta-vi-marathon-pool-campaign": {
     "name": "LACY GTA VI Marathon Pool Campaign",
-    "host": "LACY",
+    "host": "Reach",
     "board": "content_rewards",
     "type": "pool",
     "cpm": null,
-    "budget_left_usd": 12500,
+    "budget_left_usd": 13000,
     "platforms": [
-      "youtube",
-      "tiktok",
       "instagram",
+      "tiktok",
       "x",
-      "facebook"
+      "youtube"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": null,
     "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/a5c63fad-cd53-4b81-9305-4a2d1696872a",
     "status": "open",
     "first_seen": "2026-11-21T09:54:12+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T02:43:20+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "jack": {
     "name": "Jack",
@@ -1998,21 +1994,20 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.3,
-    "budget_left_usd": 15000,
+    "budget_left_usd": 13000,
     "platforms": [
-      "youtube",
-      "tiktok",
       "instagram",
-      "x"
+      "tiktok",
+      "youtube"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "Clipup",
     "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/1b3065cb-29fd-4631-a252-ec3f6d28a583",
-    "status": "unknown",
+    "status": "open",
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T05:38:19+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "gta-vi-things-i-could-ve-said-music-campaign": {
     "name": "GTA VI \"Things I Could've Said\" Music Campaign",
@@ -2218,21 +2213,19 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
-    "budget_left_usd": 4984,
+    "budget_left_usd": 5000,
     "platforms": [
-      "youtube",
-      "tiktok",
       "instagram",
-      "x"
+      "tiktok"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "Lucia",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/1d2bcb00-c904-415f-aa82-f95b96baad86",
     "status": "open",
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "whethan-dev-bass-down-low-gta-vi": {
     "name": "Whethan & DEV - Bass Down Low (GTA VI)",
@@ -2264,19 +2257,16 @@
     "cpm": 1.5,
     "budget_left_usd": 5000,
     "platforms": [
-      "youtube",
-      "tiktok",
-      "instagram",
-      "x"
+      "tiktok"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": null,
     "url": null,
     "status": "open",
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "reach-gta-6": {
     "name": "Reach GTA 6",
@@ -2428,21 +2418,18 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 4105,
+    "budget_left_usd": 4100,
     "platforms": [
-      "youtube",
-      "tiktok",
-      "instagram",
-      "x"
+      "instagram"
     ],
-    "apply_first": false,
+    "apply_first": true,
     "streamer": "DJ Tunez",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/6e9ca548-f36c-42c2-abc0-61f89b4b53ba",
     "status": "open",
     "first_seen": "2026-11-23T20:28:36+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T05:37:38+00:00"
+    "last_seen": "2026-11-25T06:39:12+00:00"
   },
   "gta-6-movie-edits-daniel-donato": {
     "name": "GTA 6 & Movie Edits | Daniel Donato",
@@ -3073,5 +3060,25 @@
     "source_board": "https://contentrewards.com/c/discover/clipping",
     "needs_review": false,
     "last_seen": "2026-11-25T05:38:19+00:00"
+  },
+  "montagem-calmo-phonknight-edits": {
+    "name": "MONTAGEM CALMO - Phonknight [EDITS]",
+    "host": "Phonknight",
+    "board": "clipster",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 2900,
+    "platforms": [
+      "tiktok",
+      "youtube"
+    ],
+    "apply_first": true,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-25T06:39:12+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": true,
+    "last_seen": "2026-11-25T06:39:12+00:00"
   }
 }

@@ -372,7 +372,30 @@
   "twitchvod:v2939930924": {
     "url": "https://www.twitch.tv/videos/2939930924",
     "title": "Eternity Magik Main (defending against throwers) 2026-11-25 02:43",
-    "scanned_until": 10800.0,
-    "last_scan": "2026-11-25T05:38:35+00:00"
+    "scanned_until": 14400.0,
+    "last_scan": "2026-11-25T06:40:43+00:00"
+  },
+  "twitchvod:v2939700926": {
+    "url": "https://www.twitch.tv/videos/2939700926",
+    "title": "[72/365] 🚔🌃 BACK ON RAINBOW 6 🚔🌃 GETTING TO 50% COMPLETION 🚔🌃 !CLIPPING  🚔🌃 !DISCORD",
+    "scanned_until": 32659.0,
+    "last_scan": "2026-11-25T06:40:39+00:00"
+  },
+  "twitchvod:v2939551953": {
+    "url": "https://www.twitch.tv/videos/2939551953",
+    "title": "2",
+    "scanned_until": 992.0,
+    "last_scan": "2026-11-25T06:40:41+00:00"
+  },
+  "twitchvod:v2939551952": {
+    "url": "https://www.twitch.tv/videos/2939551952",
+    "title": "1",
+    "scanned_until": 1024.0,
+    "last_scan": "2026-11-25T06:40:41+00:00"
+  },
+  "twitchvod:v2940140717": {
+    "url": "https://www.twitch.tv/videos/2940140717",
+    "title": "Eternity Magik Main (defending against throwers) 2026-11-25 06:40",
+    "scanned_until": null
   }
 }
