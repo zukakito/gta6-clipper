@@ -30,6 +30,26 @@ def quality_gate(campaign: dict, src: Path, words: list[dict], start: float, end
     return True, "ok"
 
 
+SYSTEM_EDITOR = """You are the senior editor and final reviewer for a YouTube Shorts channel that posts authorised
+GTA 6 livestream clips for paid clipping campaigns. Campaign reviewers reject weak or misleading clips, and one bad
+post can get the channel removed from every campaign, so rejecting is always the safe choice.
+
+Rules you never break:
+- Only describe what the streamer's own words prove happened. Never invent vehicles, heists, police, wins, deaths or
+  any other event. If you cannot tell what happens, reject the moment.
+- The hook is a plain, specific sentence about the main event. No hype words, no clickbait, no emojis.
+- No story spoilers (character deaths, betrayals, the ending), no sexual content, no graphic gore, nothing that makes
+  the streamer look bad, nothing that breaks the campaign's rules.
+- A Short needs a setup, a moment and a reaction a stranger can follow without context. Chatting while driving,
+  shopping or walking around is not a moment.
+
+Work in this order: first write down what happens and quote the transcript lines that prove it, then score how much
+a stranger scrolling Shorts would care (1-10), then decide. Only moments scoring 7 or more are kept."""
+
+SYSTEM_COPY = """You are a careful copy editor for GTA 6 YouTube Shorts. You rewrite hooks and titles so they are
+plain and specific. You never add a fact, event or detail that the transcript does not state, and you never use hype
+words or clickbait."""
+
 CURATE_PROMPT = """You edit YouTube Shorts from authorised GTA 6 livestream footage for a paid clipping campaign.
 
 CAMPAIGN: {name}
@@ -72,7 +92,9 @@ Decide:
    words, ends with " #shorts".
 5. description: 2 short lines describing the moment + required names/hashtags + "Clip from {streamer}'s GTA 6 stream."
 6. tags: 8-12 lowercase tags.
-Return JSON: {{"keep": bool, "reason": str, "start": number, "end": number, "hook": str, "title": str, "description": str, "tags": [str]}}
+7. what_happens: one or two sentences on what happens in the cut; evidence: 1-3 short transcript quotes that prove
+   it; score: 1-10, how much a stranger scrolling Shorts would care (below 7 means keep: false).
+Return JSON: {{"what_happens": str, "evidence": [str], "score": number, "keep": bool, "reason": str, "start": number, "end": number, "hook": str, "title": str, "description": str, "tags": [str]}}
 """
 
 
@@ -114,7 +136,8 @@ def _fix_wording(res: dict, words: list[dict], streamer: str) -> None:
     new = None
     if llm.available():
         new = llm.ask(REWRITE_PROMPT.format(streamer=streamer, hook=res.get("hook"), title=res.get("title"),
-                                            transcript=_transcript_text(words)[:3000]), want_json=True, temperature=0.3)
+                                            transcript=_transcript_text(words)[:3000]), want_json=True, temperature=0.3,
+                       system=SYSTEM_COPY)
     for k in ("hook", "title"):
         v = (new or {}).get(k) if isinstance(new, dict) else None
         res[k] = v if v and not HYPE.search(v) else _strip_hype(res.get(k) or "")
@@ -164,8 +187,8 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
             name=campaign["name"], streamer=streamer, must=", ".join(must) or "none",
             rules=(campaign.get("rules") or "none").strip(), dur=window_len, peak=peak_rel,
             transcript=_transcript_text(words), minlen=minlen, maxlen=maxlen,
-            vision=VISION_NOTE if images and llm.first_provider() == "gemini" else BLIND_NOTE), want_json=True, temperature=0.5,
-            images=images)
+            vision=VISION_NOTE if images and llm.first_provider() == "gemini" else BLIND_NOTE), want_json=True, temperature=0.4,
+            images=images, system=SYSTEM_EDITOR, effort=cfg.get("judge_effort", "medium"))
     if require_llm and (not isinstance(res, dict) or "keep" not in res):
         return {"defer": True, "reason": "no LLM available for cut/title - retry next run"}
 
@@ -180,6 +203,16 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
     if not res.get("keep", True):   # rejected: the model often leaves start/end empty
         log.info("curate: keep=False %s: %s", campaign["id"], str(res.get("reason"))[:160])
         return res
+    try:
+        score = float(res.get("score"))
+    except (TypeError, ValueError):
+        score = None
+    min_score = float(cfg.get("min_score", 7))
+    if res.get("reason") != "heuristic" and (score is None or score < min_score):
+        log.info("curate: score %s < %s %s: %s", score, min_score, campaign["id"], str(res.get("what_happens"))[:160])
+        return {**res, "keep": False, "reason": f"score {score} below {min_score:g}"}
+    log.info("curate: what happens (score %s): %s | evidence: %s", score, str(res.get("what_happens"))[:200],
+             "; ".join(map(str, res.get("evidence") or []))[:200])
     text = " ".join(str(res.get(k) or "") for k in ("title", "hook", "description"))
     if BANNED_TOPIC.search(text):   # the model sometimes keeps these despite the prompt
         log.info("curate: banned topic %s: %s", campaign["id"], res.get("title"))
