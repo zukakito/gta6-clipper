@@ -8,6 +8,9 @@ on:
       mode:
         description: "normal | scout-only"
         default: normal
+      rerun:
+        description: 'Re-run clips through the current pipeline: file names (comma-separated) or "since:2026-11-24T14:45Z"'
+        default: ""
 
 concurrency:
   group: clipper
@@ -43,7 +46,7 @@ jobs:
 
       - name: System tools
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core > /dev/null
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core tesseract-ocr > /dev/null
           mkdir -p fonts
           curl -fsSL -o fonts/Montserrat.ttf "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf" || true
 
@@ -66,8 +69,12 @@ jobs:
           key: hf-models-v3
 
       - name: Run pipeline
+        env:
+          RERUN: ${{ github.event.inputs.rerun }}
         run: |
-          if [ "${{ github.event.inputs.mode }}" = "scout-only" ]; then
+          if [ -n "$RERUN" ]; then
+            python -m pipeline.run --no-scout --rerun "$RERUN"
+          elif [ "${{ github.event.inputs.mode }}" = "scout-only" ]; then
             python -m pipeline.run --scout-only
           else
             python -m pipeline.run
