@@ -12,7 +12,7 @@ import datetime as dt
 import time
 import traceback
 
-from . import curate, drive, highlights, llm, publish, render, review, safety, scout, sources, submit
+from . import curate, drive, highlights, llm, publish, render, review, safety, scout, screen, sources, submit
 from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_state, settings, slug
 
 RUN_BUDGET_SEC = 50 * 60
@@ -139,9 +139,10 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 cand["status"], cand["reason"] = "rejected", why
                 log.info("rejected %s before curate: %s", name, why)
                 continue
+            ocr = screen.screen_text(src, 0, win_len) if clip_cfg.get("ocr", True) else []
             meta = curate.curate(c, words, win_len, cand["t"] - cand["win_start"], clip_cfg,
                                  images=curate.frames(src, 0, win_len, n=4),
-                                 require_llm=p_cfg.get("require_llm", True))
+                                 require_llm=p_cfg.get("require_llm", True), screen_lines=screen.as_prompt(ocr))
             if meta.get("defer"):
                 cand["deferrals"] = cand.get("deferrals", 0) + 1
                 if cand["deferrals"] >= 6:
@@ -248,10 +249,44 @@ def produce_long(c: dict, candidates: list[dict], posted: list[dict], cfg: dict)
     return 1
 
 
+def rerun(spec: str, candidates: list[dict], posted: list[dict]) -> int:
+    """Put already-rendered moments back in the queue so they go through the current pipeline again.
+    spec: comma-separated clip file names and/or "since:<ISO time>" (every unpublished clip made after that time);
+    "-<file name>" leaves that clip out.
+    The old records move to state/superseded.json (their Drive folders stay as they are)."""
+    parts = [x.strip() for x in spec.split(",") if x.strip()]
+    files = {x for x in parts if not x.startswith(("since:", "-"))}
+    skip = {x[1:] for x in parts if x.startswith("-")}   # "-name.mp4" keeps that clip out (e.g. one already published)
+    since = next((parse_iso(x[6:]) for x in parts if x.startswith("since:")), None)
+    pick = [p for p in posted if p.get("privacy") == "dry_run" and p.get("vod_url") and p.get("file") not in skip
+            and (p.get("file") in files or (since and parse_iso(p["posted_at"]) > since))]
+    superseded = load_state("superseded.json", [])
+    n = 0
+    for p in pick:
+        off = float(p.get("vod_offset") or 0)
+        cand = next((x for x in candidates if x["campaign_id"] == p["campaign_id"] and x["vod_url"] == p["vod_url"]
+                     and x.get("win_start", -1) - 1 <= off <= x.get("win_end", -1) + 1), None)
+        if not cand:
+            log.warning("rerun: no queued moment found for %s (older than 3 days?)", p.get("file"))
+            continue
+        cand.update({"status": "new", "found_at": iso(), "rerun": True})
+        for k in ("reason", "error", "deferrals"):
+            cand.pop(k, None)
+        posted.remove(p)
+        superseded.append({**p, "superseded_at": iso()})
+        n += 1
+    save_state("superseded.json", superseded)
+    save_state("posted.json", posted)
+    save_state("candidates.json", candidates)
+    log.info("rerun: %d moment(s) queued again", n)
+    return n
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--scout-only", action="store_true")
     ap.add_argument("--no-scout", action="store_true")
+    ap.add_argument("--rerun", default="", help='clip file names (comma-separated) or "since:<ISO time>"')
     args = ap.parse_args()
 
     t0 = time.time()
@@ -275,6 +310,14 @@ def main() -> None:
     candidates = load_state("candidates.json", [])
     posted = load_state("posted.json", [])
 
+    if args.rerun:
+        if rerun(args.rerun, candidates, posted):
+            cfg["posting"]["max_uploads_per_run"] = max(cfg["posting"]["max_uploads_per_run"], 8)
+            made = produce(cfg, candidates, posted, deadline - 5 * 60)   # a rerun only redoes the chosen moments
+            save_state("candidates.json", candidates)
+            status.update({"last_rerun": iso(), "rerun_made": made})
+            save_state("status.json", status)
+        return
     made = produce(cfg, candidates, posted, min(deadline - 25 * 60, t0 + 15 * 60))   # render queued moments first, max 15 min
     discover_moments(cfg, vod_state, candidates, deadline - 20 * 60)
     made += produce(cfg, candidates, posted, deadline)
