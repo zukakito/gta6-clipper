@@ -1510,5 +1510,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v294112030_10410.mp4",
+    "title": "Boeshi finishes a 40‑second GTA 6 robbery #shorts",
+    "posted_at": "2026-11-26T10:39:53+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2941120302",
+    "vod_offset": 10396.5,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1XTewDDCWwhYUX5QYSiH8dCfnyxAPwphb",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v294112030_9905.mp4",
+    "title": "Boeshi's car vanishes in GTA 6 glitch #shorts",
+    "posted_at": "2026-11-26T10:40:54+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2941120302",
+    "vod_offset": 9890.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1bXtMSNmzBozog22UYy37dcV6vabzie7D",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
