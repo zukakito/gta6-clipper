@@ -1289,5 +1289,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294164972_3474.mp4",
+    "title": "Parkerr rescues Mandy from her apartment room #shorts",
+    "posted_at": "2026-11-26T22:03:52+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_offset": 3469.6,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1WvHu1Cg84OKij1c_Whbfc7wFOgbx4PPq",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294164972_2494.mp4",
+    "title": "Parkerr discovers Paul Walker’s car in GTA 6 #shorts",
+    "posted_at": "2026-11-26T22:06:38+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_offset": 2486.9,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1XKcAZiWac1nJA9nZGFVBtdJv7ppThDOt",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

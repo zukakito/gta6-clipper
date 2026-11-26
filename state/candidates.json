@@ -2512,5 +2512,81 @@
     "found_at": "2026-11-26T12:45:03+00:00",
     "status": "rejected",
     "reason": "gameplay is black/loading for 42% of the clip"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 22:00",
+    "t": 1789.0,
+    "score": 1.290229117266691,
+    "win_start": 1744.0,
+    "win_end": 1819.0,
+    "found_at": "2026-11-26T22:01:59+00:00",
+    "status": "rejected",
+    "reason": "The clip only contains the streamer talking about an upcoming Easter egg hunt with no gameplay, reaction, or payoff shown. It lacks a clear setup and payoff that a viewer could understand without context."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 22:00",
+    "t": 3474.0,
+    "score": 1.2222941022805225,
+    "win_start": 3429.0,
+    "win_end": 3504.0,
+    "found_at": "2026-11-26T22:01:59+00:00",
+    "status": "rendered"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 22:00",
+    "t": 2239.0,
+    "score": 1.2192661121172095,
+    "win_start": 2194.0,
+    "win_end": 2269.0,
+    "found_at": "2026-11-26T22:01:59+00:00",
+    "status": "rejected",
+    "reason": "No clear gameplay event or strong reaction; only vague location comment, insufficient for a compelling Shorts clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 22:00",
+    "t": 3819.0,
+    "score": 1.2003857381692633,
+    "win_start": 3774.0,
+    "win_end": 3849.0,
+    "found_at": "2026-11-26T22:01:59+00:00",
+    "status": "rejected",
+    "reason": "too close to an existing clip from this VOD (<360s)"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 22:00",
+    "t": 2994.0,
+    "score": 1.1695032394847915,
+    "win_start": 2949.0,
+    "win_end": 3024.0,
+    "found_at": "2026-11-26T22:01:59+00:00",
+    "status": "rejected",
+    "reason": "vision review: The hook and title claim the streamer crashes a car into a tree, but the provided frames show the character swimming in water and walking on land. The actual crash event is not visible in the sampled frames, making the clip misleading. [failed: hook_matches] [score 3 < 6]"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 22:00",
+    "t": 2494.0,
+    "score": 1.1591120415269203,
+    "win_start": 2449.0,
+    "win_end": 2524.0,
+    "found_at": "2026-11-26T22:01:59+00:00",
+    "status": "rendered"
   }
 ]
