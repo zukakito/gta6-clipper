@@ -1445,5 +1445,31 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294066251_14130.mp4",
+    "title": "Parkerr drops duffel bag of cash in GTA 6 #shorts",
+    "posted_at": "2026-11-26T02:05:48+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_offset": 14127.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/17mkS6tfuwrf8MTJeTqywWKM35JKwnZaT",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294066251_11665.mp4",
+    "title": "Parkerr spots a swarm of enemies in GTA 6 #shorts",
+    "posted_at": "2026-11-26T02:08:20+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_offset": 11650.3,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1FQJqKzhfW0Im3emrFAVCEAzqkT-svfjZ",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
