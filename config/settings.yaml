@@ -51,9 +51,20 @@ clipping:
   long_target_min: 8               # long-form compilations, only for campaigns with format: long
   highlights_per_vod: 6            # candidate moments scored per VOD
   vod_lookback_hours: 48           # only clip VODs newer than this
-  whisper_model: small             # tiny | base | small (CPU-friendly)
-  caption_model: medium            # re-transcribes only the final cut, for accurate on-screen captions
+  whisper_model: groq:whisper-large-v3-turbo   # hosted Whisper on Groq (free, same key); local model if it fails
+  whisper_fallback: small
+  caption_model: groq:whisper-large-v3         # re-transcribes only the final cut, for accurate on-screen captions
+  caption_fallback: medium
+  judge_effort: medium             # reasoning effort for the clip judge (gpt-oss on Groq)
+  min_score: 7                     # judge's 1-10 score a moment needs to be rendered
   layout: auto                     # auto = facecam on top + gameplay below when a webcam is found, else zoomed gameplay
+
+review:
+  # Vision check on the finished Short: does the picture back up the hook? (Groq vision model, same key)
+  enabled: true
+  models: [qwen/qwen3.8-27b]
+  frames: 3
+  min_score: 6
 
 scout:
   # Boards the scout reads to discover new GTA 6 campaigns.
