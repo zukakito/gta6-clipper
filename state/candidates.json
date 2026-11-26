@@ -2349,5 +2349,83 @@
     "found_at": "2026-11-26T04:09:10+00:00",
     "status": "rejected",
     "reason": "No clear gameplay event or payoff is shown within the 30‑58 s window; the transcript only contains vague talk about killing and cigarettes, which lacks a concrete, interesting moment for Shorts."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2940662518",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-26 05:26",
+    "t": 25105.0,
+    "score": 1.8473721704814738,
+    "win_start": 25060.0,
+    "win_end": 25135.0,
+    "found_at": "2026-11-26T05:30:15+00:00",
+    "status": "rejected",
+    "reason": "No clear gameplay action, setup, or reaction is evident; the transcript only contains unrelated banter, so the clip would be rejected."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2940662518",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-26 05:26",
+    "t": 23110.0,
+    "score": 1.819937177707504,
+    "win_start": 23065.0,
+    "win_end": 23140.0,
+    "found_at": "2026-11-26T05:30:15+00:00",
+    "status": "rejected",
+    "reason": "The transcript provides only vague commentary without a clear, self‑contained gameplay event; a viewer would lack context to understand the moment, and the interest score is below the required threshold."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2940662518",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-26 05:26",
+    "t": 24410.0,
+    "score": 1.7061475085378575,
+    "win_start": 24365.0,
+    "win_end": 24440.0,
+    "found_at": "2026-11-26T05:30:15+00:00",
+    "status": "rejected",
+    "reason": "The transcript only shows the streamer ranting about dying without a clear, self‑contained gameplay event or payoff; no specific moment can be hooked."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2940662518",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-26 05:26",
+    "t": 22385.0,
+    "score": 1.6889835846918553,
+    "win_start": 22340.0,
+    "win_end": 22415.0,
+    "found_at": "2026-11-26T05:30:15+00:00",
+    "status": "rejected",
+    "reason": "No clear GTA 6 gameplay event or reaction is described; the transcript is just a rant without a setup and payoff, making it unsuitable for a Shorts clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2940662518",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-26 05:26",
+    "t": 24005.0,
+    "score": 1.6656292269462496,
+    "win_start": 23960.0,
+    "win_end": 24035.0,
+    "found_at": "2026-11-26T05:30:15+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only repetitive dialogue about a dog with no visible gameplay event, payoff, or clear setup; insufficient for a self‑contained Shorts clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2940662518",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-26 05:26",
+    "t": 23315.0,
+    "score": 1.656486088953289,
+    "win_start": 23270.0,
+    "win_end": 23345.0,
+    "found_at": "2026-11-26T05:30:15+00:00",
+    "status": "rejected",
+    "reason": "The transcript does not describe a clear gameplay event or reaction; it is only vague chatter, so it lacks a self‑contained moment suitable for a Shorts clip."
   }
 ]
