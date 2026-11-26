@@ -112,7 +112,10 @@ BLIND_NOTE = ("You cannot see the video, only the transcript. A local check alre
               "a crash, a fail, a funny exchange).")
 
 # Hard filters on what the model wrote (it sometimes ignores the prompt).
-BANNED_TOPIC = re.compile(r"strip[\s-]?club|stripper|lap[\s-]?dance|pole[\s-]?danc|twerk|\bnud(?:e|ity)\b|naked|porn|onlyfans|\bsex(?:y|ual)?\b|brothel|escort", re.I)
+BANNED_TOPIC = re.compile(r"strip[\s-]?club|stripper|lap[\s-]?dance|pole[\s-]?danc|twerk|\bnud(?:e|ity)\b|naked|porn|onlyfans|\bsex(?:y|ual)?\b|brothel|escort|\bghb\b|roofie|date[\s-]?rape", re.I)
+# Story spoilers the game itself shows (character subtitles) - checked on OCR text inside the chosen cut.
+SPOILER_OCR = re.compile(r"\b(?:he|she|they)(?:'s|’s| is| are)\s+dead\b|\b\w+(?:'s|’s| is)\s+dead\b|\bdied\b|"
+                         r"\bkilled (?:him|her|them)\b|\brest in peace\b", re.I)
 HYPE = re.compile(r"\b(?:epic|hilarious|insane|crazy|wild|shock(?:ing|ed)?|mystery|surprise[sd]?|revealed|chaos|chaotic|"
                   r"unbelievable|you won'?t believe|gone wrong|must see|jaw[- ]dropping|huge|massive|giant|ginormous|"
                   r"wins? big|big win)\b", re.I)
