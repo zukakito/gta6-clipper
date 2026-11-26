@@ -1432,5 +1432,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294066251_10075.mp4",
+    "title": "Parkerr's window won't open in GTA 6 escape #shorts",
+    "posted_at": "2026-11-26T00:38:39+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_offset": 10059.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1mQIk-kVe5Z485PPonpgk_TIuNv84oTRF",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
