@@ -98,6 +98,10 @@ def save(clip: Path, meta: dict, campaign: dict, source: dict, root_name: str = 
             "TAGS:", ", ".join(meta.get("tags") or []), "",
             f"PLAYLIST: {meta.get('playlist', '')}",
             f"PAID PROMOTION LABEL: {'yes' if meta.get('paid') else 'no'}",
+            "",
+            f"AUTO REVIEW: {(meta.get('review') or {}).get('verdict', 'n/a')} "
+            f"(score {(meta.get('review') or {}).get('score', '-')}): {(meta.get('review') or {}).get('reason', '')}",
+            f"WHAT HAPPENS: {meta.get('what_happens', '')}",
         ]), folder["id"])
         _text(svc, "campaign.txt", "\n".join([
             f"CAMPAIGN: {campaign.get('name', campaign.get('id'))}",
