@@ -34,9 +34,11 @@ The {n} attached frames are taken at {times} of the Short.
 Check:
 1. Does what you see support the hook and title? (e.g. a hook about a tank, a heist, an explosion or a win needs
    that to be visible or clearly happening; walking or driving around does not support it.)
-2. Is it GTA 6 gameplay (not another game, not mostly a map, menu, phone screen, loading or black screen)?
+2. Is it GTA 6 gameplay (not another game, not a map, menu, inventory/weapon wheel, phone screen, loading or black
+   screen)? If 2 or more frames show such a screen, gta_gameplay is false; if 1 does, lower the score by 2.
 3. Is the picture clear enough to follow on a phone (not too dark, tiny or blurry)?
-4. Anything unsafe for advertisers (nudity, graphic gore, hitting or insulting someone as the punchline)?
+4. Anything unsafe for advertisers (nudity, graphic gore or blood pools, drug references, hitting or insulting
+   someone as the punchline)? Does it reveal a story character's death (a spoiler)? Either makes brand_safe false.
 5. Would a stranger scrolling Shorts understand and enjoy it? Score 1-10.
 
 Return JSON only: {{"hook_matches": bool, "gta_gameplay": bool, "clear_picture": bool, "brand_safe": bool,
