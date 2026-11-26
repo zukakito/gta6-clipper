@@ -315,10 +315,11 @@ def _filter_vertical(layout: str, ass_path: Path, overlay_img: Path | None = Non
     fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
     ass = f"ass={ass_path}{fontsdir}"
     if overlay_img:   # campaign-supplied overlay (e.g. KreekCraft logo): top-right corner of the video area
-        y0 = (H - int(W * 9 / 16)) // 2 - 60 + 16
+        # zoomed gameplay (1080x1000 centre crop) so the action is big enough on a phone, not a thin 16:9 strip
+        y0 = (H - 1000) // 2 - 60 + 16
         return (f"[0:v]split=2[a][b];"
                 f"[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=24:3,eq=brightness=-0.10[bg];"
-                f"[b]scale={W}:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2-60[base];"
+                f"[b]scale=-2:1000,crop={W}:1000[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2-60[base];"
                 f"[1:v]scale={int(W * 0.28)}:-1[ov];[base][ov]overlay=W-w-24:{y0},setsar=1,fps=30,{ass}[v]")
     if layout == "center_crop":
         return f"[0:v]scale=-2:{H},crop={W}:{H},setsar=1,fps=30,{ass}[v]"
