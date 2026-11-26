@@ -1484,5 +1484,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294066251_29900.mp4",
+    "title": "Parkerr reacts to driver exploding in GTA 6 #shorts",
+    "posted_at": "2026-11-26T08:28:03+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_offset": 29900.08,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1NQpCzIUE63W6jnPpV6xqscee97VtYaXT",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
