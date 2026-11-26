@@ -153,6 +153,13 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 cand["status"] = "rejected"
                 cand["reason"] = meta.get("reason")
                 continue
+            cut_said = " ".join(w["w"] for w in words if meta["start"] <= w["s"] <= meta["end"])
+            cut_ocr = " | ".join(t for ts, t in ocr if meta["start"] - 2 <= ts <= meta["end"] + 2)
+            bad = curate.BANNED_TOPIC.search(cut_said) or curate.SPOILER_OCR.search(cut_ocr)
+            if bad:   # said on stream / shown in game subtitles inside the cut: unsafe topic or a character death
+                cand["status"], cand["reason"] = "rejected", f"unsafe topic or story spoiler in the cut: {bad.group(0)!r}"
+                log.info("rejected %s: %s", name, cand["reason"])
+                continue
             ok, why = curate.quality_gate(c, src, words, meta["start"], meta["end"])
             if ok:
                 ok, why = safety.check(src, meta["start"], meta["end"])   # local NSFW / idle / censor check
