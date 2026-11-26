@@ -33,10 +33,63 @@ _model = None
 _models_by_size: dict = {}
 
 
+GROQ_STT = "https://api.groq.com/openai/v1/audio/transcriptions"
+
+
+def _groq_transcribe(path: Path, model: str, start: float | None, end: float | None,
+                     prompt: str | None) -> list[dict]:
+    """Word-level transcript from Groq's hosted Whisper (much more accurate than CPU 'small').
+    Raises on any failure so the caller can fall back to local faster-whisper."""
+    import os
+    import tempfile
+
+    import requests
+
+    key = os.environ.get("GROQ_API_KEY")
+    if not key:
+        raise RuntimeError("no GROQ_API_KEY")
+    seek = ["-ss", f"{start:.2f}", "-to", f"{end:.2f}"] if start is not None and end is not None else []
+    with tempfile.NamedTemporaryFile(suffix=".mp3", dir=str(WORK)) as tmp:
+        subprocess.run(["ffmpeg", "-v", "error", "-y", *seek, "-i", str(path), "-vn", "-ac", "1", "-ar", "16000",
+                        "-c:a", "libmp3lame", "-b:a", "48k", tmp.name], check=True, timeout=600)
+        if Path(tmp.name).stat().st_size > 24 * 1024 * 1024:   # free tier upload limit is 25 MB
+            raise RuntimeError("audio too large for Groq")
+        data = [("model", model), ("response_format", "verbose_json"), ("language", "en"), ("temperature", "0"),
+                ("timestamp_granularities[]", "word"), ("timestamp_granularities[]", "segment")]
+        if prompt:
+            data.append(("prompt", prompt[:400]))
+        with open(tmp.name, "rb") as fh:
+            r = requests.post(GROQ_STT, headers={"Authorization": f"Bearer {key}"}, data=data,
+                              files={"file": ("audio.mp3", fh, "audio/mpeg")}, timeout=180)
+    if r.status_code != 200:
+        raise RuntimeError(f"groq stt {r.status_code}: {r.text[:200]}")
+    js = r.json()
+    off = start or 0.0
+    raw = [w for w in js.get("words") or [] if str(w.get("word", "")).strip()]
+    # Groq's word list has no punctuation; borrow it from the segment text when the tokens line up,
+    # so captions and transcript lines still break on sentences.
+    for seg in js.get("segments") or []:
+        toks = str(seg.get("text", "")).split()
+        inseg = [w for w in raw if seg["start"] - 0.05 <= w["start"] < seg["end"] + 0.05 and "_p" not in w]
+        if len(toks) == len(inseg):
+            for w, tkn in zip(inseg, toks):
+                w["word"], w["_p"] = tkn, True
+    return [{"w": str(w["word"]).strip(), "s": float(w["start"]) + off, "e": float(w["end"]) + off} for w in raw]
+
+
 def transcribe(path: Path, model_size: str = "small", start: float | None = None, end: float | None = None,
-               prompt: str | None = None) -> list[dict]:
+               prompt: str | None = None, fallback: str = "small") -> list[dict]:
     """Return word-level transcript: [{'w': str, 's': float, 'e': float}] (times relative to file).
-    With start/end only that part is transcribed (times still relative to the file)."""
+    With start/end only that part is transcribed (times still relative to the file).
+    model_size "groq:<model>" uses Groq's hosted Whisper and falls back to local `fallback` on any error."""
+    if model_size.startswith("groq:"):
+        try:
+            words = _groq_transcribe(path, model_size.split(":", 1)[1], start, end, prompt)
+            log.info("transcribe: groq %s -> %d words", model_size, len(words))
+            return words
+        except Exception as e:  # noqa: BLE001
+            log.warning("transcribe: groq failed (%s) - using local %s", str(e)[:200], fallback)
+            model_size = fallback
     try:
         from faster_whisper import WhisperModel
     except ImportError:
@@ -68,10 +121,10 @@ def transcribe(path: Path, model_size: str = "small", start: float | None = None
 
 
 def refine_words(path: Path, words: list[dict], start: float, end: float, model_size: str = "medium",
-                 prompt: str | None = None) -> list[dict]:
+                 prompt: str | None = None, fallback: str = "medium") -> list[dict]:
     """Re-transcribe just the chosen cut with a bigger Whisper model for accurate captions."""
     try:
-        better = transcribe(path, model_size, max(0.0, start - 0.5), end + 0.5, prompt=prompt)
+        better = transcribe(path, model_size, max(0.0, start - 0.5), end + 0.5, prompt=prompt, fallback=fallback)
     except Exception as e:  # noqa: BLE001
         log.warning("render: caption refine failed (%s) - keeping draft captions", e)
         return words
