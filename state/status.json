@@ -82,5 +82,7 @@
   "posted_total": 0,
   "queued_candidates": 0,
   "pending_submissions": 0,
-  "rendered_files": []
+  "rendered_files": [],
+  "last_rerun": "2026-11-26T15:06:06+00:00",
+  "rerun_made": 5
 }

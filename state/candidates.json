@@ -264,8 +264,10 @@
     "score": 1.391165784286545,
     "win_start": 12371.0,
     "win_end": 12446.0,
-    "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "Low interest, no major gameplay moment, only a single line of violence."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -289,8 +291,9 @@
     "score": 1.3425405097682375,
     "win_start": 12791.0,
     "win_end": 12866.0,
-    "found_at": "2026-11-24T00:32:26+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rendered",
+    "rerun": true
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -314,8 +317,10 @@
     "score": 1.9744799213996602,
     "win_start": 3365.0,
     "win_end": 3440.0,
-    "found_at": "2026-11-24T00:32:41+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The hook and title promise a tank and getting shot, but the provided frames show the streamer flying a jet and looking at a map. The tank is not visible in the frames, and the 'getting shot' moment is not depicted, making the clip misleading. [failed: hook_matches] [score 3 < 6]"
   },
   {
     "campaign_id": "kreekcraft-gta6",
@@ -378,8 +383,10 @@
     "score": 1.6688984740481252,
     "win_start": 2915.0,
     "win_end": 2990.0,
-    "found_at": "2026-11-24T00:32:41+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "Transcript shows only chat commentary with no evidence of a gameplay moment such as a chase, crash, or reaction to in‑game action."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -416,8 +423,10 @@
     "score": 1.6504945609028756,
     "win_start": 16156.0,
     "win_end": 16231.0,
-    "found_at": "2026-11-24T03:00:53+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "new",
+    "rerun": true,
+    "deferrals": 1
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -558,8 +567,10 @@
     "score": 1.641040862173695,
     "win_start": 22551.0,
     "win_end": 22626.0,
-    "found_at": "2026-11-24T05:29:42+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The clip fails the hook check because the tiger is never visible in the provided frames; the viewer only sees the streamer's face and a 'Wasted' screen. Additionally, the clip is not brand-safe due to heavy profanity in the captions ('F*****G NIGHTMARE') and the streamer's audio. [failed: hook_match"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -583,8 +594,10 @@
     "score": 1.587115443227882,
     "win_start": 21866.0,
     "win_end": 21941.0,
-    "found_at": "2026-11-24T05:29:42+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "The transcript shows only chat commentary with no clear in-game action or reaction, so it does not meet the campaign’s requirement for a self‑contained gameplay moment."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -673,8 +686,10 @@
     "score": 1.5796337410994843,
     "win_start": 24041.0,
     "win_end": 24116.0,
-    "found_at": "2026-11-24T09:10:34+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "Stream contains only chat and no clear gameplay moment; no setup, payoff, or reaction to an in‑game event."
   },
   {
     "campaign_id": "asianjeff-gta6",
@@ -711,8 +726,10 @@
     "score": 2.185851667747076,
     "win_start": 5390.0,
     "win_end": 5465.0,
-    "found_at": "2026-11-24T10:33:57+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The clip fails multiple checks. The final frame (22s) is completely black, which is a major technical failure. The second frame (15s) is extremely dark and blue-tinted, making the gameplay nearly impossible to see on a phone screen. The first frame shows the player on a motorcycle, but there is no v"
   },
   {
     "campaign_id": "boeshi-gta6",
@@ -749,8 +766,10 @@
     "score": 1.8834296371112331,
     "win_start": 6400.0,
     "win_end": 6475.0,
-    "found_at": "2026-11-24T10:33:57+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The hook and title promise that the streamer ignites a gas can, but the provided frames do not show this event. The frames show the character standing near an ambulance and holding a red gas can, but there is no fire, explosion, or ignition visible. This makes the clip misleading as the promised act"
   },
   {
     "campaign_id": "boeshi-gta6",
@@ -774,8 +793,10 @@
     "score": 3.7075950627737577,
     "win_start": 10365.0,
     "win_end": 10440.0,
-    "found_at": "2026-11-24T11:31:54+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "The transcript does not describe a clear gameplay event such as a chase, crash, or funny reaction. It is mostly filler dialogue with no observable in‑game action, so it lacks a self‑contained setup and payoff for a Shorts clip."
   },
   {
     "campaign_id": "boeshi-gta6",
@@ -929,8 +950,9 @@
     "score": 2.08819784169379,
     "win_start": 1375.0,
     "win_end": 1450.0,
-    "found_at": "2026-11-24T22:05:29+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rendered",
+    "rerun": true
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -980,8 +1002,10 @@
     "score": 1.6792509006372345,
     "win_start": 3295.0,
     "win_end": 3370.0,
-    "found_at": "2026-11-24T22:05:29+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "new",
+    "rerun": true,
+    "deferrals": 1
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1005,8 +1029,10 @@
     "score": 2.3233268539192395,
     "win_start": 17108.0,
     "win_end": 17183.0,
-    "found_at": "2026-11-24T23:01:28+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The hook claims the streamer sells $500,000 of goods, but the frames show him simply walking into a shop and then a static map screen. There is no visual evidence of a transaction, a sale, or the money being earned. Additionally, the final frame is a map, which fails the requirement for active gamep"
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1056,8 +1082,10 @@
     "score": 1.5906021538216313,
     "win_start": 15548.0,
     "win_end": 15623.0,
-    "found_at": "2026-11-24T23:01:28+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "Transcript lacks a clear gameplay payoff or reaction; the dialogue is incoherent and does not demonstrate a specific in‑game event, so the clip does not meet the campaign’s criteria."
   },
   {
     "campaign_id": "kai-cenat-gta6-pool",
@@ -1107,8 +1135,10 @@
     "score": 1.5580161212591688,
     "win_start": 5120.0,
     "win_end": 5195.0,
-    "found_at": "2026-11-24T23:04:20+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The hook and title promise a reaction to 'veins,' but the provided frames show the streamer's face and gameplay of driving a car. The specific visual of 'massive forearm veins' is not visible in the sampled frames, making the clip misleading to a viewer expecting to see that specific detail. [failed"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1171,8 +1201,10 @@
     "score": 1.7334508579454526,
     "win_start": 11465.0,
     "win_end": 11538.0,
-    "found_at": "2026-11-24T23:59:55+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "new",
+    "rerun": true,
+    "deferrals": 1
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1534,8 +1566,9 @@
     "score": 1.6656538587852452,
     "win_start": 10030.0,
     "win_end": 10105.0,
-    "found_at": "2026-11-26T00:35:24+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rendered",
+    "rerun": true
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1598,8 +1631,10 @@
     "score": 2.0977611543525128,
     "win_start": 14085.0,
     "win_end": 14160.0,
-    "found_at": "2026-11-26T02:03:30+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The visual content does not support the hook or title. The frames show the character walking around with the duffel bag still intact; the money is never seen falling on the floor. Additionally, the streamer's dialogue contains strong profanity ('fucking'), which makes the clip unsafe for advertisers"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -1623,8 +1658,9 @@
     "score": 1.7129882148455082,
     "win_start": 11620.0,
     "win_end": 11695.0,
-    "found_at": "2026-11-26T02:03:30+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rendered",
+    "rerun": true
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2051,8 +2087,10 @@
     "score": 1.756278880314587,
     "win_start": 25830.0,
     "win_end": 25905.0,
-    "found_at": "2026-11-26T06:37:49+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "vision review: The hook and title promise a tank encounter, but the provided frames do not show a tank. Frame 1 shows a burning car, Frame 2 shows a street view, and Frame 3 shows a dark, unidentifiable object (possibly a crate or vehicle interior). Without the tank visible, the clip is misleading and fails the pr"
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2141,8 +2179,10 @@
     "score": 1.7311238143939622,
     "win_start": 29855.0,
     "win_end": 29930.0,
-    "found_at": "2026-11-26T08:24:56+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "Insufficient evidence of a clear gameplay moment; transcript too thin to confirm setup and payoff."
   },
   {
     "campaign_id": "parkerr-gta6",
@@ -2334,8 +2374,9 @@
     "score": 2.327753904014655,
     "win_start": 10365.0,
     "win_end": 10440.0,
-    "found_at": "2026-11-26T10:37:56+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rendered",
+    "rerun": true
   },
   {
     "campaign_id": "boeshi-gta6",
@@ -2359,8 +2400,10 @@
     "score": 2.014534320035851,
     "win_start": 9860.0,
     "win_end": 9935.0,
-    "found_at": "2026-11-26T10:37:56+00:00",
-    "status": "rendered"
+    "found_at": "2026-11-26T14:37:57+00:00",
+    "status": "rejected",
+    "rerun": true,
+    "reason": "The transcript does not describe a concrete GTA 6 gameplay moment such as a chase, crash, or funny reaction. It is vague chatter without a clear setup and payoff, so it would not engage viewers."
   },
   {
     "campaign_id": "boeshi-gta6",
