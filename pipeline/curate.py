@@ -62,6 +62,9 @@ A chat/audio spike happened near second {peak:.0f}.
 
 {transcript}
 
+On-screen text read from the video by OCR (approximate; in-game subtitles and mission messages, same seconds):
+{screen}
+
 {vision}
 
 Decide:
@@ -83,7 +86,8 @@ Decide:
    "Video tape mystery revealed"). Never use hype words (epic, hilarious, insane, crazy, wild, shock, mystery,
    surprise, revealed, chaos, huge, massive, giant, big win). No emojis, no clickbait, no spoilers of major story
    twists - never name a story character being killed, stabbed or betrayed in the hook or title.
-   GROUND IT IN THE TRANSCRIPT: only state events the streamer's own words confirm (if nobody mentions a tank, a heist
+   GROUND IT IN THE TRANSCRIPT: only state events the streamer's own words or the on-screen game text confirm (if
+   neither mentions a tank, a heist
    or the police, don't put them in the hook or title). If the transcript only promises something ("we're going to
    get six stars") and the window ends before it happens, the hook must not say it happened - or set keep: false
    when the payoff is missing. A short paraphrase of the streamer's reaction is ideal. If the transcript is too thin
@@ -174,7 +178,7 @@ def streamer_name(campaign: dict) -> str:
 
 
 def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float, cfg: dict,
-           images: list[bytes] | None = None, require_llm: bool = True) -> dict:
+           images: list[bytes] | None = None, require_llm: bool = True, screen_lines: str | None = None) -> dict:
     """One LLM call that picks the cut and writes metadata (and, with Gemini, also looks at the frames).
     Returns {"defer": True} when no LLM answered and require_llm is set - generic titles hurt reach."""
     streamer = streamer_name(campaign)
@@ -187,6 +191,7 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
             name=campaign["name"], streamer=streamer, must=", ".join(must) or "none",
             rules=(campaign.get("rules") or "none").strip(), dur=window_len, peak=peak_rel,
             transcript=_transcript_text(words), minlen=minlen, maxlen=maxlen,
+            screen=screen_lines or "(not available)",
             vision=VISION_NOTE if images and llm.first_provider() == "gemini" else BLIND_NOTE), want_json=True, temperature=0.4,
             images=images, system=SYSTEM_EDITOR, effort=cfg.get("judge_effort", "medium"))
     if require_llm and (not isinstance(res, dict) or "keep" not in res):
