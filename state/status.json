@@ -1,9 +1,9 @@
 {
   "scout": {
-    "checked_at": "2026-11-26T12:44:43+00:00",
-    "new": 0,
-    "known": 191,
-    "youtube_open": 81,
+    "checked_at": "2026-11-26T14:26:12+00:00",
+    "new": 1,
+    "known": 192,
+    "youtube_open": 86,
     "needs_review": [
       "Jack [GTA LOGO]",
       "$2,500 Pilat Clipping Campaign",
@@ -58,12 +58,13 @@
       "MONTAGEM CALMO - Phonknight [EDITS]",
       "Clipped & Shipped",
       "Phonknight",
-      "Phonknight MONTAGEM CALMO - Phonknight [EDITS]"
+      "Phonknight MONTAGEM CALMO - Phonknight [EDITS]",
+      "GTA 6 x Foltyn"
     ]
   },
-  "last_scout": "2026-11-26T12:44:43+00:00",
-  "last_run": "2026-11-26T12:46:54+00:00",
-  "run_seconds": 163,
+  "last_scout": "2026-11-26T14:26:12+00:00",
+  "last_run": "2026-11-26T14:26:45+00:00",
+  "run_seconds": 39,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
