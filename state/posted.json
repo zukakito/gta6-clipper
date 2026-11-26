@@ -1497,5 +1497,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "file": "boeshi-gta6_twitchvod-v294112030_7065.mp4",
+    "title": "Boeshi chased by a haunted ATV in GTA 6 #shorts",
+    "posted_at": "2026-11-26T09:14:06+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2941120302",
+    "vod_offset": 7036.5,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1hp5CSb3IM9A3ucjyNtf1Vcy4lYAkxF4y",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]
