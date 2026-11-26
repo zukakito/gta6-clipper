@@ -1471,5 +1471,18 @@
     "video_id": null,
     "url": null,
     "privacy": "dry_run"
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "file": "parkerr-gta6_twitchvod-v294066251_25875.mp4",
+    "title": "Parkerr encounters a tank in GTA 6 | #shorts",
+    "posted_at": "2026-11-26T06:40:45+00:00",
+    "vod_url": "https://www.twitch.tv/videos/2940662518",
+    "vod_offset": 25860.0,
+    "submission": "skipped",
+    "drive": "https://drive.google.com/drive/folders/1yQS99x7_PyW4DJXnDY7rskb0F6ehC9YZ",
+    "video_id": null,
+    "url": null,
+    "privacy": "dry_run"
   }
 ]

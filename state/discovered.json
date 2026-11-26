@@ -346,7 +346,7 @@
     "name": "GTA 6 Clipping Campaign - Tokyo Girl",
     "host": "Tokyo Girl",
     "board": "content_rewards",
-    "type": "unknown",
+    "type": "cpm",
     "cpm": 0.7,
     "budget_left_usd": 1619,
     "platforms": [
@@ -358,11 +358,11 @@
     "apply_first": false,
     "streamer": "Tokyo Girl",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/9dedcdfc-7e4d-4e56-8036-846bfdbdc676",
-    "status": "unknown",
+    "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T00:31:43+00:00"
+    "last_seen": "2026-11-26T06:34:11+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -546,7 +546,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 7600,
+    "budget_left_usd": 8300,
     "platforms": [
       "facebook",
       "instagram",
@@ -561,7 +561,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T01:59:31+00:00"
+    "last_seen": "2026-11-26T06:34:11+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -1992,8 +1992,8 @@
     "host": "ClipUp Official",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 0.3,
-    "budget_left_usd": 12000,
+    "cpm": 0.25,
+    "budget_left_usd": 10000,
     "platforms": [
       "instagram",
       "tiktok",
@@ -2006,7 +2006,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-26T01:59:31+00:00"
+    "last_seen": "2026-11-26T06:34:11+00:00"
   },
   "gta-vi-things-i-could-ve-said-music-campaign": {
     "name": "GTA VI \"Things I Could've Said\" Music Campaign",
@@ -2821,7 +2821,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 2727,
+    "budget_left_usd": 2400,
     "platforms": [
       "youtube",
       "tiktok",
@@ -2835,7 +2835,7 @@
     "first_seen": "2026-11-25T02:43:20+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-25T18:24:38+00:00"
+    "last_seen": "2026-11-26T06:34:11+00:00"
   },
   "game-over-gta-vi-rollout": {
     "name": "'Game Over' GTA VI Rollout",
@@ -3477,5 +3477,22 @@
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
     "last_seen": "2026-11-26T01:59:41+00:00"
+  },
+  "gta-clipper": {
+    "name": "GTA Clipper",
+    "host": null,
+    "board": "content_rewards",
+    "type": "cpm",
+    "cpm": 0.5,
+    "budget_left_usd": 443,
+    "platforms": [],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-26T06:34:11+00:00",
+    "source_board": "https://contentrewards.com/c/discover/clipping",
+    "needs_review": false,
+    "last_seen": "2026-11-26T06:34:11+00:00"
   }
 }
