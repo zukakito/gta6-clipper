@@ -12,7 +12,7 @@ import datetime as dt
 import time
 import traceback
 
-from . import curate, drive, highlights, llm, publish, render, safety, scout, sources, submit
+from . import curate, drive, highlights, llm, publish, render, review, safety, scout, sources, submit
 from .common import OUT, campaigns, iso, load_state, log, now, parse_iso, save_state, settings, slug
 
 RUN_BUDGET_SEC = 50 * 60
@@ -128,7 +128,7 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
         name = f'{c["id"]}_{slug(cand["vod_id"], 20)}_{int(cand["t"])}'
         try:
             src = render.download_section(cand["vod_url"], cand["win_start"], cand["win_end"], name)
-            words = render.transcribe(src, clip_cfg["whisper_model"])
+            words = render.transcribe(src, clip_cfg["whisper_model"], fallback=clip_cfg.get("whisper_fallback", "small"))
             if len(words) < curate.MIN_WORDS:   # cheap check first: idle/sleeping moments have no speech
                 cand["status"], cand["reason"] = "rejected", f"too little speech ({len(words)} words)"
                 log.info("rejected %s: no speech", name)
@@ -163,12 +163,19 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                 log.info("quality gate rejected %s: %s", name, why)
                 continue
             words = render.refine_words(src, words, meta["start"], meta["end"], clip_cfg.get("caption_model", "medium"),
-                                        prompt=f"{curate.streamer_name(c)} playing GTA 6.")
+                                        prompt=f"{curate.streamer_name(c)} playing GTA 6.",
+                                        fallback=clip_cfg.get("caption_fallback", "medium"))
             out = render.render_short(src, meta["start"], meta["end"], words, meta["hook"],
                                       c.get("overlay_text") or "", bool(c.get("paid_disclosure")),
                                       c.get("layout") or clip_cfg["layout"], name,
                                       overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]),
                                       min_len=clip_cfg["short_min_sec"])
+            rv = review.review_clip(out, meta, words, curate.streamer_name(c), cfg.get("review", {}))
+            if rv.get("verdict") == "reject":   # the vision reviewer saw the hook/picture doesn't hold up
+                cand["status"], cand["reason"] = "rejected", f"vision review: {str(rv.get('reason'))[:300]}"
+                log.info("vision review rejected %s: %s", name, rv.get("reason"))
+                continue
+            meta["review"] = rv
             meta["paid"] = bool(c.get("paid_disclosure"))
             meta["playlist"] = f"{curate.streamer_name(c)} GTA 6 Moments"
             meta["streamer"] = curate.streamer_name(c)
