@@ -1,8 +1,8 @@
 {
   "scout": {
-    "checked_at": "2026-11-27T06:37:03+00:00",
-    "new": 0,
-    "known": 199,
+    "checked_at": "2026-11-27T08:03:51+00:00",
+    "new": 4,
+    "known": 203,
     "youtube_open": 84,
     "needs_review": [
       "Jack [GTA LOGO]",
@@ -62,9 +62,9 @@
       "GTA 6 x Foltyn"
     ]
   },
-  "last_scout": "2026-11-27T06:37:03+00:00",
-  "last_run": "2026-11-27T06:37:20+00:00",
-  "run_seconds": 22,
+  "last_scout": "2026-11-27T08:03:51+00:00",
+  "last_run": "2026-11-27T08:14:18+00:00",
+  "run_seconds": 632,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
