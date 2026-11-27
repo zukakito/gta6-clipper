@@ -1,7 +1,7 @@
 {
   "scout": {
-    "checked_at": "2026-11-27T02:42:17+00:00",
-    "new": 3,
+    "checked_at": "2026-11-27T04:07:57+00:00",
+    "new": 0,
     "known": 199,
     "youtube_open": 84,
     "needs_review": [
@@ -62,9 +62,9 @@
       "GTA 6 x Foltyn"
     ]
   },
-  "last_scout": "2026-11-27T02:42:17+00:00",
-  "last_run": "2026-11-27T02:44:20+00:00",
-  "run_seconds": 132,
+  "last_scout": "2026-11-27T04:07:57+00:00",
+  "last_run": "2026-11-27T04:08:29+00:00",
+  "run_seconds": 38,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
