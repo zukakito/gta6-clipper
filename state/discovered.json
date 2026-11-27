@@ -561,7 +561,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -582,7 +582,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "yourrage-5-000-gta-6-pool-campaign": {
     "name": "YourRAGE $5,000 GTA 6 Pool Campaign",
@@ -689,7 +689,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "gta-6": {
     "name": "GTA 6",
@@ -772,7 +772,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "3-000-8lanco-every-little-thing-sound-campaign": {
     "name": "$3,000 8lanco 'Every Little Thing' Sound Campaign",
@@ -1333,7 +1333,7 @@
     "board": "clipster",
     "type": "cpm",
     "cpm": 0.75,
-    "budget_left_usd": 3500,
+    "budget_left_usd": 3600,
     "platforms": [
       "tiktok",
       "instagram",
@@ -1346,7 +1346,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "take-me-droma-gta-6-edits": {
     "name": "Take me - DROMA [GTA 6 + EDITS]",
@@ -1626,15 +1626,14 @@
   "clipup-official-gta-vi-clipup-logo-campaign": {
     "name": "ClipUp Official GTA VI Clipup Logo Campaign",
     "host": "ClipUp Official",
-    "board": "content_rewards",
+    "board": "other",
     "type": "cpm",
     "cpm": 0.25,
-    "budget_left_usd": 5728,
+    "budget_left_usd": 9900,
     "platforms": [
-      "youtube",
-      "tiktok",
       "instagram",
-      "x"
+      "tiktok",
+      "youtube"
     ],
     "apply_first": false,
     "streamer": null,
@@ -1643,7 +1642,7 @@
     "first_seen": "2026-11-21T21:45:18+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T02:42:16+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "gattouz0-clipping-gattouz-gta-vi-1win": {
     "name": "Gattouz0 - Clipping GATTOUZ × GTA VI × 1WIN",
@@ -2185,7 +2184,7 @@
     "first_seen": "2026-11-22T16:51:26+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "gta-6-x-gta-clipper-tool-campaign": {
     "name": "GTA 6 x GTA Clipper Tool Campaign",
@@ -2225,7 +2224,7 @@
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "whethan-dev-bass-down-low-gta-vi": {
     "name": "Whethan & DEV - Bass Down Low (GTA VI)",
@@ -2429,7 +2428,7 @@
     "first_seen": "2026-11-23T20:28:36+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "gta-6-movie-edits-daniel-donato": {
     "name": "GTA 6 & Movie Edits | Daniel Donato",
@@ -2555,7 +2554,7 @@
     "first_seen": "2026-11-24T09:10:05+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "gta-vi-clips-memes-310babii-audio-campaign": {
     "name": "GTA VI - Clips/Memes - 310babii | Audio Campaign",
@@ -3085,7 +3084,7 @@
     "first_seen": "2026-11-25T06:39:12+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "8lanco-every-little-thing-sound-campaign": {
     "name": "8lanco 'Every Little Thing' Sound Campaign",
@@ -3619,7 +3618,7 @@
     "first_seen": "2026-11-26T19:42:52+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T10:35:18+00:00"
+    "last_seen": "2026-11-27T11:31:23+00:00"
   },
   "all-again-gta-6-edits": {
     "name": "All Again [GTA 6 EDITS]",
