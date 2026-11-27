@@ -177,7 +177,9 @@ def produce(cfg: dict, candidates: list[dict], posted: list[dict], deadline: flo
                                       c.get("overlay_text") or "", bool(c.get("paid_disclosure")),
                                       c.get("layout") or clip_cfg["layout"], name,
                                       overlay_img=render.fetch_overlay(c.get("overlay_image_url"), c["id"]),
-                                      min_len=clip_cfg["short_min_sec"])
+                                      min_len=clip_cfg["short_min_sec"],
+                                      teaser_at=meta.get("teaser") if clip_cfg.get("cold_open", True) else None,
+                                      setup=meta.get("setup_line") or "", ending=meta.get("end_line") or "")
             rv = review.review_clip(out, meta, words, curate.streamer_name(c), cfg.get("review", {}))
             if rv.get("verdict") == "reject":   # the vision reviewer saw the hook/picture doesn't hold up
                 cand["status"], cand["reason"] = "rejected", f"vision review: {str(rv.get('reason'))[:300]}"
