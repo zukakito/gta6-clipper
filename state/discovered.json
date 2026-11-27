@@ -1331,9 +1331,9 @@
     "name": "Lord Kebun",
     "host": "Lord Kebun",
     "board": "clipster",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.75,
-    "budget_left_usd": 3700,
+    "budget_left_usd": 3800,
     "platforms": [
       "tiktok",
       "instagram",
@@ -1346,7 +1346,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "take-me-droma-gta-6-edits": {
     "name": "Take me - DROMA [GTA 6 + EDITS]",
@@ -1446,7 +1446,7 @@
     "first_seen": "2026-11-21T09:54:12+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "lacy-gta-vi-marathon-pool-campaign": {
     "name": "LACY GTA VI Marathon Pool Campaign",
@@ -1817,7 +1817,7 @@
     "first_seen": "2026-11-22T05:38:49+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "ritmo-salsa": {
     "name": "RITMO SALSA",
@@ -2224,7 +2224,7 @@
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "whethan-dev-bass-down-low-gta-vi": {
     "name": "Whethan & DEV - Bass Down Low (GTA VI)",
@@ -2473,7 +2473,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "arthurtv": {
     "name": "ArthurTV",
@@ -2492,7 +2492,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "bounty-gta-vi-lucia-vs-fanvue-ai-lucia": {
     "name": "Bounty GTA VI Lucia vs Fanvue AI Lucia",
@@ -2554,7 +2554,7 @@
     "first_seen": "2026-11-24T09:10:05+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "gta-vi-clips-memes-310babii-audio-campaign": {
     "name": "GTA VI - Clips/Memes - 310babii | Audio Campaign",
@@ -2703,7 +2703,7 @@
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "rexxlife-raj-handful-of-diamond-rings-gta-6": {
     "name": "RexxLife Raj \"Handful of Diamond Rings\" GTA 6",
@@ -3145,13 +3145,13 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "the-clip-ship": {
     "name": "The Clip Ship",
     "host": null,
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.0,
     "budget_left_usd": 3700,
     "platforms": [
@@ -3164,7 +3164,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "phonknight": {
     "name": "Phonknight",
@@ -3184,13 +3184,13 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "clippedin": {
     "name": "ClippedIn",
     "host": null,
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.0,
     "budget_left_usd": 3000,
     "platforms": [
@@ -3204,7 +3204,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "ishowspeed-spotted-with-rayhaan": {
     "name": "Ishowspeed spotted with Rayhaan",
@@ -3743,9 +3743,9 @@
     "name": "500 2",
     "host": null,
     "board": "clipster",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.35,
-    "budget_left_usd": 3900,
+    "budget_left_usd": 4100,
     "platforms": [
       "tiktok",
       "instagram",
@@ -3758,7 +3758,7 @@
     "first_seen": "2026-11-27T14:00:14+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   },
   "droma": {
     "name": "DROMA",
@@ -4140,6 +4140,6 @@
     "first_seen": "2026-11-27T15:00:45+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T19:39:01+00:00"
+    "last_seen": "2026-11-27T22:00:00+00:00"
   }
 }

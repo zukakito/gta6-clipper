@@ -1,6 +1,6 @@
 {
   "scout": {
-    "checked_at": "2026-11-27T21:00:59+00:00",
+    "checked_at": "2026-11-27T22:00:01+00:00",
     "new": 0,
     "known": 226,
     "youtube_open": 88,
@@ -64,9 +64,9 @@
       "Clipping Hall of Fame"
     ]
   },
-  "last_scout": "2026-11-27T21:00:59+00:00",
-  "last_run": "2026-11-27T21:01:51+00:00",
-  "run_seconds": 58,
+  "last_scout": "2026-11-27T22:00:01+00:00",
+  "last_run": "2026-11-27T22:00:51+00:00",
+  "run_seconds": 54,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
