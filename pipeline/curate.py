@@ -98,7 +98,13 @@ Decide:
 6. tags: 8-12 lowercase tags.
 7. what_happens: one or two sentences on what happens in the cut; evidence: 1-3 short transcript quotes that prove
    it; score: 1-10, how much a stranger scrolling Shorts would care (below 7 means keep: false).
-Return JSON: {{"what_happens": str, "evidence": [str], "score": number, "keep": bool, "reason": str, "start": number, "end": number, "hook": str, "title": str, "description": str, "tags": [str]}}
+8. teaser: the transcript second (between start and end) of the single most striking instant - the payoff or the
+   streamer's biggest reaction. It is shown first as a 1.6 s cold open, so viewers see the moment before the setup.
+9. setup_line and end_line: our own storytelling, max 7 words each, shown on screen at the start and at the end.
+   setup_line frames the situation ("He thinks he lost the cops"), end_line lands it ("The ATV never stopped").
+   Same rules as the hook: only what the transcript or on-screen text confirms, no hype words, no spoilers, never
+   mock the streamer. Use "" if you can't write one that is both true and interesting.
+Return JSON: {{"what_happens": str, "evidence": [str], "score": number, "keep": bool, "reason": str, "start": number, "end": number, "teaser": number, "hook": str, "setup_line": str, "end_line": str, "title": str, "description": str, "tags": [str]}}
 """
 
 
@@ -250,5 +256,13 @@ def curate(campaign: dict, words: list[dict], window_len: float, peak_rel: float
     if campaign.get("paid_disclosure"):
         res["description"] = "Paid partnership / clipping campaign.\n" + res["description"]
     res["tags"] = list(dict.fromkeys([t.lower() for t in (res.get("tags") or [])] + ["gta 6", "gta vi"]))[:15]
+    # Cold-open moment and storytelling lines: keep only sane values (the renderer skips them when empty/None).
+    t = num(res.get("teaser"), None)
+    res["teaser"] = round(t, 2) if t is not None and s + 1.0 <= t <= e else None
+    for k in ("setup_line", "end_line"):
+        line = _strip_hype(str(res.get(k) or ""))
+        if len(line.split()) > 9 or BANNED_TOPIC.search(line):
+            line = ""
+        res[k] = line
     log.info("curate: keep=%s %s [%.1f-%.1f] %s", res.get("keep"), campaign["id"], s, e, res["title"])
     return res
