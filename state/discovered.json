@@ -362,7 +362,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T12:38:30+00:00"
+    "last_seen": "2026-11-27T19:39:16+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -654,7 +654,7 @@
     "name": "BOBBY VAN RIPER GTA VI Clipping",
     "host": "Clipping Nation",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.5,
     "budget_left_usd": 349,
     "platforms": [
@@ -666,11 +666,11 @@
     "apply_first": false,
     "streamer": "BOBBY VAN RIPER",
     "url": "https://whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/9dedcdfc-7e4d-4e56-8036-846bfdbdc676",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T14:00:50+00:00"
+    "last_seen": "2026-11-27T19:39:16+00:00"
   },
   "5-000-lauren-hamden-gta-6-clipping-campaign": {
     "name": "$5,000 Lauren Hamden GTA 6 Clipping Campaign",
@@ -1429,9 +1429,9 @@
   },
   "clipup-official": {
     "name": "ClipUp Official",
-    "host": "ClipUp Official",
+    "host": "GTA VI Clipup Logo Campaign",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.25,
     "budget_left_usd": 5600,
     "platforms": [
@@ -1446,7 +1446,7 @@
     "first_seen": "2026-11-21T09:54:12+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "lacy-gta-vi-marathon-pool-campaign": {
     "name": "LACY GTA VI Marathon Pool Campaign",
@@ -1800,9 +1800,9 @@
   },
   "gattouz0-clipping": {
     "name": "Gattouz0 - Clipping",
-    "host": "Gattouz0",
+    "host": "GATTOUZ × GTA VI × 1WIN",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.35,
     "budget_left_usd": 8900,
     "platforms": [
@@ -1817,7 +1817,7 @@
     "first_seen": "2026-11-22T05:38:49+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "ritmo-salsa": {
     "name": "RITMO SALSA",
@@ -1971,7 +1971,7 @@
     "name": "GTA 6 x GTA Clipper Logo Campaign",
     "host": "GTA Clipper",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.5,
     "budget_left_usd": 382,
     "platforms": [
@@ -1981,11 +1981,11 @@
     "apply_first": false,
     "streamer": "GTA Clipper",
     "url": "whop.com/experiences/exp_6DJh0DkDMhATvG/campaigns/0b178e3c-fbd3-4294-8ded-394e3da9c62f",
-    "status": "open",
+    "status": "unknown",
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T14:00:50+00:00"
+    "last_seen": "2026-11-27T19:39:16+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
@@ -2006,7 +2006,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T12:38:30+00:00"
+    "last_seen": "2026-11-27T19:39:16+00:00"
   },
   "gta-vi-things-i-could-ve-said-music-campaign": {
     "name": "GTA VI \"Things I Could've Said\" Music Campaign",
@@ -2210,7 +2210,7 @@
     "name": "GTA VI Lucia vs Fanvue AI Lucia",
     "host": "Bounty",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.5,
     "budget_left_usd": 13000,
     "platforms": [
@@ -2224,7 +2224,7 @@
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "whethan-dev-bass-down-low-gta-vi": {
     "name": "Whethan & DEV - Bass Down Low (GTA VI)",
@@ -2454,9 +2454,9 @@
   },
   "launch-clipping": {
     "name": "Launch Clipping",
-    "host": null,
+    "host": "BenDaDonnn x Puffco GTA 6",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.0,
     "budget_left_usd": 7700,
     "platforms": [
@@ -2473,13 +2473,13 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "arthurtv": {
     "name": "ArthurTV",
-    "host": null,
+    "host": "GTA Clips",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.5,
     "budget_left_usd": 4600,
     "platforms": [
@@ -2492,7 +2492,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "bounty-gta-vi-lucia-vs-fanvue-ai-lucia": {
     "name": "Bounty GTA VI Lucia vs Fanvue AI Lucia",
@@ -2537,7 +2537,7 @@
     "name": "GTA VI VAVADA [LOGO CAMPAIGN]",
     "host": "Bounty",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.5,
     "budget_left_usd": 26000,
     "platforms": [
@@ -2554,7 +2554,7 @@
     "first_seen": "2026-11-24T09:10:05+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "gta-vi-clips-memes-310babii-audio-campaign": {
     "name": "GTA VI - Clips/Memes - 310babii | Audio Campaign",
@@ -2688,9 +2688,9 @@
   },
   "donbet": {
     "name": "DonBet",
-    "host": null,
+    "host": "DonBet Logo Campaign (GTA6)",
     "board": "clipstake",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 0.2,
     "budget_left_usd": 4500,
     "platforms": [
@@ -2703,7 +2703,7 @@
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "rexxlife-raj-handful-of-diamond-rings-gta-6": {
     "name": "RexxLife Raj \"Handful of Diamond Rings\" GTA 6",
@@ -3130,9 +3130,9 @@
   },
   "reach": {
     "name": "Reach",
-    "host": null,
+    "host": "$5,000 Lauren Hamden GTA 6 Clipping Campaign",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.5,
     "budget_left_usd": 4400,
     "platforms": [
@@ -3145,7 +3145,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "the-clip-ship": {
     "name": "The Clip Ship",
@@ -3168,11 +3168,11 @@
   },
   "phonknight": {
     "name": "Phonknight",
-    "host": null,
+    "host": "MONTAGEM CALMO - Phonknight [EDITS]",
     "board": "clipster",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.0,
-    "budget_left_usd": 4200,
+    "budget_left_usd": 4300,
     "platforms": [
       "tiktok",
       "youtube"
@@ -3184,7 +3184,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   },
   "clippedin": {
     "name": "ClippedIn",
@@ -4122,9 +4122,9 @@
   },
   "clipping-hall-of-fame": {
     "name": "Clipping Hall of Fame",
-    "host": null,
+    "host": "GTA 6 x Foltyn",
     "board": "content_rewards",
-    "type": "cpm",
+    "type": "unknown",
     "cpm": 1.5,
     "budget_left_usd": 4900,
     "platforms": [
@@ -4138,6 +4138,6 @@
     "first_seen": "2026-11-27T15:00:45+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-27T18:26:35+00:00"
+    "last_seen": "2026-11-27T19:39:01+00:00"
   }
 }
