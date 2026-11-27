@@ -450,19 +450,31 @@
   "twitchvod:v2941601737": {
     "url": "https://www.twitch.tv/videos/2941601737",
     "title": "🦃 COOKING THANKSGIVING DINNER 🦃 WITH DARLA 🦃 FLIGHT CANCELLED 🦃 CHEF LACY 🦃 !CLIPPING !GIVEAWAY 2026-11-26 20:59",
-    "scanned_until": 10800.0,
-    "last_scan": "2026-11-26T23:01:27+00:00"
+    "scanned_until": 14400.0,
+    "last_scan": "2026-11-27T01:24:03+00:00"
   },
   "twitchvod:v2941649729": {
     "url": "https://www.twitch.tv/videos/2941649729",
     "title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS 2026-11-26 21:00",
-    "scanned_until": 8065.0,
-    "last_scan": "2026-11-26T23:04:58+00:00"
+    "scanned_until": 11665.0,
+    "last_scan": "2026-11-27T01:27:25+00:00"
   },
   "twitchvod:v2941427899": {
     "url": "https://www.twitch.tv/videos/2941427899",
     "title": "[75/365] 🦃🍁 HAPPY THANKGIVING 🦃🍁 SHORT STREAM 🦃🍁 THANKFUL FOR U GUYS 🦃🍁GTA GAMEPLAY 🦃🍁  !CLIPPING 🦃🍁 !DISCORD",
+    "scanned_until": 6901.0,
+    "last_scan": "2026-11-27T01:24:19+00:00"
+  },
+  "twitchvod:v2941789896": {
+    "url": "https://www.twitch.tv/videos/2941789896",
+    "title": "Highlight: 🦃 COOKING THANKSGIVING DINNER 🦃 WITH DARLA 🦃 FLIGHT CANCELLED 🦃 CHEF LACY 🦃 !CLIPPING !GIVEAWAY",
     "scanned_until": 3600.0,
-    "last_scan": "2026-11-27T00:00:46+00:00"
+    "last_scan": "2026-11-27T01:24:03+00:00"
+  },
+  "twitchvod:v2939980118": {
+    "url": "https://www.twitch.tv/videos/2939980118",
+    "title": "Highlight: 🌴 WE IN MIAMI 🌴 DESKTOP REACTIONS & IRL 🌴 IRL WITH SILKY?? 🌴 GOING TO BENS PENTHOUSE 🌴 ERIE PA TOMORROW 🌴 !CLIPPING !COM",
+    "scanned_until": 2329.0,
+    "last_scan": "2026-11-27T01:24:03+00:00"
   }
 }

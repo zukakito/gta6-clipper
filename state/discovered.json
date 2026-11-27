@@ -546,7 +546,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 8200,
+    "budget_left_usd": 8500,
     "platforms": [
       "facebook",
       "instagram",
@@ -561,11 +561,11 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T00:00:22+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
-    "host": "Gattouz0",
+    "host": "Gattouz0 - Clipping",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.35,
@@ -582,7 +582,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "yourrage-5-000-gta-6-pool-campaign": {
     "name": "YourRAGE $5,000 GTA 6 Pool Campaign",
@@ -674,7 +674,7 @@
   },
   "5-000-lauren-hamden-gta-6-clipping-campaign": {
     "name": "$5,000 Lauren Hamden GTA 6 Clipping Campaign",
-    "host": "Lauren Hamden",
+    "host": "Reach",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
@@ -689,7 +689,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "gta-6": {
     "name": "GTA 6",
@@ -753,7 +753,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "donbet-logo-campaign-gta6": {
     "name": "DonBet Logo Campaign (GTA6)",
@@ -772,7 +772,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "3-000-8lanco-every-little-thing-sound-campaign": {
     "name": "$3,000 8lanco 'Every Little Thing' Sound Campaign",
@@ -792,7 +792,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "2-500-pilat-clipping-campaign": {
     "name": "$2,500 Pilat Clipping Campaign",
@@ -1346,7 +1346,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "take-me-droma-gta-6-edits": {
     "name": "Take me - DROMA [GTA 6 + EDITS]",
@@ -1996,7 +1996,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.25,
-    "budget_left_usd": 5800,
+    "budget_left_usd": 9900,
     "platforms": [
       "instagram",
       "tiktok",
@@ -2009,7 +2009,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T00:00:22+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "gta-vi-things-i-could-ve-said-music-campaign": {
     "name": "GTA VI \"Things I Could've Said\" Music Campaign",
@@ -2227,7 +2227,7 @@
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "whethan-dev-bass-down-low-gta-vi": {
     "name": "Whethan & DEV - Bass Down Low (GTA VI)",
@@ -2268,7 +2268,7 @@
     "first_seen": "2026-11-23T02:38:41+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T17:14:26+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "reach-gta-6": {
     "name": "Reach GTA 6",
@@ -2416,7 +2416,7 @@
   },
   "dj-tunez-gta-6-clipping": {
     "name": "DJ Tunez - GTA 6 Clipping",
-    "host": "DJ Tunez",
+    "host": "The Clip Ship",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
@@ -2431,7 +2431,7 @@
     "first_seen": "2026-11-23T20:28:36+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "gta-6-movie-edits-daniel-donato": {
     "name": "GTA 6 & Movie Edits | Daniel Donato",
@@ -2557,7 +2557,7 @@
     "first_seen": "2026-11-24T09:10:05+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "gta-vi-clips-memes-310babii-audio-campaign": {
     "name": "GTA VI - Clips/Memes - 310babii | Audio Campaign",
@@ -3070,7 +3070,7 @@
     "board": "clipster",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 3900,
+    "budget_left_usd": 4000,
     "platforms": [
       "tiktok",
       "youtube"
@@ -3082,7 +3082,7 @@
     "first_seen": "2026-11-25T06:39:12+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   },
   "8lanco-every-little-thing-sound-campaign": {
     "name": "8lanco 'Every Little Thing' Sound Campaign",
@@ -3599,11 +3599,11 @@
   },
   "500-gta-6-2": {
     "name": "500 [GTA 6] 2",
-    "host": null,
+    "host": "500 2",
     "board": "clipster",
     "type": "cpm",
     "cpm": 0.35,
-    "budget_left_usd": 2500,
+    "budget_left_usd": 2800,
     "platforms": [
       "tiktok",
       "instagram",
@@ -3616,6 +3616,6 @@
     "first_seen": "2026-11-26T19:42:52+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T20:59:43+00:00"
+    "last_seen": "2026-11-27T01:23:59+00:00"
   }
 }
