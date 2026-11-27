@@ -242,7 +242,7 @@ def _clean(s: str) -> str:
 
 
 def build_ass(words: list[dict], clip_start: float, clip_end: float, hook: str, tag: str,
-              disclosure: bool, vertical: bool = True, split: bool = False) -> str:
+              disclosure: bool, vertical: bool = True, split: bool = False, setup: str = "", ending: str = "") -> str:
     pw, ph = (W, H) if vertical else (1920, 1080)
     cap_size = 84 if split else (78 if vertical else 64)
     cap_y = 1180 if split else (int(ph * 0.70) if vertical else int(ph * 0.88))
@@ -269,6 +269,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         ev.append(f"Dialogue: 1,{_ts(0)},{_ts(min(4.0, dur))},Hook,,0,0,0,,{{\\an5\\pos({pw // 2},640)}}{_clean(hook).upper()}")
     elif hook:
         ev.append(f"Dialogue: 1,{_ts(0)},{_ts(dur)},Hook,,0,0,0,,{_clean(hook).upper()}")
+    # Our own storytelling: a setup line at the start and a closing line at the end (on the seam, or under the hook).
+    story_pos = f"{{\\an5\\pos({pw // 2},640)}}" if split else f"{{\\an8\\pos({pw // 2},300)}}"
+    if setup:
+        ev.append(f"Dialogue: 1,{_ts(0)},{_ts(min(3.5, dur))},Hook,,0,0,0,,{story_pos}{_clean(setup).upper()}")
+    if ending and dur > 8:
+        ev.append(f"Dialogue: 1,{_ts(dur - 2.8)},{_ts(dur)},Hook,,0,0,0,,{story_pos}{_clean(ending).upper()}")
     if tag:
         ev.append(f"Dialogue: 1,{_ts(0)},{_ts(dur)},Tag,,0,0,0,,{_clean(tag).upper()}")
     if disclosure:
@@ -343,9 +349,13 @@ def _filter_vertical(layout: str, ass_path: Path, overlay_img: Path | None = Non
 
 def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict], hook: str, tag: str,
                  disclosure: bool, layout: str, name: str, overlay_img: Path | None = None,
-                 trim_silence: bool = True, min_len: float = 0.0) -> Path:
+                 trim_silence: bool = True, min_len: float = 0.0, teaser_at: float | None = None,
+                 setup: str = "", ending: str = "") -> Path:
+    """teaser_at: moment (seconds in the source window) shown as a 1.6 s cold open before the clip, with the hook.
+    setup / ending: short storytelling lines shown at the start / end of the clip."""
     out = OUT / f"{name}.mp4"
     ass_path = WORK / f"{name}.ass"
+    orig_start = rel_start
     extra = ["-i", str(overlay_img)] if overlay_img else []
     face = detect_facecam(src, rel_start, rel_end) if layout in ("auto", "split") else None
     segs = speech_segments(words, rel_start, rel_end) if trim_silence else [(0.0, rel_end - rel_start)]
@@ -367,7 +377,24 @@ def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict],
     else:
         segs, total = [(0.0, rel_end - rel_start)], rel_end - rel_start
         cap_words = [{**w, "s": w["s"] - rel_start, "e": w["e"] - rel_start} for w in words]
-    ass_path.write_text(build_ass(cap_words, 0.0, total, hook, tag, disclosure, split=bool(face)), encoding="utf-8")
+    teaser_t = None
+    if teaser_at is not None:   # where the teaser moment lands on the (possibly trimmed) clip timeline
+        rel = teaser_at - orig_start
+        if len(segs) > 1:
+            off = 0.0
+            for a, b in segs:
+                if a <= rel < b:
+                    teaser_t = off + rel - a
+                    break
+                off += b - a
+        elif 0 <= rel < total:
+            teaser_t = rel
+    main_hook = "" if teaser_t is not None else hook   # with a cold open the hook rides on the teaser instead
+    if face is None and teaser_t is not None:
+        main_hook = hook   # vertical layouts keep the hook on screen the whole time
+    ass_path.write_text(build_ass(cap_words, 0.0, total, main_hook, tag, disclosure, split=bool(face),
+                                  setup=setup if teaser_t is not None or not face else "", ending=ending),
+                        encoding="utf-8")
     if face:
         fc = _filter_split(face, ass_path, vtrim, overlay_img)
     else:
@@ -382,7 +409,37 @@ def render_short(src: Path, rel_start: float, rel_end: float, words: list[dict],
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(out),
     ], check=True, timeout=1800)
+    if teaser_t is not None:
+        try:
+            _add_cold_open(out, teaser_t, hook, bool(face))
+        except Exception as e:  # noqa: BLE001
+            log.warning("render: cold open failed (%s) - keeping the clip without it", str(e)[:200])
     return out
+
+
+def _add_cold_open(out: Path, t: float, hook: str, split: bool, length: float = 1.6) -> None:
+    """Prepend the clip's strongest moment (a 1.6 s, slightly zoomed-in excerpt with the hook) so the first second
+    shows the payoff instead of the setup - the swipe-or-watch decision happens in the first 1-2 s."""
+    dur = probe_duration(out)
+    a = min(max(0.0, t - 0.4), max(0.0, dur - length))
+    fontsdir = f":fontsdir={FONTS}" if FONTS.exists() else ""
+    hook_ass = WORK / f"{out.stem}_hook.ass"
+    # split layout: the hook is drawn on the teaser; vertical layouts already show it for the whole clip
+    hook_ass.write_text(build_ass([], 0.0, length, hook if split else "", "", False, split=split), encoding="utf-8")
+    teaser = WORK / f"{out.stem}_teaser.mp4"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", f"{a:.2f}", "-t", f"{length:.2f}", "-i", str(out),
+                    "-filter_complex", f"[0:v]scale=iw*1.12:-2,crop={W}:{H},setsar=1,ass={hook_ass}{fontsdir}[v]",
+                    "-map", "[v]", "-map", "0:a?", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20",
+                    "-pix_fmt", "yuv420p", "-r", "30", "-c:a", "aac", "-b:a", "160k", "-ar", "48000", str(teaser)],
+                   check=True, timeout=300)
+    joined = WORK / f"{out.stem}_joined.mp4"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(teaser), "-i", str(out), "-filter_complex",
+                    "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]", "-map", "[v]", "-map", "[a]",
+                    "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-r", "30",
+                    "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-movflags", "+faststart", str(joined)],
+                   check=True, timeout=600)
+    joined.replace(out)
+    log.info("render: cold open from %.1fs added to %s", a, out.name)
 
 
 def render_long(parts: list[tuple[Path, float, float, list[dict], str]], tag: str, name: str) -> Path:
