@@ -334,4 +334,4 @@ campaigns:
       never change what he said. Every clip must include the Parkerr Twitch stamp.
     verified_brief: true
     joined: true
-    enabled: true
+    enabled: false   # paused 27 Nov: campaign no longer listed on Content Rewards (ended?)
