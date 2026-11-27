@@ -284,10 +284,18 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             cur = []
     if cur:
         chunks.append(cur)
-    for ch in chunks:
+    last_end = 0.0
+    for ci, ch in enumerate(chunks):
+        nxt = chunks[ci + 1][0]["s"] - clip_start if ci + 1 < len(chunks) else None
         for i, w in enumerate(ch):
-            s = w["s"] - clip_start
+            # never show two caption lines at once: start after the previous one ended, end before the next begins
+            s = max(w["s"] - clip_start, last_end)
             e = min((ch[i + 1]["s"] if i + 1 < len(ch) else w["e"]) - clip_start, s + 1.2)  # never linger
+            if nxt is not None:
+                e = min(e, nxt)
+            if e - s < 0.08:
+                e = s + 0.08
+            last_end = e
             parts = []
             for j, x in enumerate(ch):
                 t = _clean(x["w"]).upper()
