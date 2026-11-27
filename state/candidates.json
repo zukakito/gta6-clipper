@@ -2500,5 +2500,31 @@
     "found_at": "2026-11-27T01:27:25+00:00",
     "status": "rejected",
     "reason": "No clear gameplay event or reaction is shown; the streamer only speculates about flying mechanics without any payoff, making the clip uninteresting for Shorts."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS",
+    "t": 11690.0,
+    "score": 1.185003043771119,
+    "win_start": 11665.0,
+    "win_end": 11720.0,
+    "found_at": "2026-11-27T02:43:05+00:00",
+    "status": "rejected",
+    "reason": "Engagement score below 7; the moment is weak for a Shorts clip."
+  },
+  {
+    "campaign_id": "parkerr-gta6",
+    "vod_id": "twitchvod:v2941649729",
+    "vod_url": "https://www.twitch.tv/videos/2941649729",
+    "vod_title": "🔴GTA 6 STORY COMPLETE 🔴 EASTER EGGS 🔴 MYTHBUSTING🔴REQUESTS",
+    "t": 12090.0,
+    "score": 1.089162543142097,
+    "win_start": 12045.0,
+    "win_end": 12120.0,
+    "found_at": "2026-11-27T02:43:05+00:00",
+    "status": "rejected",
+    "reason": "No clear GTA VI gameplay event or reaction is described; the transcript only contains unrelated chat and no setup/payoff, making it unsuitable for a Shorts clip."
   }
 ]
