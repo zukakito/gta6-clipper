@@ -335,3 +335,58 @@ campaigns:
     verified_brief: true
     joined: true
     enabled: false   # paused 27 Nov: campaign no longer listed on Content Rewards (ended?)
+
+  - id: foltyn-gta6
+    streamer: "Foltyn"
+    name: "GTA 6 x Foltyn (Clipping Hall of Fame)"
+    board: content_rewards
+    host: Clipping Hall of Fame
+    join_url: https://whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/ec9a0d02-4ff0-4d0d-a85f-9b5bcf699388
+    rules_doc: https://docs.google.com/document/d/1Ty8QZVEyLbMRrT0X9doqrSs2DLACPbEEa3GGtRdsYzo/edit
+    type: cpm
+    cpm: 1.50
+    min_payout_usd: 20      # YouTube: ~13.4K views before a clip pays
+    cap_usd: 350
+    # Source per brief: only NEW GTA 6 videos on Foltyn's YouTube (edited videos, not streams). No GTA 5.
+    # YouTube source: may hit yt-dlp's bot check on GitHub runners (no YTDLP_COOKIES secret yet).
+    sources: [https://www.youtube.com/@FoltynGaming3]
+    source_since: "2026-11-27"
+    format: short
+    must_include: ["@FoltynFamily"]
+    overlay_text: "FOLTYN"
+    rules: >
+      GTA 6 content only, cut from Foltyn's own new GTA 6 YouTube videos (not GTA 5, not other creators).
+      Tag @FoltynFamily in the FIRST line of the caption/description. Never negative toward Foltyn.
+      No external logos (stake, rainbet, kalshi etc.). No story-share or collab posts. No reposting the same clip,
+      no low-effort or rushed posts, no stolen clips or reworded captions from other clippers - own edit, own caption.
+      Clips need 0.75%+ engagement to be approved. Good audio and video quality only.
+    verified_brief: true
+    joined: true      # joined 28 Nov 2026
+    enabled: true
+
+  - id: brettliftsxp-gta6
+    streamer: "BrettLiftsXP"
+    name: "BrettLiftsXP GTA VI Clipping Campaign (Funnel Clips Community)"
+    board: content_rewards
+    host: Funnel Clips Community
+    join_url: https://whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/954cf1f2-1a69-4f0f-b46c-18a9dfddb219
+    rules_doc: https://docs.google.com/document/d/1N-Y9i1UKyA2YvykI0Qw24x2FiEDxGAoX2IBiznmDk_Q/edit
+    type: cpm
+    cpm: 0.50
+    min_payout_usd: 1
+    cap_usd: 100
+    sources: [https://www.twitch.tv/brettliftsxp]
+    source_since: "2026-11-28"
+    format: short
+    must_include: ["@BrettLiftsXP", "twitch.tv/brettliftsxp"]
+    overlay_text: "TWITCH.TV/BRETTLIFTSXP"
+    # Twitch banner (required in every video) is in the Assets folder:
+    # https://drive.google.com/drive/folders/11Hs24tWK1LYCjLqBxcMfEpe0dOUSUHjc
+    rules: >
+      Brett's face on screen and his Twitch banner in every video. Only streams/videos from 20 Oct 2026 on.
+      Tag Brett; Twitch + YouTube links in bio. No AI clipping platforms (Opus, Vizard). 50% Tier 1 audience.
+      Never delete posted videos. Must also be a member of whop.com/clips-by-jai. Analytics screen recording
+      from the phone app once a clip reaches min views.
+    verified_brief: true
+    joined: true      # joined 28 Nov 2026
+    enabled: false    # held: brief bans AI clipping tools, needs 50% Tier 1 audience + extra community - see notes
