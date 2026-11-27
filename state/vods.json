@@ -468,8 +468,8 @@
   "twitchvod:v2941789896": {
     "url": "https://www.twitch.tv/videos/2941789896",
     "title": "Highlight: 🦃 COOKING THANKSGIVING DINNER 🦃 WITH DARLA 🦃 FLIGHT CANCELLED 🦃 CHEF LACY 🦃 !CLIPPING !GIVEAWAY",
-    "scanned_until": 3600.0,
-    "last_scan": "2026-11-27T01:24:03+00:00"
+    "scanned_until": 7200.0,
+    "last_scan": "2026-11-27T10:35:22+00:00"
   },
   "twitchvod:v2939980118": {
     "url": "https://www.twitch.tv/videos/2939980118",
@@ -486,7 +486,19 @@
   "twitchvod:v2942044564": {
     "url": "https://www.twitch.tv/videos/2942044564",
     "title": "Streaming GTA 6 (gone right) 2026-11-27 08:04",
-    "scanned_until": 7200.0,
-    "last_scan": "2026-11-27T09:13:21+00:00"
+    "scanned_until": 10800.0,
+    "last_scan": "2026-11-27T10:35:45+00:00"
+  },
+  "twitchvod:v2941986361": {
+    "url": "https://www.twitch.tv/videos/2941986361",
+    "title": "Highlight: 🦃 COOKING THANKSGIVING DINNER 🦃 WITH DARLA 🦃 FLIGHT CANCELLED 🦃 CHEF LACY 🦃 !CLIPPING !GIVEAWAY",
+    "scanned_until": 11327.0,
+    "last_scan": "2026-11-27T10:35:22+00:00"
+  },
+  "twitchvod:v2941936181": {
+    "url": "https://www.twitch.tv/videos/2941936181",
+    "title": "Highlight: 🦃 COOKING THANKSGIVING DINNER 🦃 WITH DARLA 🦃 FLIGHT CANCELLED 🦃 CHEF LACY 🦃 !CLIPPING !GIVEAWAY",
+    "scanned_until": 2166.0,
+    "last_scan": "2026-11-27T10:35:22+00:00"
   }
 }
