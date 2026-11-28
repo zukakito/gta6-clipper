@@ -362,7 +362,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-28T11:28:36+00:00"
+    "last_seen": "2026-11-28T14:55:45+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -543,7 +543,7 @@
     "host": "BenDaDonnn",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1,
+    "cpm": 1.0,
     "budget_left_usd": 7500,
     "platforms": [
       "youtube",
@@ -556,7 +556,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-28T13:44:29+00:00"
+    "last_seen": "2026-11-28T14:55:45+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -1966,7 +1966,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.5,
-    "budget_left_usd": 125,
+    "budget_left_usd": 122,
     "platforms": [
       "youtube",
       "tiktok"
@@ -1978,7 +1978,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-28T13:44:29+00:00"
+    "last_seen": "2026-11-28T14:55:45+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
@@ -2811,8 +2811,8 @@
     "host": "Burst Clipping",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1,
-    "budget_left_usd": 900,
+    "cpm": 1.0,
+    "budget_left_usd": 700,
     "platforms": [
       "instagram",
       "tiktok",
@@ -2826,7 +2826,7 @@
     "first_seen": "2026-11-25T02:43:20+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-28T13:44:29+00:00"
+    "last_seen": "2026-11-28T14:55:45+00:00"
   },
   "game-over-gta-vi-rollout": {
     "name": "'Game Over' GTA VI Rollout",
