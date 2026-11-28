@@ -1,8 +1,8 @@
 {
   "scout": {
-    "checked_at": "2026-11-28T16:53:57+00:00",
-    "new": 0,
-    "known": 239,
+    "checked_at": "2026-11-28T17:50:38+00:00",
+    "new": 1,
+    "known": 240,
     "youtube_open": 101,
     "needs_review": [
       "Jack [GTA LOGO]",
@@ -65,9 +65,9 @@
       "$7,500 Expedia x IShowSpeed Campaign"
     ]
   },
-  "last_scout": "2026-11-28T16:53:57+00:00",
-  "last_run": "2026-11-28T16:54:54+00:00",
-  "run_seconds": 59,
+  "last_scout": "2026-11-28T17:50:38+00:00",
+  "last_run": "2026-11-28T17:51:37+00:00",
+  "run_seconds": 66,
   "made_this_run": 0,
   "publisher": "dry_run",
   "enabled_campaigns": [
