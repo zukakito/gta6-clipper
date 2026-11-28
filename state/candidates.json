@@ -2006,5 +2006,83 @@
     "found_at": "2026-11-28T09:30:52+00:00",
     "status": "rejected",
     "reason": "The transcript does not show a clear gameplay event or reaction; it is mostly chat discussion about a missile request with no visible action, making it uninteresting for Shorts and failing campaign criteria."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 10:31",
+    "t": 5122.0,
+    "score": 2.6860929663487925,
+    "win_start": 5077.0,
+    "win_end": 5152.0,
+    "found_at": "2026-11-28T10:32:04+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 75% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 10:31",
+    "t": 6672.0,
+    "score": 2.4547975822394315,
+    "win_start": 6627.0,
+    "win_end": 6702.0,
+    "found_at": "2026-11-28T10:32:04+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 42% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 10:31",
+    "t": 5317.0,
+    "score": 2.2833142961221773,
+    "win_start": 5272.0,
+    "win_end": 5347.0,
+    "found_at": "2026-11-28T10:32:04+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 58% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 10:31",
+    "t": 5847.0,
+    "score": 2.1555260343363574,
+    "win_start": 5802.0,
+    "win_end": 5877.0,
+    "found_at": "2026-11-28T10:32:04+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 58% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 10:31",
+    "t": 5562.0,
+    "score": 2.142335343658488,
+    "win_start": 5517.0,
+    "win_end": 5592.0,
+    "found_at": "2026-11-28T10:32:04+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 67% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 10:31",
+    "t": 4067.0,
+    "score": 2.1353700008243757,
+    "win_start": 4022.0,
+    "win_end": 4097.0,
+    "found_at": "2026-11-28T10:32:04+00:00",
+    "status": "rejected",
+    "reason": "The transcript does not describe a clear GTA 6 gameplay event. It consists mainly of vague chat and unrelated remarks, with no identifiable setup, payoff, or reaction that a viewer could understand without additional context."
   }
 ]
