@@ -1928,5 +1928,83 @@
     "found_at": "2026-11-28T08:44:08+00:00",
     "status": "rejected",
     "reason": "The transcript shows only chat interaction about joining; there is no clear GTA 6 gameplay event, reaction, or setup/payoff, so the clip is not suitable for the campaign."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 09:30",
+    "t": 1425.0,
+    "score": 1.8243450374352108,
+    "win_start": 1380.0,
+    "win_end": 1455.0,
+    "found_at": "2026-11-28T09:30:52+00:00",
+    "status": "rejected",
+    "reason": "The transcript only shows the streamer discussing a beverage guess with chat and no clear GTA 6 gameplay event, reaction, or payoff. There is no setup, moment, or reaction that a viewer could follow without additional context, so the clip does not meet the campaign's criteria."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 09:30",
+    "t": 655.0,
+    "score": 1.7796019259463238,
+    "win_start": 615.0,
+    "win_end": 685.0,
+    "found_at": "2026-11-28T09:30:52+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains only the streamer talking about the stream setup and video quality, with no clear GTA 6 gameplay, reaction, or event. No setup/payoff is present, so the clip is not suitable."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 09:30",
+    "t": 1020.0,
+    "score": 1.7722012226398822,
+    "win_start": 975.0,
+    "win_end": 1050.0,
+    "found_at": "2026-11-28T09:30:52+00:00",
+    "status": "rejected",
+    "reason": "No GTA 6 gameplay, chase, crash, or other in‑game event; just a snack discussion, so the clip lacks a clear setup and payoff."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 09:30",
+    "t": 785.0,
+    "score": 1.7421206663238467,
+    "win_start": 740.0,
+    "win_end": 815.0,
+    "found_at": "2026-11-28T09:30:52+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains only vague chat about \"Jason mogs me\" and no clear GTA 6 gameplay event, reaction, chase, crash, or other moment that a viewer could understand without external context."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 09:30",
+    "t": 1240.0,
+    "score": 1.700430717572789,
+    "win_start": 1195.0,
+    "win_end": 1270.0,
+    "found_at": "2026-11-28T09:30:52+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains only unrelated chatter and no clear GTA 6 gameplay event, reaction, or visual cue that a viewer can understand without context."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 09:30",
+    "t": 3605.0,
+    "score": 1.5990832868365474,
+    "win_start": 3560.0,
+    "win_end": 3635.0,
+    "found_at": "2026-11-28T09:30:52+00:00",
+    "status": "rejected",
+    "reason": "The transcript does not show a clear gameplay event or reaction; it is mostly chat discussion about a missile request with no visible action, making it uninteresting for Shorts and failing campaign criteria."
   }
 ]
