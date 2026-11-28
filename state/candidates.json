@@ -2084,5 +2084,44 @@
     "found_at": "2026-11-28T10:32:04+00:00",
     "status": "rejected",
     "reason": "The transcript does not describe a clear GTA 6 gameplay event. It consists mainly of vague chat and unrelated remarks, with no identifiable setup, payoff, or reaction that a viewer could understand without additional context."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right)",
+    "t": 8442.0,
+    "score": 2.11430437134325,
+    "win_start": 8397.0,
+    "win_end": 8472.0,
+    "found_at": "2026-11-28T12:30:18+00:00",
+    "status": "rejected",
+    "reason": "The transcript contains only filler chat about stealing cars and vague references to a chase; there is no clear gameplay moment, reaction, or payoff that a viewer could understand without context."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right)",
+    "t": 8027.0,
+    "score": 1.5396269712481436,
+    "win_start": 7982.0,
+    "win_end": 8057.0,
+    "found_at": "2026-11-28T12:30:18+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 42% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right)",
+    "t": 8257.0,
+    "score": 1.4457877671009032,
+    "win_start": 8212.0,
+    "win_end": 8287.0,
+    "found_at": "2026-11-28T12:30:18+00:00",
+    "status": "rejected",
+    "reason": "No identifiable GTA 6 gameplay event, chase, crash, or reaction is evident; the transcript is mostly unrelated chatter, making the clip uninteresting for Shorts."
   }
 ]
