@@ -1811,5 +1811,83 @@
     "found_at": "2026-11-27T10:35:45+00:00",
     "status": "rejected",
     "reason": "No clear gameplay event, reaction, or visual moment; just dialogue about mission objectives."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2942785451",
+    "vod_url": "https://www.twitch.tv/videos/2942785451",
+    "vod_title": "[76/365] ⛄🎁 CRACKING LUCIA!! ⛄🎁 GTA GAMEPLAY GETTING TO 80% ⛄🎁 FORTNITE TOURNY TMR FOR 100$? ⛄🎁 !CLIPPING ⛄🎁 !DISCORD",
+    "t": 13765.0,
+    "score": 2.299631266215747,
+    "win_start": 13720.0,
+    "win_end": 13795.0,
+    "found_at": "2026-11-28T06:03:58+00:00",
+    "status": "rejected",
+    "reason": "The transcript provides only vague comments and no clear, self‑contained gameplay event or reaction within the required 30‑58 s window, making it impossible to create a specific hook or title that complies with campaign rules."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2942785451",
+    "vod_url": "https://www.twitch.tv/videos/2942785451",
+    "vod_title": "[76/365] ⛄🎁 CRACKING LUCIA!! ⛄🎁 GTA GAMEPLAY GETTING TO 80% ⛄🎁 FORTNITE TOURNY TMR FOR 100$? ⛄🎁 !CLIPPING ⛄🎁 !DISCORD",
+    "t": 13910.0,
+    "score": 2.1435656189299714,
+    "win_start": 13865.0,
+    "win_end": 13940.0,
+    "found_at": "2026-11-28T06:03:58+00:00",
+    "status": "rejected",
+    "reason": "The transcript does not show a clear, self‑contained event or payoff; it only shows confused remarks without a visible outcome, making it unsuitable for a short clip."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2942785451",
+    "vod_url": "https://www.twitch.tv/videos/2942785451",
+    "vod_title": "[76/365] ⛄🎁 CRACKING LUCIA!! ⛄🎁 GTA GAMEPLAY GETTING TO 80% ⛄🎁 FORTNITE TOURNY TMR FOR 100$? ⛄🎁 !CLIPPING ⛄🎁 !DISCORD",
+    "t": 13410.0,
+    "score": 1.9522476650549223,
+    "win_start": 13365.0,
+    "win_end": 13440.0,
+    "found_at": "2026-11-28T06:03:58+00:00",
+    "status": "rejected",
+    "reason": "No clear GTA 6 gameplay event or reaction; transcript only shows idle chat about being drunk and ordering drinks, no setup/payoff."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2942785451",
+    "vod_url": "https://www.twitch.tv/videos/2942785451",
+    "vod_title": "[76/365] ⛄🎁 CRACKING LUCIA!! ⛄🎁 GTA GAMEPLAY GETTING TO 80% ⛄🎁 FORTNITE TOURNY TMR FOR 100$? ⛄🎁 !CLIPPING ⛄🎁 !DISCORD",
+    "t": 14100.0,
+    "score": 1.9351908655449743,
+    "win_start": 14055.0,
+    "win_end": 14130.0,
+    "found_at": "2026-11-28T06:03:58+00:00",
+    "status": "rejected",
+    "reason": "The moment lacks a clear, self‑contained payoff and is unlikely to engage Shorts viewers (score below 7)."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2942785451",
+    "vod_url": "https://www.twitch.tv/videos/2942785451",
+    "vod_title": "[76/365] ⛄🎁 CRACKING LUCIA!! ⛄🎁 GTA GAMEPLAY GETTING TO 80% ⛄🎁 FORTNITE TOURNY TMR FOR 100$? ⛄🎁 !CLIPPING ⛄🎁 !DISCORD",
+    "t": 14275.0,
+    "score": 1.6265308628527486,
+    "win_start": 14230.0,
+    "win_end": 14305.0,
+    "found_at": "2026-11-28T06:03:58+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows scattered frustration without a clear, self-contained funny or surprising event; no distinct payoff is evident, making it unlikely to engage viewers."
+  },
+  {
+    "campaign_id": "bobby-vanriper-gta6",
+    "vod_id": "twitchvod:v2942785451",
+    "vod_url": "https://www.twitch.tv/videos/2942785451",
+    "vod_title": "[76/365] ⛄🎁 CRACKING LUCIA!! ⛄🎁 GTA GAMEPLAY GETTING TO 80% ⛄🎁 FORTNITE TOURNY TMR FOR 100$? ⛄🎁 !CLIPPING ⛄🎁 !DISCORD",
+    "t": 13285.0,
+    "score": 1.5298331972749095,
+    "win_start": 13240.0,
+    "win_end": 13315.0,
+    "found_at": "2026-11-28T06:03:58+00:00",
+    "status": "rejected",
+    "reason": "gameplay is black/loading for 100% of the clip"
   }
 ]
