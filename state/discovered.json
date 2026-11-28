@@ -540,10 +540,10 @@
   },
   "bendadonnn-x-puffco-gta-6": {
     "name": "BenDaDonnn x Puffco GTA 6",
-    "host": "BenDaDonnn x Puffco",
+    "host": "BenDaDonnn",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1.0,
+    "cpm": 1,
     "budget_left_usd": 7500,
     "platforms": [
       "youtube",
@@ -556,7 +556,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-28T11:28:36+00:00"
+    "last_seen": "2026-11-28T13:44:29+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -1340,7 +1340,7 @@
     "first_seen": "2026-11-20T23:52:30+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "take-me-droma-gta-6-edits": {
     "name": "Take me - DROMA [GTA 6 + EDITS]",
@@ -1440,7 +1440,7 @@
     "first_seen": "2026-11-21T09:54:12+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "lacy-gta-vi-marathon-pool-campaign": {
     "name": "LACY GTA VI Marathon Pool Campaign",
@@ -1810,7 +1810,7 @@
     "first_seen": "2026-11-22T05:38:49+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "ritmo-salsa": {
     "name": "RITMO SALSA",
@@ -1978,7 +1978,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-28T11:28:36+00:00"
+    "last_seen": "2026-11-28T13:44:29+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
@@ -2451,7 +2451,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 7700,
+    "budget_left_usd": 7500,
     "platforms": [
       "facebook",
       "instagram",
@@ -2466,7 +2466,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "arthurtv": {
     "name": "ArthurTV",
@@ -2485,7 +2485,7 @@
     "first_seen": "2026-11-23T23:30:24+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "bounty-gta-vi-lucia-vs-fanvue-ai-lucia": {
     "name": "Bounty GTA VI Lucia vs Fanvue AI Lucia",
@@ -2643,7 +2643,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
-    "budget_left_usd": 5000,
+    "budget_left_usd": 13000,
     "platforms": [
       "instagram",
       "tiktok"
@@ -2655,7 +2655,7 @@
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-25T14:47:28+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "newsdaddy": {
     "name": "NewsDaddy",
@@ -2696,7 +2696,7 @@
     "first_seen": "2026-11-24T14:26:20+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "rexxlife-raj-handful-of-diamond-rings-gta-6": {
     "name": "RexxLife Raj \"Handful of Diamond Rings\" GTA 6",
@@ -2808,10 +2808,10 @@
   },
   "fr-7-000-bichou-miami-gta-6": {
     "name": "FR $7,000 BICHOU MIAMI GTA 6",
-    "host": "BICHOU MIAMI",
+    "host": "Burst Clipping",
     "board": "content_rewards",
     "type": "cpm",
-    "cpm": 1.0,
+    "cpm": 1,
     "budget_left_usd": 900,
     "platforms": [
       "instagram",
@@ -2826,7 +2826,7 @@
     "first_seen": "2026-11-25T02:43:20+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-28T11:28:36+00:00"
+    "last_seen": "2026-11-28T13:44:29+00:00"
   },
   "game-over-gta-vi-rollout": {
     "name": "'Game Over' GTA VI Rollout",
@@ -3138,7 +3138,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "the-clip-ship": {
     "name": "The Clip Ship",
@@ -3146,7 +3146,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 3700,
+    "budget_left_usd": 3600,
     "platforms": [
       "instagram"
     ],
@@ -3157,7 +3157,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "phonknight": {
     "name": "Phonknight",
@@ -3183,7 +3183,7 @@
     "name": "ClippedIn",
     "host": "$3,000 8lanco 'Every Little Thing' Sound Campaign",
     "board": "content_rewards",
-    "type": "unknown",
+    "type": "cpm",
     "cpm": 1.0,
     "budget_left_usd": 3000,
     "platforms": [
@@ -3197,7 +3197,7 @@
     "first_seen": "2026-11-25T14:47:28+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": false,
-    "last_seen": "2026-11-28T10:30:14+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "ishowspeed-spotted-with-rayhaan": {
     "name": "Ishowspeed spotted with Rayhaan",
@@ -4166,7 +4166,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
-    "budget_left_usd": 4900,
+    "budget_left_usd": 4700,
     "platforms": [
       "tiktok",
       "youtube"
@@ -4178,7 +4178,7 @@
     "first_seen": "2026-11-27T15:00:45+00:00",
     "source_board": "https://clipcpm.com/gta-6",
     "needs_review": true,
-    "last_seen": "2026-11-28T12:29:20+00:00"
+    "last_seen": "2026-11-28T13:44:11+00:00"
   },
   "7-500-expedia-x-ishowspeed-campaign": {
     "name": "$7,500 Expedia x IShowSpeed Campaign",
@@ -4338,5 +4338,84 @@
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
     "last_seen": "2026-11-28T11:28:33+00:00"
+  },
+  "all-again": {
+    "name": "All Again",
+    "host": null,
+    "board": "clipster",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 3600,
+    "platforms": [
+      "tiktok",
+      "instagram"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-28T13:44:11+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-28T13:44:11+00:00"
+  },
+  "purc": {
+    "name": "purc",
+    "host": null,
+    "board": "clipster",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 2100,
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-28T13:44:11+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-28T13:44:11+00:00"
+  },
+  "rayhaan-perfumes": {
+    "name": "Rayhaan Perfumes",
+    "host": null,
+    "board": "content_rewards",
+    "type": "cpm",
+    "cpm": 1.5,
+    "budget_left_usd": 2000,
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "apply_first": true,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-28T13:44:11+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-28T13:44:11+00:00"
+  },
+  "lxnder": {
+    "name": "LXNDER",
+    "host": null,
+    "board": "clipster",
+    "type": "cpm",
+    "cpm": 1.0,
+    "budget_left_usd": 1900,
+    "platforms": [
+      "tiktok"
+    ],
+    "apply_first": false,
+    "streamer": null,
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-28T13:44:11+00:00",
+    "source_board": "https://clipcpm.com/gta-6",
+    "needs_review": false,
+    "last_seen": "2026-11-28T13:44:11+00:00"
   }
 }
