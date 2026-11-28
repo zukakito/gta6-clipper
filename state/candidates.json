@@ -240,19 +240,6 @@
   },
   {
     "campaign_id": "parkerr-gta6",
-    "vod_id": "twitchvod:v2939679008",
-    "vod_url": "https://www.twitch.tv/videos/2939679008",
-    "vod_title": "🔴GTA 6 🔴 60FPS 🔴  BEATING THE GAME TODAY??🔴",
-    "t": 18868.0,
-    "score": 1.0495274740420648,
-    "win_start": 18823.0,
-    "win_end": 18898.0,
-    "found_at": "2026-11-25T04:13:03+00:00",
-    "status": "rejected",
-    "reason": "The transcript shows only idle talk about future plans and no clear GTA 6 gameplay reaction or event. There is no setup/payoff, no visible action, and nothing interesting for a short clip."
-  },
-  {
-    "campaign_id": "parkerr-gta6",
     "vod_id": "twitchvod:v2940662518",
     "vod_url": "https://www.twitch.tv/videos/2940662518",
     "vod_title": "🔴(91%) GTA 6 🔴 60FPS 🔴  END OF GAME🔴 2026-11-25 23:30",
