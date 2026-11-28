@@ -1,6 +1,6 @@
 # Pre-publish checklist: every Short, every night
 
-_Re-reviewed against each campaign's own brief on 22 Nov 2026. Claude runs this on every clip before publishing at the slot (23:30 IST weekdays, 20:30 IST weekends). A clip that fails any line is not published. If a brief changes, update this doc first. Copies: this repo (ops/publish-checklist.md), the owner's Mac (Downloads/zukakito-publishing/), and the Claude project._
+_Re-reviewed against each campaign's own brief on 22 Nov 2026; publishing rules updated 27 Nov. Claude runs this on every clip before publishing. Weekdays: publish between 19:00 and 22:00 IST; weekends: checks every 2 h from 12:00 to 20:00 IST, publish as soon as a clip passes (max 3 a day, at least 1 h apart). A clip that fails any line is not published. If a brief changes, update this doc first. Copies: this repo (ops/publish-checklist.md), the owner's Mac (Downloads/zukakito-publishing/), and the Claude project._
 
 ## A. Every clip: YouTube and channel
 1. **Length and format:** vertical 1080×1920, 30–58 s, plays to the end with no frozen or corrupted frames.
@@ -60,18 +60,30 @@ _Re-reviewed against each campaign's own brief on 22 Nov 2026. Claude runs this 
 - **The official "Parkerr Twitch stamp" image (RealParkerr Twitch badge) must be on every clip, visible from the first second.** Verified rendering on 25 Nov; from 25 Nov ~19:00 IST it sits below the hook box instead of behind it.
 - Direct viewers only to his approved accounts (Twitch @realparkerr, YouTube @ParkerrLive). Never mention his main YouTube channel. Personal-style pages only.
 - Parkerr clips rendered before 24 Nov ~20:00 IST have only a text stamp: never publish those.
+- **Paused 27 Nov:** the Parkerr campaign no longer appears on Content Rewards; don't publish Parkerr clips unless it returns.
 
 ### Dasgas Dom — $2 per 1K views (Ruckus)
 - Source: his GTA 6 playthrough on kick.com/dasgasd3m from 18 Nov (no leaks, trailers, other streams). Keep his face or voice in the edit.
 - Credit dasgasd3m on Kick, point viewers to **kick.com/dasgasd3m**, include **#dasgasdom3**. Skip explicit adult jokes.
 - Requires a GTA 6-specific channel (ours qualifies). **Submit within 30 minutes; one campaign per post.** Deadline 19 Dec 2026, 11:59pm PST.
 
+### Foltyn — $1.50 per 1K views (Clipping Hall of Fame, joined 28 Nov)
+- Source: only Foltyn's **new GTA 6 videos on YouTube** (@FoltynGaming3). No GTA 5, no other creators.
+- **@FoltynFamily must be the first line of the description.** Never negative toward Foltyn. No external logos (stake, rainbet, kalshi etc.).
+- Own edit and own caption: no reposts of the same clip, no stolen clips or reworded captions. Clips need 0.75%+ engagement to be approved; YouTube pays from $20 (about 13.4K views).
+- The pipeline can't read his YouTube videos yet: GitHub's servers get YouTube's "confirm you're not a bot" block (no YTDLP_COOKIES secret).
+
+### BrettLiftsXP — joined 28 Nov, not clipped
+- Off in the pipeline: his brief bans AI clipping tools (Opus, Vizard), wants 50% Tier 1 audience, membership of whop.com/clips-by-jai and phone analytics screen recordings. Don't publish Brett clips.
+
 ## C. At publish time
-1. Heads-up to the owner 15 minutes before the slot (Mac notification plus a message listing the Shorts). The owner can reply "hold".
-2. Upload in YouTube Studio with the settings in A7. Wait for Studio's Checks to finish: no copyright claim.
-3. Publish one Short at a time, 5 minutes apart.
-4. Right after each goes public, submit its link in Content Rewards to its one campaign, **within 30 minutes**.
-5. Report back: what was published and submitted, and what was skipped and why.
+1. **Content Rewards only accepts a clip submitted within 30 minutes of it going live** ("Posted within the last 30 minutes"). So publish only while the owner and the Mac are online, never on an unattended schedule.
+2. The owner brings the Claude app to the front ("screen up") and picks the file in YouTube Studio's upload dialog; Claude fills in the settings in A7.
+3. Wait for Studio's Checks to finish: no copyright claim.
+4. Publish **public immediately**, then submit the link to the clip's one campaign right away.
+5. Pin a comment with a short question about the moment.
+6. Report back: what was published and submitted, and what was skipped and why.
+7. Never delete and re-post a Short to get another submission window: YouTube treats that as spam.
 
 ## Owner actions that unblock campaigns
 - Done 24 Nov: joined the Clipping Nation, ClipLaunch, Ruckus and Content Rewards Discords. Still optional: Reach Discord.
@@ -88,3 +100,4 @@ _Re-reviewed against each campaign's own brief on 22 Nov 2026. Claude runs this 
 - Bobby Vanriper: https://app.notion.com/p/Bobby-Van-Riper-GTA-VI-Clipping-Requirements-Guide-414582c82d8881d5b28bdd4235a1be82
 - Parkerr: https://app.notion.com/p/GTA-VI-Streamer-Campaign-3ea0395e47eb8095ba10ef12ef45b2bc
 - Dasgas Dom: https://docs.google.com/document/d/16y5Pv5OltUMG7HSLhiZBBHUBAUggd2Gd4gmikazoGnU/view
+- Foltyn: https://docs.google.com/document/d/1Ty8QZVEyLbMRrT0X9doqrSs2DLACPbEEa3GGtRdsYzo/edit
