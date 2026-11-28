@@ -344,11 +344,11 @@
   },
   "gta-6-clipping-campaign-tokyo-girl": {
     "name": "GTA 6 Clipping Campaign - Tokyo Girl",
-    "host": "Tokyo Girl",
-    "board": "content_rewards",
-    "type": "unknown",
+    "host": "Placements",
+    "board": "clipster",
+    "type": "cpm",
     "cpm": 0.7,
-    "budget_left_usd": 1513,
+    "budget_left_usd": 2000,
     "platforms": [
       "youtube",
       "tiktok",
@@ -358,11 +358,11 @@
     "apply_first": false,
     "streamer": "Tokyo Girl",
     "url": "whop.com/experiences/exp_KZckYGtrnbujDg/campaigns/9dedcdfc-7e4d-4e56-8036-846bfdbdc676",
-    "status": "unknown",
+    "status": "open",
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T19:39:16+00:00"
+    "last_seen": "2026-11-28T02:36:53+00:00"
   },
   "fr-4-000-bichou-miami-gta-6": {
     "name": "FR $4,000 BICHOU MIAMI GTA 6",
@@ -404,7 +404,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "diegoloveless-gta-6-clipping": {
     "name": "DiegoLoveless GTA 6 Clipping",
@@ -544,7 +544,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 7718,
+    "budget_left_usd": 7659,
     "platforms": [
       "youtube",
       "tiktok"
@@ -556,7 +556,7 @@
     "first_seen": "2026-11-20T20:06:25+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "gattouz-gta-vi-1win": {
     "name": "GATTOUZ × GTA VI × 1WIN",
@@ -1963,10 +1963,10 @@
   "gta-6-x-gta-clipper-logo-campaign": {
     "name": "GTA 6 x GTA Clipper Logo Campaign",
     "host": "GTA Clipper",
-    "board": "content_rewards",
+    "board": "clipster",
     "type": "cpm",
     "cpm": 0.5,
-    "budget_left_usd": 141,
+    "budget_left_usd": 1000,
     "platforms": [
       "youtube",
       "tiktok"
@@ -1978,7 +1978,7 @@
     "first_seen": "2026-11-22T07:12:27+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:53+00:00"
   },
   "gta-vi-clipup-logo-campaign": {
     "name": "GTA VI Clipup Logo Campaign",
@@ -2185,7 +2185,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 0.7,
-    "budget_left_usd": 971,
+    "budget_left_usd": 967,
     "platforms": [
       "youtube",
       "tiktok"
@@ -2197,7 +2197,7 @@
     "first_seen": "2026-11-22T20:49:54+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "gta-vi-lucia-vs-fanvue-ai-lucia": {
     "name": "GTA VI Lucia vs Fanvue AI Lucia",
@@ -3387,12 +3387,12 @@
     "last_seen": "2026-11-27T02:42:16+00:00"
   },
   "clipping-nation-bobby-van-riper-gta-vi-clipping": {
-    "name": "Clipping Nation BOBBY VAN RIPER GTA VI Clipping",
+    "name": "Clipping Nation – BOBBY VAN RIPER GTA VI Clipping",
     "host": "BOBBY VAN RIPER",
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.5,
-    "budget_left_usd": 484,
+    "budget_left_usd": 239,
     "platforms": [],
     "apply_first": false,
     "streamer": null,
@@ -3401,7 +3401,7 @@
     "first_seen": "2026-11-26T00:31:21+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-26T00:31:21+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "phonknight-montagem-calmo-phonknight-edits": {
     "name": "Phonknight MONTAGEM CALMO - Phonknight [EDITS]",
@@ -3576,7 +3576,7 @@
     "first_seen": "2026-11-26T19:42:52+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "gta-clips-arthurtv": {
     "name": "GTA Clips (ArthurTV)",
@@ -3688,7 +3688,7 @@
     "first_seen": "2026-11-27T08:03:51+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "20-000-core-pool-campaign": {
     "name": "$20,000 CORE Pool Campaign",
@@ -3711,7 +3711,7 @@
     "first_seen": "2026-11-27T08:03:51+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "2-500-skiimasktimmy-streamer-campaign": {
     "name": "$2,500 SkiiMaskTimmy Streamer Campaign",
@@ -3905,7 +3905,7 @@
     "board": "content_rewards",
     "type": "cpm",
     "cpm": 1.0,
-    "budget_left_usd": 1639,
+    "budget_left_usd": 1593,
     "platforms": [
       "youtube",
       "tiktok"
@@ -3917,7 +3917,7 @@
     "first_seen": "2026-11-27T14:00:50+00:00",
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": false,
-    "last_seen": "2026-11-27T23:00:58+00:00"
+    "last_seen": "2026-11-28T02:36:24+00:00"
   },
   "2-500-yusuf7n-clipping-campaign": {
     "name": "$2,500 Yusuf7n Clipping Campaign",
@@ -4200,5 +4200,22 @@
     "source_board": "https://gtaclipper.com/campaigns",
     "needs_review": true,
     "last_seen": "2026-11-27T23:00:58+00:00"
+  },
+  "clippedin-2-500-skiimasktimmy-streamer-campaign": {
+    "name": "ClippedIn – $2,500 SkiiMaskTimmy Streamer Campaign",
+    "host": null,
+    "board": "content_rewards",
+    "type": "cpm",
+    "cpm": 2.0,
+    "budget_left_usd": 1922,
+    "platforms": [],
+    "apply_first": false,
+    "streamer": "SkiiMaskTimmy",
+    "url": null,
+    "status": "open",
+    "first_seen": "2026-11-28T02:36:24+00:00",
+    "source_board": "https://gtaclipper.com/campaigns",
+    "needs_review": false,
+    "last_seen": "2026-11-28T02:36:24+00:00"
   }
 }
