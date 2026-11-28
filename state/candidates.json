@@ -1889,5 +1889,44 @@
     "found_at": "2026-11-28T06:03:58+00:00",
     "status": "rejected",
     "reason": "gameplay is black/loading for 100% of the clip"
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 08:34",
+    "t": 335.0,
+    "score": 1.2301382764369413,
+    "win_start": 290.0,
+    "win_end": 365.0,
+    "found_at": "2026-11-28T08:44:08+00:00",
+    "status": "rejected",
+    "reason": "The transcript only shows the streamer talking about a Discord link with no GTA 6 gameplay, reaction, or event. No clear setup, moment, or payoff is present, so the clip does not meet campaign requirements."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 08:34",
+    "t": 100.0,
+    "score": 1.1893002256496752,
+    "win_start": 55.0,
+    "win_end": 130.0,
+    "found_at": "2026-11-28T08:44:08+00:00",
+    "status": "rejected",
+    "reason": "No clear GTA 6 gameplay event or reaction; only greetings and chat banter."
+  },
+  {
+    "campaign_id": "boeshi-gta6",
+    "vod_id": "twitchvod:v2943083400",
+    "vod_url": "https://www.twitch.tv/videos/2943083400",
+    "vod_title": "Streaming GTA 6 (gone right) 2026-11-28 08:34",
+    "t": 555.0,
+    "score": 1.1361965260276823,
+    "win_start": 510.0,
+    "win_end": 585.0,
+    "found_at": "2026-11-28T08:44:08+00:00",
+    "status": "rejected",
+    "reason": "The transcript shows only chat interaction about joining; there is no clear GTA 6 gameplay event, reaction, or setup/payoff, so the clip is not suitable for the campaign."
   }
 ]
